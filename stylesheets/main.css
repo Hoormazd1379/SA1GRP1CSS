@@ -16,7 +16,7 @@ body{
 {
   position:absolute;
   top: 10%;
-  left: 40%;
+  left: 35%;
 }
 
 #vul
@@ -50,8 +50,22 @@ body{
 #bug
 {
   text-align: center;
+  top: 60%;
+  left: 60%;
+  position: absolute;
+  display: block;
+  color: white;
+  background-color:#EE4C7C;
+  border-radius: 3px;
+  padding: 10px;
+  width: 200px;
+}
+
+#history
+{
+  text-align: center;
   top: 70%;
-  left: 50%;
+  left: 30%;
   position: absolute;
   display: block;
   color: white;
