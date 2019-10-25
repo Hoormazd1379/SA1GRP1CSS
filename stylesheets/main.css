@@ -4,10 +4,9 @@ body {
     font: normal 16px Arial, Helvetica, sand-serif;
 }
 
-#js-net {
+#particles-js {
     height: 100%;
     width: 100%;
-    margin: auto;
 }
 
 #title {
