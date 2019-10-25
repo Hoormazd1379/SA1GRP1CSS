@@ -22,6 +22,7 @@ body {
     position: absolute;
     top: 10%;
     left: 35%;
+    color: #EE4C7C;
 }
 
 .menuitem {
@@ -36,10 +37,9 @@ body {
     width: 250px;
 }
 
-.menuitem:hover
-{
-  transform: scale(1.1);
-  cursor: pointer;
+.menuitem:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #vul {
