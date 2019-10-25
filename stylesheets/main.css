@@ -1,39 +1,39 @@
 /************************************************************** PART A: VERY IMPORTANT STUFF **************************************************************/
 
+
 /**************************************************************DONT CHANGE ANYTHING HERE **************************************************************/
-body{
-  background-color: #1A1A1D;
-  margin:0;
-  font: normal 16px Arial, Helvetica, sand-serif;
+
+body {
+    background-color: #1A1A1D;
+    margin: 0;
+    font: normal 16px Arial, Helvetica, sand-serif;
 }
 
-#particles-js{
-  /* do not touch this pls otherwise we will be screwed again rofl */
-  position: fixed;
+#particles-js {
+    /* do not touch this pls otherwise we will be screwed again rofl */
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
 }
 
-#title
-{
-  position:absolute;
-  top: 10%;
-  left: 35%;
+#title {
+    position: absolute;
+    top: 10%;
+    left: 35%;
 }
 
-.menuitem
-{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  display: block;
-  color: white;
-  background-color:#EE4C7C;
-  width: 250px;
+.menuitem {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    display: block;
+    color: white;
+    background-color: #EE4C7C;
+    width: 250px;
 }
 
 .menuitem:hover
@@ -42,218 +42,217 @@ body{
   cursor: pointer;
 }
 
-#vul
-{
-
-  top: 10%;
-  left: 80%;
-
+#vul {
+    top: 10%;
+    left: 80%;
 }
 
-#mal
-{
-  top: 30%;
-  left: 10%;
+#mal {
+    top: 30%;
+    left: 10%;
 }
 
-#bug
-{
-  top: 60%;
-  left: 60%;
+#bug {
+    top: 60%;
+    left: 60%;
 }
 
-#history
-{
-  top: 70%;
-  left: 30%;
+#history {
+    top: 70%;
+    left: 30%;
 }
 
-#loadingDiv
-{
-  background-color: #1A1A1D;
-  text-align: center;
-  position: absolute;
+#loadingDiv {
+    background-color: #1A1A1D;
+    text-align: center;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
 }
 
-#loadingBox
-{
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  position: absolute;
-  width: 600px;
-  height: 400px;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -200px 0 0 -300px;
+#loadingBox {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -300px;
 }
 
 .lds-default {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
 }
+
 .lds-default div {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: #C3073F;
-  border-radius: 50%;
-  animation: lds-default 1.2s linear infinite;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #C3073F;
+    border-radius: 50%;
+    animation: lds-default 1.2s linear infinite;
 }
+
 .lds-default div:nth-child(1) {
-  animation-delay: 0s;
-  top: 29px;
-  left: 53px;
+    animation-delay: 0s;
+    top: 29px;
+    left: 53px;
 }
+
 .lds-default div:nth-child(2) {
-  animation-delay: -0.1s;
-  top: 18px;
-  left: 50px;
+    animation-delay: -0.1s;
+    top: 18px;
+    left: 50px;
 }
+
 .lds-default div:nth-child(3) {
-  animation-delay: -0.2s;
-  top: 9px;
-  left: 41px;
+    animation-delay: -0.2s;
+    top: 9px;
+    left: 41px;
 }
+
 .lds-default div:nth-child(4) {
-  animation-delay: -0.3s;
-  top: 6px;
-  left: 29px;
+    animation-delay: -0.3s;
+    top: 6px;
+    left: 29px;
 }
+
 .lds-default div:nth-child(5) {
-  animation-delay: -0.4s;
-  top: 9px;
-  left: 18px;
+    animation-delay: -0.4s;
+    top: 9px;
+    left: 18px;
 }
+
 .lds-default div:nth-child(6) {
-  animation-delay: -0.5s;
-  top: 18px;
-  left: 9px;
+    animation-delay: -0.5s;
+    top: 18px;
+    left: 9px;
 }
+
 .lds-default div:nth-child(7) {
-  animation-delay: -0.6s;
-  top: 29px;
-  left: 6px;
+    animation-delay: -0.6s;
+    top: 29px;
+    left: 6px;
 }
+
 .lds-default div:nth-child(8) {
-  animation-delay: -0.7s;
-  top: 41px;
-  left: 9px;
+    animation-delay: -0.7s;
+    top: 41px;
+    left: 9px;
 }
+
 .lds-default div:nth-child(9) {
-  animation-delay: -0.8s;
-  top: 50px;
-  left: 18px;
+    animation-delay: -0.8s;
+    top: 50px;
+    left: 18px;
 }
+
 .lds-default div:nth-child(10) {
-  animation-delay: -0.9s;
-  top: 53px;
-  left: 29px;
+    animation-delay: -0.9s;
+    top: 53px;
+    left: 29px;
 }
+
 .lds-default div:nth-child(11) {
-  animation-delay: -1s;
-  top: 50px;
-  left: 41px;
+    animation-delay: -1s;
+    top: 50px;
+    left: 41px;
 }
+
 .lds-default div:nth-child(12) {
-  animation-delay: -1.1s;
-  top: 41px;
-  left: 50px;
+    animation-delay: -1.1s;
+    top: 41px;
+    left: 50px;
 }
+
 @keyframes lds-default {
-  0%, 20%, 80%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
+    0%,
+    20%,
+    80%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
 }
 
 
 /**************************************************************END OF PART A**************************************************************/
 
+
 /**************************************************************PART B: LANDINGPAGE HEADING**************************************************************/
+
 
 /*************************************************************** gradual appearance of the main heading ***************************************************************/
 
 #a {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
 }
 
 #b {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
 }
 
 #c {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
-@-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            /* text drop down shadow configuration */
-    text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
 
-  }
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        /* text drop down shadow configuration */
+        text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
 }
+
 
 /***********************************************************************************************************************************************************************/
 
+
 /**************************************************************END OF PART B**************************************************************/
+
 
 /**************************************************************PART C: Template **************************************************************/
 
-h1
-{
-  font-size: 80px;
-  color: #C3073F;
+h1 {
+    font-size: 80px;
+    color: #C3073F;
 }
 
-h2
-{
+h2 {}
 
+h3 {
+    color: #C3073F;
 }
 
-h3
-{
-  color: #C3073F;
-}
+p {}
 
-p
-{
+li {}
 
-}
+a {}
 
-li
-{
-
-}
-
-a
-{
-
-}
-
-.pictureitem
-{
-  width:100%;
+.pictureitem {
+    width: 100%;
 }
