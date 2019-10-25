@@ -8,9 +8,7 @@
     },
     "shape":{
       "type":"circle",
-      "stroke":{
-        "width":1,
-        "color":"#545454"
+      "color":"#545454",
       },
       "image":{
         "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
