@@ -4,6 +4,10 @@ body{
   color:#333;
 }
 
+canvas {
+  height:100%;
+  width:100%;
+}
 #particles-js{
   background:black;
   height:100%;
