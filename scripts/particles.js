@@ -9,14 +9,14 @@
 
 var pJS = function(tag_id, params) {
 
-    var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el');
+    var canvas_el = document.getElementById("js-net");
 
     /* particles.js variables with default values */
     this.pJS = {
         canvas: {
             el: canvas_el,
-            w: canvas_el.offsetWidth,
-            h: canvas_el.offsetHeight
+            w: window.innerWidth,
+            h: window.innerHeight
         },
         particles: {
             number: {
