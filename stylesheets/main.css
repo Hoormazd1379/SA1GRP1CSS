@@ -1,162 +1,147 @@
 /************************************************************** PART A: VERY IMPORTANT STUFF **************************************************************/
+
+
 /**************************************************************DONT CHANGE ANYTHING HERE **************************************************************/
-body{
-  background-color: #1A1A1D;
-  margin:0;
-  font: normal 16px Arial, Helvetica, sand-serif;
+
+body {
+    background-color: #1A1A1D;
+    margin: 0;
+    font: normal 16px Arial, Helvetica, sand-serif;
 }
 
-#particles-js{
-  /* do not touch this pls otherwise we will be screwed again rofl */
-  position: fixed;
+#particles-js {
+    /* do not touch this pls otherwise we will be screwed again rofl */
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
 }
 
-#title
-{
-  position:absolute;
-  top: 10%;
-  left: 35%;
+#title {
+    position: absolute;
+    top: 10%;
+    left: 35%;
 }
 
-#vul
-{
-  text-align: center;
-  position: absolute;
-  top: 10%;
-  left: 80%;
-  display: block;
-  color: white;
-  background-color:#EE4C7C;
-  border-radius: 3px;
-  padding: 10px;
-  width: 200px;
+#vul {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    display: block;
+    color: white;
+    background-color: #EE4C7C;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
 }
 
-#mal
-{
-  text-align: center;
-  top: 30%;
-  left: 10%;
-  position: absolute;
-  display: block;
-  color: white;
-  background-color:#EE4C7C;
-  border-radius: 3px;
-  padding: 10px;
-  width: 200px;
+#mal {
+    text-align: center;
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    display: block;
+    color: white;
+    background-color: #EE4C7C;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
 }
 
-#bug
-{
-  text-align: center;
-  top: 60%;
-  left: 60%;
-  position: absolute;
-  display: block;
-  color: white;
-  background-color:#EE4C7C;
-  border-radius: 3px;
-  padding: 10px;
-  width: 200px;
+#bug {
+    text-align: center;
+    top: 60%;
+    left: 60%;
+    position: absolute;
+    display: block;
+    color: white;
+    background-color: #EE4C7C;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
 }
 
-#history
-{
-  text-align: center;
-  top: 70%;
-  left: 30%;
-  position: absolute;
-  display: block;
-  color: white;
-  background-color:#EE4C7C;
-  border-radius: 3px;
-  padding: 10px;
-  width: 200px;
+#history {
+    text-align: center;
+    top: 70%;
+    left: 30%;
+    position: absolute;
+    display: block;
+    color: white;
+    background-color: #EE4C7C;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
 }
 
 
 /**************************************************************END OF PART A**************************************************************/
 
 
-
 /**************************************************************PART B: LANDINGPAGE HEADING**************************************************************/
+
+
 /*************************************************************** gradual appearance of the main heading ***************************************************************/
 
 #a {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
 }
 
 #b {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
 }
 
 #c {
-  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
-          animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
 
+
 /***********************************************************************************************************************************************************************/
+
+
 /**************************************************************END OF PART B**************************************************************/
+
 
 /**************************************************************PART C: Template **************************************************************/
 
-h1
-{
-  font-size: 80px;
-  color: #C3073F;
+h1 {
+    font-size: 80px;
+    color: #C3073F;
 }
 
-h2
-{
+h2 {}
 
-}
+h3 {}
 
-h3
-{
+p {}
 
-}
+li {}
 
-p
-{
+a {}
 
-}
-
-li
-{
-
-}
-
-a
-{
-
-}
-
-.pictureitem
-{
-  width:95%;
+.pictureitem {
+    width: 95%;
 }
 
 @-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            /* text drop down shadow configuration */
-    text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
-
-  }
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        /* text drop down shadow configuration */
+        text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
 }
