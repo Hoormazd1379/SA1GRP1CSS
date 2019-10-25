@@ -6,38 +6,38 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
     <script>
-window.onload = function() {
+        window.onload = function() {
 
-    var images = document.getElementsByTagName('img'),
-        totalImages = images.length,
-        imagesLoaded = 0,
-        img;
+            var images = document.getElementsByTagName('img'),
+                totalImages = images.length,
+                imagesLoaded = 0,
+                img;
 
 
-    function checkForLoaded() {
+            function checkForLoaded() {
 
-        if(imagesLoaded === totalImages) {
-            var loadingDiv = document.getElementById('loadingDiv');
-            loadingDiv.parentNode.removeChild(loadingDiv);
+                if(imagesLoaded === totalImages) {
+                    var loadingDiv = document.getElementById('loadingDiv');
+                    loadingDiv.parentNode.removeChild(loadingDiv);
+                }
+            }
+
+
+            for (var i = 0; i < totalImages; i++) {
+                img = new Image();
+
+                img.onload = function () {
+
+                    imagesLoaded++;
+                    checkForLoaded();
+                }
+
+                img.src = images[i].src;
+
+            }
         }
-    }
 
-
-    for (var i = 0; i < totalImages; i++) {
-        img = new Image();
-
-        img.onload = function () {
-
-            imagesLoaded++;
-            checkForLoaded();
-        }
-
-        img.src = images[i].src;
-
-    }
-}
-
-</script>
+</script> -->
 </head>
 
 <body>
@@ -48,19 +48,19 @@ window.onload = function() {
             </h1>
         </div>
 
-        <div id="vul" class="menuitem">Vulnerabilities<br>
+        <div id="vul" class="menuitem" onclick="location.href='vul/index.html';">Vulnerabilities<br>
             <img src="https://media.giphy.com/media/26u4iAWHVEtq3KLao/giphy.gif" alt="Cyber Security" class="pictureitem">
         </div>
 
-        <div id="mal" class="menuitem">Malicious Code<br>
+        <div id="mal" class="menuitem" onclick="location.href='mal/index.html';">Malicious Code<br>
             <img src="https://media.giphy.com/media/3oEjHCF6kGlXK0ofsY/giphy.gif" alt="Malware" class="pictureitem">
         </div>
 
-        <div id="bug" class="menuitem">Bugs and Errors<br>
+        <div id="bug" class="menuitem" onclick="location.href='bug/index.html';">Bugs and Errors<br>
             <img src="http://giphygifs.s3.amazonaws.com/media/angMOutyJVlaU/giphy.gif" alt="Beoing 737-Max" class="pictureitem">
         </div>
 
-        <div id="history" class="menuitem">History<br>
+        <div id="history" class="menuitem" onclick="location.href='his/index.html';">History<br>
             <img src="https://media.giphy.com/media/Lkw7E75dWHGvCQygnQ/giphy.gif" alt="History" class="pictureitem">
         </div>
     </div>
