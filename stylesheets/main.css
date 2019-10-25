@@ -6,7 +6,8 @@ body {
 }
 
 #particles-js {
-    margin: 0;
+    height:120%;
+    width:100%;
 }
 
 #title {
