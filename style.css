@@ -13,7 +13,49 @@ body{
 {
   position:absolute;
   top: 10%;
-  left: 20%;
+  left: 40%;
+}
+
+#Vul
+{
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  display: block;
+  color: white;
+  background-color:#EE4C7C;
+  border-radius: 3px;
+  padding: 10px;
+  width: 200px;
+}
+
+#Mal
+{
+  text-align: center;
+  top: 30%;
+  left: 10%;
+  position: absolute;
+  display: block;
+  color: white;
+  background-color:#EE4C7C;
+  border-radius: 3px;
+  padding: 10px;
+  width: 200px;
+}
+
+#Bugs
+{
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  color: white;
+  background-color:#EE4C7C;
+  border-radius: 3px;
+  padding: 10px;
+  width: 200px;
 }
 
 #a {
@@ -29,6 +71,11 @@ body{
 #c {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
           animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+}
+
+.pictureitem
+{
+  width:95%;
 }
 
 @-webkit-keyframes text-pop-up-top {
