@@ -1,3 +1,5 @@
+/************************************************************** PART A: VERY IMPORTANT STUFF **************************************************************/
+/**************************************************************DONT CHANGE ANYTHING HERE **************************************************************/
 body{
   background-color: #1A1A1D;
   margin:0;
@@ -5,6 +7,7 @@ body{
 }
 
 #particles-js{
+  /* do not touch this pls otherwise we will be screwed again rofl */
   position: fixed;
     width: 100%;
     height: 100%;
@@ -75,6 +78,14 @@ body{
   width: 200px;
 }
 
+
+/**************************************************************END OF PART A**************************************************************/
+
+
+
+/**************************************************************PART B: LANDINGPAGE HEADING**************************************************************/
+/*************************************************************** gradual appearance of the main heading ***************************************************************/
+
 #a {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
           animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
@@ -90,30 +101,11 @@ body{
           animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
 
-.pictureitem
-{
-  width:95%;
-}
+/***********************************************************************************************************************************************************************/
+/**************************************************************END OF PART B**************************************************************/
 
-@-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            /* text drop down shadow configuration */
-    text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
-    /* texts have a white color therefore to be seen, a grey stroke is used */
+/**************************************************************PART C: Template **************************************************************/
 
-  }
-}
 h1
 {
   font-size: 80px;
@@ -145,43 +137,26 @@ a
 
 }
 
-.menu ul {
-width: 55px;
-height: 100%;
-float: right;
-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.7);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFF;
-  position: fixed;
-  top: 0;
-}
-
-.menu li {
-  float: left;
-}
-
-.menu li a {
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.menu li a:hover:not(.active) {
-  background-color: #E3E2DF;
-  color: #EE4C7C;
-}
-
-.active {
-  background-color: #E3E2DF;
-}
-
-.container
+.pictureitem
 {
-  padding: 10px;
-  width: 90%;
+  width:95%;
+}
+
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            /* text drop down shadow configuration */
+    text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
+
+  }
 }
