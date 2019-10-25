@@ -12,8 +12,8 @@ body{
 #title
 {
   position:absolute;
-  margin-top: 10%;
-  margin-left: 20%;
+  top: 10%;
+  left: 20%;
 }
 
 #a {
