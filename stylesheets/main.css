@@ -22,7 +22,6 @@ body {
     position: absolute;
     top: 10%;
     left: 35%;
-    color: #9A1750;
 }
 
 .menuitem {
@@ -238,7 +237,7 @@ body {
 
 h1 {
     font-size: 80px;
-    color: #9A1750;
+    color: #C3073F;
 }
 
 h2 {}
