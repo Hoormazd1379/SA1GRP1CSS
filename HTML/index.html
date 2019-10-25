@@ -5,6 +5,39 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
+    <script>
+window.onload = function() {
+
+    var images = document.getElementsByTagName('img'),
+        totalImages = images.length,
+        imagesLoaded = 0,
+        img;
+
+
+    function checkForLoaded() {
+
+        if(imagesLoaded === totalImages) {
+            var loadingDiv = document.getElementById('loadingDiv');
+            loadingDiv.parentNode.removeChild(loadingDiv);
+        }
+    }
+
+
+    for (var i = 0; i < totalImages; i++) {
+        img = new Image();
+
+        img.onload = function () {
+
+            imagesLoaded++;
+            checkForLoaded();
+        }
+
+        img.src = images[i].src;
+
+    }
+}
+
+</script>
 </head>
 
 <body>
@@ -16,19 +49,27 @@
         </div>
 
         <div id="vul">Vulnerabilities<br>
-            <img src="../assets/placeholder.jpg" alt="placeholder" class="pictureitem">
+            <img src="https://media.giphy.com/media/26u4iAWHVEtq3KLao/giphy.gif" alt="Cyber Security" class="pictureitem">
         </div>
 
         <div id="mal">Malicious Code<br>
-            <img src="../assets/placeholder.jpg" alt="placeholder" class="pictureitem">
+            <img src="https://media.giphy.com/media/3oEjHCF6kGlXK0ofsY/giphy.gif" alt="Malware" class="pictureitem">
         </div>
 
-        <div id="bug">Bugs<br>
-            <img src="../assets/placeholder.jpg" alt="placeholder" class="pictureitem">
+        <div id="bug">Bugs and Errors<br>
+            <img src="http://giphygifs.s3.amazonaws.com/media/angMOutyJVlaU/giphy.gif" alt="Beoing 737-Max" class="pictureitem">
         </div>
 
         <div id="history">History<br>
-            <img src="../assets/placeholder.jpg" alt="placeholder" class="pictureitem">
+            <img src="https://media.giphy.com/media/Lkw7E75dWHGvCQygnQ/giphy.gif" alt="History" class="pictureitem">
+        </div>
+    </div>
+
+    <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
         </div>
     </div>
 
