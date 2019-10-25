@@ -36,8 +36,10 @@ body {
     width: 250px;
 }
 
-.menuitem:hover {
-    transform: scale(1.1);
+.menuitem:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #vul {
