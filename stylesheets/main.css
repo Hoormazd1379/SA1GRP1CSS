@@ -1,12 +1,16 @@
 body {
-    background-color: #1A1A1D;
+    /* background-color: #1A1A1D; */
     margin: 0;
     font: normal 16px Arial, Helvetica, sand-serif;
     overflow: hidden;
 }
 
 #particles-js {
-    height:120%;
+    background-color: #1A1A1D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100%;
     width:100%;
 }
 
