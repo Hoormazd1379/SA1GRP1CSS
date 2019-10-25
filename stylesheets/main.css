@@ -44,13 +44,18 @@ body {
 }
 
 #mal {
-    top: 30%;
+    top: 25%;
     left: 10%;
 }
 
 #bug {
-    top: 70%;
-    left: 50%;
+    top: 60%;
+    left: 65%;
+}
+
+#his {
+    top: 55%;
+    left: 30%;
 }
 
 .pictureitem {
