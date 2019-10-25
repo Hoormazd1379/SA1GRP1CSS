@@ -33,7 +33,7 @@ a
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #e3afbc;
+  background-color: #FFF;
   position: fixed;
   top: 0;
   width: 100%;
@@ -45,30 +45,19 @@ a
 
 .menu li a {
   display: block;
-  color: white;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  /* -webkit-animation: glowanim 1s ease-in-out infinite alternate;
-    animation: glowanim 1s ease-in-out infinite alternate; */
 }
 
 .menu li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #E3E2DF;
+  color: #EE4C7C;
 }
 
 .active {
-  background-color: #bb00ff;
-}
-
-@-webkit-keyframes glowanim {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #bb00ff, 0 0 40px #bb00ff, 0 0 50px #bb00ff, 0 0 60px #bb00ff, 0 0 70px #bb00ff, 0 0 80px #bb00ff;
-  }
+  background-color: #E3E2DF;
 }
 
 .container
