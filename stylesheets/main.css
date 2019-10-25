@@ -2,11 +2,11 @@ body {
     background-color: #1A1A1D;
     margin: 0;
     font: normal 16px Arial, Helvetica, sand-serif;
+    overflow: hidden;
 }
 
 #particles-js {
-    height: 100%;
-    width: 100%;
+    margin: 0;
 }
 
 #title {
