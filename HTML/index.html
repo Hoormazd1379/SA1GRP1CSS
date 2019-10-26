@@ -4,50 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+
+    <!-- main stylesheet, used in all pages -H.P-->
     <link rel="stylesheet" href="../stylesheets/main.css">
-    <script>
-        window.onload = function() {
 
-            var images = document.getElementsByTagName('img'),
-                totalImages = images.length,
-                imagesLoaded = 0,
-                img;
-
-
-            function checkForLoaded() {
-
-                if(imagesLoaded === totalImages) {
-                    var loadingDiv = document.getElementById('loadingDiv');
-                    loadingDiv.parentNode.removeChild(loadingDiv);
-                }
-            }
-
-
-            for (var i = 0; i < totalImages; i++) {
-                img = new Image();
-
-                img.onload = function () {
-
-                    imagesLoaded++;
-                    checkForLoaded();
-                }
-
-                img.src = images[i].src;
-
-            }
-        }
-
-</script>
+    <!-- Page Loading Script: freezes the page until all img images are loaded, attached to div #loadingDiv -H.P-->
+    <script src="../scripts/pageloader.js"></script>
 </head>
 
 <body>
+    <!-- particles-js div, as a canvas -H.P-->
     <div id="particles-js">
+
+        <!-- page title -H.P-->
         <div id="title">
             <h1>
                 <span id="a">CATASTROPHIC</span><br><span id="b">SOFTWARE</span><br><span id="c">CRISIS</span>
             </h1>
         </div>
 
+        <!-- menu items -H.P-->
         <div id="vul" class="menuitem" onclick="location.href='vul/index.html';">Vulnerabilities<br>
             <img src="https://media.giphy.com/media/26u4iAWHVEtq3KLao/giphy.gif" alt="Cyber Security" class="pictureitem">
         </div>
@@ -65,7 +41,9 @@
         </div>
     </div>
 
-    <!-- dont change the spacing between the divs otherwise it will break -->
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
     <div id="loadingDiv">
         <div id="loadingBox">
             <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -74,6 +52,8 @@
         </div>
     </div>
 
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
     <script src="../scripts/particles.js"></script>
     <script>
         particlesJS.load('particles-js', '../scripts/particles.json', function() {

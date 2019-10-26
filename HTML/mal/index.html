@@ -3,39 +3,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!-- <script>
-        window.onload = function() {
-
-            var images = document.getElementsByTagName('img'),
-                totalImages = images.length,
-                imagesLoaded = 0,
-                img;
-
-
-            function checkForLoaded() {
-
-                if(imagesLoaded === totalImages) {
-                    var loadingDiv = document.getElementById('loadingDiv');
-                    loadingDiv.parentNode.removeChild(loadingDiv);
-                }
-            }
-
-
-            for (var i = 0; i < totalImages; i++) {
-                img = new Image();
-
-                img.onload = function () {
-
-                    imagesLoaded++;
-                    checkForLoaded();
-                }
-
-                img.src = images[i].src;
-
-            }
-        }
-
-</script> -->
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
 </head>
 <body>
 
@@ -43,18 +11,25 @@
         <div class="h1container">
             <h1> Malicious Code </h1>
         </div>
-        <!-- PAGE CONTECT GOES HERE DONT CHANGE ANYTHING ELSE @TOPIC_LEADERS -->
+
+        <!-- PAGE CONTECT GOES HERE DONT CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P-->
 
     </div>
 
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
     <!--  <div id="loadingDiv">
         <div id="loadingBox">
             <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             <br>
             <h3> Please wait while we load the page!</h3>
         </div>
-    </div> -->
+    </div> -H.P-->
 
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
     <script src="../../scripts/particles.js"></script>
     <script>
         particlesJS.load('particles-js', '../../scripts/particles.json', function() {
