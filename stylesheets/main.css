@@ -34,6 +34,9 @@ body {
     margin-left: 100px;
 }
 
+/* Known Issues: - Not centered correctly
+                 - link highlight coninues when cursor is outside (on the right) of the box
+
 #filters {
     min-width: 1100px;
     top: 300px;
