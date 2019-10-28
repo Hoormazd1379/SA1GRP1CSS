@@ -6,7 +6,7 @@
 body {
     background-color: #1A1A1D;
     margin: 0;
-    font: normal 16px Arial, Helvetica, sand-serif;
+    font: normal 16px Arial, Helvetica, sans-serif;
 }
 
 #particles-js {
@@ -22,6 +22,51 @@ body {
     position: absolute;
     top: 10%;
     left: 35%;
+}
+
+#back-button {
+    position: absolute;
+    margin-top: 78px;
+}
+
+#page-title {
+    position: absolute;
+    margin-left: 100px;
+}
+
+#filters {
+    min-width: 1100px;
+    top: 300px;
+    left: 0;
+    right: 0;
+    width: 61%;
+    margin: auto;
+    position: absolute;
+    list-style-type: none;
+    color: white;
+    font: bold 20px Arial, Helvetica, sans-serif;
+}
+
+.filter-element {
+    display: block;
+    background-color: #545454;
+    padding: 10px 5px;
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 62px;
+    border-radius: 13px;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.filter-link {
+    text-decoration: none;
+    color: white;
+}
+
+.filter-link:hover>.filter-element {
+    background-color: #C3073F;
 }
 
 .menuitem {
