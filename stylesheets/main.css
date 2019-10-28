@@ -284,19 +284,19 @@ h1 {
     font-size: 80px;
     color: #C3073F;
 }
-
+/*
 h2 {}
-
+*/
 h3 {
     color: #9A1750;
 }
-
+/*
 p {}
 
 li {}
 
 a {}
-
+*/
 .h1container {
     position: absolute;
     top: 10%;
