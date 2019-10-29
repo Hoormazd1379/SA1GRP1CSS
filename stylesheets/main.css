@@ -246,7 +246,7 @@ body {
 /**************************************************************HISTORY ELEMENTS**************************************************************/
 
 /* Known Issues: - Not centered correctly
-                 - link highlight coninues when cursor is outside (on the right) of the box
+                 - link "clickability" coninues when cursor is outside (on the right) of the box
    -E.R
 */
 
@@ -281,20 +281,9 @@ body {
     background: #C3073F;
 }
 
-/* #content-div {
-    background-color: white;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 300px;
-    position: absolute;
-    margin: auto;
-} */
-
 #timeline {
-    width: 25%;
-    background: green;
+    /* background: rgba(255, 255, 255, 0.205); */
+    width: 20%;
     top: 300px;
     bottom: 0;
     left: 0;
@@ -305,26 +294,106 @@ body {
 }
 
 #timeline-shapes {
-    background: honeydew;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100px;
-    height: 200px;
+    width: 80px;
+    height: 267px;
     position: absolute;
     margin: auto;
 }
 
+.milestone {
+    width: 100%;
+    height: 13px;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: #545454;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.normal {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 15px;
+    width: 60%;
+    height: 13px;
+    border-radius: 15px;
+    background-color: #545454;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.milestone:hover {
+    background: #C3073F;
+}
+
+.normal:hover {
+    background: #C3073F;
+}
+
 #content {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 96%;
+    text-align: justify;
+    overflow: hidden; 
+}
+
+#content:hover {
+    overflow: auto;
+}
+
+#content-main {
+    /* background: rgba(255, 255, 255, 0.308); */
     right: 0;
     bottom: 0;
-    background: red;
-    width: 75%;
+    width: 84%;
     top: 300px;
     position: absolute;
     margin: auto;
     float: right;
+    overflow: hidden;
+}
+
+#content-box {
+    border: rgba(129, 129, 129, 0.315);
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}
+
+#sect-title {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* CUSTOM SCROLL BAR */
+
+#content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0);
+}
+
+#content::-webkit-scrollbar {
+    width: 5px;
+}
+
+#content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(195, 7, 63, 0.452);
 }
 
 /***********************************************************************************************************************************************************************/
@@ -339,19 +408,25 @@ h1 {
     font-size: 80px;
     color: #C3073F;
 }
-/*
-h2 {}
-*/
+
+h2 {
+    font-size: 40px;
+    color: #C3073F;
+}
+
 h3 {
     color: #9A1750;
 }
-/*
-p {}
 
-li {}
+p {
+    font-size: 18px;
+    color: white;
+}
 
-a {}
-*/
+/* li {}
+
+a {} */
+
 .h1container {
     position: absolute;
     top: 20px;
