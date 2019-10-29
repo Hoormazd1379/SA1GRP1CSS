@@ -282,7 +282,6 @@ body {
 }
 
 #timeline {
-    /* background: rgba(255, 255, 255, 0.205); */
     width: 20%;
     top: 300px;
     bottom: 0;
@@ -347,7 +346,6 @@ body {
 }
 
 #content-main {
-    /* background: rgba(255, 255, 255, 0.308); */
     right: 0;
     bottom: 0;
     width: 84%;
