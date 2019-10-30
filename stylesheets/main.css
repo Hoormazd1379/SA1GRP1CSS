@@ -409,15 +409,15 @@ body {
 
 /**************************************************************MAL. CODE ELEMENTS**************************************************************/
 
-.scrollable {
-    min-height: 200%;
+#grid {
+    position: fixed;
+    margin-top: 150px;
+    z-index: 0;
 }
 
-#grid {
-    position: absolute;
-    margin-top: 150px;
-    width: 100%;
-    overflow: scroll;
+.scrollable p {
+    margin-top: 900px;
+    position: fixed;
 }
 
 .category {
