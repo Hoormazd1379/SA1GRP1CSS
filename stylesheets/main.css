@@ -245,22 +245,26 @@ body {
 
 /**************************************************************HISTORY ELEMENTS**************************************************************/
 
-/* Known Issues: - Not centered correctly
-                 - link "clickability" coninues when cursor is outside (on the right) of the box
-   -E.R
-*/
-
 #filters {
     min-width: 1100px;
     top: 222px;
     left: 0;
     right: 0;
     width: 61%;
+    height: 60px;
     margin: auto;
     position: fixed;
     list-style-type: none;
     color: white;
     font: bold 20px Arial, Helvetica, sans-serif;
+}
+#filters ul {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
 }
 
 #filter-element {
@@ -272,7 +276,6 @@ body {
     text-align: center;
     display: inline-block;
     margin-top: 10px;
-    margin-right: 62px;
     border-radius: 13px;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
 }
