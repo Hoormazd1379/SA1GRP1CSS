@@ -1,0 +1,9 @@
+This document is for @HISTORY_GROUP
+By Edoardo Riggio
+---
+HTML and CSS Template Guide
+ - Each team member must write his/her name in the apposite meta tag (already in the template)
+ - Only the title and the content of the section must be modified
+ - The content can be composed of both text and images. For images, you must write your own CSS
+ - To add extra CSS, go to the main.css file, and at the end of the "history elements" section, you can find the section where you can add custom CSS
+ - All additional graphical elements must match the website's style
