@@ -468,6 +468,89 @@ body {
 /**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
 
 
+
+/**************************************************************BUGS AND ERRORS ELEMENTS H.P**************************************************************/
+div.ItemTable {
+  width: 1200px;
+  height: 800px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.divTable.ItemTable .divTableCell, .divTable.ItemTable .divTableHead {
+  border: 0px solid #AAAAAA;
+  padding: 5px 5px;
+}
+.divTableCell {
+  width:33%;
+}
+.ItemTable .tableFootStyle {
+  font-size: 14px;
+}
+.ItemTable .tableFootStyle .links {
+   text-align: right;
+}
+.ItemTable .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.ItemTable.outerTableFooter {
+  border-top: none;
+}
+.ItemTable.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+
+/**/
+#bugsnerrors{
+  top: 200px;
+}
+
+.itemholder {
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  left: 200px;
+}
+
+
+.imageitem {
+  margin: auto;
+  text-align: center;
+  object-fit: cover;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.imageitem:hover
+{
+ transform: scale(1.1);
+  cursor: pointer; 
+}
+
+
+
+
+
+/***********************************************************************************************************************************************************************/
+
+/**************************************************************END OF BUGS AND ERRORS ELEMENTS**************************************************************/
+
+
 /**************************************************************PART C: Template **************************************************************/
 
 h1 {
@@ -476,11 +559,12 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #C3073F;
 }
 
 h3 {
+  font-size: 15px;
     color: #9A1750;
 }
 
