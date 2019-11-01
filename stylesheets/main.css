@@ -468,6 +468,75 @@ body {
 /**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
 
 
+/**************************************************************MAL. CODE Template**************************************************************/
+
+#description {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 240px auto auto auto;
+    text-align: justify;
+}
+
+.subtitle {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 60px auto auto auto;
+    text-align: justify;
+}
+
+#case {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 20px auto auto auto;
+    text-align: justify;
+}
+
+#text {
+    position: absolute;
+    float: left;
+    width: 75%;
+    left: 0;
+}
+
+#card {
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 22px;
+    width: 20%;
+    right: 0;
+    background: #444444;
+}
+
+#card-title {
+    width: 80%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 18px auto auto auto;
+}
+
+#img-div {
+    width: 100%;
+    margin-top: 22px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#card-img {
+    width: 10vw;
+    height: 10vw;
+
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
+
 /**************************************************************BUGS AND ERRORS ELEMENTS H.P**************************************************************/
 div.ItemTable {
   width: 1200px;
@@ -548,76 +617,6 @@ div.ItemTable {
 /***********************************************************************************************************************************************************************/
 
 /**************************************************************END OF BUGS AND ERRORS ELEMENTS**************************************************************/
-
-/**************************************************************MAL. CODE Template**************************************************************/
-
-#description {
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: 240px auto auto auto;
-    text-align: justify;
-}
-
-.subtitle {
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: 60px auto auto auto;
-    text-align: justify;
-}
-
-#case {
-    position: absolute;
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: 20px auto auto auto;
-    text-align: justify;
-}
-
-#text {
-    position: absolute;
-    float: left;
-    width: 75%;
-    left: 0;
-}
-
-#card {
-    position: absolute;
-    border-radius: 15px;
-    margin-top: 22px;
-    width: 20%;
-    right: 0;
-    background: #444444;
-}
-
-#card-title {
-    width: 80%;
-    text-align: center;
-    left: 0;
-    right: 0;
-    margin: 18px auto auto auto;
-}
-
-#img-div {
-    width: 100%;
-    margin-top: 22px;
-    overflow: hidden;
-    text-align: center;
-}
-
-#card-img {
-    width: 10vw;
-    height: 10vw;
-
-}
-
-/***********************************************************************************************************************************************************************/
-
-
-/**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
-
 
 /**************************************************************PART C: Template **************************************************************/
 
