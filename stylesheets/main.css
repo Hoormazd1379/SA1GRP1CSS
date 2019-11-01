@@ -533,25 +533,31 @@ table#home td{
 /**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
 
 /**************************************************************BUGS AND ERRORS ELEMENTS H.P**************************************************************/
+
 div.ItemTable {
   width: 1600px;
   height: 1000px;
   text-align: center;
   border-collapse: collapse;
 }
+
 .divTable.ItemTable .divTableCell, .divTable.ItemTable .divTableHead {
   border: 0px solid #AAAAAA;
   padding: 5px 5px;
 }
+
 .divTableCell {
   width:33%;
 }
+
 .ItemTable .tableFootStyle {
   font-size: 14px;
 }
+
 .ItemTable .tableFootStyle .links {
    text-align: right;
 }
+
 .ItemTable .tableFootStyle .links a{
   display: inline-block;
   background: #1C6EA4;
@@ -559,9 +565,11 @@ div.ItemTable {
   padding: 2px 8px;
   border-radius: 5px;
 }
+
 .ItemTable.outerTableFooter {
   border-top: none;
 }
+
 .ItemTable.outerTableFooter .tableFootStyle {
   padding: 3px 5px;
 }
@@ -603,10 +611,6 @@ div.ItemTable {
  transform: scale(1.1);
   cursor: pointer;
 }
-
-
-
-
 
 /***********************************************************************************************************************************************************************/
 
