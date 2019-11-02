@@ -28,7 +28,7 @@ body {
     width: 200px;
 }
 
-table#home td{
+table #home td {
 
     text-align: center;
     align-content: center;
@@ -182,7 +182,6 @@ table#home td{
     }
 }
 
-
 /**************************************************************END OF PART A**************************************************************/
 
 
@@ -223,7 +222,6 @@ table#home td{
         text-shadow: 0 1px 0 #1A1A1D, 0 2px 0 #1A1A1D, 0 3px 0 #1A1A1D, 0 4px 0 #1A1A1D, 0 5px 0 #1A1A1D, 0 6px 0 #1A1A1D, 0 7px 0 #1A1A1D, 0 8px 0 #1A1A1D, 0 9px 0 #1A1A1D, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
 }
-
 
 /***********************************************************************************************************************************************************************/
 
@@ -449,7 +447,6 @@ table#home td{
     text-align: center;
 }
 
-
 /***********************************************************************************************************************************************************************/
 
 
@@ -464,6 +461,7 @@ table#home td{
     right: 0;
     margin: 240px auto auto auto;
     text-align: justify;
+    z-index: 100;
 }
 
 .subtitle {
@@ -472,6 +470,7 @@ table#home td{
     right: 0;
     margin: 60px auto auto auto;
     text-align: justify;
+    z-index: 100;
 }
 
 #case {
@@ -497,10 +496,13 @@ table#home td{
     width: 20%;
     right: 0;
     background: #444444;
+    min-width: 300px;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
 #card-title {
     width: 80%;
+    font-size: 20px;
     text-align: center;
     left: 0;
     right: 0;
@@ -527,7 +529,21 @@ table#home td{
 }
 
 #quantity {
-    height: 10vw;
+    width: 80%;
+    list-style: none;
+    left: 0;
+    right: 0;
+    margin: 22px auto auto auto;
+}
+
+#quantity li {
+    display: inline-block;
+}
+
+#quantity li img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 /***********************************************************************************************************************************************************************/
@@ -535,26 +551,33 @@ table#home td{
 
 /**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
 
+
 /**************************************************************BUGS AND ERRORS ELEMENTS H.P**************************************************************/
+
 div.ItemTable {
   width: 1600px;
   height: 1000px;
   text-align: center;
   border-collapse: collapse;
 }
+
 .divTable.ItemTable .divTableCell, .divTable.ItemTable .divTableHead {
   border: 0px solid #AAAAAA;
   padding: 5px 5px;
 }
+
 .divTableCell {
   width:33%;
 }
+
 .ItemTable .tableFootStyle {
   font-size: 14px;
 }
+
 .ItemTable .tableFootStyle .links {
    text-align: right;
 }
+
 .ItemTable .tableFootStyle .links a{
   display: inline-block;
   background: #1C6EA4;
@@ -562,9 +585,11 @@ div.ItemTable {
   padding: 2px 8px;
   border-radius: 5px;
 }
+
 .ItemTable.outerTableFooter {
   border-top: none;
 }
+
 .ItemTable.outerTableFooter .tableFootStyle {
   padding: 3px 5px;
 }
@@ -577,8 +602,8 @@ div.ItemTable {
 .divTableFoot { display: table-footer-group;}
 .divTableBody { display: table-row-group;}
 
-
 /**/
+
 #bugsnerrors{
   top: 200px;
 }
@@ -590,7 +615,6 @@ div.ItemTable {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 
 .imageitem {
   margin: auto;
@@ -607,13 +631,11 @@ div.ItemTable {
   cursor: pointer;
 }
 
-
-
-
-
 /***********************************************************************************************************************************************************************/
 
+
 /**************************************************************END OF BUGS AND ERRORS ELEMENTS**************************************************************/
+
 
 /**************************************************************PART C: Template **************************************************************/
 
