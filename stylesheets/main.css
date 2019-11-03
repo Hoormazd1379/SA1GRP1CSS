@@ -461,7 +461,7 @@ table #home td {
     right: 0;
     margin: 240px auto auto auto;
     text-align: justify;
-    z-index: 100;
+    z-index: 400;
 }
 
 .subtitle {
@@ -470,7 +470,7 @@ table #home td {
     right: 0;
     margin: 60px auto auto auto;
     text-align: justify;
-    z-index: 100;
+    z-index: 400;
 }
 
 #case {
