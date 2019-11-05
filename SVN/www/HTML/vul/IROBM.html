@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Improper Restrictions</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
+    <meta name="author" content="">
+  </head>
+  <body id="vul-body">
+    <h1>Improper Restriction of Operations within the Bounds of a Memory Buffer</h1>
+    <h2>Overview</h2>
+    <p id="vul-p">The software performs operations on a memory buffer, but it can read from or write to a memory location that is outside of the intended boundary of the buffer.<br><br>
+      Certain languages allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.<br>
+      As a result, an attacker may be able to execute arbitrary code, alter the intended control flow, read sensitive information, or cause the system to crash.</p>
+
+    <h2>Detection</h2>
+
+    <h2>Consequences</h2>
+
+    <h3>Integrity,Confidentiality and Availability</h3>
+    <p id="vul-p">If the memory accessible by the attacker can be effectively controlled, it may be possible to execute arbitrary code, as with a standard buffer overflow. If the attacker can overwrite a pointer's worth of memory (usually 32 or 64 bits), they can redirect a function pointer to their own malicious code. Even when the attacker can only modify a single byte arbitrary code execution can be possible. Sometimes this is because the same problem can be exploited repeatedly to the same effect. Other times it is because the attacker can overwrite security-critical application-specific data, such as a flag indicating whether the user is an administrator.</p>
+
+    <h3>Availability and Confidentiality</h3>
+    <p id="vul-p">Out of bounds memory access will very likely result in the corruption of relevant memory, and perhaps instructions, possibly leading to a crash. Other attacks leading to lack of availability are possible, including putting the program into an infinite loop.</p>
+
+    <h3>Confidentiality</h3>
+    <p id="vul-p">In the case of an out-of-bounds read, the attacker may have access to sensitive information. If the sensitive information contains system details, such as the current buffers position in memory, this knowledge can be used to craft further attacks, possibly with more severe consequences.</p>
+
+    <h2>Mitigation</h2>
+  </body>
+</html>

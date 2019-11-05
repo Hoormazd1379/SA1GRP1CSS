@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="scrollable">
+<head>
+    <title>Ransomware | Malicious Code</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Michele Cattaneo">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="h1container">
+        <a id="back-button" href="./index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title">RANSOMWARE</h1>
+        <span id="nav">
+            <a href=""><div id="previous-div">
+                <img src="../../assets/icns/arrow.png" class="previous"> 
+                <p id="previous-p">Previous</p>
+            </div></a>
+
+            <hr id="separation-nav">
+
+            <a href="./trojan.html"><div id="next-div">
+                <p id="next-p" style="margin-right: 15px;">Next</p>
+                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;"> 
+            </div></a>
+        </span>
+    </div>
+
+    <div id="description">
+        <p>
+            A ransomware is a type of malware from cryptovirology that prevents users from accessing their systems or personal files. Furthermore the person behind the ransomware threatens to publish the victim's data unless a ransom is paid. That's the reason of the name, a combination of ransom and malware. <br>
+            Some simple ransomware lock the system in a way which is not difficult to fix with a little bit of knowledge. There are however more advanced types of ransomwares which use a technique called cryptoviral extortion, which encrypts the files. Today's methods of encrypton take huge computational power to be deceived. 
+        </p>
+        <br>
+        <div id="impact-quote">
+            <span>
+                <hr>
+                    <i>" In fact it is said that without the decryption key, recovering the files is an intractable problem, meaning that is a problem that can be solved in theory, but in practice it would take too many resources. "
+                    </i>
+                <hr>
+            </span>
+        </div>
+        <br>
+        <p>Therefore what's left for the victim is to pay a ransom in order to get back the access to his/her files. Cryptocurrencies help this process, since they make the tracing of money very difficult if not impossible. 
+        </p>
+    </div>
+
+    <h2 class="subtitle">WannaCry</h2>
+    <div id="case">
+        <div id="text">
+            <p>
+                The WannaCry ransomware attac was a worldwide cyberattack which targeted computers running windows. It started on Friday 12 May 2017 and the starting point was Asia. Within a day, the code was reported to have infected more than 230'000 computers in over 150 countries. The computers affected by this attack were those which still had not installed the Microsoft security update from April 2017. Along with those, computer running an old version of Microsoft such as Microsoft XP were at risk since no security patches had been released for years. However the vast majority of the infected computers were running Windows 7. <br>
+                In December 2017 it was formally asserted that North Korea was behind the attack. It is also known that the National Security Agency (NSA) had already discovered the vulnerability present in that Microsoft 7 version, but prefered to use it to create an exploit for its own offensive work, rather than report it to Microsoft.
+            </p>
+            <br><br>
+            <a href="#">   
+                <button class="button"><span>Back to Top</span></button>
+            </a>
+        </div>
+
+        <div id="card">
+            <h3 class="h3-white" id="card-title">WannaCry</h3>
+            <hr id="divider" style="width: 60%">
+            <div id="img-div">
+                <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
+                <img src="../../assets/mal_imgs/wannacry.png" id="card-img" alt="">
+            </div>
+            <hr id="divider" style="width: 60%">
+            <div id="specific">
+                <p>
+                    <strong>Type:</strong> Ransomware
+                    <br> <br>
+                    <strong>Origin:</strong> Pyongyang, North Korea
+                    <br> <br>
+                    <strong>Outcome:</strong> 300'000+ computers infected
+                    <br> <br>
+                    <strong>Infectivity:</strong> 
+                    <ul id="quantity">
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
