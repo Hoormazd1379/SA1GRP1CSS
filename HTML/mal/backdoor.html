@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="scrollable">
+<head>
+    <title>Backdoor | Malicious Code</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Matteo Alberici">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="h1container">
+        <a id="back-button" href="./index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title"> BACKDOOR </h1>
+        <span id="nav">
+            <a href="./adware.html"><div id="previous-div">
+                <img src="../../assets/icns/arrow.png" class="previous"> 
+                <p id="previous-p">Previous</p>
+            </div></a>
+
+            <hr id="separation-nav">
+
+            <a href="./worm.html"><div id="next-div">
+                <p id="next-p" style="margin-right: 15px;">Next</p>
+                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;"> 
+            </div></a>
+        </span>
+    </div>
+
+    <div id="description">
+        <p>
+          A backdoor is a typically covert method of bypassing normal authentication or encryption in a computer, product, embedded device, or its embodiment. <br>
+          They are most often used for securing remote access to a computer, or obtaining access to plaintext in cryptographic systems. <br>
+          From there it may be used to gain access to privileged information like passwords, corrupt or delete data on hard drives, or transfer information within autoschediastic networks. <br>
+          A backdoor could also take the form of a hidden part of a program, code in the firmware of the hardware, or parts of an operating system such as Windows. <br>
+          Although some are secretly installed, other backdoors are deliberate and widely known. <br>
+          These kinds of backdoors have legitimate uses such as providing the manufacturer with a way to restore user passwords. <br>
+          Many systems that store information within the cloud fail to create accurate security measures. <br>
+          If many systems are connected within the cloud, hackers can gain access to all other platforms through the most vulnerable system. <br>
+          Default passwords can function as backdoors if they are not changed by the user and some debugging features can also act as backdoors if they are not removed in the release version. <br>
+        </p>
+    </div>
+
+    <h2 class="subtitle">Back Orifice</h2>
+    <div id="case">
+        <div id="text">
+            <p>
+              Back Orifice is a computer program designed for remote system administration which enables a user to control a computer running the Microsoft Windows operating system from a remote location. <br>
+              It can also control multiple computers at the same time using imaging. <br>
+              A small and unobtrusive server program is installed on one machine, which is remotely manipulated by a client program with a graphical user interface on another computer system. <br>
+              The two components communicate with one another using the TCP and/or UDP network protocols. <br>
+              The program debuted at DEF CON 6 on August 1, 1998 as the brainchild of Sir Dystic, a member of the U.S. hacker organization Cult of the Dead Cow. <br>
+              According to the group, its purpose was to demonstrate the lack of security in Microsoft's operating system Windows 98. <br>
+              Although Back Orifice has legitimate purposes, such as remote administration, there are other factors that make it suited for less benign uses: the server can hide itself from cursory looks by users of the system and can be distributed as payload of a Trojan horse. <br>
+            </p>
+            <br><br>
+            <a href="#">
+              <button class="button"><span>Back to Top</span></button>
+            </a>
+        </div>
+
+        <div id="card">
+            <h3 class="h3-white" id="card-title">Back Orifice</h3>
+            <hr id="divider" style="width: 60%">
+            <div id="img-div">
+                <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
+                <img src="../../assets/mal_imgs/backorifice.png" id="card-img" alt="">
+            </div>
+            <hr id="divider" style="width: 60%">
+            <div id="specific">
+                <p>
+                    <strong>Type:</strong> Backdoor
+                    <br> <br>
+                    <strong>Origin:</strong> Las Vegas
+                    <br> <br>
+                    <strong>Infectivity:</strong>
+                    <ul id="quantity">
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>

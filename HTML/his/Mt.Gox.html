@@ -12,10 +12,11 @@
     <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
 
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
-    <meta name="author" content="">
+    <meta name="author" content="Massimo Bordogna">
 
 </head>
 <body>
+
     <div id="particles-js">
         <div class="h1container">
             <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
@@ -54,17 +55,37 @@
 
                     <div id="content">
                         <div class="title-container">
-                            <h2 id="sect-title">Title Of Section</h2>
+                            <h2 id="sect-title">Mt. Gox Failure</h2>
                         </div>
+                        <img class="H-MTGOX-image" src="../../assets/his_imgs/mtgox.jpg">
                             <p>
-                                Content here (it will be scrollable once the div's size is passed)
-                            </p>
+                                Mt.Gox was a bitcoin exchange platform, and by 2014 was the largest bitcoin intermediary by handling over 70% of all BTC (Bitcoin).
+                                But behind the scene, this company was hiding a terrible secret: what as first impression seemed a great company,
+                                indeed was just a disorganized and discordant organization, with poor security procedures and serious issues relating to the source code of the website itself.
+                                Those problems lead to a massive hack of the system itself, that lead to a total loss of 745,000 Bitcoin (reached already 850,000 by now).
+                                Even if the bankrupt of the company
+                                was caused by this massive hack attack, the major blame is on the company itself and on its source code; because it was clear after the events
+                                that there were too many flaws in the System, which leads to easy fraudulent withdrawals.
+                                So the point is that this cannot be considered a properly hack attack, because everything was possible since the software had issues itself.
+                              </p>
+                              <div class="btcwdgt-chart" bw-cash="true" bw-noshadow="true"></div>
+                              <img class="H-MTGOX-image2" src="../../assets/his_imgs/mtgox2.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+         <!-- widget for bitcoin instant value -->
+    <script>
+  (function(b,i,t,C,O,I,N) {
+    window.addEventListener('load',function() {
+      if(b.getElementById(C))return;
+      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+    },false)
+  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+</script>
 
      <!-- fullscreen div, blocking the screen view until all images are loaded.
         see pageloader.js
