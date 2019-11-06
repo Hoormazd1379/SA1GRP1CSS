@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="scrollable">
+<head>
+    <title>Scareware | Malicious Code</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="h1container">
+        <a id="back-button" href="./index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title"> SCAREWARE </h1>
+        <span id="nav">
+            <a href="./dialer.html"><div id="previous-div">
+                <img src="../../assets/icns/arrow.png" class="previous"> 
+                <p id="previous-p">Previous</p>
+            </div></a>
+
+            <hr id="separation-nav">
+
+            <a href="" class="disabled-n"><div id="next-div">
+                <p id="next-p" style="margin-right: 15px;">Next</p>
+                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;"> 
+            </div></a>
+        </span>
+    </div>
+
+    <div id="description">
+        <p>
+            Malware's description    
+        </p>
+    </div>
+
+    <h2 class="subtitle">Case Study</h2>
+    <div id="case">
+        <div id="text">
+            <p>
+                Case description
+            </p>
+        </div>
+
+        <div id="card">
+            <h3 class="h3-white" id="card-title">Name of the malware</h3>
+            <hr id="divider" style="width: 60%">
+            <div id="img-div">
+                <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
+                <img src="../../assets/icns/placeholder.jpg" id="card-img" alt="">
+            </div>
+            <hr id="divider" style="width: 60%">
+            <div id="specific">
+                <p>
+                    <strong>Type:</strong> Type of malware
+                    <br> <br>
+                    <strong>Origin:</strong> Origin of malware
+                    <br> <br>
+                    <strong>Infectivity:</strong> 
+                    <ul id="quantity">
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>

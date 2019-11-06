@@ -1,0 +1,230 @@
+\documentclass{article}
+\author{Mathias Bertelsen}
+\title{SVN guide}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Guide}
+
+\subsection{Roles}
+\label{subsec:roles}
+
+\textbf{Team Leader:}
+\begin{itemize}
+	\item Mathias Bertelsen
+\end{itemize} \medskip
+
+\noindent \textbf{CSS:}
+\begin{itemize}
+	\item Edoardo Riggio
+	\item Hoormazd Pirayeshfar
+\end{itemize} \medskip
+
+\noindent \textbf{SVN:}
+\begin{itemize}
+	\item Matteo Bernaschina
+\end{itemize} \medskip
+
+\noindent \textbf{Topic Leaders:}
+\begin{enumerate}
+	\item Bugs: Brian Bronz
+	\item Vulnerabilites: Ian Abuaf Pelo
+	\item Malicious Code: Matteo Alberici
+	\item History: Onciu Razvan Petrica
+\end{enumerate} \medskip
+
+
+\noindent \textbf{Team Members}
+\begin{multicols}{2}
+\begin{itemize}
+\item Alessio Cordivani (bugs)
+\item Davide Scannapieco (bugs)
+\item Ilker Kaymak (bugs)
+\item Kieran Mckee(vulnerabilities)
+\item Bahram Ismayilow (vulnerabilities)
+\item Michele Cattaneo (malicious code)
+\item Kelvin Likollari (malicious code)
+\item Claudio Milanesi (history)
+\item Marco Mariosa (history)
+\item Arianna Bianchi (history)
+\item Elena Franchini (history)
+\item Massimo Bordogna (history)
+\end{itemize} \medskip
+\end{multicols}
+
+\noindent \textbf{Optional: Broken Links:}
+\begin{itemize}
+	\item Michele Cattaneo
+\end{itemize} \medskip
+\noindent \textbf{Optional: LaTeX:}
+\begin{itemize}
+	\item Not yet decided
+\end{itemize} \medskip
+
+\newpage
+\subsection{Schedule}
+\label{subsec:schedule}
+
+\begin{table}[!h]
+\centering{
+\begin{tabular}{|p{5cm}|l|} \hline
+\textbf{What to do} & \textbf{Deadline} \\ \hline
+Inception & 28.10.2019 \\
+Go / No-Go & 29.10.2019\\
+Finish 50\% of content pages & 01.11.2019 \\
+Meeting: Team Leader, Topic Leaders, CSS, SVN, Bonus & 01.11.2019 \\
+Midway milestone & 04.11.2019 \\
+Meeting: Team Leader, Topic Leaders, CSS, SVN, Bonus & 04.11.2019 \\
+(Start LaTeX Bonus) & 05.11.2019 \\
+Finish draft of webpage &  06.11.2019\\
+Meeting: Team Leader, Topic Leaders, CSS, SVN, Bonus & 08.11.2019 \\
+Finish corrections  & 09.11.2019 \\
+Final milestone & 12.11.2019 \\
+Discussion about minor changes to presentation & 17.11.2019 \\
+Final presentation & 18.11.2019 \\
+
+
+\hline
+\end{tabular}
+\caption{Schedule}
+}
+\end{table}
+
+\newpage
+\subsection{Deadlines}
+\label{subsec:deadlines}
+
+\begin{table}[h]
+\centering{
+\begin{tabular}{|p{4cm}|l|l|} \hline
+\textbf{Who} & \textbf{What to do} & \textbf{Deadline} \\ \hline
+Team Leader & Add topic\_info.txt to repository & 25.10.2019 \\
+SVN & Set up repository & 25.10.2019 \\
+Team Leader & Prepare Latex  & 26.10.2019 \\
+Topic Leaders & 300 words about content/structure & 26.10.2019 \\
+CSS & Add one document to SVN & 26.10.2019 \\
+Everyone except Team Leader, CSS, SVN & 300 words about at least one case/topic & 26.10.2019 \\
+Everyone & Connect to SVN and add to text file & 26.10.2019 \\
+Volunteer & Write guide and send to Team Leader & 26.10.2019 \\
+CSS & 200 word and slides about CSS & 27.10.2019 \\
+Topic Leaders & Add slides to Presentation & 27.10.2019 \\
+Groups & Make 1 overview page and example case & 27.10.2019 \\
+ & page using CSS style and add it to project & \\
+Volunteer & Make draft of index page linking to other & 27.10.2019 \\
+ & pages & \\
+ Team Leader & Prepare Presentation & 27.10.2019 \\
+ Everyone & submit \texttt{.html} file containing ONLY all sources & 08.11.2019 \\
+ &  named: \texttt{sources\_initials.html} (see \ref{subsec:bib}) &  \\
+ Everyone & Add citations to webpages (see \ref{subsec:cit}) & 09.11.2019 \\
+ Team Leader \& CSS & Finish bibliography and citations & 10.11.2019 \\
+ Team Leader & Finish LaTeX bonus exercise  & 10.11.2019 \\
+ Topics Leaders & 300 word overview of topic  & 13.11.2019 \\
+ Topic Leaders & 200 word overview of how working process  & 14.11.2019 \\
+ & was (challenges, changes for next time?)& \\
+ Team Leader & Finish final presentation slides  & 16.11.2019 \\
+ 
+\hline
+\end{tabular}
+\caption{Deadlines}
+}
+\end{table}
+
+
+\subsection{SVN}
+\label{subsubsec:SVN}
+To checkout, first use \texttt{cd} to go to your desired working space, and use the following command using Unix Shell: \smallskip
+
+\texttt{svn checkout svn+ssh://your\_user@atelier.inf.usi.ch/home/bernamat/GroupProject/}\smallskip \newline
+Then, use the following command inside the GroupProject/ directory to commit: \smallskip
+
+\texttt{svn commit -m "your\_message"}
+
+The working directories for each topic group are located inside the html directory, with the path: \medskip
+
+\texttt{GroupProject/www/html/bugs/}
+
+\texttt{GroupProject/www/html/vulnerabilities/}
+
+\texttt{GroupProject/www/html/malicious\_code/}
+
+\texttt{GroupProject/www/html/history/} \medskip
+
+\noindent You can also just use \texttt {ls} inside the \texttt{html/} directory to find them. \medskip
+
+\noindent The \texttt{GroupProject/guide/} directory will also contain this guide chapter, \texttt{guide.tex} so that all team members can read it.
+
+\subsection{CSS}
+
+The CSS team has prepared a standard CSS template to be used across the whole website which will be available at the following path from the GroupProject directory: \medskip
+
+\texttt{GroupProject/www/stylesheets/main.css} \medskip
+
+\noindent A HTML template will also be available at the following path from the GroupProject directory: \medskip
+
+\texttt{GroupProject/www/html/topic/template.html} \medskip
+
+\noindent A different HTML file can be used if desired, as long as the standard CSS template is used and it complies with both the theme and color palette.
+
+\subsection{Citing and Bibliography}
+\label{subsec:bib}
+
+We will be citing and writing the bibliography MLA style. \textbf{Make sure to write down sources as you are working} so you do not have to rediscover all of your sources later on. The structure is as follows: \newline \medskip
+\textbf{Books:}
+\begin{itemize}
+\item Surname, First name. \emph{title}. Publisher, year.
+\begin{itemize}
+\item Example (one author): Mendelson, Elliott. \emph{3,000 Solved Problems in Calculus.} McGraw-Hill, 2009.
+\item Example (multiple authors): Tanenbaum, Andrew S. and Austin, Todd. \emph{Structured Computer Organization.} Pearson, 2013.
+\end{itemize}
+\end{itemize}
+
+\noindent \textbf{Webpages:}
+\begin{itemize} \medskip
+\item If author available: 
+\begin{itemize}
+\item Surname, First name. \emph{title}. Name of webpage, date. URL. Last date accessed.
+\item Example : Engle, Jeremy. \emph{Lesson of the Day: ‘Occupy Alcatraz: Native American Activism in the Modern Era’}. The New York Times, 2019. https://www.nytimes.com/2019/10/24/learning/lesson-of-the-day-occupy-alcatraz-native-american-activism-in-the-modern-era.html. Last accessed 25 October 2019.
+\end{itemize}
+\item Otherwise:
+\begin{itemize}
+\item Webpage creator name \emph{title}. Name of webpage, date. URL. Last date accessed.
+\item Example: EasyBib, \emph{How to Cite A Book in Print in MLA}. EasyBib, 2019. http://www.easybib.com/reference/guide/mla/book. Last accessed 25 October 2019.
+\end{itemize}
+\end{itemize}
+
+\noindent \textbf{Online Images:}
+\begin{itemize} \medskip
+\item Surname, First name. \emph{title of image}. Name of webpage, date. URL. Last date accessed.
+\item Example : Sanchez, Marcio . \emph{Firefighters worked to douse flames engulfing a home in Santa Clarita, Calif., on Thursday}. The Washington Post, 2019. https://www.washingtonpost.com/weather/2019/10/25/how-powerful-winds-bone-dry-air-are-sparking-wildfire-nightmare-california/. Last accessed 25 October 2019.
+\end{itemize}
+
+If you have any problems, such as not being able to find date or author of a webpage, first try an online citation machine, such as this one \href{http://www.citationmachine.net/}{\underline{\emph{Citation Machine}}}
+first off write what you believe is appropriate, and then write so in the citation and a Topic Leader or Group Leader will check it later. \medskip
+
+\subsection{Citations on Website:} 
+\label{subsec:cit}
+
+On the actual website, you will add citations as superscripted ordered numbers, which will link to the bibliography sections of the website. To give an examples:
+
+\begin{itemize}
+\item The final deadline for the project is Tuesday 12 November \textsuperscript{(1)}
+\end{itemize}
+
+For now since the order of sources has not been completed superscript \texttt{initials\_number} ordered according to the bibliography you have made. For example I would write:
+
+\begin{itemize}
+\item The final deadline for the project is Tuesday 12 November \textsuperscript{(mb\_1)}
+\end{itemize}
+
+They will then be ordered after the webpage has been completed, unless another method is suggested before then.
+
+
+
+\end{document}

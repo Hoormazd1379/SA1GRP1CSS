@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" name="Arianna Bianchi">
+
+</head>
+<body>
+
+    <div id="particles-js">
+        <div class="h1container">
+            <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+            <h1 id="page-title"> HISTORY </h1>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Main</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
+                <a href="#"><li id="filter-element">Social Impact</li></a>
+            </ul>
+        </div>
+
+        <div>
+            <div id="timeline">
+                <div id="timeline-shapes">
+                    <a href="#"><div class="milestone" style="background: #C3073F;"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                </div>
+            </div>
+
+            <div id="content-main">
+                <div id="content-box">
+
+                    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                    <div id="content">
+                        <div class="title-container">
+                            <h2 id="sect-title">Therac-25</h2>
+                        </div>
+                            <p>
+                              THERACH is a linear accelerator of radiations <br> <br>
+Between 1985 and 1987 happens ad accident that caused the death of five patients and several other injured.
+The Therac-25 was a radiation therapy machine manufactured by AECL in 80s. This  machine works  with two modes of operation: firstly it delivers a low-power electron beam (beta particles) which creates skin cancer, and secondly X-rays that involves deeper tissues (that can creates cancer of the lungs).
+Therac-25 based upon a previous design of “Therac-20” and it relied on software controls to switch between two modes.
+At one point this radiation therapy device malfunctions and delivers lethal radiation doses at several medical facilities.
+What engineers didn’t know was that both the 20 and the 25 were built upon an operations system that had been kludged together by a programmer with no formal training.
+Because of a subtle bug called “race condition”, a radiology technician had become very quick at typing commands into the Therac-25 machine.  He accidentally entered “x” for X-Ray rather than “e” for Electron, so pressed the up key to choose the correct mode. At this point the machine fires the electron beam in high-power mode but with the metal X-ray target out of position.
+Upon starting the program the machine shut down, displaying the error “Malfunction 54”. The patient was receiving his 9th treatment, and immediately knew something had gone terribly wrong. He reported hearing a buzzing sound, which was later determined to be the machine delivering radiation at maximum capacity, and feeling as though someone had poured hot coffee over his bath. After a few days, the patient suffered paralysis due to radiation overexposure, and ultimately died of further complications. The manufacturer believed the root cause was due to an electrical shock, and the machine was put back into service despite an electric company verifying this was not the issue, and that similar incidents had been reported to AECL before.
+Because of this catastrophic, died at least five patients, while other are seriously injured.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+</html>
