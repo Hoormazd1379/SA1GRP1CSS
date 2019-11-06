@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debugging</title>
+	<link rel="stylesheet" href="../../stylesheets/main.css">
+	<link rel="stylesheet" href="bug.css">
+	<!-- Pageloader by H.P-->
+	<script src="../../scripts/pageloader.js"></script>
+
+	<!-- background music H.P
+	<embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />-->
+
+	<!-- favicon -H.P-->
+	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+	<meta name="author" content=" ">
+</head>
+<body>
+
+	<div id="particles-js" style="top: 44px;">
+	</div>
+
+	<div id="wrapper">
+
+		<ul class="DropdownNavigationBarBug">
+			<li class="DropNavBarBug">
+				<a href="index.html" class="DropdownButtonNavBarBug">Bugs and Errors</a>
+			</li>
+			<li class="NavBarBug">></li>
+
+			<!-- SubTopic 1 -->
+			<!-- <li class="DropNavBarBug">
+		    <a class="DropdownButtonNavBarBug">Typology</a>
+		    <div class="DropNavBarBug-content">
+					<a href="logic_errors.html">Logic</a>
+					<a href="syntax_errors.html">Syntax</a>
+		      <a href="runtime_errors.html">Runtime</a>
+		    </div>
+		  </li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
+				<div class="DropNavBarBug-content">
+					<a href="logic_errors.html#categories">Categories</a>
+					<a href="#">Examples</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">Categories</li> -->
+			<!-- SubSubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Examples</li> -->
+			<!-- SubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Syntax</li> -->
+			<!-- SubSubTopic 3 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="runtime_errors.html" class="DropdownButtonNavBarBug">Runtime</a>
+				<div class="DropNavBarBug-content">
+					<a href="#">...</a>
+				</div>
+			</li> -->
+
+			<!-- SubTopic 2 -->
+			<!-- <li class="DropNavBarBug">
+		    <a class="DropdownButtonNavBarBug">Consequences</a>
+		    <div class="DropNavBarBug-content">
+		      <a href="#">Security</a>
+		      <a href="#">Design</a>
+					<a href="crash.html">Crash</a>
+		    </div>
+		  </li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
+				<div class="DropNavBarBug-content">
+					<a href="os_crash.html">Operating System</a>
+					<a href="hardware_crash.html">Hardware</a>
+					<a href="software_crash.html">Software</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">Operating System</li> -->
+			<!-- SubSubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Hardware</li> -->
+			<!-- SubSubSubTopic 3 -->
+			<!-- <li class="DropNavBarBug">Software</li> -->
+			<!-- SubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="#" class="DropdownButtonNavBarBug">Design</a>
+				<div class="DropNavBarBug-content">
+					<a href="#">...</a>
+				</div>
+			</li> -->
+
+			<!-- SubTopic 3 -->
+			<li class="DropNavBarBug">
+		    <a class="DropdownButtonNavBarBug">Prevention</a>
+		    <div class="DropNavBarBug-content">
+					<a href="debugging.html">Debugging</a>
+		      <a href="language.html">Language</a>
+		    </div>
+		  </li>
+			<li class="NavBarBug">></li>
+			<!-- SubSubTopic 1 -->
+			<li class="DropNavBarBug">Debugging</li>
+			<!-- SubSubTopic 2 -->
+
+			<!-- SubTopic 4 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
+			</li> -->
+		</ul>
+
+		<div class="ContainerBug">
+
+	<!-- CONTENT BELOW -->
+
+			<div class="h1containerBug">
+				<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+				<h1 class="bug"> Debugging </h1>
+			</div>
+
+			<p>The debug indicates the activity that consists in the identification by the programmer of the part of software affected by a bug detected following the use of the program. The debugging activity is one of the most important operations for the development of a program, often extremely difficult due to the complexity of the software currently in use and delicate due to the danger of introducing new errors or behaviors that differ from those desired in an attempt to correct those for which the debugging activity took place.</p>
+			<p>Although each debugging session is unique, there are some generic principles are applicable in every situation. We can recognize five phases: bug identification; identification of the component containing the bug; identification of the cause of the bug; design of a bug fix and implementation and testing of the aforementioned correction. There are two ways to perform a debugging session.</p>
+			<p>The first possibility is to Insert in appropriate points of the program source code instructions that print on video the contents of variables that could contain incorrect values that lead to the error. Typically, in fact, the conditions that lead to an error could arise long before the time when the error occurs. For example, if a numeric variable x that will be used later as a divisor of a number contains a value that will make the divisor zero, this will certainly lead to an error if the value of x remains that:</p>
+			<p>if we consider x=1 and z=1; and we consider also the calculus 1/(x-z)</p>
+			<p>to "debug" this part of the program it is possible to convince</p>
+			<p> oneself by printing on screen that x-z is zero before the error occurs:</p>
+			<p>int x=1, z=1:</p>
+			<p>...</p>
+			<p>System.err.println("x-z=",x-z);</p>
+			<p>...</p>
+			<p>1\x-z</p>
+			<p>Whereas the second way is to run the program under the control of an application called a debugger. A debugger allows you to execute the instructions of a program one at a time, allows you to run the program until certain user-definable points (breakpoints) are reached, and allows you to examine the contents of the variables at any time. Debuggers are very useful tools to find out the causes of errors.</p>
+			<p>Once the causes of the error have been identified and corrected, the printing instructions can be removed to end the debugging session.</p>
+			<p>The second way is to run the program under the control of an application called a debugger. A debugger allows you to execute the instructions of a program one at a time, allows you to run the program until certain user-definable points (breakpoints) are reached, and allows you to examine the contents of the variables at any time. Debuggers are very useful tools to find out the causes of errors.</p>
+
+		</div>
+	</div>
+
+
+	<!-- END OF THE CONTENT -->
+
+
+	<!-- fullscreen div, blocking the screen view until all images are loaded.
+			 see pageloader.js
+			 dont change the spacing between the divs otherwise it will break -H.P-->
+	<!-- <div id="loadingDiv">
+			 <div id="loadingBox">
+					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					 <br>
+					 <h3> Please wait while we load the page!</h3>
+			 </div>
+	 </div> -->
+
+
+	 <!-- particles-js init
+			 dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+	 <script src="../../scripts/particles.js"></script>
+	 <script>
+			 particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+					 console.log('callback - particles.js config loaded');
+			 });
+	 </script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Runtime Error</title>
+	<link rel="stylesheet" href="../../stylesheets/main.css">
+	<!-- Pageloader by H.P-->
+	<script src="../../scripts/pageloader.js"></script>
+
+	<!-- background music H.P
+	<embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />-->
+
+	<!-- favicon -H.P-->
+	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+	<meta name="author" content="Davide Scannapieco">
+</head>
+<body>
+
+	<div id="particles-js"></div>
+
+	<ul class="DropdownNavigationBarBug">
+		<li class="DropNavBarBug">
+			<a href="index.html" class="DropdownButtonNavBarBug">Bugs and Errors</a>
+		</li>
+		<li class="NavBarBug">></li>
+
+		<!-- SubTopic 1 -->
+		<li class="DropNavBarBug">
+			<a class="DropdownButtonNavBarBug">Typology</a>
+			<div class="DropNavBarBug-content">
+				<a href="logic_errors.html">Logic</a>
+				<a href="syntax_errors.html">Syntax</a>
+				<a href="runtime_errors.html">Runtime</a>
+			</div>
+		</li>
+		<li class="NavBarBug">></li>
+		<!-- SubSubTopic 1 -->
+		<!-- <li class="DropNavBarBug">
+			<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
+			<div class="DropNavBarBug-content">
+				<a href="logic_errors.html#categories">Categories</a>
+				<a href="#">Examples</a>
+			</div>
+		</li>
+		<li class="NavBarBug">></li> -->
+		<!-- SubSubSubTopic 1 -->
+		<!-- <li class="DropNavBarBug">Categories</li> -->
+		<!-- SubSubSubTopic 2 -->
+		<!-- <li class="DropNavBarBug">Examples</li> -->
+		<!-- SubSubTopic 2 -->
+		<!-- <li class="DropNavBarBug">Syntax</li> -->
+		<!-- SubSubTopic 3 -->
+		<li class="DropNavBarBug">
+			<a href="runtime_errors.html" class="DropdownButtonNavBarBug">Runtime</a>
+			<div class="DropNavBarBug-content">
+				<a href="runtime_errors.html#LogicError"> Logic Error</a>
+				<a href="runtime_errors.html#Memory Leaks"> Memory Leak</a>
+				<a href="runtime_errors.html#Input Output"> Input/Output</a>
+				<a href="runtime_errors.html#Encoding Error"> Crashes</a>
+				<a href="#">...</a>
+			</div>
+		</li>
+
+		<!-- SubTopic 2 -->
+		<!-- <li class="DropNavBarBug">
+			<a class="DropdownButtonNavBarBug">Consequences</a>
+			<div class="DropNavBarBug-content">
+				<a href="#">Security</a>
+				<a href="#">Design</a>
+				<a href="crash.html">Crash</a>
+			</div>
+		</li>
+		<li class="NavBarBug">></li> -->
+		<!-- SubSubTopic 1 -->
+		<!-- <li class="DropNavBarBug">
+			<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
+			<div class="DropNavBarBug-content">
+				<a href="os_crash.html">Operating System</a>
+				<a href="hardware_crash.html">Hardware</a>
+				<a href="software_crash.html">Software</a>
+			</div>
+		</li>
+		<li class="NavBarBug">></li> -->
+		<!-- SubSubSubTopic 1 -->
+		<!-- <li class="DropNavBarBug">Operating System</li> -->
+		<!-- SubSubSubTopic 2 -->
+		<!-- <li class="DropNavBarBug">Hardware</li> -->
+		<!-- SubSubSubTopic 3 -->
+		<!-- <li class="DropNavBarBug">Software</li> -->
+		<!-- SubSubTopic 2 -->
+		<!-- <li class="DropNavBarBug">
+			<a href="#" class="DropdownButtonNavBarBug">Design</a>
+			<div class="DropNavBarBug-content">
+				<a href="#">...</a>
+			</div>
+		</li> -->
+
+		<!-- SubTopic 3 -->
+		<!-- <li class="DropNavBarBug">
+			<a class="DropdownButtonNavBarBug">Prevention</a>
+			<div class="DropNavBarBug-content">
+				<a href="debugger.html">Debugging</a>
+				<a href="#">...</a>
+			</div>
+		</li>
+		<li class="NavBarBug">></li> -->
+		<!-- SubSubTopic 1 -->
+		<!-- <li class="DropNavBarBug">Debugging</li> -->
+		<!-- SubSubTopic 2 -->
+
+		<!-- SubTopic 4 -->
+		<!-- <li class="DropNavBarBug">
+			<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
+		</li> -->
+	</ul>
+
+
+		<div id="wrapper">
+
+			<div class="ContainerBug">
+
+		<!-- CONTENT BELOW -->
+
+				<div class="h1containerBug">
+					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+					<h1 class="bug"> RunTime Error </h1>
+				</div>
+
+				<h2>Execution Error</h2>
+				<p>An execution error occurs when a program is asked to do something that it cannot, resulting in a ‘crash’. The widely used example of a run time error is asking a program to divide by 0.
+
+					The code contains no syntax or logic errors but when it runs it can't perform the task that it has been programmed to carry out.</p>
+					<p>Runtime errors occur during execution of the application, so such errors occur during the interpretation phase: <font color="red">Interpreted</font>  programming languages are directly executed by an interpreter, without altering or transforming the source code prior to execution. This process reads each statement one at a time, translating each into a sequence of instructions that have already been converted into machine code for rapid execution. </p> <br>
+					<div style="left: 0; right: 0; margin: auto; text-align: center;"><img style="border-radius: 20%;" src="../../assets/bug_imgs/interp.png" alt="interpretation"></div>
+
+                     <div style="text-align: center; margin-top: 100px;"><h2>Tipology of RunTime Error</h2></div>
+					<div style="padding: 50px; text-align: center;">
+						<a style="background-color: cornsilk; padding: 30px; margin: 20px;" href="#LogicError"> Logic Error</a>
+						<a style="background-color: cornsilk; padding: 30px; margin: 20px;" href="#Memory Leaks"> Memory Leak</a>
+						<a style="background-color: cornsilk; padding: 30px; margin: 20px;" href="#Input Output"> Input Output Error</a>
+						<a style="background-color: cornsilk; padding: 30px; margin: 20px;" href="#Encoding Error"> Crashes</a>
+					</div>
+					<div id="Memory Leaks"><h2>Memory Leak</h2> <p>A term used to describe a software issue that causes the computer or hardware device to lose resources that are no longer in use. A leak may be caused when a program does not close properly or by a bug. Commonly, the term leak is used to describe a memory leak, which is a software program that does not release memory resources, or retains information no longer being used.
+						When a leak occurs, you will notice a drop in the performance of your computer or hardware device. For example, with a memory leak, the program may continue to consume the memory until it is exhausted or causes a crash. Microsoft Windows users can identify memory leaks by opening the Windows Task Manager; if a program's "mem usage" never stops increasing, it's likely that the program is exhibiting a memory leak.
+					</p> <br> <br> <br><div style="left: 0; right: 0; margin: auto; text-align: center;">
+						<img style="border-bottom-left-radius: 50%;border-top-right-radius: 50%;width: 50%;" src="../../assets/bug_imgs/leak.jpeg" alt="leak"></div></div>
+
+					<div id="LogicError"> <h2>Logic Error</h2> <p> If there is a program running poorly on your computer, it can affect other programs. In a Windows environment, many things are shared, and if a rogue application steps into your arena, there is a possibility for a runtime error to occur. Example of Logic Error
+							float average(float a, float b)
+							{
+								return a + b / 2;     /* should be (a + b) / 2 */
+							} <div style="text-align: center;"> <br> <br><img style="border-radius:5px;" src="../../assets/bug_imgs/logic.jpg" alt="logic"></p></div></div>
+					<div id="Input Output" > <h2>Peripherals</h2><p> To a large degree, software depends on the workability of peripherals in your computer. If you have an older computer, your hard drive is older than two years, you have recently had an electrical storm, of if the cooling fan is not working, degradation in service can occur. Any of these events can cause your software to throw a runtime error. </p> <br>
+						<div style="left: 0; right: 0; margin: auto; text-align: center;"><br><br><img style="border-radius: 3px;" src="../../assets/bug_imgs/Input.png" alt="input output"></div> </div>
+					<div id="Encoding Error"> <h2>Crashes</h2> <h3>Referencing missing files</h3><p>  You want to display a picture but provide the wrong path to it, the program won’t find it and crash. </p> <br> <div style="left: 0; right: 0; margin: auto; text-align: center;"><img style="border-radius:10px;width: 50%;" src="../../assets/bug_imgs/missing.png" alt="missing file"> </div><br>
+					<h3>Dividing things by zero</h3> <p>We simply say that anything divided by 0 is not defined. Programs are not so smart and go haywire.</p> <br><div style="left: 0; right: 0; margin: auto; text-align: center;"><img style="border-radius:4px; width: 40%;" src="../../assets/bug_imgs/divide.jpg" alt="divide by 0"> </div> <br> <h3>Giving the wrong input</h3> <p>If given a wrong input it will crash the sistem, since it's not able to compile the program.</p> <br>
+						<div style="left: 0; right: 0; margin: auto; text-align: center;"><img style="border-radius:20%;width: 50%;" src="../../assets/bug_imgs/crash.jpg" alt="crash"></div></div>
+			</div>
+
+
+
+
+		</div>
+
+	<!-- END OF THE CONTENT -->
+
+
+	<!-- fullscreen div, blocking the screen view until all images are loaded.
+			 see pageloader.js
+			 dont change the spacing between the divs otherwise it will break -H.P-->
+	<!-- <div id="loadingDiv">
+			 <div id="loadingBox">
+					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					 <br>
+					 <h3> Please wait while we load the page!</h3>
+			 </div>
+	 </div> -->
+
+
+	 <!-- particles-js init
+			 dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+	 <script src="../../scripts/particles.js"></script>
+	 <script>
+			 particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+					 console.log('callback - particles.js config loaded');
+			 });
+	 </script>
+
+</body>
+</html>

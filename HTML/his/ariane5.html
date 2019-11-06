@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Massimo Bordogna">
+
+</head>
+<body>
+    <div id="particles-js">
+        <div class="h1container">
+            <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+            <h1 id="page-title"> HISTORY </h1>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Main</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
+                <a href="#"><li id="filter-element">Social Impact</li></a>
+            </ul>
+        </div>
+
+        <div>
+            <div id="timeline">
+                <div id="timeline-shapes">
+                    <a href="#"><div class="milestone" style="background: #C3073F;"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                </div>
+            </div>
+
+            <div id="content-main">
+                <div id="content-box">
+
+                    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                    <div id="content">
+                        <div class="title-container">
+                            <h2 id="sect-title">Ariane 5 Flight 501</h2>
+                        </div>
+                            <p>
+<u>Ariane 5:</u> <br>
+ Ariane 5 is a rocket launcher developed and built by the European Space Agency. It is the successor model to Ariane 4 and was the result of a work that lasted 10 years and cost about 7 billion euros. Initially it was designed to launch mini shuttles, then over time it became a launcher for commercial purposes. Its primary use is to place the satellites in geostationary orbit.
+
+                            </p>
+                        <p>
+                       <u> What happened:</u><br>
+
+June 4, 1996 was a day of great disappointment for the ESA. On this day, in fact, the inaugural voyage of the Ariane 5 rocket was planned, unfortunately something went wrong. The use of the internal reference system of the previous model (A4) on the current A5 caused an arithmetic overflow that then led to the destruction of the rocket. The losses in economic terms are estimated at around 400 million for the material value of the rocket and 8 billion for the development work that lasted 10 years.  
+                        </p>
+                        <p>
+                       A little bug, a big bang. This is how New York Times described the disaster happened in 1996:<br>
+“It took the European Space Agency 10 years and $7 billion to produce Ariane 5, a giant rocket capable of hurling a pair of three-ton satellites into orbit with each launch and intended to give Europe overwhelming supremacy in the commercial space business.
+All it took to explode that rocket less than a minute into its maiden voyage last June, scattering fiery rubble across the mangrove swamps of French Guiana, was a small computer program trying to stuff a 64-bit number into a 16-bit space.
+One bug, one crash. Of all the careless lines of code recorded in the annals of computer science, this one may stand as the most devastatingly efficient. From interviews with rocketry experts and an analysis prepared for the space agency, a clear path from an arithmetic error to total destruction emerges.
+To play the tape backward:
+At 39 seconds after launch, as the rocket reached an altitude of two and a half miles, a self-destruct mechanism finished off Ariane 5, along with its payload of four expensive and uninsured scientific satellites. Self-destruction was triggered automatically because aerodynamic forces were ripping the boosters from the rocket.”
+
+
+
+                        </p>
+                         <img src="ariane5.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+</html>

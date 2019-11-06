@@ -16,6 +16,7 @@ body {
     height: 100%;
     left: 0;
     top: 0;
+    z-index: -2;
 }
 
 .menuitem {
@@ -25,7 +26,7 @@ body {
     text-align: center;
     color: white;
     background-color: #9A1750;
-    width: 200px;
+    width: 250px;
 }
 
 table #home td {
@@ -385,6 +386,163 @@ table #home td {
 
 /* SECTION FOR @TEAM_MEMBERS TO ADD CUSTOM CSS -E.R*/
 
+/* First Page -------------------- Onciu Razvan Petrica -- */
+
+p.H-intro-quote{
+  font-size:15px;
+  margin-top:40px;
+  margin-bottom:50px;
+}
+
+img.H-intro-1{
+  float:left;
+  width:40%;
+  min-width:150px;
+  max-width:350px;
+  margin-bottom:40px;
+}
+
+p.H-intro-1{
+  float:left;
+  margin-top:5px;
+  text-align: justify;
+
+}
+
+/*list*/
+
+ul.H-intro-list{
+  margin-top:30%;
+  color:#C3073F;
+  font-weight: bold;
+  margin-left:-20px;
+  font-size:1.9vw;
+}
+
+p.H-intro-list-title{
+  text-decoration: overline;
+}
+
+/*end list*/
+
+/*table*/
+
+table.H-intro-table{
+  margin-top:-50px;
+}
+
+td.H-intro-table-td{
+  color:white;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+  p.H-intro-1{
+    width:47vw;
+    font-size:1.7vw;
+    margin-left:20px;
+    max-height:340px;
+    overflow:auto;
+  }
+
+  td.H-intro-table-td{
+    width:100%;
+    float:left;
+    font-size:25px;
+    background-color: rgba(195, 7, 63, 0.3);
+  }
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-intro-1{
+    margin-left:30%;
+  }
+  p.H-intro-1{
+    width:100%;
+    margin-left:0px;
+    font-size:2.5vw;
+  }
+
+  ul.H-intro-list{
+    margin-top:300px;
+  }
+
+  td.H-intro-table-td{
+    padding:15px;
+    width:50%;
+    max-height:10px;
+    overflow:auto;
+    background-color: rgba(195, 7, 63, 0.3);
+    border-radius:20px;
+    border: 5px grey solid;
+    font-size:2vw;
+  }
+}
+
+/* End of First Page -----------------------------*/
+
+/* Child Support Agency -- Onciu Razvan Petrica-----------*/
+
+img.H-CSA-image{
+  float:right;
+  background-color: rgba(129, 129, 129, 0.315);
+  margin: 28px 20px 0px 10px;
+  border:1px solid rgba(195, 7, 63, 0.3);
+}
+
+img.H-CSA-image2{
+  float:left;
+  margin-right: 10px;
+  width:20%;
+}
+
+p.H-CSA-p{
+  text-decoration: overline;
+  padding:20px;
+  line-height: 40px;
+}
+
+ul.H-CSA-list{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding:25px;
+  line-height: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+/* End of Child Support Agency -----------------------------*/
+
+/* Mt. Gox -------------------- Onciu Razvan Petrica -- */
+
+img.H-MTGOX-image{
+  width:50%;
+  float:left;
+  padding: 20px;
+}
+
+img.H-MTGOX-image2{
+  width:20%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Mt.Gox -----------------------------*/
+
+
+/* Social Impact Pages -- Marco Mariosa Claudio Milanesi --------*/
+#socialimpact{
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* End of Social Impact -----------------------------------------*/
+
 
 
 /***********************************************************************************************************************************************************************/
@@ -395,12 +553,28 @@ table #home td {
 
 /**************************************************************MAL. CODE ELEMENTS**************************************************************/
 
+#block2 {
+    margin-top: 630px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.grid-title {
+    left: 0;
+    right: 0;
+    margin-top: 300px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
 #grid {
     position: absolute;
     left: 0;
     right: 0;
     width: 80%;
-    margin: 150px auto 50px auto;
+    margin: -90px auto 50px auto;
 }
 
 #cat-list {
@@ -455,13 +629,108 @@ table #home td {
 
 /**************************************************************MAL. CODE Template**************************************************************/
 
+/* Page Navigator -E.R */
+
+#nav {
+    float: right;
+    right: 0;
+    margin-top: 70px;
+    border-style: solid;
+    border-color: rgba(129, 129, 129, 0.315);
+    border-radius: 10px;
+    height: 52px;
+    width: 245px;
+}
+
+#nav div {
+    display: inline-flex;
+    height: 52px;
+}
+
+#next-div {
+    float: right;
+    margin-top: -36px;
+}
+
+#nav div img {
+    margin: 10px 0 10px 10px;
+    width: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+.next {
+    transform: rotate(180deg);
+}
+
+#nav div p {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#separation-nav {
+    transform: rotate(90deg);
+    width: 54.2px;
+    margin-top: -27.5px;
+    border-style: solid;
+    border-color: rgba(129, 129, 129, 0.315);
+    border-width: 1.5px;
+    margin-right: 75px;
+}
+
+#previous-div:hover #previous-p {
+    color: #C3073F;
+}
+
+#previous-div:hover .previous {
+    content: url("../assets/icns/arrow_sel.png");
+}
+
+#next-div:hover #next-p {
+    color: #C3073F;
+}
+
+#next-div:hover .next {
+    content: url("../assets/icns/arrow_sel.png");
+}
+
+.disabled-p {
+    pointer-events: none;
+    cursor: default;
+}
+
+.disabled-p .previous {
+    content: url("../assets/icns/arrow-dis.png");
+}
+
+.disabled-p #previous-p {
+    color: #444444;
+}
+
+.disabled-n {
+    pointer-events: none;
+    cursor: default;
+}
+
+.disabled-n .next {
+    content: url("../assets/icns/arrow-dis.png");
+}
+
+.disabled-n #next-p {
+    color: #444444;
+}
+
+/* Main page -E.R */
+
 #description {
     width: 90%;
     left: 0;
     right: 0;
     margin: 240px auto auto auto;
     text-align: justify;
-    z-index: 0;
+    z-index: 100;
 }
 
 .subtitle {
@@ -470,7 +739,7 @@ table #home td {
     right: 0;
     margin: 60px auto auto auto;
     text-align: justify;
-    z-index: 0;
+    z-index: 100;
 }
 
 #case {
@@ -487,12 +756,13 @@ table #home td {
     float: left;
     width: 75%;
     left: 0;
+    text-align: justify;
 }
 
 #card {
     position: absolute;
     border-radius: 15px;
-    margin-top: 22px;
+    margin-bottom: 20px;
     width: 20%;
     right: 0;
     background: #444444;
@@ -502,7 +772,7 @@ table #home td {
 
 #card-title {
     width: 80%;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     left: 0;
     right: 0;
@@ -518,11 +788,12 @@ table #home td {
 
 #card-img {
     width: 10vw;
-    height: 10vw; 
+    height: 10vw;
 }
 
 #specific {
     width: 80%;
+    text-align: left;
     left: 0;
     right: 0;
     margin: 22px auto auto auto;
@@ -544,12 +815,73 @@ table #home td {
     height: 20px;
     width: 20px;
     margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* SECTION FOR @TEAM_MEMBERS TO ADD CUSTOM CSS -E.R*/
+
+/* Page customization -- Michele Cattaneo */
+
+.button {
+    border-radius: 15px 15px 15px 15px;
+    background-color: #5e5e5e;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 100%;
+    margin: auto;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 1s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover {
+    background-color: #C3073F;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#impact-quote{
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+}
+
+#impact-quote span{
+    font-size: 26px; color: white;
 }
 
 /***********************************************************************************************************************************************************************/
 
 
-/**************************************************************END OF MAL. CODE ELEMENTS*******************************************************/
+/**************************************************************END OF MAL. CODE Template*******************************************************/
 
 
 /**************************************************************BUGS AND ERRORS ELEMENTS H.P**************************************************************/
@@ -567,7 +899,7 @@ div.ItemTable {
 }
 
 .divTableCell {
-  width:25%;
+  width: 25%;
 }
 
 .ItemTable .tableFootStyle {
@@ -637,6 +969,344 @@ div.ItemTable {
 /**************************************************************END OF BUGS AND ERRORS ELEMENTS**************************************************************/
 
 
+/**************************************************************BUGS AND ERRORS Template**************************************************************/
+
+h1.bug {
+    min-width: 700px;
+    text-align: left;
+}
+
+div.ContainerBug {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    min-width: 750px;
+}
+
+div.ContainerBug p {
+    line-height: 1.5;
+    text-indent: 20px;
+}
+
+div.grid3bug {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    line-height: 1.2;
+    padding-bottom: 150px;
+}
+
+div.bugquiz {
+    padding-top: 20px;
+    width: 66%;
+    margin: auto;
+}
+
+div.ImageContainerBug {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+div.ImageContainerBug img {
+    display: block;
+    margin: auto;
+    /* margin-right: auto; */
+}
+
+a.quizbug {
+    position: relative;
+    margin: auto;
+}
+
+img.DropdownBugImg {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+.DropdownButtonType {
+    text-transform: uppercase;
+    background-color: #9A1750;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    min-width: 100%;
+    line-height: 1.5;
+}
+
+.DropdownBug:hover .DropdownButtonType {
+    background-color: #9A1750;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+    transform: scale(1.05);
+}
+
+.DropdownButtonCons {
+    border-radius: 10px;
+    background-color: #9A1750;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    min-width: 100%;
+    line-height: 1.5;
+}
+
+.DropdownBug:hover .DropdownButtonCons {
+    background-color: #9A1750;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+    transform: scale(1.05);
+}
+
+.DropdownButtonPrev {
+    border-radius: 10px;
+    background-color: #9A1750;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    line-height: 1.5;
+    min-width: 100%;
+}
+
+.DropdownBug:hover .DropdownButtonPrev {
+    background-color: #9A1750;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+    transform: scale(1.05);
+}
+
+.DropdownBug {
+    position: relative;
+    display: inline-block;
+}
+
+.DropdownBug-content {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+    z-index: 1;
+}
+
+.DropdownBug-content a {
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.DropdownBug-content a:hover {
+    background-color: #c9c9c9;
+}
+
+/* Show the dropdown menu on hover */
+.DropdownBug:hover .DropdownBug-content {
+    display: block;
+}
+
+h1.bug {
+    margin-top: 29.1px;
+    margin-left: 100px;
+}
+
+#back-button-bug {
+  position: absolute;
+  margin-top: 53.5px;
+}
+
+.h1containerBug {
+    top: 44.5px;
+    position: absolute;
+    left: 90px;
+}
+
+ul.DropdownNavigationBarBug {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 900px;
+}
+
+li.NavBarBug {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+}
+
+li.DropNavBarBug {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+
+li.NavBarBug a, .DropdownButtonNavBarBug {
+    display: inline-block;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+}
+
+li.NavBarBug a:hover, .DropNavBarBug:hover .DropdownButtonNavBarBug {
+    background-color: #C3073F;
+    width: 100%;
+}
+
+.DropNavBarBug-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    text-align: center;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+    z-index: 1;
+    width: 200px;
+}
+
+.DropNavBarBug-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.DropNavBarBug-content a:hover {
+    background-color: #c9c9c9;
+}
+
+.DropNavBarBug:hover .DropNavBarBug-content {
+    display: block;
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/**************************************************************END OF BUGS AND ERRORS Template**************************************************************/
+
+
+/**************************************************************VULNERABILITIES Template**************************************************************/
+
+#vul-body {
+    margin: 15px;
+}
+
+.ContainerVul{
+  margin-top: 200px;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: justify;
+  min-width: 750px;
+}
+p {
+    margin: 5px;
+}
+.VulColorPrimary {
+  color: white;
+}
+.VulSquareBlack{
+  background-color: black;
+  padding: 0.5%;
+  margin: 0.5%;
+  max-width: 31%;
+  min-width: 31%;
+  height: 150px;
+  float: left;
+  position: static;
+}
+.VulTypeBlack{
+  background-color: black;
+  padding: 2%;
+  margin: 1%;
+  max-width: 27.33%;
+  min-width: 27.33%;
+  height: 400px;
+  float: left;
+  position: static;
+  border-radius: 25px;
+  font-size: 1em;
+}
+.VulTypeSphere{
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  position: center;
+  margin-left: calc(50% - 40px);
+  margin-top: -40px;
+  color: #C3073F;
+  font-size: 4.2rem;
+}
+.VulRectangle{
+  background-color: black;
+  padding: 0.5%;
+  margin: 0.5%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 50px;
+  float: left;
+  position: static;
+}
+.VulRectangleSmall{
+  background-color: white;
+  padding: 0%;
+  margin: 0;
+  max-width: 20%;
+  min-width: 20%;
+  height: 100%;
+  float: left;
+  position: static;
+  color: #C3073F;
+}
+a.Vul{
+  text-decoration: none;
+}
+a.VulDef{
+  text-decoration: none;
+  font-style: italic;
+  color: #C3073F;
+}
+.ArticleContainer{
+  width: 100%;
+}
+.DefinitionsContainer{
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/**************************************************************END OF VULNERABILITIES Template**************************************************************/
+
+
 /**************************************************************PART C: Template **************************************************************/
 
 h1 {
@@ -650,8 +1320,8 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
-    color: #9A1750;
+  font-size: 20px;
+    color: #C3073F;
 }
 
 .h3-white {
@@ -663,16 +1333,31 @@ p {
     color: white;
 }
 
-/* li {}
+/* Links states */
 
-a {} */
+.link:link {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.link:visited{
+    color: #FFFFFF;
+}
+
+.link:hover {
+    color: #C3073F;
+}
+
+.link:active{
+    color: #C3073F;
+}
 
 .h1container {
     position: absolute;
     top: 20px;
     left: 90px;
-    width: 1200px;
-    z-index: 100;
+    right: 90px;
+    min-width: 900px;
 }
 
 .pictureitem {

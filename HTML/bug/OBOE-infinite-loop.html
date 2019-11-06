@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bugs</title>
+	<link rel="stylesheet" href="../../stylesheets/main.css">
+	<link rel="stylesheet" href="bug.css">
+	<!-- Pageloader by H.P-->
+	<script src="../../scripts/pageloader.js"></script>
+
+	<!-- background music H.P
+	<embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />-->
+
+	<!-- favicon -H.P-->
+	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+	<meta name="author" content="Brian Bronz">
+</head>
+<body>
+
+	<div id="particles-js" style="top: 44px;">
+	</div>
+
+	<div id="wrapper">
+
+		<ul class="DropdownNavigationBarBug">
+			<li class="DropNavBarBug">
+				<a href="index.html" class="DropdownButtonNavBarBug">Home</a>
+			</li>
+			<li class="DropNavBarBug">
+		    <a href="#" class="DropdownButtonNavBarBug">Typology</a>
+		    <div class="DropNavBarBug-content">
+					<a href="logic-bug.html">Logic</a>
+					<a href="syntax.html">Syntax</a>
+		      <a href="#">Runtime</a>
+		    </div>
+		  </li>
+			<li class="DropNavBarBug">
+		    <a href="#" class="DropdownButtonNavBarBug">Consequences</a>
+		    <div class="DropNavBarBug-content">
+		      <a href="#">Security</a>
+		      <a href="#">Design</a>
+					<a href="crash.html#">Crash</a>
+		    </div>
+		  </li>
+			<li class="DropNavBarBug">
+		    <a href="#" class="DropdownButtonNavBarBug">Prevention</a>
+		    <div class="DropNavBarBug-content">
+					<a href="Debugger.html">Debugging</a>
+		      <a href="#">...</a>
+		    </div>
+		  </li>
+			<li class="DropNavBarBug">
+				<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
+			</li>
+		</ul>
+
+		<div id="wrapper">
+
+			<div class="ContainerBug">
+
+		<!-- CONTENT BELOW -->
+
+				<div class="h1containerBug">
+					<h1 class="bug"> Bugs of logic </h1>
+				</div>
+
+				<h2> OBOE</h2>
+				<p>An OBOE, which means off-by-one error, or also commonly known as an OBOB (off-by-one bug), is a logic error involving the discrete equivalent of a boundary condition. It often occurs in computer programming when an iterative loop iterates one time too many or too few. This problem could arise when a programmer makes mistakes such as using "is less than or equal to" where "is less than" should have been used in a comparison, or fails to take into account that a sequence starts at zero rather than one (as with array indices in many languages). This can also occur in a mathematical context.</p>
+				<h2>Infinite loops and infinite recursion</h2>
+				<p>The difference between an infinite loop and an infinite recursion is that the infinite recursion is a special case of an infinite loop; then the question arises what is an infinite loop?</p>
+				<p>An infinite loop (or endless loop) is a sequence of instructions in a computer program which loops endlessly, either due to the loop having no terminating condition (having one that can never be met) or one that causes the loop to start over. In older operating systems with cooperative multitasking, infinite loops normally caused the entire system to become unresponsive. With the now-prevalent preemptive multitasking model, infinite loops usually cause the program to consume all available processor time, but can usually be terminated by the user. Busy wait loops are also sometimes called "infinite loops", which can cause for a computer "freezing"; others include thrashing, deadlock, and access violations. Instead the recursive loop refers to a method of defining the functions in which the function to be defined is applied within their own definition.</p>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- END OF THE CONTENT -->
+
+
+	<!-- fullscreen div, blocking the screen view until all images are loaded.
+			 see pageloader.js
+			 dont change the spacing between the divs otherwise it will break -H.P-->
+	<!-- <div id="loadingDiv">
+			 <div id="loadingBox">
+					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					 <br>
+					 <h3> Please wait while we load the page!</h3>
+			 </div>
+	 </div> -->
+
+
+	 <!-- particles-js init
+			 dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+	 <script src="../../scripts/particles.js"></script>
+	 <script>
+			 particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+					 console.log('callback - particles.js config loaded');
+			 });
+	 </script>
+
+</body>
+</html>
