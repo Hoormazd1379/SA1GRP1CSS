@@ -553,13 +553,6 @@ img.H-MTGOX-image2{
 
 /**************************************************************MAL. CODE ELEMENTS**************************************************************/
 
-#block2 {
-    margin-top: 630px;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
 .grid-title {
     left: 0;
     right: 0;
@@ -972,15 +965,34 @@ div.ItemTable {
 /**************************************************************BUGS AND ERRORS Template**************************************************************/
 
 h1.bug {
+    min-width: 700px;
     text-align: left;
+    text-transform: capitalize;
 }
 
 div.ContainerBug {
     margin-top: 200px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 100px;
+    margin-right: 100px;
     text-align: justify;
     min-width: 750px;
+    margin-bottom: 100px;
+}
+
+div.ContainerBug p {
+    line-height: 1.5;
+    text-indent: 20px;
+    padding-bottom: 10px;
+}
+
+a.RefBug {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.RefBug:hover {
+  color: Gray;
 }
 
 div.grid3bug {
@@ -989,12 +1001,28 @@ div.grid3bug {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     line-height: 1.2;
+    padding-bottom: 50px;
 }
 
 div.bugquiz {
     padding-top: 20px;
     width: 66%;
     margin: auto;
+}
+
+div.ImageContainerBug {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+div.ImageContainerBug img {
+    display: block;
+    margin: auto;
+    /* margin-right: auto; */
 }
 
 a.quizbug {
@@ -1005,7 +1033,7 @@ a.quizbug {
 img.DropdownBugImg {
     object-fit: cover;
     width: 100%;
-    height: 170px;
+    height: 200px;
     padding-top: 20px;
     margin-bottom: -10px;
 }
@@ -1103,11 +1131,17 @@ img.DropdownBugImg {
 }
 
 h1.bug {
-    margin: 0px;
+    margin-top: 29.1px;
+    margin-left: 100px;
+}
+
+#back-button-bug {
+  position: absolute;
+  margin-top: 53.5px;
 }
 
 .h1containerBug {
-    top: 73.6px;
+    top: 44.5px;
     position: absolute;
     left: 90px;
 }
@@ -1119,18 +1153,21 @@ ul.DropdownNavigationBarBug {
     overflow: hidden;
     background-color: transparent;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 900px;
 }
 
 li.NavBarBug {
+    color: white;
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 20px;
 }
 
 li.DropNavBarBug {
+    color: white;
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 200px;
 }
 
 li.NavBarBug a, .DropdownButtonNavBarBug {
@@ -1153,7 +1190,7 @@ li.NavBarBug a:hover, .DropNavBarBug:hover .DropdownButtonNavBarBug {
     text-align: center;
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
     z-index: 1;
-    width: 150px;
+    width: 200px;
 }
 
 .DropNavBarBug-content a {
@@ -1184,9 +1221,90 @@ li.NavBarBug a:hover, .DropNavBarBug:hover .DropdownButtonNavBarBug {
     margin: 15px;
 }
 
+.ContainerVul{
+  margin-top: 200px;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: justify;
+  min-width: 750px;
+}
 p {
     margin: 5px;
-    font-size: 20px;
+}
+.VulColorPrimary {
+  color: white;
+}
+.VulSquareBlack{
+  background-color: black;
+  padding: 0.5%;
+  margin: 0.5%;
+  max-width: 31%;
+  min-width: 31%;
+  height: 150px;
+  float: left;
+  position: static;
+}
+.VulTypeBlack{
+  background-color: black;
+  padding: 2%;
+  margin: 1%;
+  max-width: 27.33%;
+  min-width: 27.33%;
+  height: 400px;
+  float: left;
+  position: static;
+  border-radius: 25px;
+  font-size: 1em;
+}
+.VulTypeSphere{
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  position: center;
+  margin-left: calc(50% - 40px);
+  margin-top: -40px;
+  color: #C3073F;
+  font-size: 4.2rem;
+}
+.VulRectangle{
+  background-color: black;
+  padding: 0.5%;
+  margin: 0.5%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 50px;
+  float: left;
+  position: static;
+}
+.VulRectangleSmall{
+  background-color: white;
+  padding: 0%;
+  margin: 0;
+  max-width: 20%;
+  min-width: 20%;
+  height: 100%;
+  float: left;
+  position: static;
+  color: #C3073F;
+}
+a.Vul{
+  text-decoration: none;
+}
+a.VulDef{
+  text-decoration: none;
+  font-style: italic;
+  color: #C3073F;
+}
+.ArticleContainer{
+  width: 100%;
+}
+.DefinitionsContainer{
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /***********************************************************************************************************************************************************************/
@@ -1221,7 +1339,19 @@ p {
     color: white;
 }
 
-/* Links states */
+/* Malware links */
+
+.mal-a {
+    color: rgb(240, 14, 82);
+    text-decoration: none;
+}
+
+.mal-a:hover {
+    color: rgb(240, 14, 82);
+    text-decoration: underline;
+}
+
+/* Link states */
 
 .link:link {
     color: #FFFFFF;

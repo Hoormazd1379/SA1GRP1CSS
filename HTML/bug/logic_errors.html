@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logic Error</title>
+	<link rel="stylesheet" href="../../stylesheets/main.css">
+	<link rel="stylesheet" href="bug.css">
+	<!-- Pageloader by H.P-->
+	<script src="../../scripts/pageloader.js"></script>
+
+	<!-- background music H.P
+	<embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />-->
+
+	<!-- favicon -H.P-->
+	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+	<meta name="author" content="Brian Bronz">
+</head>
+<body>
+
+	<div id="particles-js" style="top: 44px;">
+	</div>
+
+	<div id="wrapper">
+
+		<ul class="DropdownNavigationBarBug">
+			<li class="DropNavBarBug">
+				<a href="index.html" class="DropdownButtonNavBarBug">Bugs and Errors</a>
+			</li>
+			<li class="NavBarBug">></li>
+
+			<!-- SubTopic 1 -->
+			<li class="DropNavBarBug">
+				<a class="DropdownButtonNavBarBug">Typology</a>
+				<div class="DropNavBarBug-content">
+					<a href="logic_errors.html">Logic</a>
+					<a href="syntax_errors.html">Syntax</a>
+					<a href="runtime_errors.html">Runtime</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li>
+			<!-- SubSubTopic 1 -->
+			<li class="DropNavBarBug">
+				<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
+				<div class="DropNavBarBug-content">
+					<a href="logic_errors.html#categories">Categories</a>
+					<a href="logic_errors_examples.html">Examples</a>
+				</div>
+			</li>
+			<!-- <li class="NavBarBug">></li> -->
+			<!-- SubSubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">Categories</li> -->
+			<!-- SubSubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Examples</li> -->
+			<!-- SubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Syntax</li> -->
+			<!-- SubSubTopic 3 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="runtime_errors.html" class="DropdownButtonNavBarBug">Runtime</a>
+				<div class="DropNavBarBug-content">
+					<a href="#">...</a>
+				</div>
+			</li> -->
+
+			<!-- SubTopic 2 -->
+			<!-- <li class="DropNavBarBug">
+				<a class="DropdownButtonNavBarBug">Consequences</a>
+				<div class="DropNavBarBug-content">
+					<a href="#">Security</a> link alla pagina VULNERABILITIES
+					<a href="#">Design</a>
+					<a href="crash.html">Crash</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
+				<div class="DropNavBarBug-content">
+					<a href="os_crash.html">Operating System</a>
+					<a href="hardware_crash.html">Hardware</a>
+					<a href="software_crash.html">Software</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">Operating System</li> -->
+			<!-- SubSubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">Hardware</li> -->
+			<!-- SubSubSubTopic 3 -->
+			<!-- <li class="DropNavBarBug">Software</li> -->
+			<!-- SubSubTopic 2 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="#" class="DropdownButtonNavBarBug">Design</a>
+				<div class="DropNavBarBug-content">
+					<a href="#">...</a>
+				</div>
+			</li> -->
+
+			<!-- SubTopic 3 -->
+			<!-- <li class="DropNavBarBug">
+				<a class="DropdownButtonNavBarBug">Prevention</a>
+				<div class="DropNavBarBug-content">
+					<a href="debugger.html">Debugging</a>
+					<a href="#">...</a>
+				</div>
+			</li>
+			<li class="NavBarBug">></li> -->
+			<!-- SubSubTopic 1 -->
+			<!-- <li class="DropNavBarBug">Debugging</li> -->
+			<!-- SubSubTopic 2 -->
+
+			<!-- SubTopic 4 -->
+			<!-- <li class="DropNavBarBug">
+				<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
+			</li> -->
+		</ul>
+
+		<div id="wrapper">
+
+			<div class="ContainerBug">
+
+		<!-- CONTENT BELOW -->
+
+				<div class="h1containerBug">
+					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+					<h1 class="bug"> Logic Error</h1>
+				</div>
+
+				<p>The bugs of this type are connected to the program's operating logic and are the most difficult to identify; in fact if you want to compile a program, the compiler doesn't identify any errors, from the moment it doesn't have any reason to report them since the program is semantically and syntactically correct; therefore doesn't mean that our program is "logically" correct, in fact in many cases the end result doesn't match what we expected, so it is up to the programmer to locate them.</p>
+				<p>They can be caused by a lack of understanding of the problem to be calculated or the constraints that the input data must respect, or even in the evaluation of the algorithm test. These errors typically lead to the design of an algorithm that does not provide the required output within one or more instances of the problem to be solved and we need to use the debugger to find it.</p>
+				<p>A fairly trivial example is when we divide a number by zero or when we use a variable,which we haven't defined it before, syntactically is correct, but we have the error during the execution of the program, which stops.</p>
+				<h2 id="categories"> OBOE</h2>
+				<p>An OBOE, which means off-by-one error, or also commonly known as an OBOB (off-by-one bug), is a logic error involving the discrete equivalent of a boundary condition. It often occurs in computer programming when an iterative loop iterates one time too many or too few. This problem could arise when a programmer makes mistakes such as using "is less than or equal to" where "is less than" should have been used in a comparison, or fails to take into account that a sequence starts at zero rather than one (as with array indices in many languages). This can also occur in a mathematical context.</p>
+				<h2>Infinite loops and infinite recursion</h2>
+				<p>The difference between an infinite loop and an infinite recursion is that the infinite recursion is a special case of an infinite loop; then the question arises what is an infinite loop?</p>
+				<p>An infinite loop (or endless loop) is a sequence of instructions in a computer program which loops endlessly, either due to the loop having no terminating condition (having one that can never be met) or one that causes the loop to start over. In older operating systems with cooperative multitasking, infinite loops normally caused the entire system to become unresponsive. With the now-prevalent preemptive multitasking model, infinite loops usually cause the program to consume all available processor time, but can usually be terminated by the user. Busy wait loops are also sometimes called "infinite loops", which can cause for a computer "freezing"; others include thrashing, deadlock, and access violations. Instead the recursive loop refers to a method of defining the functions in which the function to be defined is applied within their own definition.</p>
+				<div class="ImageContainerBug">
+					<img src="../../assets/bug_imgs/Infinite-loop.jpg" width="350px"> <img src="../../assets/bug_imgs/infinite-recursion.jpeg" width="350px">
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- END OF THE CONTENT -->
+
+
+	<!-- fullscreen div, blocking the screen view until all images are loaded.
+			 see pageloader.js
+			 dont change the spacing between the divs otherwise it will break -H.P-->
+	<!-- <div id="loadingDiv">
+			 <div id="loadingBox">
+					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					 <br>
+					 <h3> Please wait while we load the page!</h3>
+			 </div>
+	 </div> -->
+
+
+	 <!-- particles-js init
+			 dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+	 <script src="../../scripts/particles.js"></script>
+	 <script>
+			 particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+					 console.log('callback - particles.js config loaded');
+			 });
+	 </script>
+
+</body>
+</html>
