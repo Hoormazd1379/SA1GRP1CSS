@@ -524,22 +524,70 @@ ul.H-CSA-list{
 
 /* End of Child Support Agency -----------------------------*/
 
-/* Mt. Gox -------------------- Onciu Razvan Petrica -- */
+/* Mt. Gox -------------------- Massimo Bordogna -- */
 
-img.H-MTGOX-image{
-  width:50%;
-  float:left;
-  padding: 20px;
-}
 
 img.H-MTGOX-image2{
-  width:20%;
+  width:30%;
   float:center;
   padding: 2px;
 }
 
 /* End of Mt.Gox -----------------------------*/
 
+/* Pentium -------------------- Massimo Bordogna -- */
+img.H-PENTIUM-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Pentium -----------------------------*/
+
+/* Ariane 5 -------------------- Massimo Bordogna -- */
+img.H-ARIANE5-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Ariane 5 -----------------------------*/
+
+/* Mariner 1 -------------------- Massimo Bordogna -- */
+img.H-MARINER1-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Mariner 1 -----------------------------*/
+
+/* Morris Worm -------------------- Massimo Bordogna -- */
+img.H-MWORM-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Morris Worm -----------------------------*/
+
+/* NASA Mars -------------------- Massimo Bordogna -- */
+img.H-NMARS-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of NASA Mars -----------------------------*/
+
+/* Knight Capital Group -------------------- Massimo Bordogna -- */
+img.H-KGROUP-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Knight Capital Group -----------------------------*/
 
 /* Social Impact Pages -- Marco Mariosa Claudio Milanesi --------*/
 #socialimpact{
@@ -1021,7 +1069,10 @@ div.bugquiz {
 }
 
 div.ImageContainerBug {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 100px;
     display: grid;
@@ -1030,10 +1081,11 @@ div.ImageContainerBug {
 }
 
 div.ImageContainerBug img {
+    max-width: 500px;
     display: block;
     margin: auto;
-    min-width: 350px;
     width: 80%;
+    min-width: 350px;
 }
 
 a.quizbug {
