@@ -553,13 +553,6 @@ img.H-MTGOX-image2{
 
 /**************************************************************MAL. CODE ELEMENTS**************************************************************/
 
-#block2 {
-    margin-top: 630px;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
 .grid-title {
     left: 0;
     right: 0;
@@ -974,6 +967,7 @@ div.ItemTable {
 h1.bug {
     min-width: 700px;
     text-align: left;
+    text-transform: capitalize;
 }
 
 div.ContainerBug {
@@ -982,11 +976,23 @@ div.ContainerBug {
     margin-right: 100px;
     text-align: justify;
     min-width: 750px;
+    margin-bottom: 100px;
 }
 
 div.ContainerBug p {
     line-height: 1.5;
     text-indent: 20px;
+    padding-bottom: 10px;
+}
+
+a.RefBug {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a.RefBug:hover {
+  color: Gray;
 }
 
 div.grid3bug {
@@ -995,7 +1001,7 @@ div.grid3bug {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     line-height: 1.2;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 div.bugquiz {
@@ -1333,7 +1339,19 @@ p {
     color: white;
 }
 
-/* Links states */
+/* Malware links */
+
+.mal-a {
+    color: rgb(240, 14, 82);
+    text-decoration: none;
+}
+
+.mal-a:hover {
+    color: rgb(240, 14, 82);
+    text-decoration: underline;
+}
+
+/* Link states */
 
 .link:link {
     color: #FFFFFF;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crash</title>
+	<title>Software Crash</title>
 	<link rel="stylesheet" href="../../stylesheets/main.css">
 	<!-- Pageloader by H.P-->
 	<script src="../../scripts/pageloader.js"></script>
@@ -30,13 +30,13 @@
 
 			<!-- SubTopic 1 -->
 			<!-- <li class="DropNavBarBug">
-		    <a class="DropdownButtonNavBarBug">Typology</a>
-		    <div class="DropNavBarBug-content">
+				<a class="DropdownButtonNavBarBug">Typology</a>
+				<div class="DropNavBarBug-content">
 					<a href="logic_errors.html">Logic</a>
 					<a href="syntax_errors.html">Syntax</a>
 					<a href="runtime_errors.html">Runtime</a>
-		    </div>
-		  </li>
+				</div>
+			</li>
 			<li class="NavBarBug">></li> -->
 			<!-- SubSubTopic 1 -->
 			<!-- <li class="DropNavBarBug">
@@ -63,13 +63,13 @@
 
 			<!-- SubTopic 2 -->
 			<li class="DropNavBarBug">
-		    <a href="#" class="DropdownButtonNavBarBug">Consequences</a>
-		    <div class="DropNavBarBug-content">
-		      <a href="../vul/index.html">Security</a>
-		      <a href="design.html">Design</a>
+				<a class="DropdownButtonNavBarBug">Consequences</a>
+				<div class="DropNavBarBug-content">
+					<a href="../vul/index.html">Security</a>
+					<a href="#">Design</a>
 					<a href="crash.html">Crash</a>
-		    </div>
-		  </li>
+				</div>
+			</li>
 			<li class="NavBarBug">></li>
 			<!-- SubSubTopic 1 -->
 			<li class="DropNavBarBug">
@@ -80,13 +80,13 @@
 					<a href="crash_software.html">Software</a>
 				</div>
 			</li>
-			<!-- <li class="NavBarBug">></li> -->
+			<li class="NavBarBug">></li>
 			<!-- SubSubSubTopic 1 -->
 			<!-- <li class="DropNavBarBug">Operating System</li> -->
 			<!-- SubSubSubTopic 2 -->
 			<!-- <li class="DropNavBarBug">Hardware</li> -->
 			<!-- SubSubSubTopic 3 -->
-			<!-- <li class="DropNavBarBug">Software</li> -->
+			<li class="DropNavBarBug">Software</li>
 			<!-- SubSubTopic 2 -->
 			<!-- <li class="DropNavBarBug">
 				<a href="#" class="DropdownButtonNavBarBug">Design</a>
@@ -97,12 +97,12 @@
 
 			<!-- SubTopic 3 -->
 			<!-- <li class="DropNavBarBug">
-		    <a class="DropdownButtonNavBarBug">Prevention</a>
-		    <div class="DropNavBarBug-content">
+				<a class="DropdownButtonNavBarBug">Prevention</a>
+				<div class="DropNavBarBug-content">
 					<a href="debugger.html">Debugging</a>
-		      <a href="#">...</a>
-		    </div>
-		  </li>
+					<a href="#">...</a>
+				</div>
+			</li>
 			<li class="NavBarBug">></li> -->
 			<!-- SubSubTopic 1 -->
 			<!-- <li class="DropNavBarBug">Debugging</li> -->
@@ -121,18 +121,19 @@
 		<!-- CONTENT BELOW -->
 
 				<div class="h1containerBug">
-					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-					<h1 class="bug"> Crash </h1>
+					<a id="back-button-bug" href="crash.html"><img src="../../assets/icns/arrow.png"></a>
+					<h1 class="bug"> Software Crash </h1>
 				</div>
 
-				<h2> Introduction</h2>
-				<p>This term means the sudden closure or blockage, which was not requested, of a program, which is running, or complete blockage and the entire computer.</p>
-				<p> This can happen when there are design or programming errors in the software, or to a malfunction of the hardware that performs it (ad example due to excessive overheating). So computers crash because there are some errors in the operating system software or errors in the computer hardware, but the errors of computer hardware are, although less commonly, more devastating and harder to diagnose than errors in the software, in fact a variety of hardware components must function correctly in order for a computer to work and over time these components can fail.</p>
-				<p> In this page we can see how to crash a determinate electronic component, which we start with the Operating System, then we continue with the Hardware and at the end we finish with the Software.</p>
-				<p> In the first electronic component, we will see what happen when an operating system, in especially we'll talk in general consider Windows, Mac OS, iOS (for Apple mobile devices) and Android crash. Then in the hardware we can find the RAM and the disk computer, to conclude this section we talk about Software, in which there are programs. </p>
-				<p> In  the first images we can find an example when the windows will be crashed, whereas in the second images we can find when a MacOS will be crashed</p>
-				<div class="ImageContainerBug"> <img src="../../assets/bug_imgs/oscrash.png"> <img src="../../assets/bug_imgs/oscrash2.png"> </div>
-
+				<p> A program crash happens when a fatal error has occurred within the application software. This type of crash might result in one specific application not being usable, or it could result in the entire computer not being usable. It's possible for one application to cause a complete computer crash. While operating systems try to isolate the problems to a specific application, so the computer doesn't crash, it can sometimes happen.</p>
+				<p>Program crashes happen for a number of reasons, and it's often not advised to go on using the program in question until the error is corrected. Most operating systems for desktops, laptops and smartphones have a means by which you can shut down and stop a particular program or app. If the operating system is still functioning, then it's usually possible to shut down the specific program and restart it to continue using the program.</p>
+				<div class="ImageContainerBug">
+					<img src="../../assets/bug_imgs/applicationcrashe.jpg" width="80%">
+				</div>
+				<p> we hypothesize to have a program in which it considers a number between 1 and 9 to be entered in it, but we insert a name. So there is a question: "What happens?". The program tries to use that string of characters as a number, but it doesn't go so well in fact one of the two situations manifests itself at this point:
+				your program continues to work but does the wrong thing: therefore it is up to us programmers to understand that the output coming out is not what we expect. Despite this it is important to understand that the system continues to work without stopping.</p>
+				<p> The program stops abnormally with the operating system that sends an alert. This is called "exception" or "error". To undertand the second modality we have to examine briefly the architecture of the system. The application is performed in a box created by the hardware (CPU) and the operating system so that it is protected from bugs. The role of the CPU in this context is to check if the application is doing something it shouldn't do (for example, to go beyond its limits): if it happens, the CPU interrupts the execution of the application and calls the code to the rescue in the operating system to protest. This code checks what happened and displays the crash message. When a program has bugs, sooner or later it will execute random or incorrect instructions. </p>
+				<p> But there is a good news: the programs are separate enough that they can't take the computer with them when they crash, but as always there are exceptions.</p>
 			</div>
 		</div>
 	</div>

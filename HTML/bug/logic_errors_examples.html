@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crash</title>
+	<title>Examples of Logic Error</title>
 	<link rel="stylesheet" href="../../stylesheets/main.css">
 	<!-- Pageloader by H.P-->
 	<script src="../../scripts/pageloader.js"></script>
@@ -13,7 +13,7 @@
 	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
 
 	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
-	<meta name="author" content="Brian Bronz">
+	<meta name="author" content="Alessio Cordivani">
 </head>
 <body>
 
@@ -29,28 +29,28 @@
 			<li class="NavBarBug">></li>
 
 			<!-- SubTopic 1 -->
-			<!-- <li class="DropNavBarBug">
+			<li class="DropNavBarBug">
 		    <a class="DropdownButtonNavBarBug">Typology</a>
 		    <div class="DropNavBarBug-content">
 					<a href="logic_errors.html">Logic</a>
 					<a href="syntax_errors.html">Syntax</a>
-					<a href="runtime_errors.html">Runtime</a>
+		      <a href="runtime_errors.html">Runtime</a>
 		    </div>
 		  </li>
-			<li class="NavBarBug">></li> -->
+			<li class="NavBarBug">></li>
 			<!-- SubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">
+			<li class="DropNavBarBug">
 				<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
 				<div class="DropNavBarBug-content">
 					<a href="logic_errors.html#categories">Categories</a>
-					<a href="#">Examples</a>
+					<a href="logic_errors_examples.html">Examples</a>
 				</div>
 			</li>
-			<li class="NavBarBug">></li> -->
+			<li class="NavBarBug">></li>
 			<!-- SubSubSubTopic 1 -->
 			<!-- <li class="DropNavBarBug">Categories</li> -->
 			<!-- SubSubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Examples</li> -->
+			<li class="DropNavBarBug">Examples</li>
 			<!-- SubSubTopic 2 -->
 			<!-- <li class="DropNavBarBug">Syntax</li> -->
 			<!-- SubSubTopic 3 -->
@@ -62,25 +62,25 @@
 			</li> -->
 
 			<!-- SubTopic 2 -->
-			<li class="DropNavBarBug">
-		    <a href="#" class="DropdownButtonNavBarBug">Consequences</a>
+			<!-- <li class="DropNavBarBug">
+		    <a class="DropdownButtonNavBarBug">Consequences</a>
 		    <div class="DropNavBarBug-content">
 		      <a href="../vul/index.html">Security</a>
-		      <a href="design.html">Design</a>
+		      <a href="#">Design</a>
 					<a href="crash.html">Crash</a>
 		    </div>
 		  </li>
-			<li class="NavBarBug">></li>
+			<li class="NavBarBug">></li> -->
 			<!-- SubSubTopic 1 -->
-			<li class="DropNavBarBug">
+			<!-- <li class="DropNavBarBug">
 				<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
 				<div class="DropNavBarBug-content">
-					<a href="crash_os.html">Operating System</a>
-					<a href="crash_hardware.html">Hardware</a>
-					<a href="crash_software.html">Software</a>
+					<a href="os_crash.html">Operating System</a>
+					<a href="hardware_crash.html">Hardware</a>
+					<a href="software_crash.html">Software</a>
 				</div>
 			</li>
-			<!-- <li class="NavBarBug">></li> -->
+			<li class="NavBarBug">></li> -->
 			<!-- SubSubSubTopic 1 -->
 			<!-- <li class="DropNavBarBug">Operating System</li> -->
 			<!-- SubSubSubTopic 2 -->
@@ -122,17 +122,20 @@
 
 				<div class="h1containerBug">
 					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-					<h1 class="bug"> Crash </h1>
+					<h1 class="bug"> Examples of Logic Error </h1>
 				</div>
 
-				<h2> Introduction</h2>
-				<p>This term means the sudden closure or blockage, which was not requested, of a program, which is running, or complete blockage and the entire computer.</p>
-				<p> This can happen when there are design or programming errors in the software, or to a malfunction of the hardware that performs it (ad example due to excessive overheating). So computers crash because there are some errors in the operating system software or errors in the computer hardware, but the errors of computer hardware are, although less commonly, more devastating and harder to diagnose than errors in the software, in fact a variety of hardware components must function correctly in order for a computer to work and over time these components can fail.</p>
-				<p> In this page we can see how to crash a determinate electronic component, which we start with the Operating System, then we continue with the Hardware and at the end we finish with the Software.</p>
-				<p> In the first electronic component, we will see what happen when an operating system, in especially we'll talk in general consider Windows, Mac OS, iOS (for Apple mobile devices) and Android crash. Then in the hardware we can find the RAM and the disk computer, to conclude this section we talk about Software, in which there are programs. </p>
-				<p> In  the first images we can find an example when the windows will be crashed, whereas in the second images we can find when a MacOS will be crashed</p>
-				<div class="ImageContainerBug"> <img src="../../assets/bug_imgs/oscrash.png"> <img src="../../assets/bug_imgs/oscrash2.png"> </div>
-
+				<h2>Time Related Errors</h2>
+				<p>Formatting and storing the time is crucial nowadays, many things depend on it. Since in computers everything has to be stored in bits and the storage is finite, some compromises had to be done. Those compromises are the cause of the problems we have today or we had in the past.</p>
+				<p>Keeping track of the time is really easy: in case of a clock, you set the initial time and then you increase it by 1 every second, in case of a calendar you increase the date by 1 every day, and so on.</p>
+				<p>It's easy to see that as the time goes, the value of the stored time gets larger and larger until there are not enough bits to store it... What happens now? <strong>Arithmetic Overflow</strong> and the result is a time which doesn't correspond to the value it should be. Here below you can find some problems from the past.</p>
+				<h3>Global Positioning System</h3>
+				<p>GPS keeps track of the date with two variables: the week number and the day of the week. The variable for the day don't need much space, because it loops, after the 7th day there is the 1st day of the next week. The problem rises with the week number... Week number is stored in 10 bits, so it has a range between 0 and 1023, after 1023 the value "rolls over" turning back to 0. Since GPS started counting weeks from Sunday 6 January 1980, it's easy to calculate when the <strong>rollover</strong> will happen.</p>
+				<p><em>Day 0 of week number 1024, Sunday 22 August 1999, will appear to the GPS as Sunday 6 January 1980 (week 0).</em></p>
+				<p>Until now another rollover happened: 1024 weeks after 22 August 1999, Sunday 7 April 2019 the week number turned back to 0 for the second time. This trend will continue and the next rollover will be Sunday 21 November 2038.</p>
+				<h3>Millenium Bug</h3>
+				<p>Also known as the <em>Year 2000 Problem</em> or the <em>Y2K</em>, the <em>Millenium Bug</em> was a problem for all computers that represented the year with only two digits. This problem is better explained in the <a class="RefBug" href="../his/index.html">History part</a> of the website.</p>
+				<h3>Unix Time</h3>
 			</div>
 		</div>
 	</div>
