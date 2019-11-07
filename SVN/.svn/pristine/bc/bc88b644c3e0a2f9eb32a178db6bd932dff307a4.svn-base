@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="scrollable">
+<head>
+    <title>Rootkit | Malicious Code</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Michele Cattaneo">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="h1container">
+        <a id="back-button" href="./index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title">ROOTKIT</h1>
+        <span id="nav">
+            <a href="./keylogger.html"><div id="previous-div">
+                <img src="../../assets/icns/arrow.png" class="previous"> 
+                <p id="previous-p">Previous</p>
+            </div></a>
+
+            <hr id="separation-nav">
+
+            <a href="./ransomware.html"><div id="next-div">
+                <p id="next-p" style="margin-right: 15px;">Next</p>
+                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;"> 
+            </div></a>
+        </span>
+    </div>
+
+    <div id="description">
+        <p>
+            A rootkit is a collection of computer softwares designed to enable the access to a computer that is otherwise not allowed, for example for an unauthorized user. The term rootkit comes from the concatenation of 'root', the traditional name of the administrator acounts on Unix systems, and the word 'kit', which are softwares designed to take root control of a 
+            PC, without informing the user. 
+        </p>
+        <br>
+        <div id="impact-quote">
+            <span>
+                <hr>
+                    <i>" Once a rootkit installs itself on your computer, it will boot up at the same time as your PC and will have administrator access. "
+                    </i>
+                <hr>
+            </span>
+        </div>
+        <br>
+        <p>Having administrator access, it can track evenything that is done on a device, like scanning the data traffic, installing programs without consent, hijack your computer resources and much more.<br>
+        Unfortunately rootkits are known to be difficult to detect, since by having administrator privileges, allow them to hide processes from the view of other users. They not only hide their process but the process of any other accompanying malware aswell. <br>
+        Rootkits are usually composed of three components: the dropper, the loader and the rootkit itself.<br>
+        The dropper is the executable program, which it usually comes as an attachment of a suspicious email or a malicious download from a non-safe website. It is important to note that the dropper does not have to be an executable program. It is in fact possible for files such a PDF, to be designed to trigger the rootkit installation at the moment they are opened.
+        </p>
+    </div>
+
+    <h2 class="subtitle">Lenovo rootkit</h2>
+    <div id="case">
+        <div id="text">
+            <p>
+                In 2015, one of the most popular PC manufacturer, the chinese company Lenovo, has been caught using a hidden Windows feature to install unremovable rootkit softwares on certain laptops and desktops they sold.<br>
+                The feature is known as "Lenovo Service Engine" or LSE, which is a piece of code present in the computer's motherboard. When windows is installed, the LSE automatically downloads and installs some Lenovo's software during the booting of the machine, before the OS is launched. This means that even if you find and uninstall these softwares, they will be reinstalled again as soon as the PC is booted again.
+                But what did these softwares do? For Desktop computers, these softwares did not send any personally identifying informations, but send some basic informations, including the system model, date, and system ID to a Lenovo server.<br>
+                For laptops the situation was a bit different; LSE would install a programm called OneKey Optimizer (or OKO). According to the company, the OKO software is used to enhancing computer performances scanning junk files and find factors that influence the system performances. This software falls under the category of a "crapware", an unwanted pre-installed software. The worst part is that both LSE and OKO appears to be insecure. <br>
+                It is not the first time Lenovo has been caught in this kind of privacy-related problems. The same year the company was forced to admit it had installed Superfish <a href="adware.html" class="mal-a">adware</a> on new machines. It is thought that as many as 16milions consumers werre affected by the preinstalled adware.
+
+
+            </p>
+            <br><br>
+            <a href="#">   
+                <button class="button"><span>Back to Top</span></button>
+            </a>
+        </div>
+
+        <div id="card">
+            <h3 class="h3-white" id="card-title">Lenovo rootkit</h3>
+            <hr id="divider" style="width: 60%">
+            <div id="img-div">
+                <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
+                <img src="../../assets/mal_imgs/lenovo.jpeg" id="card-img" alt="">
+            </div>
+            <hr id="divider" style="width: 60%">
+            <div id="specific">
+                <p>
+                    <strong>Type:</strong> Rootkit
+                    <br> <br>
+                    <strong>Origin:</strong> China
+                    <br> <br>
+                    <strong>Outcome:</strong> Unknown
+                    <br> <br>
+                    <strong>Infectivity:</strong> 
+                    <ul id="quantity">
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
+                        <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>

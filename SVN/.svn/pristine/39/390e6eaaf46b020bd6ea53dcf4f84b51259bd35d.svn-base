@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Matteo Bernaschina">
+
+</head>
+<body>
+    <div id="particles-js">
+        <div class="h1container">
+            <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+            <h1 id="page-title"> HISTORY </h1>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Main</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
+                <a href="#"><li id="filter-element">Social Impact</li></a>
+            </ul>
+        </div>
+
+        <div>
+            <div id="timeline">
+                <div id="timeline-shapes">
+                    <a href="#"><div class="milestone" style="background: #C3073F;"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                </div>
+            </div>
+
+            <div id="content-main">
+                <div id="content-box">
+
+                    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                    <div id="content">
+                        <div class="title-container">
+                            <h2 id="sect-title">Electronic medical record crashed</h2>
+                        </div>
+                            <p>
+                              In Australia, in the State of Queensland, several hospitals have been affected by a computer crash in September 2019.
+                              A similar accident occurred a month before in some other hospitals with the same software.<br><br>
+
+                              ieMR is the name of this software, which is used for recording all the clinical data of the patients. With this software
+                              it is possible to access at all times the patient records and their critical care needs from every hospital in Queensland.
+                              This program has a cost of $ 1.2 billion.<br><br>
+
+                              On 8th September 2019 from 1 pm until after 6 pm the system crashed because of a software update. All the hospital staff
+                              couldn’t access or create new records and only several hours after the accident they received an emergency email with
+                              instructions to use paper records for new patients.<br><br>
+
+                              This crash occurred a few days after the health Minister Steven Miles announced that until 2021 there will be no further
+                              software updates. The founding package for an update worth about $ 135 million. The Minister was sure that this trouble
+                              was caused by an error in use and not by a system error.<br><br>
+
+                              An investigation into this crash of the electronic medical record software has been promised by the Queensland’s Premier
+                              Annastacia Palaszczuk. At the moment the financial costs of the crash are not known.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+</html>
