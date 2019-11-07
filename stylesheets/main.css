@@ -1235,14 +1235,45 @@ p {
   color: white;
 }
 .VulSquareBlack{
-  background-color: black;
-  padding: 0.5%;
-  margin: 0.5%;
+  object-fit: cover;
+  background-color: #9A1750;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 1%;
   max-width: 31%;
   min-width: 31%;
-  height: 150px;
+  height: 250px;
   float: left;
   position: static;
+}
+
+.VulSquareBlack:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #C3073F;
+    border-radius: 10px;
+}
+
+.VulSquareBlack h3 {
+    color:white;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+.VulSquareBlack p {
+    bottom: 0;
+    font-size: 14px;
+}
+
+.VulSquareBlack img
+{
+    object-fit: cover;
+    margin-top: -15px;
+    width: 100%;
+    height: 175px;
 }
 .VulTypeBlack{
   background-color: black;
@@ -1253,7 +1284,7 @@ p {
   height: 400px;
   float: left;
   position: static;
-  border-radius: 25px;
+  border-radius: 20px;
   font-size: 1em;
 }
 .VulTypeSphere{
