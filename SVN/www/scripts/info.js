@@ -1,12 +1,9 @@
-boxID = document.getElementById("infoBox");
-
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= 500) {
-        boxID.className = "infoPage show"
-    } else {
-        boxID.className = "infoPage hide"
-    }
-};
-
-window.addEventListener("scroll", myScrollFunc);
+/* JQuery */
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.infoPage').fadeIn(1000);
+  } else {
+    $('.infoPage').fadeOut();
+  }
+});
