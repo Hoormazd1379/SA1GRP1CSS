@@ -26,13 +26,21 @@ body {
     height: 100%;
 }
 
+.infoPage h1 {
+    color:white;
+}
+
+.infoPage h2 {
+    color:white;
+}
+
 .infoPage h3 {
         position: absolute;
         bottom: 2px;
         right:5px;
         text-transform: capitalize;
         color: white;
-}
+}       
 
 .VULbg {
     background: linear-gradient(45deg, #c3073f, #B24A01);
@@ -104,7 +112,7 @@ body {
     text-align: center;
     color: white;
     background-color: #9A1750;
-    width: 300px;
+    width: 375px;
 }
 
 table #home td {
@@ -122,11 +130,16 @@ table #home td {
 
 #title {
     margin-top: 100px;
-    width: 500px;
-    left: 50%;
-    margin-left: -250px;
+    width: 100%;
     position: absolute;
-    text-align: center;
+}
+
+#scrolltitle {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
 }
 
 #back-button {
@@ -271,18 +284,29 @@ table #home td {
 /*************************************************************** gradual appearance of the main heading ***************************************************************/
 
 #a {
+    display:inline;
+   width:200px;
+   text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
 }
 
 #b {
-    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+    display:inline;
+   width:200px;
+   text-align:center;
+    margin-top:-30px;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
 
 #c {
-    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
-    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    display:inline;
+   width:200px;
+   text-align:center;
+    margin-top:-50px;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
 }
 
 @keyframes text-pop-up-top {
