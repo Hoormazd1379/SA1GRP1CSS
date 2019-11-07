@@ -17,6 +17,9 @@
     <!-- favicon H.P-->
     <link rel='icon' href='../assets/favicon.ico' type='image/x-icon'>
 
+    <!-- info page -->
+    <script src="../scripts/info.js"></script>
+
     <!-- meta data H.P-->
     <meta charset="UTF-8">
     <meta name="description" content="CATASTROPHIC SOFTWARE FAILURES">
@@ -26,9 +29,9 @@
 
 </head>
 
-<body>
+<body style="height: 2000px;">
     <!-- particles-js div, as a canvas -H.P-->
-    <div id="particles-js">
+    <div id="particles-js" style="position: fixed;">
 
         <!-- page title -H.P-->
 
@@ -61,6 +64,8 @@
         </table>
     </div>
 
+    <div id="infoBox" class="infoPage hide">
+    </div>
     <!-- fullscreen div, blocking the screen view until all images are loaded.
         see pageloader.js
         dont change the spacing between the divs otherwise it will break -H.P-->
