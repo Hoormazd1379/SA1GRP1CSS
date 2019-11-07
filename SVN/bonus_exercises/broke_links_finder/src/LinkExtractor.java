@@ -31,11 +31,7 @@ public class LinkExtractor {
             matcherLink = patternLink.matcher(href);
 
             while (matcherLink.find()){
-                    if(href.charAt(0) == ' '){
-                        href = href.substring(0);
-                    }
-                    listOfLinks.add(href);
-
+                listOfLinks.add(href);
             }
         }
         return listOfLinks;

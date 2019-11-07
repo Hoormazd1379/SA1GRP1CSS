@@ -16,17 +16,6 @@ import java.time.LocalDateTime;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException, FileNotFoundException {
-        /*
-        String test =   "href='#' style='margin-right: 60px;' ";
-        if(test.contains(" ")){
-            if(test.indexOf(" ") != test.length()) {
-                int x1 = test.indexOf(" ");
-                test = test.substring(0, x1);
-                System.out.print(test);
-            }
-        } */
-
-
 
         String documentPath, resultPath;
         Scanner console = new Scanner(System.in);
@@ -47,7 +36,7 @@ public class Main {
         do {
             System.out.println(">>> Type absolute path of the folder containing the files to check:");
 
-            documentPath=console.nextLine();
+            documentPath=console.next();
             f1 = new File(documentPath);
 
             System.out.println("<< Selected '"+documentPath+"' as source path. Checking if exists and is a directory..");
@@ -57,7 +46,6 @@ public class Main {
             }else if(!f1.isDirectory()){
                 System.out.println("Expected a directory, given a file.");
             }else{
-                System.out.println("---------------------------------");
                 System.out.println("Found the following html files:");
 
                 fileFilter filter = new fileFilter();
@@ -66,7 +54,6 @@ public class Main {
 
                     System.out.println(i+") "+foundfiles[i].getName());
                 }
-                System.out.println("---------------------------------");
             }
 
         }while (!f1.exists() || !f1.isDirectory() );
@@ -133,7 +120,6 @@ public class Main {
 
 
             for (String e : list) {
-                System.out.println(e);
                 listOfLinks.add(new htmlLink());
                 int currentPos = (listOfLinks.size() - 1);
                 htmlLink currentHtmlLink = listOfLinks.get(currentPos);
@@ -212,33 +198,16 @@ public class Main {
     //Given a String of the form href="https://www.google.com"
     //returns the executable url only
     private static String extractLink(String in){
-
-        int firstIndex = in.indexOf("href");
-        int delta = ("href".length())+2;
-
         int endIndex = in.length();
-        Scanner sc = new Scanner(in);
-        for(int i=firstIndex+delta; i<in.length();i++){//after the first href found, + delta (lenght of href=" ) find the next double quote to end the string
-            if(in.charAt(i) == '"'){
-                endIndex=i;
-                break;
-            }
-        }
-
-
-
         String out;
 
 
-        out = in.substring(firstIndex+delta,endIndex);
+        out = in.substring(7,endIndex-1);
         return out;
     }
 
     //returns wether a given link is local
     private static boolean isLocal(String in){
-        if(in.length()<8){
-            return true;
-        }
         return !(in.substring(0,8).equals("https://"));
     }
 
