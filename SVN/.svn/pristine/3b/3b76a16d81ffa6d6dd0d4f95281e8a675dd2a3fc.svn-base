@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Mathias Bertelsen">
+
+</head>
+<body>
+    <div id="particles-js">
+        <div class="h1container">
+            <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+            <h1 id="page-title"> HISTORY </h1>
+        </div>
+
+        <div id="filters">
+            <ul>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Main</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+                <a href="#" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
+                <a href="#"><li id="filter-element">Social Impact</li></a>
+            </ul>
+        </div>
+
+        <div>
+            <div id="timeline">
+                <div id="timeline-shapes">
+                    <a href="#"><div class="milestone" style="background: #C3073F;"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="normal"></div></a>
+                    <a href="#"><div class="milestone"></div></a>
+                </div>
+            </div>
+
+            <div id="content-main">
+                <div id="content-box">
+
+                    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                    <div id="content">
+                        <div class="title-container">
+                            <h2 id="sect-title"> Hole in Ozone Layer Gone Undetected until 1985</h2>
+                        </div>
+                            <p>
+                              In 1985 a British team of scientists discovered a significant reduction in the amount of ozone over Halley Bay in Anartica, by 40 %. This came as a shock to the scientific cummunity, as it was expected that the the ozone had to be depleted in the upper levels of the stratoshpere before &ndash; which was not seen &ndash; would occur before such a alrge reduction in amounts of ozone could take place.
+                              However, it was discovered that a reduction of ozone in the entire Anartica had actually been found 8 years prior &ndash; only that a bug caused the analysis software to ignore values that were deemed to deviate too greatly from expected values. Therefore noone noticed taht abnormal values had been found for 8 whole years. <sup> (mb_1) </sup>
+                            </p>
+                            <div id="socialimpact"><img src="../../assets/his_imgs/ozone_layer1.jpg" style=" width:60%; margin-left:20px; border-radius:20px;"></div>
+                            <h2 id="sect-title"> Social Impact </h2>
+                            <div id="socialimpact"><img src="../../assets/his_imgs/ozone_layer2.jpg" style=" float:right; width:60%; margin-left:30px; border-radius:20px;"></div>
+                            <p>
+                              The major impact of the bug has been that 8 years have been spent not knowing how quickly the ozone layer was diminishing. This meant that the rate at which ozone depletes was underestimated. <br><br> It also resulted in a much more severe issue being created than if the fall in ozone had been discovered in a more timely manner.
+                              As the environment affects all beings on earth, this bug has undeniably had negative consequences for all of humanity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+</html>
