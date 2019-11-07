@@ -19,6 +19,84 @@ body {
     z-index: -2;
 }
 
+.infoPage {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.infoPage h3 {
+        position: absolute;
+        bottom: 2px;
+        right:5px;
+        text-transform: capitalize;
+        color: white;
+}
+
+.VULbg {
+    background: linear-gradient(45deg, #c3073f, #B24A01);
+    background-size: 400% 400%;
+
+    -webkit-animation: infoBackground 4s ease infinite;
+    animation: infoBackground 4s ease infinite;
+
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.MALbg {
+    background: linear-gradient(45deg, #B24A01, #8C7000);
+    background-size: 400% 400%;
+
+    -webkit-animation: infoBackground 4s ease infinite;
+    animation: infoBackground 4s ease infinite;
+
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.BUGbg {
+    background: linear-gradient(45deg, #8C7000, #588814);
+    background-size: 400% 400%;
+
+    -webkit-animation: infoBackground 4s ease infinite;
+    animation: infoBackground 4s ease infinite;
+
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.HISbg {
+    background: linear-gradient(45deg, #588814, #00995C);
+    background-size: 400% 400%;
+
+    -webkit-animation: infoBackground 4s ease infinite;
+    animation: infoBackground 4s ease infinite;
+
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.MOREbg {
+
+    background: linear-gradient(45deg, #00995C, #00A5A1);
+    background-size: 400% 400%;
+
+    -webkit-animation: infoBackground 4s ease infinite;
+    animation: infoBackground 4s ease infinite;
+
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+        
+}
+
+@-webkit-keyframes infoBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes infoBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 .menuitem {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -26,7 +104,7 @@ body {
     text-align: center;
     color: white;
     background-color: #9A1750;
-    width: 250px;
+    width: 300px;
 }
 
 table #home td {
@@ -39,6 +117,7 @@ table #home td {
 .menuitem:hover {
     transform: scale(1.1);
     cursor: pointer;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
 #title {
@@ -515,22 +594,70 @@ ul.H-CSA-list{
 
 /* End of Child Support Agency -----------------------------*/
 
-/* Mt. Gox -------------------- Onciu Razvan Petrica -- */
+/* Mt. Gox -------------------- Massimo Bordogna -- */
 
-img.H-MTGOX-image{
-  width:50%;
-  float:left;
-  padding: 20px;
-}
 
 img.H-MTGOX-image2{
-  width:20%;
+  width:30%;
   float:center;
   padding: 2px;
 }
 
 /* End of Mt.Gox -----------------------------*/
 
+/* Pentium -------------------- Massimo Bordogna -- */
+img.H-PENTIUM-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Pentium -----------------------------*/
+
+/* Ariane 5 -------------------- Massimo Bordogna -- */
+img.H-ARIANE5-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Ariane 5 -----------------------------*/
+
+/* Mariner 1 -------------------- Massimo Bordogna -- */
+img.H-MARINER1-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Mariner 1 -----------------------------*/
+
+/* Morris Worm -------------------- Massimo Bordogna -- */
+img.H-MWORM-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Morris Worm -----------------------------*/
+
+/* NASA Mars -------------------- Massimo Bordogna -- */
+img.H-NMARS-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of NASA Mars -----------------------------*/
+
+/* Knight Capital Group -------------------- Massimo Bordogna -- */
+img.H-KGROUP-image{
+  width:30%;
+  float:center;
+  padding: 2px;
+}
+
+/* End of Knight Capital Group -----------------------------*/
 
 /* Social Impact Pages -- Marco Mariosa Claudio Milanesi --------*/
 #socialimpact{
@@ -954,6 +1081,7 @@ div.ItemTable {
 {
  transform: scale(1.1);
   cursor: pointer;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
 /***********************************************************************************************************************************************************************/
@@ -1011,7 +1139,10 @@ div.bugquiz {
 }
 
 div.ImageContainerBug {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 100px;
     display: grid;
@@ -1020,9 +1151,11 @@ div.ImageContainerBug {
 }
 
 div.ImageContainerBug img {
+    max-width: 500px;
     display: block;
     margin: auto;
-    /* margin-right: auto; */
+    width: 80%;
+    min-width: 350px;
 }
 
 a.quizbug {
@@ -1030,26 +1163,6 @@ a.quizbug {
     margin: auto;
 }
 
-img.DropdownBugImg {
-    object-fit: cover;
-    width: 100%;
-    height: 200px;
-    padding-top: 20px;
-    margin-bottom: -10px;
-}
-
-.DropdownButtonType {
-    text-transform: uppercase;
-    background-color: #9A1750;
-    font-weight: bold;
-    border-radius: 10px;
-    color: white;
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    min-width: 100%;
-    line-height: 1.5;
-}
 
 .DropdownBug:hover .DropdownButtonType {
     background-color: #9A1750;
@@ -1057,18 +1170,6 @@ img.DropdownBugImg {
     transform: scale(1.05);
 }
 
-.DropdownButtonCons {
-    border-radius: 10px;
-    background-color: #9A1750;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    min-width: 100%;
-    line-height: 1.5;
-}
 
 .DropdownBug:hover .DropdownButtonCons {
     background-color: #9A1750;
@@ -1076,18 +1177,6 @@ img.DropdownBugImg {
     transform: scale(1.05);
 }
 
-.DropdownButtonPrev {
-    border-radius: 10px;
-    background-color: #9A1750;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    padding: 16px;
-    font-size: 18px;
-    border: none;
-    line-height: 1.5;
-    min-width: 100%;
-}
 
 .DropdownBug:hover .DropdownButtonPrev {
     background-color: #9A1750;
@@ -1100,8 +1189,30 @@ img.DropdownBugImg {
     display: inline-block;
 }
 
+.DropdownBug button
+{
+    background-color: #9A1750;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding:0;
+    font-size: 18px;
+    min-width: 100%;
+    line-height: 1.5;
+    border:none;
+}
+
+img.DropdownBugImg {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+
 .DropdownBug-content {
-    border-radius: 10px;
+    border-radius: 5px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -1111,7 +1222,7 @@ img.DropdownBugImg {
 }
 
 .DropdownBug-content a {
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
     font-weight: 600;
     text-align: center;
@@ -1122,7 +1233,9 @@ img.DropdownBugImg {
 
 /* Change color of dropdown links on hover */
 .DropdownBug-content a:hover {
-    background-color: #c9c9c9;
+    color:white;
+    background-color: #C3073F;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
 /* Show the dropdown menu on hover */
@@ -1255,6 +1368,7 @@ p {
     cursor: pointer;
     background-color: #C3073F;
     border-radius: 10px;
+    box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
 .VulSquareBlack h3 {
