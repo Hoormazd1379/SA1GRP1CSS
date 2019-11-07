@@ -43,7 +43,7 @@ body {
 }       
 
 .VULbg {
-    background: linear-gradient(45deg, #c3073f, #B24A01);
+    background: linear-gradient(45deg, #c3073f, #AA2168);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
@@ -53,7 +53,7 @@ body {
 }
 
 .MALbg {
-    background: linear-gradient(45deg, #B24A01, #8C7000);
+    background: linear-gradient(45deg, #AA2168, #813B80);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
@@ -63,7 +63,7 @@ body {
 }
 
 .BUGbg {
-    background: linear-gradient(45deg, #8C7000, #588814);
+    background: linear-gradient(45deg, #813B80, #534881);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
@@ -73,7 +73,7 @@ body {
 }
 
 .HISbg {
-    background: linear-gradient(45deg, #588814, #00995C);
+    background: linear-gradient(45deg, #534881, #324B71);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
@@ -84,7 +84,7 @@ body {
 
 .MOREbg {
 
-    background: linear-gradient(45deg, #00995C, #00A5A1);
+    background: linear-gradient(45deg, #324B71, #2F4858);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
