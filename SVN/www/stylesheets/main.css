@@ -40,7 +40,7 @@ body {
         right:5px;
         text-transform: capitalize;
         color: white;
-}       
+}
 
 .VULbg {
     background: linear-gradient(45deg, #c3073f, #AA2168);
@@ -91,7 +91,7 @@ body {
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
-        
+
 }
 
 @-webkit-keyframes infoBackground {
@@ -1144,7 +1144,7 @@ a.RefBug {
 }
 
 a.RefBug:hover {
-  color: Gray;
+  color: #C3073F;
 }
 
 div.grid3bug {

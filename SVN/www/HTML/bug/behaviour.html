@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Design</title>
+	<title>Behaviour</title>
 	<link rel="stylesheet" href="../../stylesheets/main.css">
 	<!-- Pageloader by H.P-->
 	<script src="../../scripts/pageloader.js"></script>
@@ -13,7 +13,7 @@
 	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
 
 	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
-	<meta name="author" content="Ilker Kaymak">
+	<meta name="author" content="Alessio Cordivani">
 </head>
 <body>
 
@@ -32,14 +32,14 @@
 		    <a class="DropdownButtonNavBarBug">Consequences</a>
 		    <div class="DropNavBarBug-content">
 		      <a href="../vul/index.html">Security</a>
-		      <a href="design.html">Design</a>
+		      <a href="behaviour.html">Behaviour</a>
 					<a href="crash.html">Crash</a>
 		    </div>
 		  </li>
 			<li class="NavBarBug">></li>
 			<!-- SubSubTopic -->
 			<li class="DropNavBarBug">
-				<a href="design.html" class="DropdownButtonNavBarBug">Design</a>
+				<a href="behaviour.html" class="DropdownButtonNavBarBug">Behaviour</a>
 				<!-- <div class="DropNavBarBug-content">
 					<a href="#">...</a>
 				</div> -->
@@ -53,12 +53,16 @@
 
 				<div class="h1containerBug">
 					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-					<h1 class="bug"> Design </h1>
+					<h1 class="bug"> Behaviour </h1>
 				</div>
 
-				<h2>Description</h2>
-				<p>Something Something</p>
-
+				<p>If a program runs and doesn't crash it does not mean it hasn't any bugs, it could have some of them. Since the program is working, we expect it to behave in the way we intended to and to spit out the right results.</p>
+				<p>Unfortunately not all that glitters is gold, which means, although the program is running, a bug present in the code can make the program give results that differ from the expected ones. It could have many causes, for example there can be an arithmetic overflow somewhere in a calculation, or a syntax error in a formula where rather than adding (+) we multiply (*).</p>
+				<p>It can also happen that the keyboard input for a platform game is not defined correctly and the game thinks you pressed the right arrow, when you are actually pressing the left one.</p>
+				<p>The animation below represent a calculator adding two numbers positive, but something strange happens, the result is negative...</p>
+				<div class="ImageContainerBug">
+					<img src="../../assets/bug_imgs/calculator_bug.gif" alt="Calculator adding 2 positive numbers and returning a negative number">
+				</div>
 			</div>
 		</div>
 	</div>
