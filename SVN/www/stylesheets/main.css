@@ -501,25 +501,26 @@ img.H-intro-1{
   float:left;
   width:40%;
   min-width:150px;
-  max-width:350px;
-  margin-bottom:40px;
+  max-width:300px;
+  margin-bottom:80px;
 }
 
 p.H-intro-1{
   float:left;
   margin-top:5px;
   text-align: justify;
-
+  margin-left:-10px;
 }
 
 /*list*/
 
 ul.H-intro-list{
-  margin-top:30%;
+  margin-top:350px;
   color:#C3073F;
   font-weight: bold;
   margin-left:-20px;
   font-size:1.9vw;
+  position:relative;
 }
 
 p.H-intro-list-title{
@@ -548,13 +549,22 @@ td.H-intro-table-td{
     max-height:340px;
     overflow:auto;
   }
-
+  p.H-intro-1{
+    float:right;
+    width:60%;
+  }
   td.H-intro-table-td{
-    width:100%;
-    float:left;
+    width:50%;
+    border-radius:20px;
+    border: 5px grey solid;
     font-size:25px;
     background-color: rgba(195, 7, 63, 0.3);
+    padding:20px;
   }
+  ul.H-intro-list{
+    margin-left:-10px;
+  }
+
 }
 
 /*window size under 1200px*/
@@ -568,9 +578,8 @@ td.H-intro-table-td{
     margin-left:0px;
     font-size:2.5vw;
   }
-
   ul.H-intro-list{
-    margin-top:300px;
+    margin-top:90%;
   }
 
   td.H-intro-table-td{
@@ -600,12 +609,21 @@ img.H-CSA-image2{
   float:left;
   margin-right: 10px;
   width:20%;
+  min-width:200px;
 }
 
-p.H-CSA-p{
-  text-decoration: overline;
+p.H-CSA-p1{
+  text-decoration: underline;
   padding:20px;
   line-height: 40px;
+}
+
+p.H-CSA-p2{
+  padding:20px;
+  line-height: 40px;
+  background-color: rgba(195, 7, 63, 0.1);
+  border-radius:20px;
+  border: white 1px solid;
 }
 
 ul.H-CSA-list{
@@ -616,13 +634,86 @@ ul.H-CSA-list{
   font-weight: bold;
 }
 
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  h2#sect-title-CSA{
+    text-align:center;
+  }
+  img.H-CSA-image2{
+    width:50%;
+    max-width:200px;
+    position:relative;
+  }
+
+}
+
 /* End of Child Support Agency -----------------------------*/
+
+/* cpr_number_social_impact -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-OZONE-image1{
+  width:40%;
+  margin-left:20px;
+  max-width:300px;
+}
+img.H-OZONE-image2{
+  float:right;
+  width:60%;
+  margin-left:10px;
+  border-radius:20px;
+  max-width:400px;
+  margin-top:10px;
+}
+p.H-OZONE-p2{
+  background-color: rgba(195, 7, 63, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+  img.H-OZONE-image2{
+    margin-top: 30px;
+  }
+  hr.H-OZONE-hr{
+    margin: 20px 0px 20px 1%;
+    height:5px;
+    background-color: white;
+   border: 2px solid white;
+   border-radius: 20px;
+  }
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  hr.H-OZONE-hr{
+    display:none;
+  }
+  img.H-OZONE-image2{
+    width:300px;
+    height:166px;
+    margin-top:0px;
+  }
+}
+
+/* End of First Page -----------------------------*/
 
 /* Mt. Gox -------------------- Massimo Bordogna -- */
 
 
 img.H-MTGOX-image2{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -632,6 +723,7 @@ img.H-MTGOX-image2{
 /* Pentium -------------------- Massimo Bordogna -- */
 img.H-PENTIUM-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -641,6 +733,7 @@ img.H-PENTIUM-image{
 /* Ariane 5 -------------------- Massimo Bordogna -- */
 img.H-ARIANE5-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -650,6 +743,7 @@ img.H-ARIANE5-image{
 /* Mariner 1 -------------------- Massimo Bordogna -- */
 img.H-MARINER1-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -659,6 +753,7 @@ img.H-MARINER1-image{
 /* Morris Worm -------------------- Massimo Bordogna -- */
 img.H-MWORM-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -668,6 +763,7 @@ img.H-MWORM-image{
 /* NASA Mars -------------------- Massimo Bordogna -- */
 img.H-NMARS-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }
@@ -677,6 +773,7 @@ img.H-NMARS-image{
 /* Knight Capital Group -------------------- Massimo Bordogna -- */
 img.H-KGROUP-image{
   width:30%;
+  min-width: 150px;
   float:center;
   padding: 2px;
 }

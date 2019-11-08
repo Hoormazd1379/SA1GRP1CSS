@@ -101,9 +101,11 @@ function handleClickRandom() {
     for (var i = 0; i < objects.length; i++) {
         for (key in objects[i]) {
             if (objects[i].code == Math.floor(Math.random() * (13))+1){
+                
                 $('.code').text(objects[i].code);
                 $('.def').text(objects[i].def);
                 $('.text').text(objects[i].description);
+                document.getElementById("iCode").value=objects[i].code.toString();
                 break;
             }
         }
