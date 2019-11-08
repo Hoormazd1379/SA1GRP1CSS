@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IPA</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <meta name="Kieran Mckee" content="">
+  </head>
+
+  <body id="vul-body">
+    <h1>Incorrect Permission Assignment for Critical Resource</h1>
+    <h2>Overview</h2>
+    <p id="vul-p"> When a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.<br>
+        Basically, the software specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.</p>
+
+        <h2>Detection</h2>
+
+        <h2>Consequences</h2>
+
+        <h3>Confidentiality</h3>
+        <p id="vul-p">An attacker may be able to read sensitive information from the associated resource, such as credentials or configuration information stored in a file.</p>
+
+        <h3>Access Control</h3>
+        <p id="vul-p">An attacker may be able to modify critical properties of the associated resource to gain privileges, such as replacing a world-writable executable with a Trojan horse.</p>
+
+        <h3>Integrity</h3>
+        <p id="vul-p">An attacker may be able to destroy or corrupt critical data in the associated resource, such as deletion of records from a database.</p>
+
+        <h2>Mitigation</h2>
+      </body>
+    </html>

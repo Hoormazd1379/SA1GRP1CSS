@@ -24,6 +24,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .infoPage h1 {
@@ -40,6 +41,17 @@ body {
         right:5px;
         text-transform: capitalize;
         color: white;
+}
+
+.infoIMG {
+  object-fit: cover;
+  width:100%;
+  height: 500px;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+#roster {
+  height: 350px;
 }
 
 .VULbg {
