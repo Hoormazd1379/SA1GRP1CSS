@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <title>Improper Restrictions</title>
     <link rel="stylesheet" href="../../stylesheets/main.css">
-
-    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
-    <meta name="author" content="">
+    <meta name="Kieran Mckee" content="">
   </head>
   <body id="vul-body">
     <h1>Improper Restriction of Operations within the Bounds of a Memory Buffer</h1>
@@ -14,7 +12,12 @@
     <p id="vul-p">The software performs operations on a memory buffer, but it can read from or write to a memory location that is outside of the intended boundary of the buffer.<br><br>
       Certain languages allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.<br>
       As a result, an attacker may be able to execute arbitrary code, alter the intended control flow, read sensitive information, or cause the system to crash.</p>
+      <br>
 
+      <ol id="list1">
+        <a class="link" href="1"><li>Out-of-Bounds Read</li></a>
+        <a class="link" href="2"><li>Out-of-Bounds Write</li></a>
+      </ol>
     <h2>Detection</h2>
 
     <h2>Consequences</h2>

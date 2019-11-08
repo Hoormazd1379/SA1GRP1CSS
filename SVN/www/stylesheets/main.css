@@ -105,10 +105,6 @@ body {
     100%{background-position:0% 50%}
 }
 
-#roster {
-  height: 500px;
-}
-
 .menuitem {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -710,7 +706,7 @@ p.H-OZONE-p2{
   }
 }
 
-/* End of First Page -----------------------------*/
+/* End of OZONE Page -----------------------------*/
 
 /* Mt. Gox -------------------- Massimo Bordogna -- */
 
@@ -1258,6 +1254,7 @@ div.grid3bug {
 }
 
 div.bugquiz {
+    padding-top: 20px;
     width: 66%;
     margin: auto;
 }
@@ -1313,11 +1310,8 @@ a.quizbug {
     display: inline-block;
 }
 
-.DropdownBug:hover {
-  margin-bottom: 100px;
-}
-
-.DropdownBug button {
+.DropdownBug button
+{
     background-color: #9A1750;
     text-transform: uppercase;
     letter-spacing: 2px;
