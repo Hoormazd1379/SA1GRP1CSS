@@ -49,13 +49,13 @@
                <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="Data Overflow">
           <p>The software performs operations outside of its intended memory buffer, leading to data leaks.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
-            <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
-          <p>C'mon guys we are running out of time  <br> &#128557;  &#128557;  &#128557;  &#128557;  &#128557; </p>
+          <div class="VulSquareBlack VULbg"><h3>Incorrect permission assignment</h3>
+            <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
+          <p>Permissions are assigned in such a way that important resources are able to be read or modified by threat actors.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
-            <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
-          <p>C'mon guys we are running out of time  <br> &#128557;  &#128557;  &#128557;  &#128557;  &#128557; </p>
+          <div class="VulSquareBlack VULbg"><h3>Improper authentication</h3>
+            <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
+          <p>The software doesn't check the identity of users sufficiently enough, allowing threat actors to make incorrect claims.</p>
           </div>
           <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
             <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
@@ -75,7 +75,7 @@
             Clicking on a <a class="VulDef" href="#">red term</a> in one of the articles will bring you here to its respective definition.
           </p>
           <div class="DefinitionsContainer">
-          <h2>Types</h2>
+          <h2><a name="VulTypes"></a>Types</h2>
           <p>The type of a vulnerability represents its level of abstraction, meaning the range of situations, software types, and programming languages where that vulnerability can appear.
           For example a vulnerability that can only appear in a specific programming language is less abstract than one that can appear in any software. </p>
           <p>For more information visit the <a class="VulDef" href="#">CWE website</a>.</p>
@@ -83,34 +83,94 @@
             <div class="VulTypeSphere">
               C
             </div>
+            <h2>Class type</h2>
+            <p>Vulnerabilities of the "class" type are wide-spread accross all types of software.
+              They are more general than "base" types and they can sometimes include more "base" and "variant" vulnerabilities within them.
+              For example, <a class="VulDef "href="#">Improper Restriction of Operation</a> is a type C vulnerability that includes <a class="VulDef"href="#">Out of Bounds Read</a> and <a class="VulDef"href="#">Write</a>, two type B vulnerabilities. </p>
           </div>
           <div class="VulTypeBlack VULbg">
             <div class="VulTypeSphere">
               B
             </div>
+            <h2>Base type</h2>
+            <p>A "base" type vulnerability is described in an abstract fashion, however with sufficient details to be able to apply specific and targeted ways of detection and prevention.
+            They are more general than "variant" types but more specific than "class" types.
+            They can sometimes include multiple "variant" types within them.</p>
           </div>
           <div class="VulTypeBlack VULbg">
             <div class="VulTypeSphere">
               V
             </div>
+            <h2>Variant type</h2>
+            <p>a "variant" type vulnerability is often only found either in a specific subset of software or in software written in a specific programming language.
+            Because of this, they are more specific than "base" weaknesses, and can often be associated with one or more other "variant" type vulnerabilities that exploit related issues.
+            For example, the type B vulnerability <a class="VulDef" href="#">Out of Bounds Read</a> includes two related type V vulnerabilities, <a class="VulDef" href="#">Buffer Over-read</a> and <a class="VulDef" href="#">Under-read</a>. </p>
+          </div>
+          <h2>Consequences</h2>
+          <p>The danger of vulnerabilities comes from the various consequences that occur when they are exploited. The following definitions describe some of the most dangerous consequences of software vulnerabilities.
+             Each vulnerability can lead to multiple consequences, visit the <a class="VulDef" href="#">articles section</a> for more information.</p>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulDenialOfService"></a>Denial of Service (DoS)
+            </div>
+            DoS is one of the most common consequences of software vulnerabilities, it consints in disrupting a machine or program by flooding its input with useless requests that overload the system preventing legitimate requests from being fulfilled. This can lead to a <a class="VulDef" href="#">crash</a> of the system.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulFailOpening"></a>Fail Opening
+            </div>
+            "Fail Closed" software is software that is able to block access to users when exceptions are encountered. If a threat actor is able to "Fail Open" a system, then that system will be able to grant access even when exceptions are met. For example, an online market will grant access to its products when payment does not terminate sucsessfully.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulMemoryAccess"></a>Memory Access
+            </div>
+            If the threat actor is given the ability to modify or overwrite data in the memory, it could be able to change important flags, such as permissions of users, that could lead to more dangerous consequences.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulDataCorruption"></a>Data Corruption
+            </div>
+            If the threat actor is unable to directly control memory, but is still able to change it, such as through an overflow, it is considered data corruption. Data corruption can vary in size from a minor loss of data to a change that makes the affected memory portion unable to be identified or computed by the program, resulting in the program erroring or <a class="VulDef" href="#">crashing</a>.
           </div>
           <h2>Detection</h2>
           <p>The following terms describe several ways of detecting possible vulnerabilities in a code.
           Certain solutions are better suited for certain vulnerabilities, visit the <a class="VulDef" href="#">articles section</a> for more information.</p>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
-
+              <a name="VulStaticAnalysis"></a>Static Analysis
             </div>
+            This debugging method consists in reading the source code of a program without executing it to find errors and spot vulnerabilities. Carrying out this method requires a base understanding of the code structure. Certain automated tools can help programmers in this task.
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
-
+              <a name="VulDynamicAnalysis"></a>Dynamic Analysis
             </div>
+            The evaluation of a program is carried out by executing it and looking at the data in real time, while the program is running. It is important that a program is tested in all scenarios possible, as to reduce the risk of overlooking a fatal flaw.
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
-
+              <a name="VulFuzzing"></a>Fuzzing
             </div>
+            The program is given invalid, unexpected or random data as input, and is then monitored for crashes, memory leaks or other exceptions. This process is often automated and is the most effective when the program recievies semi-valid inputs, which exposes issues regarding corner cases.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulSpotchecking"></a>Spotchecking
+            </div>
+            This test is similar to static analysis, however it is only performed in a small percentage of spots of the source code, mainly the most vulnerable parts.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulManualCodeReview"></a>Manual Code Review
+            </div>
+            The process of reading through the code line by line to spot errors or vulnerabilities. Ideally, all of the programmers review the entirety of the source code in order to find as many errors as possible.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulSoftwareReview"></a>Software Review
+            </div>
+            A process of meeting during which a software product is examined by a project personnel, managers, users, customers, user representatives, or other interested parties for comment or approval. IEEE Std 1028 is a common set of activities for formal reviews with the objective of identifying issues.
           </div>
           <h2>Mitigation</h2>
           <p>There are many possible ways of eliminating or mitigating the effect of a vulnerability.

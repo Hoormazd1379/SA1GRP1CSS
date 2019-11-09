@@ -21,14 +21,11 @@ body {
 
 .textblockcont {
   padding:10px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(68,68,68,0.3);
   border-radius: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  border-style: solid;
   box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
-  border-width: 1px 1px 1px 5px;
-  border-color: #C3073F;
   margin-bottom: 15px;
 }
 
@@ -716,7 +713,7 @@ ul.H-CSA-list{
 
 /* End of Child Support Agency -----------------------------*/
 
-/* cpr_number_social_impact -------------------- modified by Onciu Razvan Petrica -- */
+/* ozone_layer_social_impact -------------------- Mathias Bertelsen (modified by Onciu Razvan Petrica) -- */
 
 img.H-OZONE-image1{
   width:40%;
@@ -731,6 +728,12 @@ img.H-OZONE-image2{
   max-width:400px;
   margin-top:10px;
 }
+
+p.H-OZONE-p1{
+  text-align: justify;
+  padding: 20px;
+}
+
 p.H-OZONE-p2{
   background-color: rgba(195, 7, 63, 0.5);
   border-radius: 20px;
@@ -765,7 +768,7 @@ p.H-OZONE-p2{
   }
 }
 
-/* End of OZONE Page -----------------------------*/
+/* End of ozone_layer_social_impact Page -----------------------------*/
 
 /* heathrow_5 -------------------- modified by Onciu Razvan Petrica -- */
 
@@ -1103,14 +1106,67 @@ p.H-MEDICALRECORD-p{
 
 
 
-/* Mt. Gox -------------------- Massimo Bordogna -- */
+/* Mt. Gox -------------------- Massimo Bordogna (modified by Onciu Razvan Petrica) -- */
 
 
 img.H-MTGOX-image2{
   width:30%;
-  min-width: 150px;
-  float:center;
+  min-width: 300px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
   padding: 2px;
+  border: 10px solid (129, 129, 129, 0.315);
+  border-radius:20px;
+}
+
+p.H-MTGOX-p2{
+  padding:20px;
+  text-align:justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  border-radius: 10px;
+
+}
+
+p.H-MTGOX-p1{
+  padding:20px;
+  text-align:justify;
+  background-color: grey;
+  border: 1px solid white;
+
+}
+
+div.H-MTGOX-div1{
+  margin: 0px 2% 0px 2%;
+}
+
+div.H-MTGOX-bitcoin{
+  width:50%;
+  display:block;
+  margin-left:25%;
+  margin-right:auto;
+  color:white;
+  font-style: italic;
+  text-align: center;
+}
+
+table.H-MTGOX-table{
+  text-align: justify;
+  color:white;
+  border-spacing: 50px;
+}
+
+p.none{
+  text-align:center;
+}
+
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+
+
 }
 
 /* End of Mt.Gox -----------------------------*/
@@ -1969,7 +2025,11 @@ li.NavBarBug a:hover, .DropNavBarBug:hover .DropdownButtonNavBarBug {
 #vul-body {
     margin: 15px;
 }
-
+.VulArticleTitle{
+  font-size: 4rem;
+  margin-top: 55px;
+  margin-left: 100px;
+}
 .ContainerVul{
   margin-top: 200px;
   margin-left: 8%;
@@ -2037,6 +2097,50 @@ p {
   border-radius: 20px;
   font-size: 1em;
 }
+.VulTypeWhite{
+  background-color: white;
+  padding: 2%;
+  margin: 1%;
+  max-width: 27.33%;
+  min-width: 27.33%;
+  height: 400px;
+  float: left;
+  position: static;
+  border-radius: 20px;
+  font-size: 1em;
+}
+.VulTypeWhite p{
+  color: black;
+}
+.VulStats{
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  width: 20%;
+  height: 400px;
+  float: right;
+  position: static;
+  font-size: 1em;
+}
+.VulArticleBody{
+  width: 100%;
+  height: inherit;
+  float: right;
+}
+a.Vul{
+  text-decoration: none;
+}
+a.VulDef{
+  text-decoration: none;
+  font-style: italic;
+  color: #C3073F;
+}
+.VulTypeBlack h2, .VulTypeBlack a{
+  color:white;
+}
+.VulStats h2, .VulStats a{
+  color:white;
+}
 .VulTypeSphere{
   background-color: white;
   height: 80px;
@@ -2058,6 +2162,9 @@ p {
   float: left;
   position: static;
 }
+.VulRectangle h2, .VulRectangle a{
+  color:white;
+}
 .VulRectangleSmall{
   background-color: white;
   padding: 0%;
@@ -2068,14 +2175,7 @@ p {
   float: left;
   position: static;
   color: #C3073F;
-}
-a.Vul{
-  text-decoration: none;
-}
-a.VulDef{
-  text-decoration: none;
-  font-style: italic;
-  color: #C3073F;
+  font-size: 1.5rem;
 }
 .ArticleContainer{
   width: 100%;
@@ -2099,11 +2199,13 @@ a.VulDef{
 h1 {
     font-size: 80px;
     color: #C3073F;
+    text-transform: capitalize;
 }
 
 h2 {
     font-size: 30px;
     color: #C3073F;
+    text-transform: capitalize;
 }
 
 h3 {
