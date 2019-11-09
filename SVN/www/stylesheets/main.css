@@ -336,26 +336,21 @@ table #home td {
 
 #a {
     display:inline;
-   width:200px;
-   text-align:center;
+    text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
 }
 
 #b {
     display:inline;
-   width:200px;
-   text-align:center;
-    margin-top:-30px;
+    text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
-}
+    }
 
 #c {
     display:inline;
-   width:200px;
-   text-align:center;
-    margin-top:-50px;
+    text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
 }
@@ -483,6 +478,10 @@ table #home td {
     background: #C3073F;
 }
 
+.normal:hover .date-nor {
+    display: block;
+}
+
 #content {
     height: 100%;
     width: 100%;
@@ -531,7 +530,18 @@ table #home td {
     text-decoration: none;
     position: absolute;
     margin-left: 100px;
-    margin-top: -2px;
+    margin-top: -5px;
+    display: none;
+}
+
+.date-nor {
+    font-size: 16px;
+    color: #C3073F;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -3px;
     display: none;
 }
 
@@ -945,6 +955,150 @@ img.H-CPR-img2{
 }
 
 /* End of cpr_number_social_impact -----------------------------*/
+
+
+/* zimbawbe -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica) -- */
+
+img.H-ZIMBAWBE-img1{
+  width:25%;
+  float:left;
+  border-radius:20px;
+  border: 2px solid white;
+  min-width:300px;
+  padding:5px;
+}
+
+p.H-ZIMBAWBE-p1{
+  text-align: justify;
+  padding:50px;
+  margin: 0px 20% 0px 300px;
+}
+
+p.H-ZIMBAWBE-p2{
+  text-align: justify;
+  margin: 0px 22% 0px 0px;
+}
+
+img.H-ZIMBAWBE-img2{
+  width:20%;
+  float:right;
+  border-radius:20px;
+  border: 2px solid white;
+  min-width:150px;
+  padding:5px;
+}
+
+div.H-ZIMBAWBE-div1{
+  margin: 0px 2% 0px 2%;
+}
+
+table.H-ZIMBAWBE-table{
+  margin: 5% 10% 0px 10%;
+  color:white;
+  background-color: rgba(195, 7, 63, 0.5);
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+}
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  p.H-ZIMBAWBE-p1{
+    padding:50px;
+    margin: 10% 2% 0px 0%;
+  }
+
+  p.H-ZIMBAWBE-p2{
+    margin: 0px 2% 0px 2%;
+  }
+
+  img.H-ZIMBAWBE-img1{
+    margin: -50px 30% 50px 35%;
+
+  }
+
+  img.H-ZIMBAWBE-img2{
+    margin: 10px 0px 50px 10px;
+    float:right;
+  }
+
+
+
+}
+
+/* End of zimbawbe -----------------------------*/
+
+
+/* electr_medical_record -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica) -- */
+
+img.H-MEDICALRECORD-img1{
+  width:20%;
+  border-bottom: 20px rgba(195, 7, 63, 0.5) double;
+  border-top: 20px rgba(195, 7, 63, 0.5) double;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  min-width: 200px;
+
+}
+
+img.H-MEDICALRECORD-img2{
+  width:20%;
+  float:right;
+  border-bottom: 20px rgba(195, 7, 63, 0.5) double;
+  border-top: 20px rgba(195, 7, 63, 0.5) double;
+  margin-right:20px;
+  border-left: 10px solid grey;
+  border-right: 10px solid grey;
+  min-width: 200px;
+}
+
+div.H-MEDICALRECORD-div{
+  margin: 0px 1% 0px 1%;
+    border: 2px inset white;
+
+}
+
+p.H-MEDICALRECORD-p{
+  color:white;
+  border: 2px solid grey;
+  padding:20px;
+}
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-MEDICALRECORD-img2{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+    margin-top:10px;
+    margin-bottom:10px;
+
+  }
+
+  p.H-MEDICALRECORD-p{
+    border:none;
+  }
+
+
+}
+
+/* End of electr_medical_record -----------------------------*/
 
 
 
@@ -2014,4 +2168,23 @@ p {
 
 .pictureitem {
     width: 100%;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    bottom: 0;
+    background: #1A1A1D;
+    box-shadow: 0px 4px 21px #000000;
+}
+
+.footer-txt {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 136.2%;
+    color: white;
 }
