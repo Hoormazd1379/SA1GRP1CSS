@@ -64,6 +64,10 @@ body {
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
+.VULh {
+  color: #c3073f;
+}
+
 .MALbg {
     background: linear-gradient(45deg, #AA2168, #813B80);
     background-size: 400% 400%;
@@ -72,6 +76,10 @@ body {
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.MALh {
+  color: #AA2168;
 }
 
 .BUGbg {
@@ -84,6 +92,10 @@ body {
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
+.BUGh {
+  color: #813880;
+}
+
 .HISbg {
     background: linear-gradient(45deg, #534881, #324B71);
     background-size: 400% 400%;
@@ -92,6 +104,10 @@ body {
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.HISh {
+  color: #534881;
 }
 
 .MOREbg {
@@ -719,6 +735,113 @@ p.H-OZONE-p2{
 }
 
 /* End of OZONE Page -----------------------------*/
+
+/* heathrow_5 -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-T5-image1{
+  width:100%;
+  float:right;
+}
+
+img.H-T5-image2{
+  width:50%;
+  float:left;
+  min-width:300px;
+}
+
+p.H-T5-p1{
+  text-align: center;
+}
+
+div.H-T5-div1{
+  background-color: rgba(195, 7, 63, 0.5);
+  border: 2px solid white;
+  padding:5px;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of heathrow_5 Page -----------------------------*/
+
+/* korean_air_flight -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-KOREAN-img1{
+  width:40%;
+  float:left;
+  padding:30px;
+  border: white double 2px;
+  margin-left:20px;
+}
+
+img.H-KOREAN-img2{
+  width:40%;
+  float:right;
+  padding:30px;
+  border: white double 2px;
+  margin-right:20px;
+}
+
+img.H-KOREAN-img3{
+  width:30%;
+  float:left;
+  padding:30px;
+  border: white double 2px;
+  margin-right:20px;
+}
+p.H-KOREAN-p1{
+  text-align: center;
+}
+
+p.H-KOREAN-p2{
+  margin-top:450px;
+  text-align: justify;
+}
+
+p.H-KOREAN-p3{
+
+  margin: 5% 10% 5% 50%;
+
+
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-KOREAN-img1{
+    width:30%;
+        min-width:250px;
+  }
+
+  img.H-KOREAN-img2{
+    position:relative;
+    width:30%;
+    min-width:250px;
+  }
+
+  p.H-KOREAN-p2{
+    margin-top:300px;
+  }
+
+}
+
+/* End of korean_air_flight Page -----------------------------*/
 
 /* Mt. Gox -------------------- Massimo Bordogna -- */
 
