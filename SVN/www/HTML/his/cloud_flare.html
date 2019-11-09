@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>History</title>
+    <meta charset="utf-8"/>
     <link rel="stylesheet" href="../../stylesheets/main.css">
-
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
     <meta name="author" content="Arianna Bianchi">
-
+    <title>History</title>
 </head>
 <body>
     <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
@@ -17,19 +16,36 @@
                             <h2 id="sect-title">Cloudflare/Cloudbleed</h2>
                         </div>
                             <p>
-For about 30 minutes on 2 July 2019 at 05:50 pm, visitors to Cloudflare sites received 502 errors
-("Bad Gateway") due to a global outage across network, caused by a massive spike in CPU
-utilization on our network. This CPU spike was
-caused by a bad software deploy that was rolled back. Once rolled back the service
-returned to normal operation and all domains using Cloudflare returned to normal
-traffic levels.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+CLoudflare was created in 2009 and acts as an intermediary between a client and a server, using
+a reverse proxy to mirror and cache websites. By storing web content for delivery on the
+closest edge serverm it is able to optimize loading times. That also allows it to modify
+content, such as images and rich text, for better peromance.
 
+On 2 July 2019 at 05:50 pm, visitors to Cloudflare sites received 502 errors
+("Bad Gateway") due to a global outage across network for about 30 minutes.
+
+The cause of this outage was deployment of a single misconfigured rule within the
+Cloudflare Web Application Firewall (WAF) during a routine deployment of new Cloudflare
+WAF Managed rules. The intent of these new rules was to improve the blocking of
+inline JavaScript that is used in attacks. These rules were being deployed in a
+simulated mode where issues are identified and logged by the new rule but no customer
+traffic is actually blocked so that we can measure false positive rates and ensure
+that the new rules do not cause problems when they are deployed into full production.
+Unfortunately, one of these rules contained a regular expression that caused CPU to
+spike to 100% on our machines worldwide. This 100% CPU spike caused the 502 errors
+that our customers saw. At its worst traffic dropped by 82%.
+
+Solution:
+We decided to issue a ‘global kill’ on the WAF Managed Rulesets, which instantly
+dropped CPU back to normal and restored traffic.
+We then went on to review the offending pull request, roll back the specific rules,
+test the change to ensure that we were 100% certain that we had the correct fix,
+and re-enabled the WAF Managed Rulesets.
+
+Once rolled back the service returned to normal operation and all domains
+using Cloudflare returned to normal traffic levels.
+
+                        </div>
 
 
 </body>
