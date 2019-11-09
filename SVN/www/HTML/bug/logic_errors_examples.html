@@ -60,23 +60,23 @@
 					<a id="back-button-bug" href="logic_errors.html"><img src="../../assets/icns/arrow.png"></a>
 					<h1 class="bug"> Examples of Logic Error </h1>
 				</div>
-
+				<div class="textblockcont">
 				<h2>Time Related Errors</h2>
 				<p>Formatting and storing the time is crucial nowadays, many things depend on it. Since in computers everything has to be stored in bits and the storage is finite, some compromises had to be done. Those compromises are the cause of the problems we have today or we had in the past.</p>
-				<p>Keeping track of the time is really easy: in case of a clock, you set the initial time and then you increase it by 1 every second, in case of a calendar you increase the date by 1 every day, and so on.</p>
-				<p>It's easy to see that as the time goes, the value of the stored time gets larger and larger until there are not enough bits to store it... What happens now? <strong>Arithmetic Overflow</strong> and the result is a time which doesn't correspond to the value it should be. Here below you can find some problems from the past.</p>
+				<p>Keeping track of the time is really easy: in case of a clock, you set the initial time and then you increase it by 1 every second, in case of a calendar you increase the date by 1 every day, and so on. It's easy to see that as the time goes, the value of the stored time gets larger and larger until there are not enough bits to store it... What happens now? <strong>Arithmetic Overflow</strong> and the result is a time which doesn't correspond to the value it should be. Here below you can find some problems from the past.</p>
 				<h3>Global Positioning System</h3>
 				<p>GPS keeps track of the date with two variables: the week number and the day of the week. The variable for the day don't need much space, because it loops, after the 7th day there is the 1st day of the next week. The problem rises with the week number... Week number is stored in 10 bits, so it has a range between 0 and 1023, after 1023 the value "rolls over" turning back to 0. Since GPS started counting weeks from Sunday 6 January 1980, it's easy to calculate when the <strong>rollover</strong> will happen.</p>
-				<p><em>Day 0 of week number 1024, Sunday 22 August 1999, will appear to the GPS as Sunday 6 January 1980 (week 0).</em></p>
-				<p>Until now another rollover happened: 1024 weeks after 22 August 1999, Sunday 7 April 2019 the week number turned back to 0 for the second time. This trend will continue and the next rollover will be Sunday 21 November 2038.</p>
+				<p><em>Day 0 of week number 1024, Sunday 22 August 1999, will appear to the GPS as Sunday 6 January 1980 (week 0).</em> Until now another rollover happened: 1024 weeks after 22 August 1999, Sunday 7 April 2019 the week number turned back to 0 for the second time. This trend will continue and the next rollover will be Sunday 21 November 2038.</p>
 				<h3>Millenium Bug</h3>
 				<p>Also known as the <em>Year 2000 Problem</em> or the <em>Y2K</em>, the <em>Millenium Bug</em> was a problem for all computers in the 20th century that represented the year with only two digits. This problem is better explained in the <a class="RefBug" href="../his/index.html">History part</a> of the website.</p>
 				<h3>Unix Time</h3>
 				<p>Early Unix operating systems stored the time as a 32-bit signed integer, where every second the value is increased by 1. It started counting at 00:00:00 UTC on 1 January 1970 and it is known as the Unix Epoch. Since time was stored as a 32-bit signed integer, the greatest value it can be is 0111 1111 1111 1111 1111 1111 1111 1111 which in decimal represent 2147483647 seconds from the Unix Epoch. With some easy calculations, we find out that it corresponds to 68 years, 18 days, 3 hours, 14 minutes and 7 seconds, which means that 03:14:07 UTC on 19 January 2038 will be the last date displayed before the time will turn back to 2147483647 seconds before Unix Epoch.</p>
-				<p>Operating systems using the Unix time will display correctly the date until 03:14:07-19.01.2038 when a second later they will display 20:45:52-13.12.1901, like the animation below is showing</p>
-				<div class="ImageContainerBug">
-					<img src="../../assets/bug_imgs/year_2038_problem.gif" alt="Animation showing the rollover">
-				</div>
+				<p>Operating systems using the Unix time will display correctly the date until 03:14:07-19.01.2038 when a second later they will display 20:45:52-13.12.1901, like the animation below is showing.</p>
+					<center>
+					<img class="imageblockcont" style="width: 40%;" src="../../assets/bug_imgs/year_2038_problem.gif" alt="Animation showing the rollover">
+				</center>
+				
+			</div>
 			</div>
 		</div>
 	</div>

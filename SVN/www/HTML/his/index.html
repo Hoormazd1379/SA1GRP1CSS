@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html style="height: 105%;">
+<html style="height: 105%;" lang="en">
 <head>
-    <title>History</title>
+    <meta charset="utf-8"/>
     <link rel="stylesheet" href="../../stylesheets/main.css">
     <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
 
@@ -13,7 +13,7 @@
 
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
     <meta name="author" content="">
-
+    <title>History</title>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -34,11 +34,11 @@
     <div>
         <div id="timeline">
             <div id="timeline-shapes">
-                <a href="./mariner1.html" target="iframe"><div class="milestone" id="n1"><span class="date-mil">1962</span></div></a>
-                <a href="#"><div class="milestone" id="n2"><span class="date-mil">1985</span></div></a>
+                <a href="./mariner1.html" target="iframe" onclick="milestones('n1', 0)"><div class="milestone" id="n1"><span class="date-mil">1962</span></div></a>
+                <a onclick="milestones('n2', 1); showSub1()" style="cursor: pointer;"><div class="milestone" id="n2"><span class="date-mil">1985</span></div></a>
                 <a href="#"><div class="normal" id="n2.1"></div></a>
                 <a href="#"><div class="normal" id="n2.2"></div></a>
-                <a href="#"><div class="milestone" id="n3"><span class="date-mil">1988</span></div></a>
+                <a href="#" onclick="milestones('n3', 2)"><div class="milestone" id="n3"><span class="date-mil">1988</span></div></a>
                 <a href="#"><div class="milestone" id="n4"><span class="date-mil">1991</span></div></a>
                 <a href="#"><div class="milestone" id="n5"><span class="date-mil">1994</span></div></a>
                 <a href="#"><div class="normal" id="n5.1"></div></a>
@@ -85,6 +85,7 @@
                 <a href="#"><div class="normal" id="n21.3"></div></a>
                 <a href="#"><div class="normal" id="n21.4"></div></a>
                 <a href="#"><div class="normal" id="n21.5"></div></a>
+                <script src="../../scripts/his.js"></script>
             </div>
         </div>
 
