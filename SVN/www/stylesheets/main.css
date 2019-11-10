@@ -553,20 +553,8 @@ p.H-intro-quote{
   text-align: center;
 }
 
-img.H-intro-1{
-  float:left;
-  width:40%;
-  min-width:150px;
-  max-width:300px;
-  margin-bottom:80px;
-}
 
-p.H-intro-1{
-  float:left;
-  margin-top:5px;
-  text-align: justify;
-  margin-left:-10px;
-}
+
 
 /*list*/
 
@@ -585,7 +573,7 @@ li.H-intro-list-title{
 
 /*end list*/
 
-/*table*/
+
 
 table.H-intro-table{
   margin-top:-50px;
@@ -598,17 +586,23 @@ td.H-intro-table-td{
 /*window size over 1201px*/
 
 @media screen and (min-width: 1201px) {
+  img.H-intro-1{
+    float:left;
+    width:40%;
+    min-width:150px;
+    max-width:300px;
+  }
+
   p.H-intro-1{
     width:47vw;
     font-size:1.7vw;
-    margin-left:20px;
     max-height:340px;
-    overflow:auto;
-  }
-  p.H-intro-1{
-    float:right;
+    float:left;
+    margin-left:50px;
     width:60%;
+    text-align: justify;
   }
+
   td.H-intro-table-td{
     width:50%;
     border-radius:20px;
@@ -627,15 +621,27 @@ td.H-intro-table-td{
 
 @media screen and (max-width: 1200px) {
   img.H-intro-1{
-    margin-left:30%;
+    width:40%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    max-width: 300px;
   }
+
   p.H-intro-1{
+    max-height: none;
+    max-width:90%;
+    float:none;
+    position:absolute;
     width:100%;
-    margin-left:0px;
+    margin: 50px 2% 0px 5%;
     font-size:2.5vw;
+    text-align: justify;
   }
+
   ul.H-intro-list{
-    margin-top:90%;
+    margin-top:30%;
   }
 
   td.H-intro-table-td{
@@ -717,7 +723,9 @@ ul.H-CSA-list{
 
 img.H-OZONE-image1{
   width:40%;
-  margin-left:20px;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
   max-width:300px;
 }
 img.H-OZONE-image2{
@@ -1103,6 +1111,94 @@ p.H-MEDICALRECORD-p{
 
 /* End of electr_medical_record -----------------------------*/
 
+/* northeast_blackout -------------------- Onciu Razvan Petrica -- */
+
+body.H-BLACKOUT-body{
+  animation: color 9s ease-in 0s infinite;
+}
+@keyframes color {
+  0% {background-color: #1A1A1D;}
+  25% {background-color: grey;}
+  50% {background-color: black;}
+  75% {background-color: grey;}
+  100% {background-color: #1A1A1D;}
+}
+
+img.H-BLACKOUT-img2{
+  width:25%;
+  float:left;
+}
+
+div.H-BLACKOUT-div{
+  margin: 0px 2% 0px 2% ;
+}
+
+p.H-BLACKOUT-p1{
+  position:relative;
+  margin: 5% 5% 0px 30%;
+  text-align: justify;
+  border:10px double white;
+  padding:20px;
+  background-color: rgba(195, 7, 63, 0.5);
+}
+
+p.H-BLACKOUT-p2{
+  text-decoration: underline;
+  text-align: justify;
+  margin-top:20px;
+}
+
+p.H-BLACKOUT-p3{
+  text-decoration: underline;
+  text-align: justify;
+  margin-top:20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding:20px;
+}
+
+img.H-BLACKOUT-img1{
+  width:30%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border:white 2px solid;
+  margin-top: 2%;
+  min-width: 200px;
+}
+
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-BLACKOUT-img2{
+    width:25%;
+    min-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.H-BLACKOUT-p1{
+    position:relative;
+    margin: 10% 5% 0px 2%;
+    text-align: justify;
+    border:10px double white;
+    padding:20px;
+    background-color: rgba(195, 7, 63, 0.5);
+  }
+}
+
+
+/* End of northeast_blackout -----------------------------*/
+
 
 
 
@@ -1120,12 +1216,20 @@ img.H-MTGOX-image2{
   border-radius:20px;
 }
 
-p.H-MTGOX-p2{
+dl.H-MTGOX-dl{
   padding:20px;
   text-align:justify;
   background-color: rgba(195, 7, 63, 0.5);
   border-radius: 10px;
+  color:white;
+}
 
+dt.H-MTGOX-dt{
+  text-decoration: underline;
+  margin: 10px 0px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding:10px;
+  color:black;
 }
 
 p.H-MTGOX-p1{
@@ -1150,11 +1254,7 @@ div.H-MTGOX-bitcoin{
   text-align: center;
 }
 
-table.H-MTGOX-table{
-  text-align: justify;
-  color:white;
-  border-spacing: 50px;
-}
+
 
 p.none{
   text-align:center;
@@ -1164,10 +1264,43 @@ p.none{
 /*window size under 1200px*/
 
 @media screen and (max-width: 1200px) {
+  td.H-MTGOX-td1{
+    position: absolute;
+    width:100%;
+    margin-top: 50px;
+    margin-right: 30%;
+  }
 
+  td.H-MTGOX-td2{
+    position:absolute;
+    width:100%;
+    margin-top: 200px;
+  }
 
+  table.H-MTGOX-table{
+    text-align: justify;
+    color:white;
+    border-spacing: 0px;
+  }
+
+  div.H-MTGOX-div2{
+    position:relative;
+    margin: 0px 3%px 0px 3%;
+  }
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+  table.H-MTGOX-table{
+    text-align: justify;
+    color:white;
+    border-spacing: 50px;
+  }
 
 }
+
+
 
 /* End of Mt.Gox -----------------------------*/
 
@@ -1327,33 +1460,6 @@ img.H-HOSPITALRANSW-img1{
 }
 
 /* End of hospital_ransomware ------------------------------------------*/
-
-/* sony_hacks -------------------- Marco Mariosa (modified by Onciu Razvan Petrica)------ */
-
-iframe.H-SONY-iframe{
-  width: 560px;
-  height: 315px;
-  border: none;
-  margin: 30px;
-}
-
-img.H-HOSPITALRANSW-img1{
-  width:500px;
-}
-
-/*window size over 1201px*/
-
-@media screen and (min-width: 1201px) {
-
-}
-
-/*window size under 1200px*/
-
-@media screen and (max-width: 1200px) {
-
-}
-
-/* End of sony_hacks ------------------------------------------*/
 
 
 
@@ -1803,13 +1909,13 @@ div.ContainerBug p {
 }
 
 a.RefBug {
-  color: white;
-  text-decoration: underline;
-  font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 a.RefBug:hover {
-  color: #C3073F;
+    color: #C3073F;
 }
 
 div.grid3bug {
@@ -1831,6 +1937,19 @@ div.bugquiz:hover {
     transform: scale(1.05);
 }
 
+button.ShowSolution {
+    background-color: #1A1A1D;
+    border: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 120%;
+}
+
+button.ShowSolution:hover {
+    color: #C3073F;
+}
 div.ImageContainerBug {
     margin-left: auto;
     margin-right: auto;
@@ -1941,8 +2060,8 @@ h1.bug {
 }
 
 #back-button-bug {
-  position: absolute;
-  margin-top: 53.5px;
+    position: absolute;
+    margin-top: 53.5px;
 }
 
 .h1containerBug {
