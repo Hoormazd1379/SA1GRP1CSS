@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <meta charset="utf-8">
+    <title>Read Out Of Bounds</title>
+    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
+    <meta name="author" content="Bahram Ismayilov">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">  Out Of Bounds Read</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <p>Don't worry about this for now, i'll complete it tomorrow </p>
+        <ul>
+          <li><p>Type: Class</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Description</h2>
+    <p> Out of Bounds read is type of vulnerability that may happen in a software when it reads data from the buffer (place where physical memory is stored) and reads the data out of its bounds.
+
+</p>
+<h2>Potention causes</h2>
+<p > There are several causes that can trigger Buffer over-read. These are:
+<ul style="color:#FfFFFF">
+<li> Ordinary Bugs</li>
+ <li>Malicious Inputs</li>
+ <li>Heartbleed bug(Caused by <a class="link" href="file:///Users/bahrami/GroupProject/www/HTML/vul/validation.html#2"> Improper Input Validation)</a></li>
+</ul> </p>
+<h2>Where this can happen</h2>
+<p>This can mainly happen in C or C++, because function in these languages does not check memory bounds they use. Moreover, it is crucial to know  some function, which are bounded in memory use
+by mistake can cause Buffer over read.</p>
+    <!-- If you have any other sections, put them here -->
+       </div>
+         <div class="VulTypeWhite">
+           <h2>Consequences</h2>
+           <p>When there exists  an Out of bound vulnerability then it can lead to the leak of very important information, for intance passwords. Moreover it can lead to the crash of. <br>
+           Why?
+           <br> Because software can read so much data that program can cause buffer over-flow, which leads to system crash. </p> </div>
+         <div class="VulTypeWhite">
+
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Mitigation</h2>
+           <p>There are 2 ways to mitigate this problem.
+             <ul>
+               <li>The frist is to use language with restricted memory </li>
+               <li>The second is to use input validation. Moreover using Input validation it is essetial to be aware about its potential problems, which are here :<a class="link" href="file:///Users/bahrami/GroupProject/www/HTML/vul/validation.html#2" style="color:#C3073F"> Improper Input Validation</a></li>
+             </ul>
+           </p>
+         </div>
+
+
+
+
+
+
+<h2>Links</h2>
+<ul id="num1">
+      <a class="link" href="https://cwe.mitre.org/data/definitions/125.html"><li>https://cwe.mitre.org/data/definitions/125.html</li></a>
+    <a class="link" href="https://en.wikipedia.org/wiki/Buffer_over-read"><li>https://en.wikipedia.org/wiki/Buffer_over-read</li></a>
+    <a class="link" href="https://vulncat.fortify.com/en/detail?id=desc.internal.cpp.out_of_bounds_read"><li>https://vulncat.fortify.com/en/detail?id=desc.internal.cpp.out_of_bounds_read</li></a>
+    <a class="link" href="https://en.wikipedia.org/wiki/Heartbleed"><li>https://en.wikipedia.org/wiki/Heartbleed</li></a>
+</ul>
+
+  </body>
+</html>

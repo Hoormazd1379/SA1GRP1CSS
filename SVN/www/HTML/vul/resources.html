@@ -4,51 +4,58 @@
     <link rel="stylesheet" href="../../stylesheets/main.css">
 
     <meta charset="utf-8">
-    <title></title>
+    <title>Uncontrolled Resource Consumption</title>
 
     <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
-    <meta name="author" content="Ismayilov Bahram">
+    <meta name="author" content="Bahr">
   </head>
   <body id="vul-body">
     <div class="h1container">
         <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-        <h2 id="page-title"> Vulnerabilities </h1>
-        <h1 id="page-title" class="VulArticleTitle">Uncontrolled Resource Consumption</h2>
+        <h2 id="page-title"> Vulnerabilities </h2>
+        <h1 class="VulArticleTitle">Uncontrolled Resource Consumption</h1>
     </div>
     <div class="ContainerVul">
     <div class="VulArticleBody">
       <div class="VulStats VULbg">
         <h2>Statistics</h2>
         <hr>
-        <p>Don't worry about this for now, i'll complete it tomorrow <br>
         <ul>
-          <li>Type: Class</li>
-        </ul></p>
+          <li><p>Type: Class</p></li>
+          <li><p>CWE Number: 400</p></li>
+          <li><p>Applicable Platforms: Language-independent</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
         <hr>
       </div>
     <h2>Description</h2>
-    <p> Uncontrolled resources consuption is a type of vulnerability that can occur if the size of Limited resources is not controlled. <br> What is limited resources?
-    <br> Limited resource or System resource is device that is connected to a computer, wheres it is interal or external. It can be memory,  CPU, Network connections and so on.<br>
-         So, if the number of resources is not limited, then in any attack case in which this resources will be allocated, then the Server Resource manager can crush. COnsequently making software slower. </p>
+    <p> Uncontrolled resources consuption is a type of vulnerability that can occur if the size of limited resources is not controlled. <br> What is limited resources?
+    <br> Limited resource or System resource is a device that is connected to a computer, wheres it is interal or external. It can be memory, CPU, Network connections and so on</p>
+    <p>If the number of resources is not limited, then in any attack case in which this resource will be allocated the Server Resource manager can crash, consequently making software slower.</p>
 
        </div>
          <div class="VulTypeWhite">
            <h2>Consequences</h2>
-           <p></p>
+           <p>The most common result of resource exhaustion is <a class="VulDef" href="index.html#VulDenialOfService">denial of service</a>. The software may slow down, crash due to unhandled errors, or lock out legitimate users.</p>
+           <p>Sometimes the attacker is able to <a class="VulDef" href="index.html#VulFailOpening">“Fail Open”</a> the software.
+           </p>
+
          </div>
          <div class="VulTypeWhite">
            <h2>Detection</h2>
-           <p></p>
+           <p>Certain <a class="VulDef" href="index.html#VulDynamicAnalysis">dynamic analysis</a> techniques are able to identify this vulnerability by sending many requests in a short time span.</p>
+           <p><a class="VulDef" href="index.html#VulFuzzing">Fuzzing</a> can also sometimes spot resource consumption, although it is normally not used for this purpose.
+           </p>
          </div>
          <div class="VulTypeWhite">
            <h2>Mitigation</h2>
-           <p>In order to avoid problems such that one needs to put a limit to the amount of resources, which in turn will not let attacker to allocate uncontrolled resources. Consequently the software will be less vulnerable.</p>
+           <p>In order to avoid problems one needs to put a limit to the amount of processed resources, which in turn will not let attackers allocate uncontrolled amounts of resources. Consequently the software will be less vulnerable.</p>
          </div>
     <h2>Links</h2>
     <ul>
-      <a class="link" href="https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Denial_of_Service_(Application_Based)"><li>https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Denial_of_Service_(Application_Based)</li></a>
-      <a class="link" href="https://cwe.mitre.org/data/definitions/400.html"><li>https://cwe.mitre.org/data/definitions/400.html</li></a>
-      <a class="link" href="https://en.wikipedia.org/wiki/System_resource"><li>https://en.wikipedia.org/wiki/System_resource</li></a>
+      <li><a class="link" href="https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Denial_of_Service_(Application_Based)">https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Denial_of_Service_(Application_Based)</a></li>
+      <li><a class="link" href="https://cwe.mitre.org/data/definitions/400.html">https://cwe.mitre.org/data/definitions/400.html</a></li>
+      <li><a class="link" href="https://en.wikipedia.org/wiki/System_resource">https://en.wikipedia.org/wiki/System_resource</a></li>
     </ul>
   </div>
   </body>

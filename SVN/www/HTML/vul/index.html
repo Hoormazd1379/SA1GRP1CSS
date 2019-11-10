@@ -123,15 +123,27 @@
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
-              <a name="VulMemoryAccess"></a>Memory Access
+              <a name="VulConfidentiality"></a>Loss of confidentiality
             </div>
-            If the threat actor is given the ability to modify or overwrite data in the memory, it could be able to change important flags, such as permissions of users, that could lead to more dangerous consequences.
+            If a system suffers loss of confidentiality, then data has been disclosed to unauthorized individuals. This could range from data that someone simply wasn't authorized to see (such as employees being able to see payroll data) to very serious data leaks (such as a threat actor being able to access customers' names and credit card information).
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulIntegrity"></a>Loss of integrity
+            </div>
+            Loss of integrity means that data or an IT system has been modified or destroyed by an unauthorized entity. This could mean that the system has been infected with a <a class="VulDef" href="#">virus</a> or simply that stored information has been modified or deleted.
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulDataCorruption"></a>Data Corruption
             </div>
             If the threat actor is unable to directly control memory, but is still able to change it, such as through an overflow, it is considered data corruption. Data corruption can vary in size from a minor loss of data to a change that makes the affected memory portion unable to be identified or computed by the program, resulting in the program erroring or <a class="VulDef" href="#">crashing</a>.
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulAccessControl"></a>Access Control
+            </div>
+            Access control is a method of guaranteeing that users are who they say they are and that they have the appropriate access to company data. If this authentication phase is compromised, threat actors are able to gain administrative permissions.
           </div>
           <h2>Detection</h2>
           <p>The following terms describe several ways of detecting possible vulnerabilities in a code.

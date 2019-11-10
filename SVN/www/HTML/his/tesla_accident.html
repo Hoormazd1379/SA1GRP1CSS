@@ -13,11 +13,15 @@
 
                     <div id="content">
                         <div class="title-container">
-                            <h2 id="sect-title"> Tesla car memory failure</h2>
+                            <h2 id="sect-title"> Tesla Car Software Failure</h2>
                         </div>
-                            <p>
-"We really deigned the Model S to be a very sophisticated computer on wheels"
-said Tesla Chief Executive Elon Musk. But he forgot to mention they run on Linux
+                          <div class="H-TESLA-div">
+
+
+<p class="H-TESLA-p1">"We really deigned the Model S to be a very sophisticated computer on wheels" -Tesla CEO Elon Musk</p>
+<img class="H-TESLA-img1" src="../../assets/his_imgs/tesla_chip.jpg" alt="Tesla Chip">
+<br> <br>
+<p class="H-TESLA-p2"> But he forgot to mention they run on Linux
 and so they need a lot of logging.
 
 The main issue is that the excessive log file writing causes eMMC flash wear.
@@ -29,9 +33,9 @@ Each memory bit on a flash chip can only be written to a limited number of times
 before data gets corrupt – and that bit can no longer reliably store a 0 or a 1.
 
 When one block fails, parts of the firmware may also become unreadable,
- leading to poor operation or failure of the MCU completely.
+leading to poor operation or failure of the MCU completely.</p>
 
-Every Tesla Model S and Model X created up to 2018 has an MCU, or Media Control Unit Version 1, also
+<p class="H-TESLA-p2"> Every Tesla Model S and Model X created up to 2018 has an MCU, or Media Control Unit Version 1, also
 called MCUv1. WHen it fails the car loses important festures controlled by the touchscreen.
 This failure derives by the Architecture of the CPU: Tesla soldered the 8 GB eMMC flash memory
 chip to the same boeard of the CPU. For that reason now the dirmware is competing with logs for space
@@ -47,16 +51,17 @@ essentially avoiding the write limitation.
 But here there is another problem because if data changed on the chip too often and in large
 quantities, wear-leveling can only do so much and at one point data strarts to get corrupt.
 You can either lose data or core functionality can start to fail depending on where the
-corruption occurs.
+corruption occurs<p>
 
-Solution:
-The only way to remedy at this failure is to replace the whole MCU. If your car is still
+<h2 id="sect-title"> Solution</h2>
+<p>The only way to remedy at this failure is to replace the whole MCU. If your car is still
 in warranty period, that is for free. If coverage is no longer valid you will have to pay the bill.
-A replacement isn't cheap. It affords from $700 to $5000.
+A replacement isn't cheap. It affords from $700 to $5000.</p>
 
-                            </p>
+
                         </div>
-                
+                      </div>
+
 
 
 

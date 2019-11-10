@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <meta charset="utf-8">
+    <title>Write Out Of Bounds</title>
+    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
+    <meta name="author" content="Bahram Ismayilov">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle"> Out of Bounds Write</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <p>Don't worry about this for now, i'll complete it tomorrow </p>
+        <ul>
+          <li><p>Type: Class</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Description</h2>
+    <p> Out of Bounds write is type of vulnerability that may happen in a software when it writes data outside of the current buffer (place where physical memory is stored) that it was initialy planned to.
+
+</p>
+<h2>Where this can happen</h2>
+<p>This vulnerability mostly occurs in Assembly, C or C++, </p>
+
+
+    <!-- If you have any other sections, put them here -->
+       </div>
+         <div class="VulTypeWhite">
+           <h2>Consequences</h2>
+           <p> Write out of bounds can lead to several problems such as: troubles in code launching, system failure, and errors in data. Moreover, a program may refer to memory locations, which are not in the boundaries of current buffer and may lead to software failure.
+
+           </p></div>
+         <div class="VulTypeWhite">
+         <h2>Detection</h2>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Mitigation</h2>
+           <p>There are several ways to mitigate this problem. However, most of them only may help partially, but even thoug there is one universal.<br>
+            It is the usage of languages,such as Java that does not support such vulnerability.
+           </p>
+         </div>
+    <h2>Links</h2>
+    <ul id="num1">
+      <a class="link" href="https://cwe.mitre.org/data/definitions/787.html"><li>https://cwe.mitre.org/data/definitions/787.html</li></a>
+    </ul>
+  </div>
+  </body>
+</html>

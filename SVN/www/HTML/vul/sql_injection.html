@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <meta charset="utf-8">
+    <title>SQL Injection</title>
+    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
+    <meta name="author" content="Ian Abuaf Pelo">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">SQL Injection</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Base</p></li>
+          <li><p>CWE Number: 89</p></li>
+          <li><p>Applicable Platforms: Database server</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Description</h2>
+    <p>SQL Injection is the practice of introducing <a class="VulDef" href="#">malicious code</a> inside an SQL server that is then executed on the machine. Using this method, it is possible to cause serious damage to a database.</p>
+    <p>This is possible because vulnerable systems can accept SQL command syntax as input, because the system either doesn't neutralize or doesn't quote its inputs. Because of that, those inputs will be interpreted as SQL instead of ordinary user data, which allows threat actors to alter query logic, bypass security checks, or modify the database, as,
+  by default, SQL does not make a distinction between the data plane and the control plane.</p>
+  <p>Because of the nature of this exploit, it is easy to attempt an attack on any SQL server, leaving vulnerable servers very often identified very quickly.<br>
+  SQL Injection can be classified under <a class="VulDef" href="validation.html">Improper Input Validation</a>.
+</p>
+    <h2>What is SQL?</h2>
+    <p>SQL, which stands for "Structured Query Language", is a domain-specific language used and designed for managing large databases, and thus it is in close contact with large amounts of data.<br>
+    It particularly useful in handling structured data, which is made up of relations between different types of data, such as variables. </p>
+       </div>
+         <div class="VulTypeWhite">
+           <h2>Consequences</h2>
+           <p>Common consequences of SQL Injection include <a class="VulDef" href="index.html#VulIntegrity">loss of integrity</a> and <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a>.</p>
+          <p>In some cases, either if authorization information is stored in the database and able to be changed via SQL injection, or if the system uses SQL commands in order to validate user names and passwords allowing threat actors to log in as a user without knowing the password, <a class="VulDef" href="index.html#VulAccessControl">access control</a> is compromised.</p>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Detection</h2>
+           <p>Detection of this vulnerability is not easy as <a class="VulDef" href="index.html#VulStaticAnalysis">automated static analysis</a> might not be able to detect the usage of third-party libraries or API functions that indirectly invoke SQL commands.</p>
+           <p> <a class="VulDef" href="index.html#VulManualCodeReview">Manual code reviews</a> can prove useful, however they are more time-consuming than <a class="VulDef" href="index.html#VulSpotchecking">spotchecking</a>, which only covers a small portion of the code and can often not be enough as a result.
+           </p>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Mitigation</h2>
+           <p>If the set of acceptable inputs is limited or known, it may prove useful to assign every valid input a numerical value, such as a numeric ID, and reject all other inputs.</p>
+           <p>Another strategy is to, if available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
+         </div>
+  </div>
+  </body>
+</html>
