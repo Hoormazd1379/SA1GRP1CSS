@@ -15,12 +15,19 @@
                         <div class="title-container">
                             <h2 id="sect-title">Cloudflare/Cloudbleed</h2>
                         </div>
-                            <p>
-CLoudflare was created in 2009 and acts as an intermediary between a client and a server, using
+                        <div class="H-CLOUD-div">
+
+
+                            <p class="H-CLOUD-div">
+<img class="H-CLOUD-img1" src="../../assets/his_imgs/cloudflare.png" alt="Cloudflare logo">
+<p class="H-CLOUD-p1">Cloudflare was created in 2009 and acts as an intermediary between a client and a server, using
 a reverse proxy to mirror and cache websites. By storing web content for delivery on the
 closest edge serverm it is able to optimize loading times. That also allows it to modify
-content, such as images and rich text, for better peromance.
+content, such as images and rich text, for better peromance.</p><hr>
+<img class="H-CLOUD-img2" src="../../assets/his_imgs/cloudbleed.png" alt="Cloudflare logo">
+<img class="H-CLOUD-img3" src="../../assets/his_imgs/text.png">
 
+<p class="H-CLOUD-p2">
 On 2 July 2019 at 05:50 pm, visitors to Cloudflare sites received 502 errors
 ("Bad Gateway") due to a global outage across network for about 30 minutes.
 
@@ -33,9 +40,11 @@ traffic is actually blocked so that we can measure false positive rates and ensu
 that the new rules do not cause problems when they are deployed into full production.
 Unfortunately, one of these rules contained a regular expression that caused CPU to
 spike to 100% on our machines worldwide. This 100% CPU spike caused the 502 errors
-that our customers saw. At its worst traffic dropped by 82%.
+that our customers saw. At its worst traffic dropped by 82%.</p>
+<hr>
 
-Solution:
+  <h2 id="sect-title">Solutions</h2>
+<p class="H-CLOUD-p3">
 We decided to issue a ‘global kill’ on the WAF Managed Rulesets, which instantly
 dropped CPU back to normal and restored traffic.
 We then went on to review the offending pull request, roll back the specific rules,
@@ -43,10 +52,10 @@ test the change to ensure that we were 100% certain that we had the correct fix,
 and re-enabled the WAF Managed Rulesets.
 
 Once rolled back the service returned to normal operation and all domains
-using Cloudflare returned to normal traffic levels.
+using Cloudflare returned to normal traffic levels.</p>
 
                         </div>
-
+</div>
 
 </body>
 </html>

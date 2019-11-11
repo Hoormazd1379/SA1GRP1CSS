@@ -175,7 +175,7 @@ if(save) {
 
 ##### Challenges 
 
-One problem that I encountered was that I supposed a <a> Tag would only containg the link and no other strings, like id, class or style. In Part 3 there's the solution that I found to this problem.
+One problem that I encountered was that I supposed a `<a>` Tag would only containg the link and no other strings, like id, class or style. In Part 3 there's the solution that I found to this problem.
 
 Another problem that I had, but to whom I quickly got a solution was that of the local links, which create a problem when checked since the Java Software is not in the same location as the files checked. The solution is quickly found, since the first thing that the software ask you to give it the absolute path of the filder containing the files to check.
 

@@ -8,48 +8,160 @@
     <meta name="author" content="Marco Mariosa">
     <title>History</title>
     <style>
-        img.H-FIW-img {
-            margin-top: 5vh;
-            margin-bottom: 3vh;
-            margin-left: 10vh;
-        }
+    /* Modified by Onciu Razvan Petrica */
 
-        .H-FIW-date {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
 
-        img.H-FIW-img1 {
+    div.H-FIW-div{
+      margin:0px 2% 0px 2%;
+    }
 
-            margin-bottom: 3vh;
-            margin-left: 10vh;
-            margin-bottom: 3vh;
+    img.H-FIW-img1 {
+        min-width:300px;
+        width:35%;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        float:left;
+    }
 
-        }
+    iframe.H-FIW-video {
+      width:100%;
+      border:none;
+      height:150px;
+      margin-bottom:20px;
+      }
 
-        .H-FIW-subtitle {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
+    img.H-FIW-img2 {
+        min-width:300px;
+        width:25%;
+        margin-bottom: 3vh;
+        margin-left: 20vh;
+        float:right;
+      }
 
-        iframe.H-FIW-video {
-            margin-top: 3vh;
-            margin-left: 10vh;
-            margin-bottom: 3vh;
-        }
+    img.H-FIW-img3 {
+        width:25%;
+        margin-bottom: 3vh;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:40px;
+        border: 30px rgba(90, 90, 90, 0.9) ridge;
+        padding:20px;
+        background-color: rgba(195, 7, 63, 0.5);
+      }
 
-        img.H-FIW-img2 {
-            margin-bottom: 3vh;
-            margin-left: 20vh;
-            margin-bottom: 3vh;
+    p.H-FIW-centerp {
+        margin-top: 5vh;
+        text-align: center;
+        margin-bottom: 5vh;
+      }
 
-        }
+    p.H-FIW-p1 {
+        text-align: center;
+        background-color: rgba(195, 7, 63, 0.5);
+        padding:20px;
+      }
 
-        p.H-FIW-centerp {
-            margin-top: 5vh;
-            text-align: center;
-            margin-bottom: 5vh;
-        }
+    p.H-FIW-p2 {
+        text-align: center;
+        background-color: rgba(90, 90, 90, 0.5);
+        padding:20px;
+      }
+
+    p.H-FIW-p3 {
+        text-align: justify;
+        margin: 0px 30% 0px 40%;
+        padding:20px;
+        border: 2px white solid;
+      }
+
+    p.H-FIW-p4 {
+        text-align: justify;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        padding:20px;
+        border: 5px rgba(90, 90, 90, 0.9) groove;
+        background-color: rgba(195, 7, 63, 0.5);
+        margin-bottom:20px;
+      }
+
+    p.H-FIW-p5 {
+        text-align: justify;
+        padding:20px;
+        border: 2px white solid;
+        margin-bottom:20px;
+      }
+
+    #facebook{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: rgba(195, 7, 63, 1);
+        text-indent: -999em;
+        width: 100px;
+        height: 110px;
+        box-sizing: content-box;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        border: 15px solid rgba(195, 7, 63, 0.5);
+        border-bottom: 0;
+        margin-bottom:20px;
+    }
+    #facebook:before {
+        content: "/20";
+        position: absolute;
+        background-color: rgba(195, 7, 63, 0.5);
+        width: 40px;
+        height: 90px;
+        bottom: -30px;
+        right: -37px;
+        border: 20px solid #eee;
+        border-radius: 25px;
+        box-sizing: content-box;
+   }
+   #facebook:after {
+        content: "/20";
+        position: absolute;
+        width: 55px;
+        top: 50px;
+        height: 20px;
+        background-color: #eee;
+        right: 5px;
+        box-sizing: content-box;
+   }
+
+   /*window size under 1200px*/
+
+   @media screen and (max-width: 1200px) {
+     img.H-FIW-img1 {
+         display:block;
+         margin-left:auto;
+         margin-right: auto;
+         float:none;
+
+     }
+
+     img.H-FIW-img2 {
+         float:none;
+         display:block;
+         margin-left:auto;
+         margin-right: auto;
+     }
+
+     p.H-FIW-p3 {
+         text-align: justify;
+         margin: 0px 0% 0px 0%;
+         padding:20px;
+         border: 2px white solid;
+         display:inline-block;
+       }
+
+
+   }
+
+
 
     </style>
 </head>
@@ -60,27 +172,47 @@
 
     <div id="content">
         <div class="title-container">
-            <h2 id="sect-title">Facebook,Instagram and Whatsapp</h2>
-            <h2 class="H-FIW-date">
-                <p> 3/7/2019</p>
-            </h2>
+            <h2 id="sect-title">Facebook, Instagram and Whatsapp</h2>
         </div>
-        <p>
-            Facebook had problems loading images, videos, and other data across its apps today, leaving some people unable to load photos in the Facebook News Feed, view stories on Instagram, or send messages in WhatsApp. Facebook said that it was aware of the issues and was “working to get things back to normal as quickly as possible.” It blamed the outage on an error that was triggered during a “routine maintenance operation.”
+        <div class="H-FIW-div">
+          <div id="facebook"></div>
+
+        <p class="H-FIW-p1">
+            Facebook had problems loading images, videos, and other data across its apps today, leaving some people unable to load photos in the Facebook News Feed, view stories on Instagram, or send messages in WhatsApp. Facebook said that it was aware of the issues and was “working to get things back to normal as quickly as possible.”
+            It blamed the outage on an error that was triggered during a “routine maintenance operation.”
         </p>
-        <p> At 7:48 of 3 July Facebook posted a message to its official Twitter account saying the “issue has since been resolved and we should be back at 100 percent for everyone. We’re sorry for any inconvenience.” Instagram similarly said its issues were more or less resolved, too.</p>
-        <div> <img class="H-FIW-img" src="../../assets/his_imgs/facebook_down.jpg" height="300vw"><img class="H-FIW-img1" src="../../assets/his_imgs/instagram_down.jpg" width="300vw" height="300vw"></div>
-        <p>The issues started around 8AM ET and began slowly clearing up after a couple hours, according to DownDetector, which monitors website and app issues. The errors aren’t affecting all images; many pictures on Facebook and Instagram still load, but others are appearing blank. DownDetector has also received reports of people being unable to load messages in Facebook Messenger.
 
-            The outage persisted through mid-day, with Facebook releasing a second statement, where it apologized “for any inconvenience.” Facebook’s platform status website still lists a “partial outage,” with a note saying that the company is “working on a fix that will go out shortly.”</p>
-        <h2 class="H-FIW-subtitle"> The consequences</h2>
-        <p>Apps and websites are always going to experience occasional disruptions due to the complexity of services they’re offering. But even when they’re brief, they can become a real problem due to the huge number of users many of these services have. A Facebook outage affects a suite of popular apps, and those apps collectively have billions of users who rely on them. That’s a big deal when those services have become critical for business and communications, and every hour they’re offline or acting strange can mean real inconveniences or lost money.</p>
-        <div><iframe class="H-FIW-video" width="560" height="315" src="https://www.youtube.com/embed/hhXOYNhGvXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><img class="H-FIW-img2" src="../../assets/his_imgs/facebook_down2.jpg" width="400vw"></div>
-        <p>Moreover the consequences were especially on a social level beacause people were not able to communicate for hours, but also economic because the issue also affected Facebook Workplace, the service used by businesses to communicate internally. One examlpe of the impact of this outage could be the delcaration of Buenos Aires-based designer Rebecca Brooker who told the BBC the interruption was having a significant impact on her firm's work.</p>
-        <p class="H-FIW-centerp"> <small>"Facebook for personal use is fine - but what happens when we rely on large companies such as this to provide business services?"</small></p>
+        <p class="H-FIW-p2"> At 7:48 of 3 July Facebook posted a message to its official Twitter account saying the “issue has since been resolved and we should be back at 100 percent for everyone. We’re sorry for any inconvenience.” Instagram similarly said its issues were more or less resolved, too.
+        </p>
+        <br>
+          <img class="H-FIW-img1" src="../../assets/his_imgs/facebook_down.jpg" alt="facebook screenshot">
+          <img class="H-FIW-img2" src="../../assets/his_imgs/instagram_down.jpg" alt="instagram screenshot">
+
+        <p class="H-FIW-p3">
+          The issues started around 8AM ET and began slowly clearing up after a couple hours, according to DownDetector, which monitors website and app issues. The errors aren’t affecting all images; many pictures on Facebook and Instagram still load, but others are appearing blank. DownDetector has also received reports of people being unable to load messages in Facebook Messenger.
+          The outage persisted through mid-day, with Facebook releasing a second statement, where it apologized “for any inconvenience.” Facebook’s platform status website still lists a “partial outage,” with a note saying that the company is “working on a fix that will go out shortly.”
+        </p>
+
+        <h2> The consequences</h2>
+
+        <p class="H-FIW-p4">
+          Apps and websites are always going to experience occasional disruptions due to the complexity of services they’re offering. But even when they’re brief, they can become a real problem due to the huge number of users many of these services have. A Facebook outage affects a suite of popular apps, and those apps collectively have billions of users who rely on them.
+          That’s a big deal when those services have become critical for business and communications, and every hour they’re offline or acting strange can mean real inconveniences or lost money.
+        </p>
+
+        <iframe class="H-FIW-video" src="https://www.youtube.com/embed/hhXOYNhGvXg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+        <p class="H-FIW-p5">Moreover the consequences were especially on a social level beacause people were not able to communicate for hours, but also economic because the issue also affected Facebook Workplace, the service used by businesses to communicate internally.
+          One examlpe of the impact of this outage could be the delcaration of Buenos Aires-based designer Rebecca Brooker who told the BBC the interruption was having a significant impact on her firm's work.
+        </p>
+        <img class="H-FIW-img3" src="../../assets/his_imgs/facebook_down2.jpg" >
+        <p class="H-FIW-centerp">
+          "Facebook for personal use is fine - but what happens when we rely on large companies such as this to provide business services?"
+        </p>
 
+
+      </div>
     </div>
 
 

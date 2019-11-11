@@ -8,7 +8,24 @@
   </head>
 
   <body id="vul-body">
-    <h1>Incorrect Permission Assignment for Critical Resource</h1>
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Incorrect Permission Assignment For Critical Resource</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Base</p></li>
+          <li><p>CWE Number: 89</p></li>
+          <li><p>Applicable Platforms: Database server</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
     <h2>Overview</h2>
     <p id="vul-p"> When a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.<br>
         Basically, the software specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.</p>
@@ -26,6 +43,16 @@
         <h3>Integrity</h3>
         <p id="vul-p">An attacker may be able to destroy or corrupt critical data in the associated resource, such as deletion of records from a database.</p>
 
-        <h2>Mitigation</h2>
+      </div>
+        <div class="VulTypeWhite">
+          <h2>Consequences</h2>
+          </div>
+        <div class="VulTypeWhite">
+          <h2>Detection</h2>
+          </div>
+        <div class="VulTypeWhite">
+          <h2>Mitigation</h2>
+          </div>
+ </div>
       </body>
     </html>

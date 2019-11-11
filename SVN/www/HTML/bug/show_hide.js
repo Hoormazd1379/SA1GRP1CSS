@@ -1,5 +1,5 @@
-function myFunction() {
-  var x = document.getElementById("solution");
+function ShowHide(divId) {
+  var x = document.getElementById(divId);
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

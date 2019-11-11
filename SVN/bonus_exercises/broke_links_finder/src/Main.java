@@ -12,10 +12,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
+import java.io.*;
 
 public class Main {
 
-    public static void main(String[] args) throws InterruptedException, FileNotFoundException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         /*
         String test =   "href='#' style='margin-right: 60px;' ";
         if(test.contains(" ")){
@@ -28,13 +29,20 @@ public class Main {
 
 
 
-        String documentPath, resultPath;
+        String documentPath, resultPath= " ";
         Scanner console = new Scanner(System.in);
         ArrayList<htmlLink> listOfLinks = new ArrayList<htmlLink>();
         File f1,f2;
-        boolean print = true;
+        boolean save = true;
         File[] foundfiles = new File[0];
+        String outputString = " ";
+        String tempOutputString;
+        String title;
 
+
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        outputString = outputString+now+"\n";
 
 
 
@@ -72,37 +80,39 @@ public class Main {
         }while (!f1.exists() || !f1.isDirectory() );
         System.out.println("<< Directory: OK.");
         //Set results path, where to put the results
-        do {
-            System.out.println(">>> Type absolute path to decide where to put the results (list of all links + status):");
-
-            resultPath = console.next();
-
-            System.out.println("<< Selected'" + resultPath + "' as result path. Checking if exists and is a directory..");
-            f2 = new File(resultPath);
-            if(!f2.exists()){
-                System.out.println("ERROR: File not Found. Try again");
-            }
-            else if (!f2.isDirectory()){
-                System.out.println("ERROR: Not a Directory. Try again");
-            }
-        }while (!f2.exists() || !f2.isDirectory());
-        System.out.println("<< Directory: OK.");
-
         String p;
         do {
-            System.out.println(">> Print the results on the console? [Y] / [N] ");
+            System.out.println(">> Store  the results? [Y] / [N] ");
             p = console.next();
             if(!p.equals("N") && !p.equals("Y") && !p.equals("n") && !p.equals("y")){
                 System.out.println("Wrong input; Only N, n, Y and y allowed.");
             }else if( p.equals("n") || p.equals("N")){
-                print=false;
+                save=false;
 
                 System.out.println("Wait for the finishing confirmation before closing the program.");
             }else {
-                print=true;
+                save=true;
                 System.out.println("Getting the results..");
             }
         }while (!p.equals("N") && !p.equals("Y") && !p.equals("n") && !p.equals("y"));
+
+        if(save) {
+            do {
+                System.out.println(">>> Type absolute path to decide where to put the results (list of all links + status):");
+
+                resultPath = console.next();
+
+                System.out.println("<< Selected'" + resultPath + "' as result path. Checking if exists and is a directory..");
+                f2 = new File(resultPath);
+                if (!f2.exists()) {
+                    System.out.println("ERROR: File not Found. Try again");
+                } else if (!f2.isDirectory()) {
+                    System.out.println("ERROR: Not a Directory. Try again");
+                }
+            } while (!f2.exists() || !f2.isDirectory());
+            System.out.println("<< Directory: OK.");
+        }
+
 
 
 
@@ -117,7 +127,9 @@ public class Main {
 
                 content = Files.readString(Paths.get(documentPath+"/"+foundfiles[i].getName()));
                 System.out.println("---------------------------------");
-                System.out.println("<< Links found in: "+foundfiles[i].getName()+"\n");
+                title = "<< Links found in: "+foundfiles[i].getName()+"\n";
+                outputString = outputString+"\n"+title+"\n";
+                System.out.println(title);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -133,7 +145,7 @@ public class Main {
 
 
             for (String e : list) {
-                System.out.println(e);
+                //System.out.println(e);
                 listOfLinks.add(new htmlLink());
                 int currentPos = (listOfLinks.size() - 1);
                 htmlLink currentHtmlLink = listOfLinks.get(currentPos);
@@ -164,18 +176,24 @@ public class Main {
                 }
 
 
-                if (print) {
-                    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-                    LocalDateTime now = LocalDateTime.now();
-                    System.out.println(dtf.format(now));
-                    System.out.println(currentHtmlLink.href + " Type: " + currentHtmlLink.type + " Status: " + currentHtmlLink.status + "\n");
-                }
+
+
+                    tempOutputString = currentHtmlLink.href + " Type: " + currentHtmlLink.type + " Status: " + currentHtmlLink.status + "\n";
+                    outputString = outputString + tempOutputString;
+                    System.out.println(tempOutputString);
+
 
             }
             System.out.println("---------------------------------");
         }
+        if(save) {
 
-        System.out.println("\nProgram terminated correcly. Safe to close it.\n Results are located in: "+resultPath);
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(resultPath+"/result.txt"));
+            writer.write(outputString);
+            writer.close();
+            System.out.println("\nProgram terminated correcly. Safe to close it.\n Results are located in: " + resultPath);
+        }
         System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
     }
 
@@ -255,10 +273,8 @@ public class Main {
         //case that the path is absolute
         File f1 = new File(Path);
 
-
         //case that the path is relative, add it to the absolute path where the
         //file is found
-
 
         File f2 = new File(documentPath+"/"+Path);
         //either the relative or absolute path must work

@@ -19,6 +19,7 @@ public class htmlLink {
     public htmlLink(){
 
     }
+
     public void setType(int x){
         if(x==0){
             type= type.EXTERNAL;

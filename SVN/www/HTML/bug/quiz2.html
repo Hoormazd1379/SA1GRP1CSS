@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quiz</title>
+	<title>Quiz - Part II</title>
 	<link rel="stylesheet" href="../../stylesheets/main.css">
 	<!-- Pageloader by H.P-->
 	<script src="../../scripts/pageloader.js"></script>
@@ -32,29 +32,63 @@
 
 				<div class="h1containerBug">
 					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-					<h1 class="bug"> Quiz </h1>
+					<h1 class="bug"> Quiz - Part II</h1>
 				</div>
 
-				<h2>IT'S TIME TO TEST YOUR KNOWLEGE!</h2>
+				<h2 class="bugquiz">One page is not enough to see what you learned!</h2>
 
 
 				<!-- Question and solution template-->
-				<h3>Question 2</h3>
+				<div class="textblockcont">
+					<h3>Question 1</h3>
 
-				<p>The question.</p>
-				<button class="ShowSolution" onclick="myFunction()">>>> Show solution <<<</button>
+					<p>Which are the typology of Runtime error?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution1')">>>> Show solution <<<</button>
 
-				<div id="solution" style="display: none;">
-					The solution
+					<div id="solution1" class="solution" style="display: none;">
+						<ol class="SolutionQuiz">
+							<li>Memory Leak</li>
+							<li>Logic Error</li>
+							<li>Crash</li>
+							<li>Peripherals</li>
+						</ol>
+						<p>More details in the <a class="RefBug" href="runtime_errors.html">Runtime Error</a> page.</p>
+					</div>
 				</div>
-				<h3>Question 2</h3>
 
-				<p>The question.</p>
-				<button class="ShowSolution" onclick="myFunction()">>>> Show solution <<<</button>
+				<div class="textblockcont">
+					<h3>Question 2</h3>
 
-				<div id="solution" style="display: none;">
-					The solution
+					<p>What is a Severe Runtime Error in Videogame?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution2')">>>> Show solution <<<</button>
+
+					<div id="solution2" class="solution" style="display: none;">
+						<p>Severe is a game bug which restricts any movement from the player, without crashing or closing the game.</p>
+					</div>
 				</div>
+
+					<div class="textblockcont">
+					<h3>Question 3</h3>
+
+					<p>When does a Runtime Error appear?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution3')">>>> Show solution <<<</button>
+
+					<div id="solution3" class="solution" style="display: none;">
+						<p>Runtime errors occur during execution of the software, so such errors occur during the interpretation phase.</p>
+					</div>
+				</div>
+
+					<div class="textblockcont">
+					<h3>Question 4</h3>
+
+					<p>The question.</p>
+					<button class="ShowSolution" onclick="ShowHide('solution4')">>>> Show solution <<<</button>
+
+					<div id="solution4" class="solution" style="display: none;">
+						The solution
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

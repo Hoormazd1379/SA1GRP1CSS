@@ -7,7 +7,24 @@
     <meta name="Kieran Mckee" content="">
   </head>
   <body id="vul-body">
-    <h1>Improper Restriction of Operations within the Bounds of a Memory Buffer</h1>
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Improper Restriction Of Operation Within the Bounds of Memory Access</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Base</p></li>
+          <li><p>CWE Number: 89</p></li>
+          <li><p>Applicable Platforms: Database server</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
     <h2>Overview</h2>
     <p id="vul-p">The software performs operations on a memory buffer, but it can read from or write to a memory location that is outside of the intended boundary of the buffer.<br><br>
       Certain languages allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.<br>
@@ -30,6 +47,16 @@
     <h3>Confidentiality</h3>
     <p id="vul-p">In the case of an out-of-bounds read, the attacker may have access to sensitive information. If the sensitive information contains system details, such as the current buffers position in memory, this knowledge can be used to craft further attacks, possibly with more severe consequences.</p>
 
-    <h2>Mitigation</h2>
+  </div>
+    <div class="VulTypeWhite">
+      <h2>Consequences</h2>
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Detection</h2>
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Mitigation</h2>
+      </div>
+</div>
   </body>
 </html>

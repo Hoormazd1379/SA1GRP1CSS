@@ -23,6 +23,7 @@
           <h1 id="page-title"> VULNERABILITIES </h1>
       </div>
         <div class="ContainerVul">
+          <div class="textblockcont">
           <h2>What is a vulnerability?</h2>
           <p>A vulnerability is a weakness of a system which can be exploited by a threat actor to perform unauthorized actions within the system.
             Some vulnerabilities are directly tied with bugs in the code, others are an innate repercussion of the type of the software, and others still are the result of a lack of implementation of mitigation strategies.
@@ -31,6 +32,8 @@
           <p>In this section you will find list and describe some of the most harmful vulnerabilities of software that can still be found in software today.
           In addition, every vulnerability described will also provide information on the possible consequences of that vulnerability being exploited as well as strategies to detect and mitigate that vulnerability to help making your software more secure.
           You will also be able to see the effects of these exploits by visiting related articles in the History section.</p>
+          </div>
+          <div class="textblockcont" style="height: 950px">
           <h2>Articles</h2>
           <div class="ArticleContainer">
             <div class="VulSquareBlack VULbg" onclick="location.href='resources.html';"><h3>Uncontrolled resource consumption</h3>
@@ -41,35 +44,37 @@
                <img src="https://media.giphy.com/media/l0HlJ7aAQyvjxM6B2/giphy.gif" alt="Improper Input">
           <p>Inputs are not controlled or can be mistaken by the software for a different type of input. </p>
           </div>
-            <div class="VulSquareBlack VULbg" onclick="location.href='informationExposure.html';"><h3>Information exposure</h3>
+            <div class="VulSquareBlack VULbg" onclick="location.href='information_exposure.html';"><h3>Information exposure</h3>
                <img src="http://giphygifs.s3.amazonaws.com/media/FmLecXUlTqZ6o/giphy.gif" alt="Exposure">
           <p>The private information of users in unintentionally exposed to threat actors.</p>
           </div>
-            <div class="VulSquareBlack VULbg" onclick="location.href='IROBM.html';"><h3>Improper restriction of operations</h3>
+            <div class="VulSquareBlack VULbg" onclick="location.href='improper_restriction.html';"><h3>Improper restriction of operations</h3>
                <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="Data Overflow">
           <p>The software performs operations outside of its intended memory buffer, leading to data leaks.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>Incorrect permission assignment</h3>
+          <div class="VulSquareBlack VULbg" onclick="location.href='improper_permission.html';"><h3>Incorrect permission assignment</h3>
             <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
           <p>Permissions are assigned in such a way that important resources are able to be read or modified by threat actors.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>Improper authentication</h3>
+          <div class="VulSquareBlack VULbg" onclick="location.href='improper_authentication.html';"><h3>Improper authentication</h3>
             <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
           <p>The software doesn't check the identity of users sufficiently enough, allowing threat actors to make incorrect claims.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
-            <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
-          <p>C'mon guys we are running out of time  <br> &#128557;  &#128557;  &#128557;  &#128557;  &#128557; </p>
+          <div class="VulSquareBlack VULbg" onclick="location.href='out_of_bounds_read.html';"><h3>Out of bounds read</h3>
+            <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
+          <p>A part of Improper Restriction of Operations, allows threat actors to read outside the bounds of memory.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
-            <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
-          <p>C'mon guys we are running out of time  <br> &#128557;  &#128557;  &#128557;  &#128557;  &#128557; </p>
+          <div class="VulSquareBlack VULbg" onclick="location.href='out_of_bounds_write.html';"><h3>Out of bounds write</h3>
+            <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
+          <p>A part of Improper Restriction of Operations, allows threat actors to write outside the bounds of memory.</p>
           </div>
-          <div class="VulSquareBlack VULbg"><h3>TO BE UPLOADED</h3>
-            <img src="https://media.giphy.com/media/1XgIXQEzBu6ZWappVu/giphy.gif" alt="To be Completed">
-          <p>C'mon guys we are running out of time <br> &#128557;  &#128557;  &#128557;  &#128557;  &#128557; </p>
+          <div class="VulSquareBlack VULbg" onclick="location.href='sql_injection.html';"><h3>SQL Injection</h3>
+            <img src="https://media.giphy.com/media/3oFzlWifRcnogZOs3m/giphy.gif" alt="To be Completed">
+          <p>The SQL language comes with a very dangerous vulnerability that needs to be accounted for.</p>
           </div>
           </div>
+        </div>
+        <div class="textblockcont" style="height: 2000px">
           <h2>Definitions</h2>
           <p>In order to better understand each vulnerability, certain recurring key words will be described here in the homepage.
             Clicking on a <a class="VulDef" href="#">red term</a> in one of the articles will bring you here to its respective definition.
@@ -78,7 +83,8 @@
           <h2><a name="VulTypes"></a>Types</h2>
           <p>The type of a vulnerability represents its level of abstraction, meaning the range of situations, software types, and programming languages where that vulnerability can appear.
           For example a vulnerability that can only appear in a specific programming language is less abstract than one that can appear in any software. </p>
-          <p>For more information visit the <a class="VulDef" href="#">CWE website</a>.</p>
+          <p>For more information visit the <a class="VulDef" href="https://cwe.mitre.org/data/definitions/1000.html">CWE website</a>
+            <sup><a class="VulDef" href="bib_vul.html">(1)</a></sup>.</p>
           <div class="VulTypeBlack VULbg">
             <div class="VulTypeSphere">
               C
@@ -113,37 +119,42 @@
             <div class="VulRectangleSmall">
               <a name="VulDenialOfService"></a>Denial of Service (DoS)
             </div>
-            DoS is one of the most common consequences of software vulnerabilities, it consints in disrupting a machine or program by flooding its input with useless requests that overload the system preventing legitimate requests from being fulfilled. This can lead to a <a class="VulDef" href="#">crash</a> of the system.
+            DoS is one of the most common consequences of software vulnerabilities, it consints in disrupting a machine or program by flooding its input with useless requests that overload the system preventing legitimate requests from being fulfilled. This can lead to a crash of the system.
+            <sup><a class="VulDef" href="bib_vul.html">(2)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulFailOpening"></a>Fail Opening
             </div>
             "Fail Closed" software is software that is able to block access to users when exceptions are encountered. If a threat actor is able to "Fail Open" a system, then that system will be able to grant access even when exceptions are met. For example, an online market will grant access to its products when payment does not terminate sucsessfully.
+            <sup><a class="VulDef" href="bib_vul.html">(3)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulConfidentiality"></a>Loss of confidentiality
             </div>
             If a system suffers loss of confidentiality, then data has been disclosed to unauthorized individuals. This could range from data that someone simply wasn't authorized to see (such as employees being able to see payroll data) to very serious data leaks (such as a threat actor being able to access customers' names and credit card information).
+            <sup><a class="VulDef" href="bib_vul.html">(4)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulIntegrity"></a>Loss of integrity
             </div>
-            Loss of integrity means that data or an IT system has been modified or destroyed by an unauthorized entity. This could mean that the system has been infected with a <a class="VulDef" href="#">virus</a> or simply that stored information has been modified or deleted.
+            Loss of integrity means that data or an IT system has been modified or destroyed by an unauthorized entity. This could mean that the system has been infected with a <a class="VulDef" href="../mal/virus.html">virus<a> or simply that stored information has been modified or deleted.
+            <sup><a class="VulDef" href="bib_vul.html">(4)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulDataCorruption"></a>Data Corruption
             </div>
-            If the threat actor is unable to directly control memory, but is still able to change it, such as through an overflow, it is considered data corruption. Data corruption can vary in size from a minor loss of data to a change that makes the affected memory portion unable to be identified or computed by the program, resulting in the program erroring or <a class="VulDef" href="#">crashing</a>.
+            If the threat actor is unable to directly control memory, but is still able to change it, such as through an overflow, it is considered data corruption. Data corruption can vary in size from a minor loss of data to a change that makes the affected memory portion unable to be identified or computed by the program, resulting in the program erroring or crashing.
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulAccessControl"></a>Access Control
             </div>
             Access control is a method of guaranteeing that users are who they say they are and that they have the appropriate access to company data. If this authentication phase is compromised, threat actors are able to gain administrative permissions.
+            <sup><a class="VulDef" href="bib_vul.html">(5)</a></sup>
           </div>
           <h2>Detection</h2>
           <p>The following terms describe several ways of detecting possible vulnerabilities in a code.
@@ -153,18 +164,21 @@
               <a name="VulStaticAnalysis"></a>Static Analysis
             </div>
             This debugging method consists in reading the source code of a program without executing it to find errors and spot vulnerabilities. Carrying out this method requires a base understanding of the code structure. Certain automated tools can help programmers in this task.
+            <sup><a class="VulDef" href="bib_vul.html">(6)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulDynamicAnalysis"></a>Dynamic Analysis
             </div>
             The evaluation of a program is carried out by executing it and looking at the data in real time, while the program is running. It is important that a program is tested in all scenarios possible, as to reduce the risk of overlooking a fatal flaw.
+            <sup><a class="VulDef" href="bib_vul.html">(6)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
               <a name="VulFuzzing"></a>Fuzzing
             </div>
             The program is given invalid, unexpected or random data as input, and is then monitored for crashes, memory leaks or other exceptions. This process is often automated and is the most effective when the program recievies semi-valid inputs, which exposes issues regarding corner cases.
+            <sup><a class="VulDef" href="bib_vul.html">(7)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
@@ -177,6 +191,7 @@
               <a name="VulManualCodeReview"></a>Manual Code Review
             </div>
             The process of reading through the code line by line to spot errors or vulnerabilities. Ideally, all of the programmers review the entirety of the source code in order to find as many errors as possible.
+            <sup><a class="VulDef" href="bib_vul.html">(8)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
             <div class="VulRectangleSmall">
@@ -184,30 +199,13 @@
             </div>
             A process of meeting during which a software product is examined by a project personnel, managers, users, customers, user representatives, or other interested parties for comment or approval. IEEE Std 1028 is a common set of activities for formal reviews with the objective of identifying issues.
           </div>
-          <h2>Mitigation</h2>
-          <p>There are many possible ways of eliminating or mitigating the effect of a vulnerability.
-          Certain solutions will work best for certain vulnerabilities while others may be not effective, visit the <a class="VulDef" href="#">articles section</a> for more information.</p>
-          <div class="VulRectangle VULbg">
-            <div class="VulRectangleSmall">
-
-            </div>
           </div>
-          <div class="VulRectangle VULbg">
-            <div class="VulRectangleSmall">
-
-            </div>
-          </div>
-          <div class="VulRectangle VULbg">
-            <div class="VulRectangleSmall">
-
-            </div>
-          </div>
-          </div>
+        </div>
         </div>
         <div id="footer">
             <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
                 &#169; Catastrophic Software Failures
-                <span style="float: right; margin-right: 46px;" id="page-auth">Ian Abuaf Pelo</span>
+                <span><address id="page-auth">Ian Abuaf Pelo</address></span>
             </p>
         </div>
      <!-- fullscreen div, blocking the screen view until all images are loaded.
