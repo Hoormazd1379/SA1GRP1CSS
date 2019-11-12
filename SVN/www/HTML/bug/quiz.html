@@ -20,118 +20,186 @@
 </head>
 <body>
 
-	<div id="particles-js" style="top: 44px;">
+	<div id="particles-js">
 	</div>
 
 	<div id="wrapper">
-
-
-
 		<div id="wrapper">
-
 			<div class="ContainerBug">
 
 		<!-- CONTENT BELOW -->
 
-				<div class="h1containerBug">
-					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
-					<h1 class="bug"> Quiz </h1>
+				<div class="h1container">
+					<a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+					<h1 id="page-title"> Quiz </h1>
+					<ul class="changePage">
+						<li>
+							<a href="quiz2.html"> >> next page >> </a>
+						</li>
+					</ul>
 				</div>
 
 				<h2>IT'S TIME TO TEST YOUR KNOWLEGE!</h2>
 
 
+				<div class="textblockcont">
 				<!-- Question and solution template-->
-				<h3>Question 1</h3>
+					<h3>Question 1</h3>
 
-			<p>What id the difference between an OBOE and a fencepost-error?</p>
+					<p>What is a bug?</p>
 
-				<p>a) OBOE means on-by-one error and the Fencepost error is a specific type.</p>
-				<p>b) There is no difference.</p>
-				<p>c) The OBOE we can find it in the mathematical context, while the Fencepost error is not found in this field.</p>
-				<p>d) None of these options are correct.</p>
+					<ol class="Quiz">
+						<li>A bug is an order of the insects.</li>
+						<li>A bug , in informatics, is an error in software.</li>
+						<li>Both answers are correct.</li>
+						<li>None of these options are correct.</li>
+					</ol>
 
-				<button class="ShowSolution" onclick="ShowHide('solution1')">>>> Show solution <<<</button>
+					<button class="ShowSolution" onclick="ShowHide('solution1')">>>> Show solution <<<</button>
 
-				<div id="solution1" class="solution" style="display: none;">
-					None of these options is correct.
+					<div id="solution1" class="solution" style="display: none;">
+						<p>Both answers are correct.</p>
+					</div>
 				</div>
 
-				<h3>Question 2</h3>
-				<p>What means infinite loops?</p>
+				<div class="textblockcont">
+					<h3>Question 2</h3>
 
-				<p>a) Is a specific type on an OBOE, which is a logic error involving the discrete equivalent of boundary condition.</p>
-				<p>b) Is a sequence of instructions in a computer program which loops endlessly.</p>
-				<p>c) Is a method of defining a funcion to solve a problem but returns to hte initial problem.</p>
-				<p>d) None of these options are correct.</p>
+					<p>What is the difference between an OBOE and a fencepost-error?</p>
 
-				<button class="ShowSolution" onclick="ShowHide('solution2')">>>> Show solution <<<</button>
+					<ol class="Quiz">
+						<li>OBOE means on-by-one error and the Fencepost error is a specific type.</li>
+						<li>There is no difference.</li>
+						<li>The OBOE we can find it in the mathematical context, while the Fencepost error is not found in this field.</li>
+						<li>None of these options are correct.</li>
+					</ol>
 
-				<div id="solution2" class="solution" style="display: none;">
-					Is a sequence of instructions in a computer program which loops endlessly.
+					<button class="ShowSolution" onclick="ShowHide('solution2')">>>> Show solution <<<</button>
+
+					<div id="solution2" class="solution" style="display: none;">
+						<p>None of these options is correct.</p>
+					</div>
 				</div>
 
-				<h3>Question 3</h3>
+				<div class="textblockcont">
+					<h3>Question 3</h3>
 
-				<p>What are the causes of a crash to any electronic component?</p>
+					<p>What means infinite loops?</p>
 
-<p>a) Bugs, heat and fans.</p>
-<p>b) Bugs, component malfunction and cooling.</p>
-<p>c) Bugs, fans and component malfunction.</p>
-<p>d) None of these options are correct.</p>
+					<ol class="Quiz">
+						<li>Is a specific type on an OBOE, which is a logic error involving the discrete equivalent of boundary condition.</li>
+						<li>Is a sequence of instructions in a computer program which loops endlessly.</li>
+						<li>Is a method of defining a funcion to solve a problem but returns to hte initial problem.</li>
+						<li>None of these options are correct.</li>
+					</ol>
 
-<button class="ShowSolution" onclick="ShowHide('solution3')">>>> Show solution <<<</button>
+					<button class="ShowSolution" onclick="ShowHide('solution3')">>>> Show solution <<<</button>
 
-<div id="solution3" class="solution" style="display: none;">
-None of these options are correct.</div>
+					<div id="solution3" class="solution" style="display: none;">
+						<p>Is a sequence of instructions in a computer program which loops endlessly.</p>
+					</div>
+				</div>
 
-<h3>Question 4</h3>
+				<div class="textblockcont">
+					<h3>Question 4</h3>
 
+					<p>What are the causes of a crash to any electronic component?</p>
 
-<p>In which component if there is a crash, the applications do not work, although there is power?</p>
+					<ol class="Quiz">
+						<li>Bugs, heat and fans.</li>
+						<li>Bugs, component malfunction and cooling.</li>
+						<li>Bugs, fans and component malfunction.</li>
+						<li>None of these options are correct.</li>
+					</ol>
 
-<p>a) In Operating Systems.</p>
-<p>b) In software and operating systems.</p>
-<p>c) In Software.</p>
-<p>d) All options are wrong.</p>
+					<button class="ShowSolution" onclick="ShowHide('solution4')">>>> Show solution <<<</button>
 
-<button class="ShowSolution" onclick="ShowHide('solution4')">>>> Show solution <<<</button>
+					<div id="solution4" class="solution" style="display: none;">
+						<p>None of these options are correct.</p>
+					</div>
+				</div>
 
-<div id="solution4" class="solution" style="display: none;">
-In Operating Systems.</div>
+				<div class="textblockcont">
+					<h3>Question 5</h3>
 
+					<p>In which component if there is a crash, the applications do not work, although there is power?</p>
 
-<h3>Question 5</h3>
+					<ol class="Quiz">
+						<li>In Operating Systems.</li>
+						<li>In software and operating systems.</li>
+						<li>In Software.</li>
+						<li>All options are wrong.</li>
+					</ol>
 
-<p>How many ways can you use debugging?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution5')">>>> Show solution <<<</button>
 
+					<div id="solution5" class="solution" style="display: none;">
+						<p>In Operating Systems.</p>
+					</div>
+				</div>
 
-<p>a) One.</p>
-<p>b) Two.</p>
-<p>c) Three.</p>
-<p>d) None of these options.</p>
+				<div class="textblockcont">
+					<h3>Question 6</h3>
 
-<button class="ShowSolution" onclick="ShowHide('solution5')">>>> Show solution <<<</button>
+					<p>How many ways can you use debugging?</p>
 
-<div id="solution5" class="solution" style="display: none;">
-Two.</div>
+					<ol class="Quiz">
+						<li>One.</li>
+						<li>Two.</li>
+						<li>Three.</li>
+						<li>None of these options.</li>
+					</ol>
 
+					<button class="ShowSolution" onclick="ShowHide('solution6')">>>> Show solution <<<</button>
 
-<h3>Question 6</h3>
+					<div id="solution6" class="solution" style="display: none;">
+						<p>Two.</p>
+					</div>
+				</div>
 
-<p>There is a difference between the Debugging and the Debugger?</p>
+				<div class="textblockcont">
+					<h3>Question 7</h3>
 
-<p>a) The Debugger is the activity that consists of identifiying an error in the execution of a program, while Debugging is a program.</p>
-<p>b) The Debugging is the activity that consists of identifiying an error in the execution of a program, while the Debugger is a program.</p>
-<p>c) There is no difference.</p>
-<p>d) None of these are correct.</p>
+					<p>There is a difference between the Debugging and the Debugger?</p>
 
-<button class="ShowSolution" onclick="ShowHide('solution6')">>>> Show solution <<<</button>
+					<ol class="Quiz">
+						<li>The Debugger is the activity that consists of identifiying an error in the execution of a program, while Debugging is a program.</li>
+						<li>The Debugging is the activity that consists of identifiying an error in the execution of a program, while the Debugger is a program.</li>
+						<li>There is no difference.</li>
+						<li>None of these are correct.</li>
+					</ol>
 
-<div id="solution6" class="solution" style="display: none;">
-The Debugging is the activity that consists of identifiying an error in the execution of a program, while the Debugger is a program.</div>
+					<button class="ShowSolution" onclick="ShowHide('solution7')">>>> Show solution <<<</button>
 
+					<div id="solution7" class="solution" style="display: none;">
+						<p>The Debugging is the activity that consists of identifiying an error in the execution of a program, while the Debugger is a program.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 8</h3>
+					<p>What is a syntax error?</p>
+
+					<ol class="Quiz">
+						<li>A syntax error is an error present in a programming language.</li>
+						<li>A syntax error is a bug in the operating system.</li>
+						<li>A syntax error is a grammatical error in the code of a program.</li>
+						<li>None of these options are correct.</li>
+					</ol>
+
+					<button class="ShowSolution" onclick="ShowHide('solution8')">>>> Show solution <<<</button>
+
+					<div id="solution8" class="solution" style="display: none;">
+						<p>None of these options are correct.</p>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div id="footer">
+			<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+				&#169; Catastrophic Software Failures
+				<span><address id="page-auth">Ilker Kaymak</address></span>
+			</p>
 		</div>
 	</div>
 

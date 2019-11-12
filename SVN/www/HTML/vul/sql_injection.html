@@ -36,16 +36,16 @@
 </p>
     <h2>What is SQL?</h2>
     <p>SQL, which stands for "Structured Query Language", is a domain-specific language used and designed for managing large databases, and thus it is in close contact with large amounts of data.<br>
-    It particularly useful in handling structured data, which is made up of relations between different types of data, such as variables. </p>
+    It is particularly useful in handling structured data, which is made up of relations between different types of data, such as variables. </p>
        </div>
          <div class="VulTypeWhite">
            <h2>Consequences</h2>
            <p>Common consequences of SQL Injection include <a class="VulDef" href="index.html#VulIntegrity">loss of integrity</a> and <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a>.</p>
-          <p>In some cases, either if authorization information is stored in the database and able to be changed via SQL injection, or if the system uses SQL commands in order to validate user names and passwords allowing threat actors to log in as a user without knowing the password, <a class="VulDef" href="index.html#VulAccessControl">access control</a> is compromised.</p>
+          <p>In some cases, either if authorization information is stored in the database and are able to be changed via SQL injection, or if the system uses SQL commands in order to validate user names and passwords allowing threat actors to log in as a user without knowing the password, <a class="VulDef" href="index.html#VulAccessControl">access control</a> is compromised.</p>
          </div>
          <div class="VulTypeWhite">
            <h2>Detection</h2>
-           <p>Detection of this vulnerability is not easy as <a class="VulDef" href="index.html#VulStaticAnalysis">automated static analysis</a> might not be able to detect the usage of third-party libraries or API functions that indirectly invoke SQL commands.</p>
+           <p>Detection of this vulnerability is not as easy as <a class="VulDef" href="index.html#VulStaticAnalysis">automated static analysis</a> which might not be able to detect the usage of third-party libraries or API functions that indirectly invoke SQL commands.</p>
            <p> <a class="VulDef" href="index.html#VulManualCodeReview">Manual code reviews</a> can prove useful, however they are more time-consuming than <a class="VulDef" href="index.html#VulSpotchecking">spotchecking</a>, which only covers a small portion of the code and can often not be enough as a result.
            </p>
          </div>

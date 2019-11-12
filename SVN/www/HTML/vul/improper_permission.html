@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>IPA</title>
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <meta name="Kieran Mckee" content="">
+    <meta name="author" content="Kieran Mckee">
   </head>
 
   <body id="vul-body">
@@ -26,33 +26,41 @@
         </ul>
         <hr>
       </div>
-    <h2>Overview</h2>
-    <p id="vul-p"> When a resource is given a permissions setting that provides access to a wider range of actors than required, it could lead to the exposure of sensitive information, or the modification of that resource by unintended parties. This is especially dangerous when the resource is related to program configuration, execution or sensitive user data.<br>
-        Basically, the software specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors.</p>
+      <h2>Overview</h2>
 
-        <h2>Detection</h2>
+      <p id="vul-p">Incorrect Permission Assignment for Critical Resource is when a certain resource has permissions that allow access by more actors than required. This can lead to the exposure of sensitive information, or alteration of the resource if they have write permissions. This is a severe weakness when the resource contains information related to program configuration, execution or sensitive user data. </p>
 
-        <h2>Consequences</h2>
+      <p>In short, the software specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors. </p>
 
-        <h3>Confidentiality</h3>
-        <p id="vul-p">An attacker may be able to read sensitive information from the associated resource, such as credentials or configuration information stored in a file.</p>
-
-        <h3>Access Control</h3>
-        <p id="vul-p">An attacker may be able to modify critical properties of the associated resource to gain privileges, such as replacing a world-writable executable with a Trojan horse.</p>
-
-        <h3>Integrity</h3>
-        <p id="vul-p">An attacker may be able to destroy or corrupt critical data in the associated resource, such as deletion of records from a database.</p>
 
       </div>
         <div class="VulTypeWhite">
           <h2>Consequences</h2>
+          <p>Any application that is writable by an unintended party compromises the system security, for example, they would be able to destroy or corrupt critical data in the targeted resource, such as deletion of records from a database.</p>
+
+            <p>The attacker may have the means to read sensitive information from the resource, such as credentials, configuration information or user data, resulting in a <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a> </p>
+
+            <p>If the attacker has access to a world-writable executable, they are able to inject malicious content into it and execute arbitrary code, such as a Trojan horse.
+            </p>
+          <p>They can also, if privileges allow, execute arbitrary code which will be harmful to the application and cause alterations. </p>
           </div>
         <div class="VulTypeWhite">
           <h2>Detection</h2>
+          <p>A highly cost effective method to detect flaws in permission assignments is Manual <a class="VulDef" href="index.html#VulStaticAnalysis">Static Analysis</a> via the source code, which is achieved through manual code reviews.</p>
+
+            <p>Automated <a class="VulDef" href="index.html#VulStaticAnalysis">Static Analysis</a> can be effective in detecting flaws in permission assignments for system resources such as files, directories, shared memory, device interfaces, etc. Automated techniques may be able to detect the use of library functions that modify permissions, then analyze function calls for arguments that contain potentially insecure values.</p>
           </div>
+
         <div class="VulTypeWhite">
           <h2>Mitigation</h2>
+          <p>Make sure that all configuration files, executables and libraries can be readable and writable by only the administrator.</p>
+
+            <p>During program startup, set the default permissions to the most restrictive assignments possible.</p>
+
+            <p>When using a critical resource such as a configuration file, check if the resource has insecure permissions, generate an error or exit the software if there is a possibility that the resource could have been modified by an unauthorized party, as there may be a chance it contains malicious code.
+          </p>
           </div>
+
  </div>
       </body>
     </html>

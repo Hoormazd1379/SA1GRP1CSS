@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html style="height: 105%;" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
+
+    <!-- background music -H.P-->
+    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+
+    <!-- favicon -H.P-->
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="">
+    <title>Casualities | History</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="h1container">
+        <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title"> HISTORY </h1>
+    </div>
+
+    <div id="filters">
+        <ul>
+            <a href="./index.html" style="margin-right: 60px;"><li id="filter-element">All</li></a>
+            <a href="./fin-impact.html" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+            <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Casualties</li></a>
+            <a href="#"><li id="filter-element">Social Impact</li></a>
+        </ul>
+    </div>
+
+    <div>
+        <div id="timeline">
+            <div id="timeline-shapes">
+                <a href="./therac_25.html" target="iframe" onclick="milestones('n1', 0); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="milestone" id="n1"><span class="date-mil">1985</span></div></a>
+                <a href="./patriot_missile_failure.html" target="iframe" onclick="milestones('n2', 1); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n2"><span class="date-mil">1991</span></div></a>
+                <a href="./raf_chinook.html" target="iframe" onclick="milestones('n3', 2); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n3"><span class="date-mil">1994</span></div></a>
+                <a href="./tam_air_402.html" target="iframe" onclick="milestones('n4', 3); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n4"><span class="date-mil">1996</span></div></a>
+                <a href="./korean_air_flight.html" target="iframe" onclick="milestones('n5', 4); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n5"><span class="date-mil">1997</span></div></a>
+                <a href="./multidata_system.html" target="iframe" onclick="milestones('n6', 5); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="milestone" id="n6"><span class="date-mil">2001</span></div></a>
+                <a href="./airbus_a400m_plane.html" target="iframe" onclick="milestones('n7', 6); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n7"><span class="date-mil">2005</span></div></a>
+                <a href="./toyota_glitch.html" target="iframe" onclick="milestones('n8', 7); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="milestone" id="n8"><span class="date-mil">2010</span></div></a>
+                <a href="./tesla_accident.html" target="iframe" onclick="milestones('n9', 8); showSub2_1(); multiple(); normal('n9.1', 0); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'" style="cursor: pointer;"><div class="milestone" id="n9"><span class="date-mil">2018</span></div></a>
+                <a href="./tesla_accident.html" target="iframe" onclick="normal('n9.1', 0); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n9.1"><span class="date-nor">#1</span></div></a>
+                <a href="./uber_car.html" target="iframe" onclick="normal('n9.2', 1); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n9.2"><span class="date-nor">March</span></div></a>
+                <a href="./boeing_737_max_8.html" target="iframe" onclick="normal('n9.3', 2); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n9.3"><span class="date-nor">October</span></div></a>
+                <script src="../../scripts/his_cas.js"></script>
+            </div>
+        </div>
+
+        <div id="content-main">
+            <div id="content-box">
+
+                <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                <iframe id="content" src="./introduction_page.html" name="iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+            &#169; Catastrophic Software Failures
+            <span><address id="page-auth">Onciu Razvan Petrica</address></span>
+        </p>
+    </div>
+
+     <!-- fullscreen div, blocking the screen view until all images are loaded.
+        see pageloader.js
+        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!--  <div id="loadingDiv">
+        <div id="loadingBox">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <br>
+            <h3> Please wait while we load the page!</h3>
+        </div>
+    </div> -H.P-->
+
+
+    <!-- particles-js init
+        dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+    <script src="../../scripts/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+</html>

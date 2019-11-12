@@ -1448,39 +1448,49 @@ table.H-ZIMBAWBE-table{
 
 /* electr_medical_record -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica) -- */
 
+
 img.H-MEDICALRECORD-img1{
-  width:20%;
-  border-bottom: 20px rgba(195, 7, 63, 0.5) double;
-  border-top: 20px rgba(195, 7, 63, 0.5) double;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:10px;
-  min-width: 200px;
-
+  position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 5px solid white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
 }
 
-img.H-MEDICALRECORD-img2{
-  width:20%;
-  float:right;
-  border-bottom: 20px rgba(195, 7, 63, 0.5) double;
-  border-top: 20px rgba(195, 7, 63, 0.5) double;
-  margin-right:20px;
-  border-left: 10px solid grey;
-  border-right: 10px solid grey;
-  min-width: 200px;
-}
 
 div.H-MEDICALRECORD-div{
   margin: 0px 1% 0px 1%;
-    border: 2px inset white;
-
+  border: 0px inset white;
+  color: white
 }
 
-p.H-MEDICALRECORD-p{
-  color:white;
-  border: 2px solid grey;
-  padding:20px;
+
+
+dl.H-MEDICALRECORD-dl{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: white;
+}
+
+dt.H-MEDICALRECORD-dt{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: white;
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: black;
 }
 /*window size over 1201px*/
 
@@ -2818,12 +2828,20 @@ p.H-NHS-p2{
 p.H-NHS-p3{
     background-color: rgba(195, 7, 63, 0.5);
     text-align: justify;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding: 2%;
     border-radius: 15px;
     border: 1px white solid;
 }
 
+p.H-NHS-p4{
+    background-color: rgba(129, 129, 129, 0.1);
+    text-align: justify;
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 1px white solid;
+}
 
 img.H-NHS-img1{
   display:block;
@@ -2845,46 +2863,12 @@ img.H-NHS-img2{
   border: 1px white solid;
 }
 
-
-
-
-
-
 @media screen and (max-width: 1200px) {
-
-
-
 
 }
 
 /* End of national_health_service------------------------------------------*/
 
-/* hospital_ransomware -------------------- Marco Mariosa (modified by Onciu Razvan Petrica)------ */
-
-iframe.H-HOSPITALRANSW-iframe{
-  width: 560px;
-  height: 315px;
-  border: none;
-  margin:5vh;
-}
-
-img.H-HOSPITALRANSW-img1{
-  width:500px;
-}
-
-/*window size over 1201px*/
-
-@media screen and (min-width: 1201px) {
-
-}
-
-/*window size under 1200px*/
-
-@media screen and (max-width: 1200px) {
-
-}
-
-/* End of hospital_ransomware ------------------------------------------*/
 
 /* malcom_byrd -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
 
@@ -3007,23 +2991,91 @@ img.H-MALCOM-img1{
     border-radius:10px;
     width:30%;
   }
-
-
-/*window size over 1201px*/
-
-@media screen and (min-width: 1201px) {
-
-}
-
-/*window size under 1200px*/
-
-
-}
-
-
-}
-
 /* End of prison ------------------------------------------*/
+
+
+/* nesth_therm -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+  div.H-NEST-div{
+    margin:0px 2% 0px 2%;
+  }
+
+  img.H-NEST-img1{
+    width:20%;
+    border:5px solid rgba(195, 7, 63, 0.9);
+    margin-top:20px;
+    float:left;
+    min-width:200px;
+  }
+
+  p.H-NEST-p1{
+    position:relative;
+    margin: 50px 2% 0px 25%;
+    text-align:justify;
+    text-decoration: underline;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:20px;
+
+  }
+
+  p.H-NEST-p2{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:10px;
+  }
+
+  p.H-NEST-p3{
+    position:relative;
+    text-align:center;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:10px;
+  }
+
+  p.H-NEST-p4{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:10px;
+  }
+
+  p.H-NEST-p5{
+    position:relative;
+    text-align:center;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:15px;
+    margin:0px 10% 0px 10%;
+    border:10px groove rgba(129, 129, 129, 0.9);
+  }
+
+  p.H-NEST-p6{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.9);
+    padding:15px;
+    border-left:10px groove rgba(195, 7, 63, 0.9);
+    border-right:10px groove rgba(195, 7, 63, 0.9);
+  }
+
+  /*window size under 1200px*/
+
+  @media screen and (max-width: 1200px) {
+    img.H-NEST-img1{
+      float:none;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    p.H-NEST-p1{
+      margin: 0px 2% 0px 2%;
+    }
+
+
+  }
+
+
+
+/* End of nesth_therm ------------------------------------------*/
 
 
 
@@ -3489,7 +3541,7 @@ div.grid3bug {
     padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
+    grid-gap: 20px;
     line-height: 1.2;
     padding-bottom: 50px;
 }
@@ -3502,6 +3554,35 @@ div.bugquiz {
 
 div.bugquiz:hover {
     transform: scale(1.05);
+}
+
+ul.changePage {
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  margin-top: 70px;
+  border-style: solid;
+  border-color: rgba(129, 129, 129, 0.315);
+  border-radius: 10px;
+  height: 52px;
+  width: 245px;
+  padding-left: 0px;
+}
+
+ul.changePage li {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul.changePage a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+ul.changePage a:hover {
+  color: #C3073F;
 }
 
 button.ShowSolution {
@@ -3524,9 +3605,16 @@ div.solution {
     font-style: italic;
 }
 
-ol.SolutionQuiz {
+ol.Quiz {
     color: white;
-    line-height: 1.5;
+    line-height: 2;
+    font-size: 18px;
+}
+
+ol.SolutionQuiz {
+  color: white;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 div.ImageContainerBug {
@@ -3597,7 +3685,7 @@ a.quizbug {
 img.DropdownBugImg {
     object-fit: cover;
     width: 100%;
-    height: 150px;
+    height: 200px;
 }
 
 
@@ -3859,7 +3947,7 @@ a.VulDef{
   margin: 0.5%;
   max-width: 100%;
   min-width: 100%;
-  height: 50px;
+  height: 55px;
   float: left;
   position: static;
 }

@@ -7,9 +7,9 @@
     <meta name="author" content="Marco Mariosa">
     <title>History</title>
     <style>
+    /*Modified by Onciu Razvan Petrica*/
         .H-HOSPITALRANSW-date {
-
-            margin-left: 30px;
+          margin-left: 30px;
             margin-right: 30px;
         }
 
@@ -18,15 +18,48 @@
             margin-right: 30px;
         }
 
-        .H-HOSPITALRANSW-video {
-        text-align: center;
-        margin: 3vh;
+        iframe.H-HOSPITALRANSW-iframe {
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+          border:2px white double;
+          width:45%;
+          padding:2px;
+          margin-top:40px;
+          margin-bottom:40px;
         }
 
-        .H-HOSPITALRANSW-img {
-            text-align: center;
-            margin: 3vh;
+        .H-HOSPITALRANSW-img1 {
+          width:40%;
+          position:relative;
+          display:block;
+          margin-left:auto;
+          margin-right:auto;
+          border:10px rgba(129, 129, 129, 0.5) ridge;
+        }
 
+        p.H-HOSPITALRANSW-p1{
+          text-align:justify;
+          background-color:rgba(195, 7, 63, 0.5);
+          padding:20px;
+        }
+
+        p.H-HOSPITALRANSW-p2{
+          text-align:justify;
+          background-color:rgba(195, 7, 63, 0.5);
+          padding:20px;
+        }
+
+        p.H-HOSPITALRANSW-p3{
+          text-align:justify;
+          background-color:rgba(195, 7, 63, 0.5);
+          padding:20px;
+          margin:0px 10% 0px 10%;
+          border-top:10px rgba(129, 129, 129, 0.9) ridge;
+        }
+
+        div.H-HOSPITALRANSW-div{
+          margin:0px 2% 0px 2%;
         }
     </style>
 </head>
@@ -38,29 +71,43 @@
     <div id="content">
         <div class="title-container">
             <h2 id="sect-title">Ransomware Attack against 3 hospitals in Alabama</h2>
-            <h2 class="H-HOSPITALRANSW-date">
-                <p>1/10/2019</p>
-            </h2>
         </div>
-        <p>
+
+        <div class="H-HOSPITALRANSW-div">
+        <p class="H-HOSPITALRANSW-p1">
             Three hospitals in Alabama have been hit with paralyzing ransomware attacks that affected their ability to take new patients.
-            All three hospitals that make up the DCH Health System in Alabama were closed to new patients, as officials there coped with an attack that paralyzed the health network's computer system. The hospitals <q>DCH Regional Medical Center</q> in Tuscaloosa, <q>Northport Medical Center</q>, and <q>Fayette Medical Center</q> turned away <q>all but the most critical patients</q>. Local ambulances were being instructed to take patients to other hospitals when possible. Patients coming to DCH emergency rooms faced the possibility of being transferred to another hospital once they were stabilized.</p>
-        <div class="H-HOSPITALRANSW-video"><iframe class="H-HOSPITALRANSW-iframe" src="https://www.youtube.com/embed/aHI5XwS6jfc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <p> Details about the specific strain of malware weren't immediately available. Typically, the malware encrypts production and backup hard drives used to store data and run computer systems. Victims can only receive the decryption key needed to restore systems after paying a ransom, usually using bitcoin or another cryptocurrency.In some cases, it's possible to decrypt data without paying the ransom. In other cases, it's impossible.</p><br>
-        <div class="H-HOSPITALRANSW-img"><img class="H-HOSPITALRANSW-img1" src="../../assets/his_imgs/emergency_room.jpg" alt="Hospital"></div>
+            All three hospitals that make up the DCH Health System in Alabama were closed to new patients, as officials there coped with an attack that paralyzed the health network's computer system. The hospitals
+            <q>DCH Regional Medical Center</q> in Tuscaloosa,
+            <q>Northport Medical Center</q>, and
+            <q>Fayette Medical Center</q> turned away
+            <q>all but the most critical patients</q>. Local ambulances were being instructed to take patients to other hospitals when possible. Patients coming to DCH emergency rooms faced the possibility of being transferred to another hospital once they were stabilized.
+          </p>
+
+          <iframe class="H-HOSPITALRANSW-iframe" src="https://www.youtube.com/embed/aHI5XwS6jfc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p class="H-HOSPITALRANSW-p2"> Details about the specific strain of malware weren't immediately available. Typically, the malware encrypts production and backup hard drives used to store data and run computer systems. Victims can only receive the decryption key needed to restore systems after paying a ransom, usually using bitcoin or another cryptocurrency.In some cases, it's possible to decrypt data without paying the ransom. In other cases, it's impossible.
+        </p>
+        <br>
+          <img class="H-HOSPITALRANSW-img1" src="../../assets/his_imgs/emergency_room.jpg" alt="Hospital">
 
 
 
         <h2 class="H-HOSPITALRANSW-second-title">How could hospital ransomware attacks affect healthcare?</h2>
-        <p style="margin-bottom: 5vh;"> As previously mentioned, healthcare ransomware attacks could be particularly devastating to a covered entity. With more organizations implementing connected medical devices and creating BYOD strategies or allowing mobile devices to be regularly used, there are more potential access points for unauthorized users.
+        <p class="H-HOSPITALRANSW-p3" > As previously mentioned, healthcare ransomware attacks could be particularly devastating to a covered entity. With more organizations implementing connected medical devices and creating BYOD strategies or allowing mobile devices to be regularly used, there are more potential access points for unauthorized users.
 
             If a hospital cannot access its own EHR, patient care could be delayed or hindered.
 
             This is why it's critical for covered entities to implement the necessary security measures, such as advanced malware protection, anti-virus, firewalls, and email/web security.
         </p>
+        <br>
+
+
     </div>
+  </div>
 
 
 
 
-</body></html>
+
+  </body>
+</html>

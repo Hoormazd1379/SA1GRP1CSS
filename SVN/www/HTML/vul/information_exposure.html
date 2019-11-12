@@ -27,29 +27,42 @@
         <hr>
       </div>
     <h2>Overview</h2>
-    <p> Information exposure is the intentional or unintentional disclosure of information to someone that is not explicitly authorised to have access to that information.<br>
-        A program may accidentally reveal valuable data to a user. This could be private messages or program configuration files that are supposed to be private and which could give attackers a way into the system.</p>
+    <p> Information exposure is the intentional or unintentional leak of information to someone that is not recognised to have access to that information.<br>
+This information can be sensitive within the product functionality, i.e. a private message that has been sent.
+It can also be in the form of Information that provides material about the product which can then be used in an attack, such as an installation path.<br>
+All types of software can be vulnerable.</p>
 
-    <p> Information Exposure occurs through numerous different ways.<br> For Example:</p>
+    <!-- <p> Information Exposure occurs through numerous different ways.<br> For Example:</p>
     <ul class="VulList">
       <li><p>Information Exposure Through Sent Data</p></li>
       <li><p>Exposure of Sensitive Data Through Data Queries</p></li>
       <li><p>Information Exposure through an Error Message</p></li>
-    </ul>
+    </ul> -->
 
   </div>
     <div class="VulTypeWhite">
       <h2>Consequences</h2>
-      <p><a class="VulDef" href="index.html#VulConfidentiality">Loss of confidentiality</a> is the most common consequence, as data is often disclosed. This often has security implications.  </p>
+      <p><a class="VulDef" href="index.html#VulConfidentiality">Loss of confidentiality</a> is the most common consequence, as data is often disclosed. This often has security implications.</p>
+        <p>For example, if an attacker attempts to retrieve an object from a database, and an SQLException is raised whilst querying the database, an error message will be created.
+          The error message can include sensitive information about the database or query logic. This data can then be used to simplify different attacks, such as an <a class="VulDef" href="sql_injection.html">SQL Injection</a> in order to access the database.</p>
+
       </div>
     <div class="VulTypeWhite">
       <h2>Detection</h2>
       <p>Regular error-checking methods will identify this vulnerability: both <a class="VulDef" href="index.html#VulDynamicAnalysis">dynamic analysis</a> and <a class="VulDef" href="index.html#VulStaticAnalysis">static analysis</a>.</p>
-      <p>There also exist several context-specific weakness analyzers that will detect this issue in a source code.</p>
+      <p>Scanning the software with Dynamic Analysis through the use of: Web Application Scanners, Web Services Scanners and Database Scanners are highly cost-effective methods which can be used to detect areas which have the potential to cause information to be exposed.</p>
+
+      <p>Another highly cost effective method to detect areas viable to information exposure is Manual Static Analysis via the source code, which is achieved through manual code reviews.</p>
+
       </div>
     <div class="VulTypeWhite">
       <h2>Mitigation</h2>
-      <p>In your system define "safe" areas where trust boundaries can be unambiguously drawn. Do not allow sensitive data to go outside of the trust boundary and always be careful when interfacing with a compartment outside of the safe area.</p>
+      <p>In order to prevent such attacks, effective security measures are required, such as, </p>
+
+      <p>-Identifying data that requires extra protection, and protecting it through data encryption, this makes it harder for attackers to determine the information that has been exposed, as opposed to open text.</p>
+
+      <p>-Sites should ensure that there are appropriate section components which are built into the system design and that the compartmentalization allows for and further reinforcing privileges in separation functionality. Allowing different levels of privileges.</p>
+
       </div>
 </div>
   </body>

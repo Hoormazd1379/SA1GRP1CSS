@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Improper Restrictions</title>
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <meta name="Kieran Mckee" content="">
+    <meta name="author" content="Kieran Mckee">
   </head>
   <body id="vul-body">
     <div class="h1container">
@@ -26,36 +26,32 @@
         <hr>
       </div>
     <h2>Overview</h2>
-    <p id="vul-p">The software performs operations on a memory buffer, but it can read from or write to a memory location that is outside of the intended boundary of the buffer.<br><br>
-      Certain languages allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.<br>
-      As a result, an attacker may be able to execute arbitrary code, alter the intended control flow, read sensitive information, or cause the system to crash.</p>
+    <p id="vul-p"> Various languages can allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.</p>
+    <p> Simply, a software can execute operations on the memory buffer, but when there are improper restrictions, it can cause it to read from or write to a memory location which is not located inside of the intended memory buffer.</p>
 
-      <ol id="list1">
-        <a class="link" href="1"><li>Out-of-Bounds Read</li></a>
-        <a class="link" href="2"><li>Out-of-Bounds Write</li></a>
-      </ol>
-    <h2>Detection</h2>
-
-    <h2>Consequences</h2>
-
-    <h3>Integrity,Confidentiality and Availability</h3>
-    <p id="vul-p">If the memory accessible by the attacker can be effectively controlled, it may be possible to execute arbitrary code, as with a standard buffer overflow. If the attacker can overwrite a pointer's worth of memory (usually 32 or 64 bits), they can redirect a function pointer to their own malicious code. Even when the attacker can only modify a single byte arbitrary code execution can be possible. Sometimes this is because the same problem can be exploited repeatedly to the same effect. Other times it is because the attacker can overwrite security-critical application-specific data, such as a flag indicating whether the user is an administrator.</p>
-
-    <h3>Availability and Confidentiality</h3>
-    <p id="vul-p">Out of bounds memory access will very likely result in the corruption of relevant memory, and perhaps instructions, possibly leading to a crash. Other attacks leading to lack of availability are possible, including putting the program into an infinite loop.</p>
-
-    <h3>Confidentiality</h3>
-    <p id="vul-p">In the case of an out-of-bounds read, the attacker may have access to sensitive information. If the sensitive information contains system details, such as the current buffers position in memory, this knowledge can be used to craft further attacks, possibly with more severe consequences.</p>
 
   </div>
     <div class="VulTypeWhite">
       <h2>Consequences</h2>
+      <p><a class="VulDef" href="index.html#VulConfidentiality">Confidentiality:</a> In the event of an <a class="VulDef" href="out_of_bounds_read.html">out of bounds read</a>, the attacker may gain access to sensitive information. The sensitive information may contain system details, for example, the current buffers position in memory, this can be used to orchestrate further attacks, possibly with more severe consequences.</p>
+      <p> Out of bounds memory access has a high chance of causing corruption of relevant memory, and possibly instructions, which in turn, can cause the system to crash.</p>
+      <p>If the memory that is accessed by the attacker is controlled, it allows the possibility to execute arbitrary code, as with a standard buffer overflow.</p>
+      <!--  If the attacker is able to overwrite a pointer's worth of memory, they can redirect the function pointer to their own malicious code. Even when the attacker can only modify a single byte, arbitrary code execution can be possible. Sometimes this is because the same problem can be exploited repeatedly to the same effect. Other times it is because the attacker can overwrite security-critical application-specific data, such as a flag indicating whether the user is an administrator.-->
+
+
       </div>
     <div class="VulTypeWhite">
       <h2>Detection</h2>
+      <p>The most effective way of detecting the weakness is through Automated <a class="VulDef" href="index.html#VulStaticAnalysis">Static Analysis</a> tools, an IEEE inspection can also locate the weakness but it is a much more costly method.
+      </p>
       </div>
     <div class="VulTypeWhite">
       <h2>Mitigation</h2>
+      <p> Defending applications from buffer errors can be done by performing checks on input data, and through the use of certain compilers which provide process that can mitigate or eliminate exploitation possibilities, such as automatic buffer overflow detection.</p>
+      <p>Language Selection: <br>
+      Using a language such as Java and Perl do not allow this weakness to occur, this is excuse they perform their own memory management, thus they are not liable to buffer overflows.
+      Ada and C# are similar in that they provide their own overflow protection.</p>
+
       </div>
 </div>
   </body>
