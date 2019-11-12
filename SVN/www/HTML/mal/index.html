@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html style="height: 130%;">
+<html lang="en" class="scrollable" style="height: 130%;">
 <head>
     <title>Malicious Code</title>
+    
+    <!-- Stylesheet -E.R -->
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!--  Pageloader by -H.P-->
-    <script src="../../scripts/pageloader.js"></script>
 
-    <!-- background music -H.P-->
-    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+    <!-- Scripts -E.R -->
+    <script src="../../scripts/pageloader.js"></script>
+    <script src="../scripts/pageloader.js"></script>
 
     <!-- favicon -H.P-->
     <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
     <meta name="author" content="Edoardo Riggio">
     <meta name="css-designer" content="Edoardo Riggio">
-    <meta charset="utf-8">
+
+    <!-- Meta data -E.R -->
+    <meta charset="UTF-8">
+    <meta name="description" content="malicious code">
+    <meta name="keywords" content="software, failure, malware, protection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div id="particles-js"></div>
 
@@ -124,9 +133,9 @@
         </div>
     </div>
 
-     <!-- fullscreen div, blocking the screen view until all images are loaded.
-        see pageloader.js
-        dont change the spacing between the divs otherwise it will break -H.P-->
+    <!-- fullscreen div, blocking the screen view until all images are loaded.
+         see pageloader.js
+         dont change the spacing between the divs otherwise it will break -H.P-->
     <div id="loadingDiv">
         <div id="loadingBox">
             <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -142,7 +151,6 @@
         </p>
     </div>
 
-
     <!-- particles-js init
         dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
     <script src="../../scripts/particles.js"></script>
@@ -151,6 +159,5 @@
             console.log('callback - particles.js config loaded');
         });
     </script>
-
 </body>
 </html>

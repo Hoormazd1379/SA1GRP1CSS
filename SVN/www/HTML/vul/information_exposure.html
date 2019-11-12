@@ -32,12 +32,25 @@ This information can be sensitive within the product functionality, i.e. a priva
 It can also be in the form of Information that provides material about the product which can then be used in an attack, such as an installation path.<br>
 All types of software can be vulnerable.</p>
 
-    <!-- <p> Information Exposure occurs through numerous different ways.<br> For Example:</p>
+<h2>Variants</h2>
+    <p> Information Exposure occurs through numerous different ways.<br> For Example:
     <ul class="VulList">
-      <li><p>Information Exposure Through Sent Data</p></li>
-      <li><p>Exposure of Sensitive Data Through Data Queries</p></li>
-      <li><p>Information Exposure through an Error Message</p></li>
-    </ul> -->
+    <li><h3>Through Sent Data</h3>
+      <p>The accidental exposure of sensitive information through sent data refers to the transmission of data which are either sensitive in and of itself or useful in the further exploitation of the system through standard data channels.</p>
+    </li>
+    <li><h3>Through Discrepancy</h3>
+      <p>The product behaves differently or sends different responses in a way that exposes security-relevant information about the state of the product, such as whether a particular operation was successful or not.</p>
+    </li>
+    <li><h3>Through An Error Message</h3>
+      <p>The software generates an error message that includes sensitive information about its environment, users, or associated data.</p>
+    </li>
+    <li><h3>Through Debug Information</h3>
+      <p>The application contains debugging code that can expose sensitive information to untrusted parties.</p>
+    </li>
+    <li><h3>Through Caching</h3>
+      <p>The application uses a cache to maintain a pool of objects, threads, connections, pages, or passwords to minimize the time it takes to access them. If implemented improperly, these caches can allow access to unauthorized information.</p>
+    </li>
+    </ul>
 
   </div>
     <div class="VulTypeWhite">
@@ -57,13 +70,18 @@ All types of software can be vulnerable.</p>
       </div>
     <div class="VulTypeWhite">
       <h2>Mitigation</h2>
-      <p>In order to prevent such attacks, effective security measures are required, such as, </p>
-
-      <p>-Identifying data that requires extra protection, and protecting it through data encryption, this makes it harder for attackers to determine the information that has been exposed, as opposed to open text.</p>
-
-      <p>-Sites should ensure that there are appropriate section components which are built into the system design and that the compartmentalization allows for and further reinforcing privileges in separation functionality. Allowing different levels of privileges.</p>
-
+      <p>In order to prevent such attacks, effective security measures are required, for example: </p>
+      <ul>
+      <li><p>Identifying data that requires extra protection, and protecting it through data encryption, makes it harder for attackers to determine the information that has been exposed.</p></li>
+      <li><p>Sites should ensure that there are appropriate section components which are built into the system design and that the compartmentalization allows for and further reinforcing privileges in separation functionality, allowing different levels of privileges.</p></li>
+    </ul>
       </div>
+</div>
+<div id="footer">
+    <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+        &#169; Catastrophic Software Failures
+        <span><address id="page-auth">Kieran McKee</address></span>
+    </p>
 </div>
   </body>
 </html>

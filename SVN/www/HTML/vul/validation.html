@@ -43,22 +43,22 @@
   <li><a class="link" href="#6">Disabled Validator</a></li>
 </ol>
 
-  <a class="link" id="1"><h2>Shared Names of Forms </h2></a>
+  <h2 id="1">Shared Names of Forms </h2>
   <p >This problem occurs when two or more forms have the same name, which leads to increased susceptibility to attacks of some forms. Why? Because the Validator only validates one of the forms with the same name and ignores others, which makes other forms more vulnerable. </p>
 
-  <a class="link" id="2"><h2>Improper method of validation</h2></a>
+  <h2 id="2">Improper method of validation</h2>
   <p >Some classes in a software may not support forms of validation and in order to avoid problems, super validate form should be used. If super validate forms is not used then some classes will not be validated and will be more susceptibile to attacks and software will be more vulnerable</p>
 
-  <a class="link" id="3"><h2>Validator</h2></a>
+  <h2 id="3">Validator</h2>
   <p >In the validation process, it is essential to all forms to be validated by forms defined by the Validator, otherwise forms which do not support the Validator will be weak places of a software. Moreover, a possible problem may occur when not all of the fields are validated, because the Validator requires all fields to be validated, even the unused fields as well. </p>
 
-  <a class="link" id="4"><h2>Outdated Logic of validation</h2></a>
+  <h2 id="4">Outdated Logic of validation</h2>
   <p > The logic of validation should always be updated. There are several consequencese when validation is out of date. One of them are forms with no fields, which may lead to a software crash. Moreover, when validation logic is outdated that means that validation is unavailabe, which makes forms more susceptibile to attacks and software becomes more vulnerable. So, it is essential for programmers to update validation logic.  </p>
 
-  <a class="link" id="5"><h2>Action Form</h2></a>
+  <h2 id="5">Action Form</h2>
   <p >Action forms have their own form defined by "Action Form Mapping". So, this form is the supported by Validator then Action forms will stay unvalidated, which will make tje program more vulnerable.</p>
 
-  <a class="link" id="6"><h2>Disabled Validator</h2></a>
+  <h2 id="6">Disabled Validator</h2>
   <p >This problem occurs when the Validator is turned off. That can happen when action form disables it. It is very dangerous if the Validator is disabled, because the Validator validates all the forms in a software.</p>
 
 
@@ -77,11 +77,12 @@
            <h2>Mitigation</h2>
            <p>There are several mitigations of Improper Input Validation. One of them is to use Strut or OWASP ESAPI Validation API to validate data.</p>
          </div>
-    <h2>Links</h2>
-    <ul class="VulList">
-      <li><a class="link" href="https://www.owasp.org/index.php/Improper_Data_Validation">https://www.owasp.org/index.php/Improper_Data_Validation</a></li>
-      <li><a class="link" href="https://cwe.mitre.org/data/definitions/20.html">https://cwe.mitre.org/data/definitions/20.html</a></li>
-    </ul>
+         <div id="footer">
+             <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+                 &#169; Catastrophic Software Failures
+                 <span><address id="page-auth">Bahram Ismayilov</address></span>
+             </p>
+         </div>
   </div>
   </body>
 </html>

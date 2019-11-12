@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../../stylesheets/main.css">
 
     <meta charset="utf-8">
-    <title>Read Out Of Bounds</title>
+    <title>Out Of Bounds Read</title>
     <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
     <meta name="author" content="Bahram Ismayilov">
   </head>
@@ -27,51 +27,43 @@
         <hr>
       </div>
     <h2>Description</h2>
-    <p> Out of Bounds Read is a type of vulnerability that may happen in a software when it reads data from the buffer (where physical memory is stored) and reads the data out of its bounds.
-
-</p>
+    <p> Out of Bounds Read is a type of vulnerability that may happen in a software when it reads data from the buffer (where physical memory is stored) and reads the data out of its bounds.</p>
+    <p>This can mainly happen in C or C++, because functions in these languages do not check the memory bounds they use. Moreover, it is crucial to know  some functions, which are bounded in memory use
+    by mistake can cause buffer over read or buffer under read.</p>
+    <h2>Variants</h2>
+    <p>Buffer over-read (CWE 126) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is incremented over the limits of the buffer.</p>
+    <p>Buffer under-read (CWE 127) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is decremented under the limits of the buffer. </p>
 <h2>Potential Causes</h2>
-<p > There are several causes that can trigger Buffer over-read. These are:
+<p > There are several causes that can trigger an out of bounds read. These are:
 <ul style="color:#FfFFFF">
 <li> Ordinary Bugs</li>
  <li>Malicious Inputs</li>
- <li>Heartbleed bug(Caused by <a class="link" href="file:///Users/bahrami/GroupProject/www/HTML/vul/validation.html#2"> Improper Input Validation)</a></li>
+ <li>Heartbleed bug (Caused by <a class="VulDef" href="validation.html"> Improper Input Validation</a>)</li>
 </ul> </p>
-<h2>Where this can happen</h2>
-<p>This can mainly happen in C or C++, because functions in these languages do not check the memory bounds they use. Moreover, it is crucial to know  some functions, which are bounded in memory use
-by mistake can cause Buffer over read.</p>
     <!-- If you have any other sections, put them here -->
        </div>
          <div class="VulTypeWhite">
            <h2>Consequences</h2>
-           <p>When there exists an Out of bound vulnerability, it can lead to leakage of very important information, for instance passwords. Moreover, it can lead to the crash of. <br>
-           Why?
-           <br> Because the software reads too much data which causes a buffer over-flow, which leads to system crash. </p> </div>
+           <p>When there exists an out of bounds vulnerability, it can lead to leakage of very important information, for instance passwords (<a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a>). </p>
+           <p>Moreover, it can lead to the crash of the program, because the software reads too much data which causes a buffer over-flow, which in turns causes <a class="VulDef" href="index.html#VulDataCorruption">data corruption</a>. </p> </div>
          <div class="VulTypeWhite">
-
+           <h2>Detection</h2>
+           <p>This weakness can be detected by a standard <a class="VulDef" href="index.html#VulManualCodeReview">manual code review</a>, for example by checking in there exists a check within bounds for all pointers and values.</p>
          </div>
          <div class="VulTypeWhite">
            <h2>Mitigation</h2>
            <p>There are 2 ways to mitigate this problem.
              <ul>
                <li>The first is to use a language with restricted memory access. </li>
-               <li>The second is to use input validation. Moreover when using Input validation it is essetial to be aware about its potential problems, which are here :<a class="link" href="file:///Users/bahrami/GroupProject/www/HTML/vul/validation.html" style="color:#C3073F"> Improper Input Validation</a>.</li>
+               <li>The second is to use input validation. Moreover when using Input validation it is essetial to be aware about its potential problems, which are here :<a class="VulDef" href="validation.html" style="color:#C3073F"> Improper Input Validation</a>.</li>
              </ul>
            </p>
          </div>
-
-
-
-
-
-
-<h2>Links</h2>
-<ul id="num1">
-      <a class="link" href="https://cwe.mitre.org/data/definitions/125.html"><li>https://cwe.mitre.org/data/definitions/125.html</li></a>
-    <a class="link" href="https://en.wikipedia.org/wiki/Buffer_over-read"><li>https://en.wikipedia.org/wiki/Buffer_over-read</li></a>
-    <a class="link" href="https://vulncat.fortify.com/en/detail?id=desc.internal.cpp.out_of_bounds_read"><li>https://vulncat.fortify.com/en/detail?id=desc.internal.cpp.out_of_bounds_read</li></a>
-    <a class="link" href="https://en.wikipedia.org/wiki/Heartbleed"><li>https://en.wikipedia.org/wiki/Heartbleed</li></a>
-</ul>
-
+         <div id="footer">
+             <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+                 &#169; Catastrophic Software Failures
+                 <span><address id="page-auth">Bahram Ismayilov</address></span>
+             </p>
+         </div>
   </body>
 </html>

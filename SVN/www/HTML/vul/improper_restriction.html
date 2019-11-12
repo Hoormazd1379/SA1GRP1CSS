@@ -10,7 +10,7 @@
     <div class="h1container">
         <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
         <h2 id="page-title"> Vulnerabilities</h2>
-        <h1 class="VulArticleTitle">Improper Restriction Of Operation Within the Bounds of Memory Access</h1>
+        <h1 class="VulArticleTitle">Improper Restriction Of Operations Within the Bounds of Memory Access</h1>
     </div>
     <div class="ContainerVul">
     <div class="VulArticleBody">
@@ -18,9 +18,9 @@
         <h2>Statistics</h2>
         <hr>
         <ul>
-          <li><p>Type: Base</p></li>
-          <li><p>CWE Number: 89</p></li>
-          <li><p>Applicable Platforms: Database server</p></li>
+          <li><p>Type: Class</p></li>
+          <li><p>CWE Number: 119</p></li>
+          <li><p>Applicable Platforms: Most prevalent in languages C/C++/Assembly</p></li>
           <li><p>Likelyhood of exploit: High</p></li>
         </ul>
         <hr>
@@ -28,7 +28,8 @@
     <h2>Overview</h2>
     <p id="vul-p"> Various languages can allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.</p>
     <p> Simply, a software can execute operations on the memory buffer, but when there are improper restrictions, it can cause it to read from or write to a memory location which is not located inside of the intended memory buffer.</p>
-
+    <h2>Variants</h2>
+    <p>Two of the most common vulnerabilities that can be categorized under improper restriction of operations are <a class="VulDef" href="out_of_bounds_read.html">out of bounds read</a> (CWE 125) and <a class="VulDef" href="out_of_bounds_write">out of bounds write</a> (CWE 787).</p>
 
   </div>
     <div class="VulTypeWhite">
@@ -53,6 +54,12 @@
       Ada and C# are similar in that they provide their own overflow protection.</p>
 
       </div>
+</div>
+<div id="footer">
+    <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+        &#169; Catastrophic Software Failures
+        <span><address id="page-auth">Kieran McKee</address></span>
+    </p>
 </div>
   </body>
 </html>

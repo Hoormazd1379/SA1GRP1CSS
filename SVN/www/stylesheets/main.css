@@ -657,6 +657,11 @@ td.H-intro-table-td{
 
 /* Child Support Agency -- Onciu Razvan Petrica-----------*/
 
+
+div.H-CSA-div{
+  margin:0px 2% 0px 2%;
+}
+
 img.H-CSA-image{
   float:right;
   background-color: rgba(129, 129, 129, 0.315);
@@ -675,12 +680,13 @@ p.H-CSA-p1{
   text-decoration: underline;
   padding:20px;
   line-height: 40px;
+  text-align: justify;
 }
 
 p.H-CSA-p2{
   padding:20px;
   line-height: 40px;
-  background-color: rgba(195, 7, 63, 0.1);
+  background-color: rgba(195, 7, 63, 0.5);
   border-radius:20px;
   border: white 1px solid;
 }
@@ -688,9 +694,11 @@ p.H-CSA-p2{
 ul.H-CSA-list{
   background-color: rgba(255, 255, 255, 0.5);
   padding:25px;
-  line-height: 50px;
+  line-height: 35px;
   color: black;
   font-weight: bold;
+  margin: 50px 10% 50px 10%;
+  border: 15px groove rgba(195, 7, 63, 0.9);
 }
 
 /*window size over 1201px*/
@@ -825,6 +833,7 @@ img.H-KOREAN-img1{
   padding:30px;
   border: white double 2px;
   margin-left:20px;
+  min-width: 300px;
 }
 
 img.H-KOREAN-img2{
@@ -833,6 +842,7 @@ img.H-KOREAN-img2{
   padding:30px;
   border: white double 2px;
   margin-right:20px;
+  min-width: 300px;
 }
 
 img.H-KOREAN-img3{
@@ -841,7 +851,9 @@ img.H-KOREAN-img3{
   padding:30px;
   border: white double 2px;
   margin-right:20px;
+  min-width: 300px;
 }
+
 p.H-KOREAN-p1{
   text-align:center;
   margin-bottom: 2%;
@@ -883,29 +895,61 @@ p.H-KOREAN-p5{
   margin-bottom: 4%
 }
 
-/*window size over 1201px*/
+p.H-KOREAN-p6{
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:5%;
+}
 
-@media screen and (min-width: 1201px) {
-
-
+iframe.H-KOREAN-img4{
+  height:30%;
+  width:50%;
+  margin-left: 12%;
+  margin-top: 2%;
+  border-radius: 20px;
 }
 
 /*window size under 1200px*/
 
 @media screen and (max-width: 1200px) {
   img.H-KOREAN-img1{
-    width:30%;
-        min-width:250px;
+    float:none;
+    margin-left:0px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
   }
 
   img.H-KOREAN-img2{
-    position:relative;
-    width:30%;
-    min-width:250px;
+    float:none;
+    margin-right:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:-150px;
   }
 
   p.H-KOREAN-p2{
-    margin-top:300px;
+    margin-top:200px;
+  }
+
+  img.H-KOREAN-img3{
+    float:none;
+    margin-right:0px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  p.H-KOREAN-p5{
+    margin-left:0px;
+    margin-bottom: 4%;
+    margin-top:4%;
+  }
+
+  p.H-KOREAN-p6{
+    margin-top:0%;
   }
 
 }
@@ -917,9 +961,9 @@ p.H-KOREAN-p5{
 img.H-A400-img1{
   width:70%;
   float:left;
-  padding:30px;
-  border: white double 2px;
-  margin-left:17%;
+  border-radius: 5px;
+  border: 5px groove white;
+  margin-left:9%;
   margin-top: 2%;
   margin-bottom: 2%
 }
@@ -957,7 +1001,13 @@ p.H-A400-p3{
   padding: 10px;
 }
 
-
+iframe.H-A400-img2{
+  width:500px;
+  height: 300px;
+  margin-left: 9%;
+  border-radius: 5px;
+  border: 5px groove white;
+}
 /*window size over 1201px*/
 
 @media screen and (min-width: 1201px) {
@@ -1075,6 +1125,16 @@ p.UBER-p3{
   margin-bottom: 4%
 }
 
+iframe.UBER-img2{
+  height: 30%;
+  width:50%;
+  border-color: black;
+  border:10px;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-bottom: 2%
+}
+
 /* End of Driveless Uber car -----------------------------*/
 
 /* Patriot_missile_failure -------------------- Elena Franchini (modified by Onciu Razvan Petrica)*/
@@ -1183,6 +1243,8 @@ img.H-RAF-CHINOOK-img2{
   text-align:justify;
   margin-bottom: 2%;
   min-width:200px;
+  height:300px;
+  width:200px;
 }
 
 p.H-RAF-CHINOOK-p1{
@@ -1255,6 +1317,13 @@ p.H-TAM-p2{
   margin-right: 10%
 }
 
+iframe.H-TAM-img2{
+  width:40%;
+  height:20%;
+  margin-left: 35%;
+  border-radius: 15px;
+  border:black;
+}
 /* End of TAM Flight 402 -----------------------------*/
 
 /* astro_h -------------------- Onciu Razvan Petrica -- */
@@ -1269,6 +1338,7 @@ img.H-ASTRO-img1{
   border:20px rgba(195, 7, 63, 0.5) groove;
   padding: 1%;
   margin-right: 4%;
+  min-width:200px;
 }
 
 img.H-ASTRO-img2{
@@ -1280,6 +1350,7 @@ img.H-ASTRO-img2{
   border-right: 10px white groove;
   border-radius: 20px;
   margin-bottom: 2%;
+  min-width:400px;
 }
 
 p.H-ASTRO-p1{
@@ -1314,6 +1385,13 @@ hr.H-ASTRO-hr{
 /*window size under 1200px*/
 
 @media screen and (max-width: 1200px) {
+  img.H-ASTRO-img1{
+    float:none;
+    margin-right: 0%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 
@@ -1413,18 +1491,12 @@ table.H-ZIMBAWBE-table{
 }
 
 
-/*window size over 1201px*/
-
-@media screen and (min-width: 1201px) {
-
-}
-
 /*window size under 1200px*/
 
 @media screen and (max-width: 1200px) {
   p.H-ZIMBAWBE-p1{
     padding:50px;
-    margin: 10% 2% 0px 0%;
+    margin: 5% 2% 0px 0%;
   }
 
   p.H-ZIMBAWBE-p2{
@@ -1432,13 +1504,20 @@ table.H-ZIMBAWBE-table{
   }
 
   img.H-ZIMBAWBE-img1{
-    margin: -50px 30% 50px 35%;
+    float:none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 
   }
 
   img.H-ZIMBAWBE-img2{
-    margin: 10px 0px 50px 10px;
-    float:right;
+    float:none;
+    margin-top:5%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
   }
 
 }
@@ -1446,7 +1525,7 @@ table.H-ZIMBAWBE-table{
 /* End of zimbawbe -----------------------------*/
 
 
-/* electr_medical_record -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica) -- */
+/* electr_medical_record -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica and Massimo Bordogna) -- */
 
 
 img.H-MEDICALRECORD-img1{
@@ -1482,7 +1561,7 @@ dl.H-MEDICALRECORD-dl{
   color: white;
 }
 
-dt.H-MEDICALRECORD-dt{
+dd.H-MEDICALRECORD-dd1{
   position:relative;
   margin: 20px 1% 0px 1%;
   text-align: left;
@@ -1492,6 +1571,18 @@ dt.H-MEDICALRECORD-dt{
   text-decoration: none;
   color: black;
 }
+
+dd.H-MEDICALRECORD-dd{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: grey;
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: white;
+}
+
 /*window size over 1201px*/
 
 @media screen and (min-width: 1201px) {
@@ -1508,7 +1599,6 @@ dt.H-MEDICALRECORD-dt{
     float:none;
     margin-top:10px;
     margin-bottom:10px;
-
   }
 
   p.H-MEDICALRECORD-p{
@@ -1636,7 +1726,7 @@ dl.H-MTGOX-dl{
 
 dt.H-MTGOX-dt{
   text-decoration: underline;
-  margin: 10px 0px 10px 0px;
+  margin: 25px 0px 10px 0px;
   background-color: rgba(255, 255, 255, 0.5);
   padding:10px;
   color:black;
@@ -3889,9 +3979,10 @@ p {
   background-color: white;
   padding: 2%;
   margin: 1%;
+  margin-bottom: 100px;
   max-width: 27.33%;
   min-width: 27.33%;
-  height: 400px;
+  height: 450px;
   float: left;
   position: static;
   border-radius: 20px;

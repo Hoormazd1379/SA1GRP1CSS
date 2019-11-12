@@ -31,7 +31,7 @@
     <p>SQL Injection is the practice of introducing <a class="VulDef" href="#">malicious code</a> inside an SQL server that is then executed on the machine. Using this method, it is possible to cause serious damage to a database.</p>
     <p>This is possible because vulnerable systems can accept SQL command syntax as input, because the system either doesn't neutralize or doesn't quote its inputs. Because of that, those inputs will be interpreted as SQL instead of ordinary user data, which allows threat actors to alter query logic, bypass security checks, or modify the database, as,
   by default, SQL does not make a distinction between the data plane and the control plane.</p>
-  <p>Because of the nature of this exploit, it is easy to attempt an attack on any SQL server, leaving vulnerable servers very often identified very quickly.<br>
+  <p>Because of the nature of this exploit, it is easy to attempt an attack on any SQL server, leaving vulnerable servers to be identified very quickly.<br>
   SQL Injection can be classified under <a class="VulDef" href="validation.html">Improper Input Validation</a>.
 </p>
     <h2>What is SQL?</h2>
@@ -54,6 +54,12 @@
            <p>If the set of acceptable inputs is limited or known, it may prove useful to assign every valid input a numerical value, such as a numeric ID, and reject all other inputs.</p>
            <p>Another strategy is to, if available, use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated.</p>
          </div>
+  </div>
+  <div id="footer">
+      <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+          &#169; Catastrophic Software Failures
+          <span><address id="page-auth">Ian Abuaf Pelo</address></span>
+      </p>
   </div>
   </body>
 </html>

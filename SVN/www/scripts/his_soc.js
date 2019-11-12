@@ -1,4 +1,4 @@
-// Handler for history page - 'Financial Impact' section.
+// Handler for history page - 'Social Impact' section.
 // Author: Edoardo Riggio
 
 var selected = -1
@@ -81,22 +81,23 @@ function multiple(){
     }
 }
 
-function showSub1_1(){
+function showSub3_1(){
     sub_cat = document.getElementsByClassName('normal');
-    sub_cat['n6.1'].style.display = 'block';
-    sub_cat['n6.2'].style.display = 'block';
+    sub_cat['n4.1'].style.display = 'block';
+    sub_cat['n4.2'].style.display = 'block';
+    sub_cat['n4.3'].style.display = 'block';
 }
 
-function showSub1_2(){
+function showSub3_2(){
     sub_cat = document.getElementsByClassName('normal');
-    sub_cat['n10.1'].style.display = 'block';
-    sub_cat['n10.2'].style.display = 'block';
+    sub_cat['n8.1'].style.display = 'block';
+    sub_cat['n8.2'].style.display = 'block';
 }
 
-function showSub1_3(){
+function showSub4_2(){
     sub_cat = document.getElementsByClassName('normal');
-    sub_cat['n13.1'].style.display = 'block';
-    sub_cat['n13.2'].style.display = 'block';
+    sub_cat['n9.1'].style.display = 'block';
+    sub_cat['n9.2'].style.display = 'block';
 }
 
 document.getElementById('n1').onmouseover = onMouse;
@@ -110,48 +111,35 @@ document.getElementById('n3').onmouseleave = leaveMouse3;
 
 document.getElementById('n4').onmouseover = onMouse4;
 document.getElementById('n4').onmouseleave = leaveMouse4;
+document.getElementById('n4.1').onmouseover = onMouse4_1;
+document.getElementById('n4.1').onmouseleave = leaveMouse4_1;
+document.getElementById('n4.2').onmouseover = onMouse4_2;
+document.getElementById('n4.2').onmouseleave = leaveMouse4_2;
+document.getElementById('n4.3').onmouseover = onMouse4_3;
+document.getElementById('n4.3').onmouseleave = leaveMouse4_3;
 
 document.getElementById('n5').onmouseover = onMouse5;
 document.getElementById('n5').onmouseleave = leaveMouse5;
 
 document.getElementById('n6').onmouseover = onMouse6;
 document.getElementById('n6').onmouseleave = leaveMouse6;
-document.getElementById('n6.1').onmouseover = onMouse6_1;
-document.getElementById('n6.1').onmouseleave = leaveMouse6_1;
-document.getElementById('n6.2').onmouseover = onMouse6_2;
-document.getElementById('n6.2').onmouseleave = leaveMouse6_2;
 
 document.getElementById('n7').onmouseover = onMouse7;
 document.getElementById('n7').onmouseleave = leaveMouse7;
 
 document.getElementById('n8').onmouseover = onMouse8;
 document.getElementById('n8').onmouseleave = leaveMouse8;
+document.getElementById('n8.1').onmouseover = onMouse8_1;
+document.getElementById('n8.1').onmouseleave = leaveMouse8_1;
+document.getElementById('n8.2').onmouseover = onMouse8_2;
+document.getElementById('n8.2').onmouseleave = leaveMouse8_2;
 
 document.getElementById('n9').onmouseover = onMouse9;
 document.getElementById('n9').onmouseleave = leaveMouse9;
-
-document.getElementById('n10').onmouseover = onMouse10;
-document.getElementById('n10').onmouseleave = leaveMouse10;
-document.getElementById('n10.1').onmouseover = onMouse10_1;
-document.getElementById('n10.1').onmouseleave = leaveMouse10_1;
-document.getElementById('n10.2').onmouseover = onMouse10_2;
-document.getElementById('n10.2').onmouseleave = leaveMouse10_2;
-
-document.getElementById('n11').onmouseover = onMouse11;
-document.getElementById('n11').onmouseleave = leaveMouse11;
-
-document.getElementById('n12').onmouseover = onMouse12;
-document.getElementById('n12').onmouseleave = leaveMouse12;
-
-document.getElementById('n13').onmouseover = onMouse13;
-document.getElementById('n13').onmouseleave = leaveMouse13;
-document.getElementById('n13.1').onmouseover = onMouse13_1;
-document.getElementById('n13.1').onmouseleave = leaveMouse13_1;
-document.getElementById('n13.2').onmouseover = onMouse13_2;
-document.getElementById('n13.2').onmouseleave = leaveMouse13_2;
-
-document.getElementById('n14').onmouseover = onMouse14;
-document.getElementById('n14').onmouseleave = leaveMouse14;
+document.getElementById('n9.1').onmouseover = onMouse9_1;
+document.getElementById('n9.1').onmouseleave = leaveMouse9_1;
+document.getElementById('n9.2').onmouseover = onMouse9_2;
+document.getElementById('n9.2').onmouseleave = leaveMouse9_2;
 
 // Actions for n1
 
@@ -233,6 +221,65 @@ function leaveMouse4(){
     }
 }
 
+// Actions for n4.1
+
+function onMouse4_1(){
+    document.getElementById('n4.1').style.backgroundColor = '#C3073F'
+
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[0].style.display = "block"
+}
+
+function leaveMouse4_1(){
+    if (selected_sub == 0) {
+        document.getElementById('n4.1').style.backgroundColor = '#C3073F'
+    } else {
+        document.getElementById('n4.1').style.backgroundColor = '#535353'
+
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[0].style.display = "none"
+    }
+}
+
+// Actions for n4.2
+
+function onMouse4_2(){
+    document.getElementById('n4.2').style.backgroundColor = '#C3073F'
+
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[1].style.display = "block"
+}
+
+function leaveMouse4_2(){
+    if (selected_sub == 1) {
+        document.getElementById('n4.2').style.backgroundColor = '#C3073F'
+    } else {
+        document.getElementById('n4.2').style.backgroundColor = '#535353'
+
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[1].style.display = "none"
+    }
+}
+// Actions for n4.3
+
+function onMouse4_3(){
+    document.getElementById('n4.3').style.backgroundColor = '#C3073F'
+
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[2].style.display = "block"
+}
+
+function leaveMouse4_3(){
+    if (selected_sub == 2) {
+        document.getElementById('n4.3').style.backgroundColor = '#C3073F'
+    } else {
+        document.getElementById('n4.3').style.backgroundColor = '#535353'
+
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[2].style.display = "none"
+    }
+}
+
 // Actions for n5
 
 function onMouse5(){
@@ -270,46 +317,6 @@ function leaveMouse6(){
 
         hover_str = document.getElementsByClassName('date-mil');
         hover_str[5].style.display = "none"
-    }
-}
-
-// Actions for n6.1
-
-function onMouse6_1(){
-    document.getElementById('n6.1').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-nor');
-    hover_str[0].style.display = "block"
-}
-
-function leaveMouse6_1(){
-    if (selected_sub == 0) {
-        document.getElementById('n6.1').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n6.1').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-nor');
-        hover_str[0].style.display = "none"
-    }
-}
-
-// Actions for n6.2
-
-function onMouse6_2(){
-    document.getElementById('n6.2').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-nor');
-    hover_str[1].style.display = "block"
-}
-
-function leaveMouse6_2(){
-    if (selected_sub == 1) {
-        document.getElementById('n6.2').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n6.2').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-nor');
-        hover_str[1].style.display = "none"
     }
 }
 
@@ -353,6 +360,46 @@ function leaveMouse8(){
     }
 }
 
+// Actions for n8.1
+
+function onMouse8_1(){
+    document.getElementById('n8.1').style.backgroundColor = '#C3073F'
+
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[3].style.display = "block"
+}
+
+function leaveMouse8_1(){
+    if (selected_sub == 3) {
+        document.getElementById('n8.1').style.backgroundColor = '#C3073F'
+    } else {
+        document.getElementById('n8.1').style.backgroundColor = '#535353'
+
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[3].style.display = "none"
+    }
+}
+
+// Actions for n8.2
+
+function onMouse8_2(){
+    document.getElementById('n8.2').style.backgroundColor = '#C3073F'
+
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[4].style.display = "block"
+}
+
+function leaveMouse8_2(){
+    if (selected_sub == 4) {
+        document.getElementById('n8.2').style.backgroundColor = '#C3073F'
+    } else {
+        document.getElementById('n8.2').style.backgroundColor = '#535353'
+
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[4].style.display = "none"
+    }
+}
+
 // Actions for n9
 
 function onMouse9(){
@@ -373,182 +420,42 @@ function leaveMouse9(){
     }
 }
 
-// Actions for n10
+// Actions for n9.1
 
-function onMouse10(){
-    document.getElementById('n10').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-mil');
-    hover_str[9].style.display = "block"
-}
-
-function leaveMouse10(){
-    if (selected == 9) {
-        document.getElementById('n10').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n10').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-mil');
-        hover_str[9].style.display = "none"
-    }
-}
-
-// Actions for n10.1
-
-function onMouse10_1(){
-    document.getElementById('n10.1').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-nor');
-    hover_str[2].style.display = "block"
-}
-
-function leaveMouse10_1(){
-    if (selected_sub == 2) {
-        document.getElementById('n10.1').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n10.1').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-nor');
-        hover_str[2].style.display = "none"
-    }
-}
-
-// Actions for n10.2
-
-function onMouse10_2(){
-    document.getElementById('n10.2').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-nor');
-    hover_str[3].style.display = "block"
-}
-
-function leaveMouse10_2(){
-    if (selected_sub == 3) {
-        document.getElementById('n10.2').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n10.2').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-nor');
-        hover_str[3].style.display = "none"
-    }
-}
-
-// Actions for n11
-
-function onMouse11(){
-    document.getElementById('n11').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-mil');
-    hover_str[10].style.display = "block"
-}
-
-function leaveMouse11(){
-    if (selected == 10) {
-        document.getElementById('n11').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n11').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-mil');
-        hover_str[10].style.display = "none"
-    }
-}
-
-// Actions for n12
-
-function onMouse12(){
-    document.getElementById('n12').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-mil');
-    hover_str[11].style.display = "block"
-}
-
-function leaveMouse12(){
-    if (selected == 11) {
-        document.getElementById('n12').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n12').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-mil');
-        hover_str[11].style.display = "none"
-    }
-}
-
-// Actions for n13
-
-function onMouse13(){
-    document.getElementById('n13').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-mil');
-    hover_str[12].style.display = "block"
-}
-
-function leaveMouse13(){
-    if (selected == 12) {
-        document.getElementById('n13').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n13').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-mil');
-        hover_str[12].style.display = "none"
-    }
-}
-
-// Actions for n13.1
-
-function onMouse13_1(){
-    document.getElementById('n17.1').style.backgroundColor = '#C3073F'
-
-    hover_str = document.getElementsByClassName('date-nor');
-    hover_str[4].style.display = "block"
-}
-
-function leaveMouse13_1(){
-    if (selected_sub == 4) {
-        document.getElementById('n13.1').style.backgroundColor = '#C3073F'
-    } else {
-        document.getElementById('n13.1').style.backgroundColor = '#535353'
-
-        hover_str = document.getElementsByClassName('date-nor');
-        hover_str[4].style.display = "none"
-    }
-}
-
-// Actions for n13.2
-
-function onMouse13_2(){
-    document.getElementById('n13.2').style.backgroundColor = '#C3073F'
+function onMouse9_1(){
+    document.getElementById('n9.1').style.backgroundColor = '#C3073F'
 
     hover_str = document.getElementsByClassName('date-nor');
     hover_str[5].style.display = "block"
 }
 
-function leaveMouse13_2(){
+function leaveMouse9_1(){
     if (selected_sub == 5) {
-        document.getElementById('n13.2').style.backgroundColor = '#C3073F'
+        document.getElementById('n9.1').style.backgroundColor = '#C3073F'
     } else {
-        document.getElementById('n13.2').style.backgroundColor = '#535353'
+        document.getElementById('n9.1').style.backgroundColor = '#535353'
 
         hover_str = document.getElementsByClassName('date-nor');
         hover_str[5].style.display = "none"
     }
 }
 
-// Actions for n14
+// Actions for n9.2
 
-function onMouse14(){
-    document.getElementById('n14').style.backgroundColor = '#C3073F'
+function onMouse9_2(){
+    document.getElementById('n9.2').style.backgroundColor = '#C3073F'
 
-    hover_str = document.getElementsByClassName('date-mil');
-    hover_str[13].style.display = "block"
+    hover_str = document.getElementsByClassName('date-nor');
+    hover_str[6].style.display = "block"
 }
 
-function leaveMouse14(){
-    if (selected == 13) {
-        document.getElementById('n14').style.backgroundColor = '#C3073F'
+function leaveMouse9_2(){
+    if (selected_sub == 6) {
+        document.getElementById('n9.2').style.backgroundColor = '#C3073F'
     } else {
-        document.getElementById('n14').style.backgroundColor = '#535353'
+        document.getElementById('n9.2').style.backgroundColor = '#535353'
 
-        hover_str = document.getElementsByClassName('date-mil');
-        hover_str[13].style.display = "none"
+        hover_str = document.getElementsByClassName('date-nor');
+        hover_str[6].style.display = "none"
     }
 }

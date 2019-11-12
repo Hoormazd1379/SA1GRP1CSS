@@ -74,7 +74,7 @@
           </div>
           </div>
         </div>
-        <div class="textblockcont" style="height: 2000px">
+        <div class="textblockcont" style="height: 2050px">
           <h2>Definitions</h2>
           <p>In order to better understand each vulnerability, certain recurring key words will be described here in the homepage.
             Clicking on a <a class="VulDef" href="#">red term</a> in one of the articles will bring you here to its respective definition.
@@ -92,7 +92,7 @@
             <h2>Class type</h2>
             <p>Vulnerabilities of the "class" type are wide-spread accross all types of software.
               They are more general than "base" types and they can sometimes include more "base" and "variant" vulnerabilities within them.
-              For example, <a class="VulDef "href="#">Improper Restriction of Operation</a> is a type C vulnerability that includes <a class="VulDef"href="#">Out of Bounds Read</a> and <a class="VulDef"href="#">Write</a>, two type B vulnerabilities. </p>
+              For example, <a class="VulDef "href="improper_restriction.html">Improper Restriction of Operation</a> is a type C vulnerability that includes <a class="VulDef"href="out_of_bounds_read.html">Out of Bounds Read</a> and <a class="VulDef"href="out_of_bounds_write.html">Write</a>, two type B vulnerabilities. </p>
           </div>
           <div class="VulTypeBlack VULbg">
             <div class="VulTypeSphere">
@@ -110,7 +110,7 @@
             <h2>Variant type</h2>
             <p>a "variant" type vulnerability is often only found either in a specific subset of software or in software written in a specific programming language.
             Because of this, they are more specific than "base" weaknesses, and can often be associated with one or more other "variant" type vulnerabilities that exploit related issues.
-            For example, the type B vulnerability <a class="VulDef" href="#">Out of Bounds Read</a> includes two related type V vulnerabilities, <a class="VulDef" href="#">Buffer Over-read</a> and <a class="VulDef" href="#">Under-read</a>. </p>
+            For example, the type B vulnerability <a class="VulDef" href="out_of_bounds_read.html">Out of Bounds Read</a> includes two related type V vulnerabilities, <a class="VulDef" href="out_of_bounds_read.html">Buffer Over-read</a> and <a class="VulDef" href="out_of_bounds_read.html">Under-read</a>. </p>
           </div>
           <h2>Consequences</h2>
           <p>The danger of vulnerabilities comes from the various consequences that occur when they are exploited. The following definitions describe some of the most dangerous consequences of software vulnerabilities.
@@ -141,6 +141,13 @@
               <a name="VulIntegrity"></a>Loss of integrity
             </div>
             Loss of integrity means that data or an IT system has been modified or destroyed by an unauthorized entity. This could mean that the system has been infected with a <a class="VulDef" href="../mal/virus.html">virus<a> or simply that stored information has been modified or deleted.
+            <sup><a class="VulDef" href="bib_vul.html">(4)</a></sup>
+          </div>
+          <div class="VulRectangle VULbg">
+            <div class="VulRectangleSmall">
+              <a name="VulAviability"></a>Loss of aviability
+            </div>
+            Availability ensures that data and systems are up and operational when they are needed. Or said another way, loss of availability indicates that either data or a system is not available when needed by a user.
             <sup><a class="VulDef" href="bib_vul.html">(4)</a></sup>
           </div>
           <div class="VulRectangle VULbg">
@@ -218,7 +225,7 @@
             <h3> Please wait while we load the page!</h3>
         </div>
     </div>
-
+    <br><br><br><br><br>
 
     <!-- particles-js init
         dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->

@@ -36,13 +36,12 @@
       </div>
         <div class="VulTypeWhite">
           <h2>Consequences</h2>
-          <p>Any application that is writable by an unintended party compromises the system security, for example, they would be able to destroy or corrupt critical data in the targeted resource, such as deletion of records from a database.</p>
+          <p>Any application that is writable by an unintended party compromises the system security, for example, they would be able to destroy or <a class="VulDef" href="index.html#VulDataCorruption">corrupt critical data</a> in the targeted resource, such as deletion of records from a database.</p>
 
             <p>The attacker may have the means to read sensitive information from the resource, such as credentials, configuration information or user data, resulting in a <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a> </p>
 
             <p>If the attacker has access to a world-writable executable, they are able to inject malicious content into it and execute arbitrary code, such as a Trojan horse.
             </p>
-          <p>They can also, if privileges allow, execute arbitrary code which will be harmful to the application and cause alterations. </p>
           </div>
         <div class="VulTypeWhite">
           <h2>Detection</h2>
@@ -61,6 +60,12 @@
           </p>
           </div>
 
+ </div>
+ <div id="footer">
+     <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+         &#169; Catastrophic Software Failures
+         <span><address id="page-auth">Kieran McKee</address></span>
+     </p>
  </div>
       </body>
     </html>
