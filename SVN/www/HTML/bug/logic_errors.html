@@ -61,30 +61,29 @@
 				</div>
 				<div class="textblockcont">
 				<h2>What is a Logic Error? </h2>
-				<p>The bugs of this type are connected to the program's operating logic and are the most difficult to identify; in fact if you want to compile a program, the compiler doesn't identify any errors, from the moment it doesn't have any reason to report them since the program is semantically and syntactically correct; therefore doesn't mean that our program is "logically" correct, in fact in many cases the end result doesn't match what we expected, so it is up to the programmer to locate them.</p>
+				<p>Logic bugs are closely related to the operational logic of the program and therefore are the most difficult to identify; in fact if you want to compile a program, the compiler does not identify any error, from the moment in which it has no reason to report them as erroe because the program is semantically and syntactically correct; this does not mean that our program is "logically" correct, in fact in many cases the final result does not correspond to what we expected, so it is up to the programmer to locate them. </P>
 
-				<p>They can be caused by a lack of understanding of the problem to be calculated or the constraints that the input data must respect, or even in the evaluation of the algorithm test. These errors typically lead to the design of an algorithm that does not provide the required output within one or more instances of the problem to be solved and we need to use the debugger to find it.</p>
-				<p>A fairly trivial example is when we divide a number by zero or when we use a variable, which we haven't defined it before, syntactically is correct, but we have the error during the execution of the program, which stops.</p>
+<p> These bugs can be caused by different events such as: the lack of understanding of the problem to be calculated or the constraints that the input data must respect, or even in the evaluation of the algorithm test. The result we get does not match what we wanted because of this error and to solve it we have to use the debugger. </p>
+<p> A fairly trivial example is when we divide a number by zero or when we use a variable, which we never defined before, syntactically it is correct, but we have the error during the execution of the program, which stops. </p>
 
-				<p>They can be caused by a lack of understanding of the problem to be calculated or the constraints that the input data must respect, or even in the evaluation of the algorithm test. These errors typically lead to the design of an algorithm that does not provide the required output within one or more instances of the problem to be solved and we need to use the debugger to find it.</p>
-				<p>A fairly trivial example is when we divide a number by zero or when we use a variable,which we haven't defined it before, syntactically is correct, but we have the error during the execution of the program, which stops.</p>
-
-				<p>They can be caused by a lack of understanding of the problem to be calculated or the constraints that the input data must respect, or even in the evaluation of the algorithm test. These errors typically lead to the design of an algorithm that does not provide the required output within one or more instances of the problem to be solved and we need to use the debugger to find it. A fairly trivial example is when we divide a number by zero or when we use a variable,which we haven't defined it before, syntactically is correct, but we have the error during the execution of the program, which stops.</p>
+<p> They can be caused by the lack of understanding of the problem to be calculated or by the constraints that the input data must respect, or even in the evaluation of the algorithm test. These errors generally lead to the design of an algorithm that does not provide the required output in one or more instances of the problem to be solved and to find it you need to use the debugger. </P>
+<p> A fairly trivial example is when we divide a number by zero or when we use a variable, which we never defined before, syntactically it is correct, but we have the error during the execution of the program, which stops. </p>
 				</div>
 				<div class="textblockcont">
-					
+
 				<h2 id="categories"> OBOE</h2>
-				<p>An OBOE, which means off-by-one error, or also commonly known as an OBOB (off-by-one bug), is a logic error involving the discrete equivalent of a boundary condition. It often occurs in computer programming when an iterative loop iterates one time too many or too few. This problem could arise when a programmer makes mistakes such as using "is less than or equal to" where "is less than" should have been used in a comparison, or fails to take into account that a sequence starts at zero rather than one (as with array indices in many languages). This can also occur in a mathematical context.</p>
+				<p>An OBOE means off-by-one error and is also commonly known as OBOB (off-by-one bug). It is a logical error, which involves the discrete equivalent of a boundary condition. It often happens that it happens during the programming of a computer, that is when there is an iterative cycle that flows once too often or once too little. This problem could arise when a programmer makes mistakes such as the use of "is less than or equal to" where "is less than" should have been used in a comparison or does not take into account the fact that a sequence starts from zero instead of one ( as with array indexes in many languages). This can also happen in a mathematical context, which we will see immediately.</p>
 				<h3> Fencepost errors</h3>
 				<p> A fencepost error is a specific type of an off-by-one-error. We can understand better if we take an example: consider a fence 30 meters long and every 3 meters you have to put a pole, the question that arises is: how many poles do we need?</p> <center>
 					<img src="../../assets/bug_imgs/fencepost_error.png" style="filter: invert(1);">
 				</center>
-				<p>Instantly we come to answer 10, but it's wrong since we have 11 seats. If we want to broaden and generalize the concept; the problem can be declared as follows: if you have n places, how many sections are there between them? There are three possibilities. the answer can be n-1 if you have an open-ended posts-line, while it will be n if the posts-line forms a circle and finally we have n + 1 if the messages are not at the end of the barrier. Thus the Fencepost errors come from the inaccurate counting of things either spaces between them or even if one or both ends should be counted.</p>
-			  <p> Fencepost error may refer to an error caused by unexpected regularities in input values, which could completely counter a function. This error involves the difference between expected behaviors and worst cases of an algorithm. In these cases the accuracy is essential to avoid committing an OBOE that could lead to disastrous effects.</p>
+				<p>We could say at first that the answer is 10, but it is wrong since we have 11 seats. If we want to broaden and generalize the concept; the problem can be exposed as follows: if there are n places, how many sections are there between them? To answer this question we must consider that there are three possibilities. The first, in which the answer is n-1 if and only if you have an open mail line, while it will be n if the mail line forms a circle and finally we have n + 1 if the messages are not at the end of the barrier. Therefore the errors of Fencepost come from the closed count of the spaces that are between the various objects. </p>
+<p> The Fencepost error can refer to an error caused by unexpected regularities in the input values, which could completely counteract a function. This error can lead to the difference between expected behaviors and worst cases of an algorithm. In these cases accuracy is essential to avoid committing an OBOE that could lead to disastrous effects.</p>
 			</div>
 			  <div class="textblockcont">
 				<h2>Infinite loops and infinite recursion</h2>
-				<p>The difference between an infinite loop and an infinite recursion is that the infinite recursion is a special case of an infinite loop; then the question arises what is an infinite loop? An infinite loop (or endless loop) is a sequence of instructions in a computer program which loops endlessly, either due to the loop having no terminating condition (having one that can never be met) or one that causes the loop to start over. In older operating systems with cooperative multitasking, infinite loops normally caused the entire system to become unresponsive. With the now-prevalent preemptive multitasking model, infinite loops usually cause the program to consume all available processor time, but can usually be terminated by the user. Busy wait loops are also sometimes called "infinite loops", which can cause for a computer "freezing"; others include thrashing, deadlock, and access violations. Instead the recursive loop refers to a method of defining the functions in which the function to be defined is applied within their own definition. In the first image you can see an example of an infinite loop, whereas the second picture is an example of a recursion loop.</p>
+				<p>The difference between an infinite loop and an infinite recursion is that the infinite recursion is a special case of an infinite loop; then the question arises what is an infinite loop? An infinite loop (or infinite loop) is a sequence of instructions in a computer program that repeats itself over and over, since the
+cycle does not have a termination condition (because it does not have one that can never be satisfied) or one that restarts the cycle. With older operating systems, loops caused the entire operating system to fail to respond, but now with the prevailing preventive multitasking model, infinite loops make the program consume all the processor's available time, even though it can usually be closed by the user. Busy waiting loops are sometimes also called "infinite loops", which could cause the computer to crash or even block it; others, however, include thrashing, deadlocks and access violations. Instead the recursive cycle refers to a method to define the functions in which the function to be defined is applied within its own definition. In the first image you can see an example of an infinite loop, while the second image is an example of a recursion cycle.</p>
 				<div class="ImageContainerBug">
 					<img class="imageblockcont" style="width: 300px; height:300px;" src="../../assets/bug_imgs/Infinite-loop.jpg" alt="Infinite loop in a math exercise">
 					<img class="imageblockcont" style="width: 300px; height:300px;" src="../../assets/bug_imgs/infinite-recursion.jpeg"  alt="Infinite recursion">
@@ -97,14 +96,13 @@
 
 			</div>
 		</div>
-		<div id="footer">
-			<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
-				&#169; Catastrophic Software Failures
-				<span><address id="page-auth">Brian Bronz</address></span>
-			</p>
-		</div>
 	</div>
-
+	<div id="footer">
+		<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+			&#169; Catastrophic Software Failures
+			<span><address id="page-auth">Brian Bronz</address></span>
+		</p>
+	</div>
 	<!-- END OF THE CONTENT -->
 
 

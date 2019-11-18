@@ -52,13 +52,12 @@
 			</div>
 			<div class="textblockcont">
 				<h2> What is Debugging </h2>
-			<p>The debug indicates the activity that consists in the identification by the programmer of the part of software affected by a bug detected following the use of the program. The debugging activity is one of the most important operations for the development of a program, often extremely difficult due to the complexity of the software currently in use and delicate due to the danger of introducing new errors or behaviors that differ from those desired in an attempt to correct those for which the debugging activity took place.</p>
-			<p>Although each debugging session is unique, there are some generic principles are applicable in every situation. We can recognize five phases: bug identification; identification of the component containing the bug; identification of the cause of the bug; design of a bug fix and implementation and testing of the aforementioned correction. There are two ways to perform a debugging session.</p>
+			<p>The identification of a bug by the program or programmer is called Debugging. Its activity is one of the most fundamental operations for the development of a program, which is usually extremely difficult due to the complexity of the software that is currently in use and delicate due to the possibility of introducing new errors or different behaviors from those desired in an attempt to correct those for which the debugging activity took place. </P>
+<p> Although each debugging session is unique in its kind, there are some generic principles, according to which they are applicable in every situation. To begin with we can find five steps: identification of the bugs; identification of the component containing the bug; identification of the cause of the bug; design of a bug fix and implementation and test of the above correction. However, there are two ways to perform a debug session..</p>
 		</div>
 		<div class="textblockcont">
 			<h2> Debugging Sessions </h2>
-			<p>The first possibility is to Insert in appropriate points of the program source code instructions that print on video the contents of variables that could contain incorrect values that lead to the error. Typically, in fact, the conditions that lead to an error could arise long before the time when the error occurs. For example, if a numeric variable x that will be used later as a divisor of a number contains a value that will make the divisor zero, this will certainly lead to an error if the value of x remains that:</p>
-			<p>if we consider x=1 and z=1; and we consider also the calculus 1/(x-z)</p>
+			<p>To begin, you can insert in the most appropriate points of the instructions of the source code of the program which print on the video the contents of the variables that could have the wrong values which consequently could lead to the error. Typically the conditions that lead to an error could arise long before the time the error occurs. We can consider for example the division of two numbers, where if a numeric variable x that will be used later as a divisor of a number contains a value that will make the divisor zero, this will surely cause an error if the value of x remains such: </p> 1/(x-z)</p>
 			<p>to "debug" this part of the program it is possible to convince</p>
 			<p> oneself by printing on screen that x-z is zero before the error occurs:</p>
 			<p>int x=1, z=1:</p>
@@ -66,19 +65,18 @@
 			<p>System.err.println("x-z=",x-z);</p>
 			<p>...</p>
 			<p>1\x-z</p>
-			<p>Whereas the second way is to run the program under the control of an application called a debugger. A debugger allows you to execute the instructions of a program one at a time, allows you to run the program until certain user-definable points (breakpoints) are reached, and allows you to examine the contents of the variables at any time. Debuggers are very useful tools to find out the causes of errors.</p>
-			<p>Once the causes of the error have been identified and corrected, the printing instructions can be removed to end the debugging session.</p>
+			<p>Instead the second way is to execute the program under the control of an application called debugger that allows to execute the instructions of a program one at a time, they allow to carry out the program up to the attainment of determined points (points of interruption) definable by the user and allows you to analyze the contents of the variables at any time. Debuggers play a very useful role in discovering the causes of errors. </p>
+<p> Once the causes of the error have been identified and corrected, you can remove the printing instructions to end the debugging session. </P>
 		</div>
-			
-		</div>
-		<div id="footer">
-			<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
-				&#169; Catastrophic Software Failures
-				<span><address id="page-auth">Brian Bronz</address></span>
-			</p>
+
 		</div>
 	</div>
-
+	<div id="footer">
+		<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+			&#169; Catastrophic Software Failures
+			<span><address id="page-auth">Brian Bronz</address></span>
+		</p>
+	</div>
 
 	<!-- END OF THE CONTENT -->
 

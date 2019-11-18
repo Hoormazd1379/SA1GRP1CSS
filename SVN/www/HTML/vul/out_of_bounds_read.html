@@ -29,16 +29,16 @@
     <h2>Description</h2>
     <p> Out of Bounds Read is a type of vulnerability that may happen in a software when it reads data from the buffer (where physical memory is stored) and reads the data out of its bounds.</p>
     <p>This can mainly happen in C or C++, because functions in these languages do not check the memory bounds they use. Moreover, it is crucial to know  some functions, which are bounded in memory use
-    by mistake can cause buffer over read or buffer under read.</p>
+    by mistake can cause buffer over read or buffer under read.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(18)</a></sup><sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(19)</a></sup></p>
     <h2>Variants</h2>
-    <p>Buffer over-read (CWE 126) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is incremented over the limits of the buffer.</p>
-    <p>Buffer under-read (CWE 127) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is decremented under the limits of the buffer. </p>
+    <p>Buffer over-read (CWE 126) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is incremented over the limits of the buffer.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(20)</a></sup></p>
+    <p>Buffer under-read (CWE 127) is a <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerability categorized under out of bounds read. It usually happens when a pointer is decremented under the limits of the buffer.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(21)</a></sup></p>
 <h2>Potential Causes</h2>
 <p > There are several causes that can trigger an out of bounds read. These are:
 <ul style="color:#FfFFFF">
 <li> Ordinary Bugs</li>
  <li>Malicious Inputs</li>
- <li>Heartbleed bug (Caused by <a class="VulDef" href="validation.html"> Improper Input Validation</a>)</li>
+ <li>Heartbleed bug (Caused by <a class="VulDef" href="validation.html"> Improper Input Validation</a>)<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(22)</a></sup></li>
 </ul> </p>
     <!-- If you have any other sections, put them here -->
        </div>
