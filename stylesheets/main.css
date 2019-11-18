@@ -1,7 +1,16 @@
-/************************************************************** PART A: VERY IMPORTANT STUFF **************************************************************/
+ /************************************************************** PART A: VERY IMPORTANT STUFF **************************************************************/
 
 
 /**************************************************************DONT CHANGE ANYTHING HERE **************************************************************/
+
+
+/*added by Onciu Razvan Petrica*/
+sup{
+  color:grey;
+  font-size: 12px;
+}
+
+/*---------------------*/
 
 body {
     background-color: #1A1A1D;
@@ -19,11 +28,40 @@ body {
     z-index: -2;
 }
 
+.textblockcont {
+  padding:10px;
+  background-color: rgba(68,68,68,0.3);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+  margin-bottom: 15px;
+}
+
+.imageblockcont {
+  padding:0px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+  border-width: 1px 1px 1px 1px;
+  border-color: #C3073F;
+}
+
 .infoPage {
     display: none;
     position: fixed;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.infoPage h1 {
+    color:white;
+}
+
+.infoPage h2 {
+    color:white;
 }
 
 .infoPage h3 {
@@ -34,28 +72,47 @@ body {
         color: white;
 }
 
+.infoIMG {
+  object-fit: cover;
+  width:100%;
+  height: 500px;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+#roster {
+  height: 350px;
+}
+
 .VULbg {
-    background: linear-gradient(45deg, #c3073f, #B24A01);
+    background: linear-gradient(45deg, #c3073f, #AA2168);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.VULh {
+  color: #c3073f;
 }
 
 .MALbg {
-    background: linear-gradient(45deg, #B24A01, #8C7000);
+    background: linear-gradient(45deg, #AA2168, #813B80);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.MALh {
+  color: #AA2168;
 }
 
 .BUGbg {
-    background: linear-gradient(45deg, #8C7000, #588814);
+    background: linear-gradient(45deg, #813B80, #534881);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
@@ -64,26 +121,34 @@ body {
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 
+.BUGh {
+  color: #813880;
+}
+
 .HISbg {
-    background: linear-gradient(45deg, #588814, #00995C);
+    background: linear-gradient(45deg, #534881, #324B71);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
+}
+
+.HISh {
+  color: #534881;
 }
 
 .MOREbg {
 
-    background: linear-gradient(45deg, #00995C, #00A5A1);
+    background: linear-gradient(45deg, #324B71, #2F4858);
     background-size: 400% 400%;
 
     -webkit-animation: infoBackground 4s ease infinite;
     animation: infoBackground 4s ease infinite;
 
     box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
-        
+
 }
 
 @-webkit-keyframes infoBackground {
@@ -104,7 +169,7 @@ body {
     text-align: center;
     color: white;
     background-color: #9A1750;
-    width: 300px;
+    width: 375px;
 }
 
 table #home td {
@@ -122,11 +187,16 @@ table #home td {
 
 #title {
     margin-top: 100px;
-    width: 500px;
-    left: 50%;
-    margin-left: -250px;
+    width: 100%;
     position: absolute;
-    text-align: center;
+}
+
+#scrolltitle {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
 }
 
 #back-button {
@@ -271,18 +341,24 @@ table #home td {
 /*************************************************************** gradual appearance of the main heading ***************************************************************/
 
 #a {
+    display:inline;
+    text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
 }
 
 #b {
-    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-}
-
-#c {
+    display:inline;
+    text-align:center;
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
     animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+    }
+
+#c {
+    display:inline;
+    text-align:center;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
 }
 
 @keyframes text-pop-up-top {
@@ -319,11 +395,12 @@ table #home td {
     width: 61%;
     height: 60px;
     margin: auto;
-    position: fixed;
+    position: absolute;
     list-style-type: none;
     color: white;
     font: bold 20px Arial, Helvetica, sans-serif;
 }
+
 #filters ul {
     left: 0;
     right: 0;
@@ -354,15 +431,16 @@ table #home td {
     width: 20%;
     top: 300px;
     bottom: 0;
+    height: 500px;
     left: 0;
     position: absolute;
     float: left;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #timeline-shapes {
-    top: 0;
+    top: -250px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -391,27 +469,33 @@ table #home td {
     border-radius: 15px;
     background-color: #545454;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.56);
+    display: none;
 }
 
 .milestone:hover {
     background: #C3073F;
 }
 
+.milestone:hover .date-mil {
+    display: block;
+}
+
 .normal:hover {
     background: #C3073F;
 }
 
-#content {
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    height: 96%;
-    text-align: justify;
-    overflow: hidden;
+.normal:hover .date-nor {
+    display: block;
 }
 
-#content:hover {
-    overflow: auto;
+#content {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-style: none;
+    border-radius: 10px;
 }
 
 #content-main {
@@ -445,22 +529,26 @@ table #home td {
     margin-right: 30px;
 }
 
-/* CUSTOM SCROLL BAR -E.R*/
-
-#content::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: rgba(245, 245, 245, 0);
+.date-mil {
+    font-size: 18px;
+    color: #C3073F;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -5px;
+    display: none;
 }
 
-#content::-webkit-scrollbar {
-    width: 5px;
-}
-
-#content::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: rgba(195, 7, 63, 0.452);
+.date-nor {
+    font-size: 16px;
+    color: #C3073F;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -3px;
+    display: none;
 }
 
 /* SECTION FOR @TEAM_MEMBERS TO ADD CUSTOM CSS -E.R*/
@@ -471,40 +559,27 @@ p.H-intro-quote{
   font-size:15px;
   margin-top:40px;
   margin-bottom:50px;
+  text-align: center;
 }
 
-img.H-intro-1{
-  float:left;
-  width:40%;
-  min-width:150px;
-  max-width:350px;
-  margin-bottom:40px;
-}
-
-p.H-intro-1{
-  float:left;
-  margin-top:5px;
-  text-align: justify;
-
-}
 
 /*list*/
 
 ul.H-intro-list{
-  margin-top:30%;
+  margin-top:350px;
   color:#C3073F;
   font-weight: bold;
   margin-left:-20px;
   font-size:1.9vw;
+  position:relative;
 }
 
-p.H-intro-list-title{
+li.H-intro-list-title{
   text-decoration: overline;
 }
 
 /*end list*/
 
-/*table*/
 
 table.H-intro-table{
   margin-top:-50px;
@@ -517,36 +592,62 @@ td.H-intro-table-td{
 /*window size over 1201px*/
 
 @media screen and (min-width: 1201px) {
+  img.H-intro-1{
+    float:left;
+    width:40%;
+    min-width:150px;
+    max-width:300px;
+  }
+
   p.H-intro-1{
     width:47vw;
     font-size:1.7vw;
-    margin-left:20px;
     max-height:340px;
-    overflow:auto;
+    float:left;
+    margin-left:50px;
+    width:60%;
+    text-align: justify;
   }
 
   td.H-intro-table-td{
-    width:100%;
-    float:left;
+    width:50%;
+    border-radius:20px;
+    border: 5px grey solid;
     font-size:25px;
     background-color: rgba(195, 7, 63, 0.3);
+    padding:20px;
   }
+  ul.H-intro-list{
+    margin-left:-10px;
+  }
+
 }
 
 /*window size under 1200px*/
 
 @media screen and (max-width: 1200px) {
   img.H-intro-1{
-    margin-left:30%;
+    width:40%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    max-width: 300px;
   }
+
   p.H-intro-1{
+    max-height: none;
+    max-width:90%;
+    float:none;
+    position:absolute;
     width:100%;
-    margin-left:0px;
+    margin: 50px 2% 0px 5%;
     font-size:2.5vw;
+    text-align: justify;
   }
 
   ul.H-intro-list{
-    margin-top:300px;
+    margin-top:30%;
   }
 
   td.H-intro-table-td{
@@ -565,6 +666,11 @@ td.H-intro-table-td{
 
 /* Child Support Agency -- Onciu Razvan Petrica-----------*/
 
+
+div.H-CSA-div{
+  margin:0px 2% 0px 2%;
+}
+
 img.H-CSA-image{
   float:right;
   background-color: rgba(129, 129, 129, 0.315);
@@ -576,99 +682,2500 @@ img.H-CSA-image2{
   float:left;
   margin-right: 10px;
   width:20%;
+  min-width:200px;
 }
 
-p.H-CSA-p{
-  text-decoration: overline;
+p.H-CSA-p1{
+  text-decoration: underline;
   padding:20px;
   line-height: 40px;
+  text-align: justify;
+}
+
+p.H-CSA-p2{
+  padding:20px;
+  line-height: 40px;
+  background-color: rgba(195, 7, 63, 0.5);
+  border-radius:20px;
+  border: white 1px solid;
 }
 
 ul.H-CSA-list{
   background-color: rgba(255, 255, 255, 0.5);
   padding:25px;
-  line-height: 50px;
+  line-height: 35px;
   color: black;
   font-weight: bold;
+  margin: 50px 10% 50px 10%;
+  border: 15px groove rgba(195, 7, 63, 0.9);
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  h2#sect-title-CSA{
+    text-align:center;
+  }
+  img.H-CSA-image2{
+    width:50%;
+    max-width:200px;
+    position:relative;
+  }
+
 }
 
 /* End of Child Support Agency -----------------------------*/
 
-/* Mt. Gox -------------------- Massimo Bordogna -- */
+/* ozone_layer_social_impact -------------------- Mathias Bertelsen (modified by Onciu Razvan Petrica) -- */
+
+div.H-OZONE-div{
+  margin:0px 1% 0px 1% ;
+
+}
+
+img.H-OZONE-image1{
+  width:40%;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  max-width:300px;
+}
+img.H-OZONE-image2{
+  float:right;
+  width:60%;
+  margin-left:10px;
+  border-radius:20px;
+  max-width:400px;
+  margin-top:10px;
+}
+
+p.H-OZONE-p1{
+  text-align: justify;
+  padding: 20px;
+}
+
+p.H-OZONE-p2{
+  background-color: rgba(195, 7, 63, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+  img.H-OZONE-image2{
+    margin-top: 30px;
+  }
+  hr.H-OZONE-hr{
+    margin: 20px 0px 20px 1%;
+    height:5px;
+    background-color: white;
+   border: 2px solid white;
+   border-radius: 20px;
+  }
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  hr.H-OZONE-hr{
+    display:none;
+  }
+  img.H-OZONE-image2{
+    width:300px;
+    height:166px;
+    margin-top:0px;
+  }
+}
+
+/* End of ozone_layer_social_impact Page -----------------------------*/
+
+/* heathrow_5 -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-T5-image1{
+  width:100%;
+  float:right;
+}
+
+img.H-T5-image2{
+  width:50%;
+  float:left;
+  min-width:300px;
+}
+
+p.H-T5-p1{
+  text-align: center;
+}
+
+div.H-T5-div1{
+  background-color: rgba(195, 7, 63, 0.5);
+  border: 2px solid white;
+  padding:5px;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of heathrow_5 Page -----------------------------*/
+
+/* korean_air_flight -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-KOREAN-img1{
+  width:40%;
+  float:left;
+  padding:30px;
+  border: white double 2px;
+  margin-left:20px;
+  min-width: 300px;
+}
+
+img.H-KOREAN-img2{
+  width:40%;
+  float:right;
+  padding:30px;
+  border: white double 2px;
+  margin-right:20px;
+  min-width: 300px;
+}
+
+img.H-KOREAN-img3{
+  width:30%;
+  float:left;
+  padding:30px;
+  border: white double 2px;
+  margin-right:20px;
+  min-width: 300px;
+}
+
+p.H-KOREAN-p1{
+  text-align:center;
+  margin-bottom: 2%;
+}
+
+p.H-KOREAN-p2{
+  margin-top:450px;
+  text-align: justify;
+}
+
+p.H-KOREAN-p3{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius: 0px 10px 10px 0px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 4%
+}
+
+p.H-KOREAN-p4{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding:20px;
+  border:10px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  margin-left:15%;
+  margin-bottom: 4%
+}
+
+p.H-KOREAN-p5{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding:20px;
+  border:10px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  margin-left:45%;
+  margin-bottom: 4%
+}
+
+p.H-KOREAN-p6{
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:5%;
+}
+
+iframe.H-KOREAN-img4{
+  height:30%;
+  width:50%;
+  margin-left: 12%;
+  margin-top: 2%;
+  border-radius: 20px;
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-KOREAN-img1{
+    float:none;
+    margin-left:0px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  img.H-KOREAN-img2{
+    float:none;
+    margin-right:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:-150px;
+  }
+
+  p.H-KOREAN-p2{
+    margin-top:200px;
+  }
+
+  img.H-KOREAN-img3{
+    float:none;
+    margin-right:0px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  p.H-KOREAN-p5{
+    margin-left:0px;
+    margin-bottom: 4%;
+    margin-top:4%;
+  }
+
+  p.H-KOREAN-p6{
+    margin-top:0%;
+  }
+
+}
+
+/* End of korean_air_flight Page -----------------------------*/
+
+/* airbus_a400m_plane -------------------- modified by Onciu Razvan Petrica -- */
+
+img.H-A400-img1{
+  width:50%;
+  float:left;
+  border-radius: 5px;
+  border: 5px groove white;
+  margin-left:9%;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+p.H-A400-p1{
+  border: 10px groove rgba(195, 7, 63, 0.5);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:85%;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+  padding: 10px;
+}
+
+p.H-A400-p2{
+  position:relative;
+  margin-left: 70%;
+  margin-right: 2%;
+  text-align: justify;
+  text-decoration: underline;
+  padding:10px;
+}
+
+p.H-A400-p3{
+  border: 10px groove rgba(195, 7, 63, 0.5);
+  display:block;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+  padding: 10px;
+  margin-left: 70%;
+  margin-right: 2%
+}
+
+iframe.H-A400-img2{
+  width:500px;
+  height: 300px;
+  margin-left: 9%;
+  border-radius: 5px;
+  border: 5px groove white;
+}
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of aibus_a400m_plane -----------------------------*/
+
+/* boeing_737_max_8 -------------------- Elena Franchini  (modified by Onciu Razvan Petrica) -- */
+
+img.H-BOEING737-img1{
+  border-radius:2px;
+  width:50%;
+  border: 2px white solid;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+img.H-BOEING737-img2{
+  border-radius:2px;
+  width:50%;
+  border: 2px white solid;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 25%;
+
+}
+
+p.H-BOEING737-p1{
+text-align: center;
+}
+
+p.H-BOEING737-p2{
+  position:relative;
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%
+}
+
+p.H-BOEING737-p3{
+  position:relative;
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of boeing_737_max_8 -----------------------------*/
+
+/* Driveless Uber car -------------------- Elena Franchini*/
+
+img.UBER-img1{
+  position:relative;
+  width:50%;
+  min-width: 150px;
+  padding: 2px;
+  border: 5px solid rgba(195, 7, 63, 0.5);
+  padding:2px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  float:none;
+  margin-bottom: 2%
+}
+
+p.UBER-p1{
+text-align: center;
+}
+
+p.UBER-p2{
+text-align: center;
+position:relative;
+margin-left: 10%;
+margin-right: 10%;
+text-align: justify;
+text-decoration: underline;
+padding:10px;
+}
+
+p.UBER-p3{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 4%
+}
+
+iframe.UBER-img2{
+  height: 30%;
+  width:50%;
+  border-color: black;
+  border:10px;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-bottom: 2%
+}
+
+/* End of Driveless Uber car -----------------------------*/
+
+/* Patriot_missile_failure -------------------- Elena Franchini (modified by Onciu Razvan Petrica)*/
+
+div.H-PATRIOT-div{
+  margin:0px 2% 0px 2%;
+}
+
+p.H-PATRIOT-p1{
+  text-align:center;
+  margin-bottom: 2%;
+}
+
+p.H-PATRIOT-p2{
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  border:10px white double;
+  border-radius: 20px;
+  border-bottom:200px;
+}
+
+p.H-PATRIOT-p3{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding:20px;
+  border:10px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  margin-left:30%;
+}
+
+img.H-PATRIOT-img1{
+  border: 15px groove rgba(195, 7, 63, 0.5);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+}
+
+img.H-PATRIOT-img2{
+  border: 15px groove rgba(195, 7, 63, 0.5);
+  width:30%;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+  float:left;
+}
+
+textarea.H-PATRIOT-textarea{
+  border: 10px groove rgba(129, 129, 129, 0.8);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  height:50px;
+  padding:10px;
+  font-size: 15px;
+}
+
+blockquote.H-PATRIOT-pg1{
+color:white;
+}
+
+img.H-PATRIOT-img2{
+width:300px;
+height: 200px;
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-PATRIOT-img2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+  p.H-PATRIOT-p3{
+    margin-left:0px;
+  }
+}
+
+/* End of Patriote Missile Failure -----------------------------*/
+
+/* RAF Chinook -------------------- Elena Franchini -- */
+
+img.H-RAF-CHINOOK-img1{
+  border: 15px groove rgba(195, 7, 63, 0.5);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+}
+
+img.H-RAF-CHINOOK-img2{
+  border: 15px groove rgba(195, 7, 63, 0.5);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:20%;
+  text-align:justify;
+  margin-bottom: 2%;
+  min-width:200px;
+  height:300px;
+  width:200px;
+}
+
+p.H-RAF-CHINOOK-p1{
+  text-align:center;
+  margin-bottom: 2%;
+}
+
+p.H-RAF-CHINOOK-p2{
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  border:10px white double;
+  border-radius: 20px;
+  border-bottom:200px;
+  margin-left: 3%;
+  margin-right: 3%
+}
+
+p.H-RAF-CHINOOK-p3{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding:20px;
+  border:10px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  margin-left:10%;
+  margin-right: 10%
+}
+
+/* End of RAF Chinook -----------------------------*/
+
+/* TAM Flight 402 -------------------- Elena Franchini -- */
+
+img.H-TAM-img1{
+  border: 10px groove black;
+  display:block;
+  margin-left: 35%;
+  margin-right: auto;
+  width:40%;
+  text-align:justify;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  min-width:200px;
+}
+
+img.H-TAM-img2{
+  border: 15px groove white;
+  display:block;
+  margin-left: 35%;
+  margin-right: auto;
+  width:40%;
+  text-align:justify;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  min-width:200px;
+}
+
+p.H-TAM-p1{
+  background-color: black;
+  padding:20px;
+  border:5px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 5px;
+  margin-left:5%;
+  margin-right: 10%
+}
+
+p.H-TAM-p2{
+  background-color: black;
+  padding:20px;
+  border:5px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 5px;
+  margin-left:5%;
+  margin-right: 10%
+}
+
+iframe.H-TAM-img2{
+  width:40%;
+  height:20%;
+  margin-left: 35%;
+  border-radius: 15px;
+  border:black;
+}
+/* End of TAM Flight 402 -----------------------------*/
+
+/* astro_h -------------------- Onciu Razvan Petrica -- */
+
+div.H-ASTRO-div{
+  margin: 0px 1% 0px 1%;
+}
+
+img.H-ASTRO-img1{
+  width:20%;
+  float:left;
+  border:20px rgba(195, 7, 63, 0.5) groove;
+  padding: 1%;
+  margin-right: 4%;
+  min-width:200px;
+}
+
+img.H-ASTRO-img2{
+  width:50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 10px white groove;
+  border-right: 10px white groove;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  min-width:400px;
+}
+
+p.H-ASTRO-p1{
+  text-align: justify;
+  margin-right:4%;
+}
+
+p.H-ASTRO-p2{
+  text-align: justify;
+  margin-right:4%;
+  margin-top:4%;
+}
+
+p.H-ASTRO-p3{
+  text-align: justify;
+  border-radius: 20px;
+  border: white 2px solid;
+  padding:20px;
+}
+
+hr.H-ASTRO-hr{
+  margin-right: 4%;
+}
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-ASTRO-img1{
+    float:none;
+    margin-right: 0%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* End of astro_h -----------------------------*/
+
+/* cpr_number_social_impact -------------------- Mathias Bertelsen (modified by Onciu Razvan Petrica) -- */
+
+div.H-CPR-div{
+  margin:0px 2% 0px 2%;
+}
+
+img.H-CPR-img1{
+  position:relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  border-radius:2px;
+  border: 10px white groove;
+  margin-bottom:2%;
+  padding:1%;
+  background-color: rgba(195, 7, 63, 0.5);
+  min-width:300px;
+}
+
+p.H-CPR-p1{
+  border: 2px white double;
+  padding:20px;
+  text-align:justify;
+  border-radius: 20px;
+}
+
+p.H-CPR-p2{
+  border: 2px white double;
+  padding:20px;
+  text-align:justify;
+  border-radius: 20px;
+  background-color: rgba(195, 7, 63, 0.5);
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of cpr_number_social_impact -----------------------------*/
+
+
+/* zimbawbe -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica) -- */
+
+img.H-ZIMBAWBE-img1{
+  width:25%;
+  float:left;
+  border-radius:20px;
+  border: 2px solid white;
+  min-width:300px;
+  padding:5px;
+}
+
+p.H-ZIMBAWBE-p1{
+  text-align: justify;
+  padding:50px;
+  margin: 0px 20% 0px 300px;
+}
+
+p.H-ZIMBAWBE-p2{
+  text-align: justify;
+  margin: 0px 22% 0px 0px;
+}
+
+img.H-ZIMBAWBE-img2{
+  width:20%;
+  float:right;
+  border-radius:20px;
+  border: 2px solid white;
+  min-width:150px;
+  padding:5px;
+}
+
+div.H-ZIMBAWBE-div1{
+  margin: 0px 2% 0px 2%;
+}
+
+table.H-ZIMBAWBE-table{
+  margin: 5% 10% 0px 10%;
+  color:white;
+  background-color: rgba(195, 7, 63, 0.5);
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+}
+
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  p.H-ZIMBAWBE-p1{
+    padding:50px;
+    margin: 5% 2% 0px 0%;
+  }
+
+  p.H-ZIMBAWBE-p2{
+    margin: 0px 2% 0px 2%;
+  }
+
+  img.H-ZIMBAWBE-img1{
+    float:none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+  }
+
+  img.H-ZIMBAWBE-img2{
+    float:none;
+    margin-top:5%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+  }
+
+}
+
+/* End of zimbawbe -----------------------------*/
+
+
+/* electr_medical_record -------------------- Matteo Bernaschina (modified by Onciu Razvan Petrica and Massimo Bordogna) -- */
+
+
+img.H-MEDICALRECORD-img1{
+  position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 5px solid white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+
+div.H-MEDICALRECORD-div{
+  margin: 0px 1% 0px 1%;
+  border: 0px inset white;
+  color: white
+}
+
+
+
+dl.H-MEDICALRECORD-dl{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: white;
+}
+
+dd.H-MEDICALRECORD-dd1{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: white;
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: black;
+}
+
+dd.H-MEDICALRECORD-dd{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: grey;
+  padding:15px;
+  border-radius:20px;
+  text-decoration: none;
+  color: white;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-MEDICALRECORD-img2{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  p.H-MEDICALRECORD-p{
+    border:none;
+  }
+
+
+}
+
+/* End of electr_medical_record -----------------------------*/
+
+/* northeast_blackout -------------------- Onciu Razvan Petrica -- */
+
+body.H-BLACKOUT-body{
+  animation: color 20s ease-in 0s infinite;
+}
+
+@keyframes color {
+  0% {background-color: #1A1A1D;}
+  25% {background-color: grey;}
+  50% {background-color: black;}
+  75% {background-color: grey;}
+  100% {background-color: #1A1A1D;}
+}
+
+img.H-BLACKOUT-img2{
+  width:25%;
+  float:left;
+}
+
+div.H-BLACKOUT-div{
+  margin: 0px 2% 0px 2% ;
+}
+
+p.H-BLACKOUT-p1{
+  position:relative;
+  margin: 5% 5% 0px 30%;
+  text-align: justify;
+  border:10px double white;
+  padding:20px;
+  background-color: rgba(195, 7, 63, 0.5);
+}
+
+p.H-BLACKOUT-p2{
+  text-decoration: underline;
+  text-align: justify;
+  margin-top:20px;
+}
+
+p.H-BLACKOUT-p3{
+  text-decoration: underline;
+  text-align: justify;
+  margin-top:20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding:20px;
+}
+
+img.H-BLACKOUT-img1{
+  width:30%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border:white 2px solid;
+  margin-top: 2%;
+  min-width: 200px;
+}
+
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-BLACKOUT-img2{
+    width:25%;
+    min-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.H-BLACKOUT-p1{
+    position:relative;
+    margin: 10% 5% 0px 2%;
+    text-align: justify;
+    border:10px double white;
+    padding:20px;
+    background-color: rgba(195, 7, 63, 0.5);
+  }
+}
+
+
+/* End of northeast_blackout -----------------------------*/
+
+
+
+
+/* Mt. Gox -------------------- Massimo Bordogna (modified by Onciu Razvan Petrica) -- */
 
 
 img.H-MTGOX-image2{
   width:30%;
-  float:center;
+  min-width: 300px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
   padding: 2px;
+  border: 10px solid (129, 129, 129, 0.315);
+  border-radius:20px;
 }
+
+dl.H-MTGOX-dl{
+  padding:20px;
+  text-align:justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  border-radius: 10px;
+  color:white;
+}
+
+dt.H-MTGOX-dt{
+  text-decoration: underline;
+  margin: 25px 0px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding:10px;
+  color:black;
+}
+
+p.H-MTGOX-p1{
+  padding:20px;
+  text-align:justify;
+  background-color: grey;
+  border: 1px solid white;
+
+}
+
+div.H-MTGOX-div1{
+  margin: 0px 2% 0px 2%;
+}
+
+div.H-MTGOX-bitcoin{
+  width:50%;
+  display:block;
+  margin-left:25%;
+  margin-right:auto;
+  color:white;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+p.none{
+  text-align:center;
+}
+
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  td.H-MTGOX-td1{
+    position: absolute;
+    width:100%;
+    margin-top: 50px;
+    margin-right: 30%;
+  }
+
+  td.H-MTGOX-td2{
+    position:absolute;
+    width:100%;
+    margin-top: 200px;
+  }
+
+  table.H-MTGOX-table{
+    text-align: justify;
+    color:white;
+    border-spacing: 0px;
+  }
+
+  div.H-MTGOX-div2{
+    position:relative;
+    margin: 0px 3%px 0px 3%;
+  }
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+  table.H-MTGOX-table{
+    text-align: justify;
+    color:white;
+    border-spacing: 50px;
+  }
+
+}
+
+
 
 /* End of Mt.Gox -----------------------------*/
 
-/* Pentium -------------------- Massimo Bordogna -- */
+/* Pentium -------------------- Massimo Bordogna (modified by Onciu Razvan Petrica) -- */
+
+div.H-PENTIUM-div{
+  margin:0px 2% 0px 2%;
+}
+
 img.H-PENTIUM-image{
-  width:30%;
-  float:center;
-  padding: 2px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:25%;
+  min-width: 150px;
+  padding: 15px;
+  border: 2px white solid;
+  background-color: rgba(195, 7, 63, 0.5);
+}
+
+p.H-PENTIUM-p1{
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-top:20px;
+  border-radius: 20px;
+}
+
+p.H-PENTIUM-p2{
+  background-color: rgba(129, 129, 129, 0.315);
+  padding:20px;
+  border-radius: 20px;
+}
+
+p.H-PENTIUM-p3{
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  border:20px rgba(129, 129, 129, 0.9) ridge;
+  margin: 0px 10% 0px 10%;
+  text-decoration: overline;
 }
 
 /* End of Pentium -----------------------------*/
 
 /* Ariane 5 -------------------- Massimo Bordogna -- */
+div.H-ARIANE5-div{
+    margin:0px 2% 0px 2%;
+}
+
 img.H-ARIANE5-image{
-  width:30%;
-  float:center;
-  padding: 2px;
+  position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 5px solid white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+p.H-ARIANE5-pt{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+p.H-ARIANE5-pc{
+  color: black;
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: white;
+  padding:15px;
+  border-radius:20px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+p.H-ARIANE5-article{
+  position:relative;
+  margin: 0px 6% 0px 6%;
+  text-align: justify;
+  text-decoration: none;
+  border:5px white double;
+  padding:10px;
+
 }
 
 /* End of Ariane 5 -----------------------------*/
 
-/* Mariner 1 -------------------- Massimo Bordogna -- */
-img.H-MARINER1-image{
-  width:30%;
-  float:center;
-  padding: 2px;
+/* Mariner 1 -------------------- Massimo Bordogna (Modified by Onciu Razvan Petrica)-- */
+
+div.H-MARINER-div{
+  margin:0px 2% 0px 2%;
 }
+
+img.H-MARINER-image{
+  width:30%;
+  min-width: 150px;
+  padding: 2px;
+  border: 10px double white;
+  float: right;
+  padding:2px;
+}
+
+p.H-MARINER-p1{
+  position:relative;
+  margin: 0px 35% 0px 1%;
+  text-align: justify;
+}
+
+p.H-MARINER-p2{
+  position:relative;
+  margin: 10px 35% 0px 1%;
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+}
+
+p.H-MARINER-p3{
+  position:relative;
+  text-align: justify;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.H-MARINER-p4{
+  position:relative;
+  margin: 0px 40% 0px 6%;
+  text-align: justify;
+  text-decoration: underline;
+  border:1px white solid;
+  padding:10px;
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  p.H-MARINER-p4{
+    position:relative;
+    margin: 0px 1% 0px 1%;
+    text-align: justify;
+    text-decoration: underline;
+    border:1px white solid;
+    padding:10px;
+  }
+
+  img.H-MARINER-image{
+    position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 10px double white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+  }
+
+
+  p.H-MARINER-p1{
+    margin: 0px 1% 0px 1%;
+  }
+
+  p.H-MARINER-p2{
+    margin: 10px 1% 0px 1%;
+
+  }
+
+  p.H-MARINER-p3{
+    position:relative;
+    text-align: justify;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+
+
 
 /* End of Mariner 1 -----------------------------*/
 
-/* Morris Worm -------------------- Massimo Bordogna -- */
+/* Morris Worm -------------------- Massimo Bordogna (modified by Onciu Razvan Petrica)-- */
+
+div.H-MWORM-div{
+  margin:0px 2% 0px 2%;
+}
+
 img.H-MWORM-image{
   width:30%;
-  float:center;
+  min-width: 350px;
   padding: 2px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
+
+p.H-MWORM-p1{
+  border-right: 15px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  border-top: 5px rgba(195, 7, 63, 0.5) solid;
+  border-bottom: 5px rgba(195, 7, 63, 0.5) solid;
+  padding:20px;
+  background-color: rgba(129, 129, 129, 0.1);
+  text-align:justify;
+}
+
+p.H-MWORM-p2{
+  border-left: 15px rgba(195, 7, 63, 0.5) solid;
+  border-radius: 20px;
+  border-top: 5px rgba(195, 7, 63, 0.5) solid;
+  border-bottom: 5px rgba(195, 7, 63, 0.5) solid;
+  padding:20px;
+  background-color: rgba(129, 129, 129, 0.1);
+  text-align: justify;
+}
+
+p.H-MWORM-p3{
+  border-left: 15px rgba(50, 50, 50, 1) solid;
+  border-right: 15px rgba(50, 50, 50, 1) solid;
+  border-radius: 20px;
+  border-top: 5px rgba(50, 50, 50, 1) solid;
+  border-bottom: 5px rgba(50, 50, 50, 1) solid;
+  padding:20px;
+  background-color: rgba(195, 7, 63, 0.5);
+}
+
+textarea.H-MWORM-article{
+  margin-top: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  height: 130px;
+  overflow:hidden;
+  font-size: 15px;
+  padding:2%;
+  border:none;
+  text-align: justify;
+  box-shadow: 10px 10px rgba(129, 129, 129, 1);
+  font-style: oblique;
+
+}
+
+hr.H-MWORM-hr{
+  margin:2% 0px 2% 0px;
+}
+
 
 /* End of Morris Worm -----------------------------*/
 
 /* NASA Mars -------------------- Massimo Bordogna -- */
 img.H-NMARS-image{
-  width:30%;
-  float:center;
-  padding: 2px;
+   position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 5px solid white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+p.H-NMARS-pt{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+p.H-NMARS-pc{
+  color: black;
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: white;
+  padding:15px;
+  border-radius:20px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+p.H-NMARS-article{
+  position:relative;
+  margin: 0px 6% 0px 6%;
+  text-align: justify;
+  text-decoration: none;
+  border:5px white double;
+  padding:10px;
+
 }
 
 /* End of NASA Mars -----------------------------*/
 
 /* Knight Capital Group -------------------- Massimo Bordogna -- */
 img.H-KGROUP-image{
-  width:30%;
-  float:center;
-  padding: 2px;
+  position:relative;
+    width:30%;
+    min-width: 150px;
+    padding: 2px;
+    border: 0px solid white;
+    padding:2px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+p.H-KGROUP-pt{
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:15px;
+  border-radius:20px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+p.H-KGROUP-pc{
+  color: black;
+  position:relative;
+  margin: 20px 1% 0px 1%;
+  text-align: left;
+  background-color: white;
+  padding:15px;
+  border-radius:20px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+p.H-KGROUP-article{
+  position:relative;
+  margin: 0px 6% 0px 6%;
+  text-align: justify;
+  text-decoration: none;
+  border:5px white double;
+  padding:10px;
+
 }
 
 /* End of Knight Capital Group -----------------------------*/
 
-/* Social Impact Pages -- Marco Mariosa Claudio Milanesi --------*/
-#socialimpact{
-  text-align: center;
-  left: 0;
-  right: 0;
-  margin-top: 30px;
-  width: 100%;
+
+
+/* emergency_num -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+
+div.H-EMERGENCY-div{
+  margin:0px 2% 0px 2%;
 }
 
-/* End of Social Impact -----------------------------------------*/
+img.H-EMERGENCY-img1{
+  min-width:200px;
+  width: 25%;
+  float:right;
+  margin-left:20px;
+  margin-bottom:10px;
+  border-radius:20px;
+}
+
+img.H-EMERGENCY-img2{
+  width: 10%;
+  min-width:150px;
+  float:left;
+  margin-right:20px;
+  margin-top:20px;
+  padding-left:3%;
+  padding-bottom:5px;
+}
+
+p.H-EMERGENCY-p1{
+  color:#C3073F;
+  text-align:center;
+  font-size:20px;
+  font-style:italic;
+  text-decoration:underline;
+  border-right: 10px white solid;
+  border-left: 10px white solid;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  margin-right:30%;
+  border-radius:20px;
+  padding:20px;
+}
+
+p.H-EMERGENCY-p2{
+  text-align:justify;
+  font-size:20px;
+  border-right: 10px white solid;
+  border-left: 10px white solid;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  margin-right:30%;
+  border-radius:20px;
+  padding:20px;
+}
+
+p.H-EMERGENCY-p3{
+  text-align: center;
+  color:#C3073F;
+}
+
+p.H-EMERGENCY-p4{
+  text-align: center;
+  border-left: 5px solid #C3073F;
+  border-right: 5px solid #C3073F;
+  padding:20px;
+}
+
+p.H-EMERGENCY-p5{
+  text-align: justify;
+  border: 5px groove #C3073F;
+  padding:20px;
+}
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-EMERGENCY-img1{
+    float:none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  p.H-EMERGENCY-p1{
+    margin-right:0px;
+    margin-top: 50px;
+  }
+
+  p.H-EMERGENCY-p2{
+    margin-right:0%;
+  }
+
+
+  img.H-EMERGENCY-img2{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    padding-left: 0px;
+    float:none;
+  }
+
+  p.H-EMERGENCY-p5{
+    display: inline-block;
+  }
+
+
+
+}
+
+/* End of emergency_num ------------------------------------------*/
+
+/* nissan -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+
+div.H-NISSAN-div{
+  margin:0px 2% 0px 2%;
+}
+
+img.H-NISSAN-img1{
+  border-radius:10px;
+  width:30%;
+  float:left;
+  border: 2px white solid;
+}
+
+p.H-NISSAN-p1{
+  margin-left:35%;
+  margin-right:5%;
+  text-align:justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  border-radius:20px;
+}
+
+hr.H-NISSAN-hr{
+  width:30%;
+  margin-top:50px;
+}
+
+p.H-NISSAN-p2{
+  border-top: 10px inset white;
+  border-bottom: 10px inset white;
+  padding:20px;
+  text-align:justify;
+}
+
+p.H-NISSAN-p3{
+  color:#C3073F;
+  text-align:center;
+  font-size:20px;
+  font-style:italic;
+}
+
+p.H-NISSAN-p4{
+  border: 10px groove white;
+  padding:20px;
+  background-color: rgba(195, 7, 63, 0.5);
+  text-align:justify;
+}
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-NISSAN-img1{
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  p.H-NISSAN-p1{
+    margin-left:0%;
+    margin-right:0%;
+  }
+
+
+}
+
+/* End of nissan ------------------------------------------*/
+
+
+
+/* mizuho -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+
+div.H-MIZUHO-div{
+  margin:0px 2% 0px 2%;
+}
+
+img.H-MIZUHO-img1{
+  width:20%;
+  float:left;
+  margin-right:20px;
+  margin-bottom:20px;
+  border:15px rgba(195, 7, 63, 0.5) groove;
+  min-width:250px;
+}
+
+p.H-MIZUHO-p1{
+   text-align:justify;
+   border: 20px white double;
+   margin-left:25%;
+   padding:20px;
+   border-radius: 20px;
+}
+
+p.H-MIZUHO-p2{
+   text-align:justify;
+   border: 2px rgba(129, 129, 129, 0.9) solid;
+   padding:10px;
+   border-radius: 20px;
+   background-color: rgba(195, 7, 63, 0.5);
+}
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-MIZUHO-img1{
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.H-MIZUHO-p1{
+     margin-left:0px;
+   }
+}
+
+/* End of mizuho ------------------------------------------*/
+
+/* toyota_glitch -------------------- Arianna Bianchi (Modified by Onciu Razvan Petrica)------ */
+
+div.H-TOYOTA-div{
+  margin: 0px 2% 0px 2%;
+
+}
+
+img.H-TOYOTA-img1{
+  margin: 0px 5px 1% 1%;
+  width: 40%;
+  float:right;
+  border: 20px rgba(129, 129, 129, 1) ridge;
+  min-width:200px;
+}
+
+img.H-TOYOTA-img2{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 30%;
+  border: 20px rgba(129, 129, 129, 1) groove;
+  border-radius: 10px;
+  min-width:200px;
+
+}
+
+p.H-TOYOTA-p1{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+}
+
+p.H-TOYOTA-p2{
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+}
+
+p.H-TOYOTA-p3{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+}
+
+table.H-TOYOTA-table{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1) ;
+  padding:20px;
+  border: 20px rgba(195, 7, 63, 0.5) inset;
+  color:white;
+}
+
+td.H-TOYOTA-td1{
+  padding-right: 3%;
+}
+
+p.H-TOYOTA-p5{
+  text-align: center;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+}
+
+hr.H-TOYOTA-hr{
+  display:none;
+}
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+
+  img.H-TOYOTA-img1{
+    position:relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 20px rgba(129, 129, 129, 1) ridge;
+    min-width:200px;
+    float:none;
+  }
+
+  td.H-TOYOTA-td1{
+    padding-right: 0px;
+    margin-bottom: 3%;
+    display:inline-block;
+  }
+
+  hr.H-TOYOTA-hr{
+    display:block;
+  }
+
+  td.H-TOYOTA-td2{
+    display:inline-block;
+  }
+
+}
+
+/* End of toyota_glitch ------------------------------------------*/
+
+/* therac_25 -------------------- Arianna Bianchi (Modified by Onciu Razvan Petrica)------ */
+
+div.H-THERAC-div{
+  margin:0px 2% 0px 2%;
+}
+
+img.H-THERAC-img1{
+  width:50%;
+  float:left;
+  border-top: 15px rgba(195, 7, 63, 0.5) solid;
+  min-width:300px;
+}
+
+img.H-THERAC-img2{
+  width:25%;
+  float:right;
+  border: 15px rgba(195, 7, 63, 0.5) solid;
+  margin-top:20px;
+  min-width:300px;
+}
+
+p.H-THERAC-p1{
+  margin-left: 52%;
+  display:block;
+  text-align:justify;
+  background-color: rgba(129, 129, 129, 0.5);
+  padding:20px;
+  border-bottom: 15px rgba(195, 7, 63, 0.8) solid;
+  margin-top:20px;
+}
+
+p.H-THERAC-p2{
+  border-radius:20px;
+  display:block;
+  text-align:justify;
+  background-color: rgba(129, 129, 129, 0.5);
+  padding:20px;
+  border-bottom: 15px rgba(195, 7, 63, 0.8) solid;
+  border-top: 15px rgba(195, 7, 63, 0.8) solid;
+}
+
+p.H-THERAC-p3{
+  text-align:justify;
+  background-color: rgba(195, 7, 63, 0.8);
+  padding:20px;
+  border-bottom: 15px rgba(129, 129, 129, 1) groove;
+  border-top: 15px rgba(129, 129, 129, 1) groove;
+  margin: 30px 30% 0px 5%;
+  text-decoration: underline;
+}
+
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  p.H-THERAC-p1{
+    margin-left: 0px;
+    display:inline-block;
+    margin-top:20px;
+  }
+
+  img.H-THERAC-img2{
+    position:relative;
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+  }
+
+  img.H-THERAC-img1{
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.H-THERAC-p3{
+    margin: 0px 0px 0px 0px;
+    text-decoration: underline;
+  }
+
+}
+
+/* End of therac_25 ------------------------------------------*/
+
+
+/* tesla_accident.html -------------------- Arianna Bianchi ------ */
+div.H-TESLA-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-TESLA-p1{
+  text-align: center;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-bottom: 5%;
+}
+
+p.H-TESLA-p2{
+  margin-top: 30px;
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+}
+
+p.H-TESLA-p3{
+  text-align: center;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  border: 1px white solid;
+}
+
+img.H-TESLA-img1{
+  margin: 0px 5px 1% 1%;
+  width: 20%;
+  float:right;
+  min-width: 200px;
+  border: 10px rgba(129, 125, 129, 1) ridge;
+}
+
+img.H-TESLA-img2{
+  margin: 0px 5px 1% 1%;
+  width: 20%;
+  margin-top: 60px;
+  float:left;
+  min-width: 200px;
+  border: 10px rgba(129, 125, 129, 1) ridge;
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-TESLA-img1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  img.H-TESLA-img2{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    float: none;
+  }
+}
+
+/* End of tesla_accident.html ------------------------------------------*/
+
+
+/* air_traffic -------------------- Arianna Bianchi ------ */
+div.H-AIRTRAFFIC-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-AIRTRAFFIC-p1{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+  margin-bottom: 2%
+}
+
+p.H-AIRTRAFFIC-p2{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+  margin-bottom: 5%;
+}
+
+img.H-AIRTRAFFIC-img1{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 2%;
+  float: none;
+  width: 45%;
+  border: 10px rgba(129, 125, 129, 1) ridge;
+}
+
+img.H-AIRTRAFFIC-img2{
+  margin: 0px 5px 1% 1%;
+  width: 45%;
+  float:right;
+  min-width: 100px;
+  border: 10px rgba(129, 125, 129, 1) ridge;
+}
+
+p.H-AIRTRAFFIC-p3{
+  text-align: center;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+  margin-bottom: 3%;
+  border: 1px grey solid;
+}
+
+p.H-AIRTRAFFIC-p4{
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+  img.H-AIRTRAFFIC-img2{
+    position:relative;
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+  }
+
+  img.H-AIRTRAFFIC-img1{
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.H-AIRTRAFFIC-p3{
+    margin: 0px 0px 0px 0px;
+    text-decoration: underline;
+  }
+
+}
+
+
+/* End of air_traffic------------------------------------------*/
+
+/* cloud_flare -------------------- Arianna Bianchi ------ */
+
+div.H-CLOUD-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-CLOUD-p1{
+  text-align: justify;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+p.H-CLOUD-p2{
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+
+img.H-CLOUD-img1{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1%;
+  float: none;
+  width: 50%;
+
+}
+
+img.H-CLOUD-img2{
+  float:right;
+  width: 30%;
+  min-width: 100px;
+  max-width: 250px;
+  padding: 2%;
+  position:relative;
+  margin:15px 0px -1% -3%;
+}
+
+img.H-CLOUD-img3{
+  width: 30%;
+  margin-top: 10%;
+  min-width: 100px;
+  max-width: 250px;
+}
+
+p.H-CLOUD-p3{
+  text-align: center;
+  background-color: rgba(129, 129, 129, 0.1);
+  padding:20px;
+  margin-bottom: 3%;
+  border: 1px grey solid;
+  border-radius: 20px;
+}
+
+p.H-CLOUD-p4{
+  text-align: justify;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  margin-bottom: 3%;
+  border-radius: 20px;
+  border: 1px grey solid;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+  img.H-CLOUD-img2{
+    position:relative;
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    margin-bottom: -10%;
+  }
+
+  img.H-CLOUD-img1{
+    float:none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.H-CLOUD-img3{
+    width: 30%;
+    min-width: 100px;
+    max-width: 250px;
+  }
+
+
+}
+/* End of cloud_flare------------------------------------------*/
+
+/* cloud_flare -------------------- Arianna Bianchi ------ */
+
+div.H-MULTIDATA-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-MULTIDATA-p1{
+    background-color: rgba(195, 7, 63, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    border: 1px white solid;
+    margin-bottom: 3%;
+    padding: 2%;
+
+}
+
+p.H-MULTIDATA-p2{
+    background-color: rgba(129, 129, 129, 0.1);
+    text-align: justify;
+    border-radius: 10px;
+    border: 1px white solid;
+    padding: 2%;
+}
+
+img.H-MULTIDATA-img1{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1%;
+  float: none;
+  width: 35%;
+  margin-bottom: 3%;
+  border: 10px rgba(129, 125, 129, 1) ridge;
+  border-radius: 20px;
+}
+
+p.H-MULTIDATA-p3{
+    background-color: rgba(195, 7, 63, 0.5);
+    text-align: justify;
+    border-radius: 10px;
+    border: 1px white solid;
+    padding: 2%;
+}
+
+/* End of air_traffic------------------------------------------*/
+
+/* national_health_service -------------------- Arianna Bianchi ------ */
+
+div.H-NHS-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-NHS-p1{
+    background-color: rgba(129, 129, 129, 0.1);
+    text-align: justify;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+p.H-NHS-p2{
+    background-color: rgba(195, 7, 63, 0.5);
+    text-align: justify;
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+p.H-NHS-p3{
+    background-color: rgba(195, 7, 63, 0.5);
+    text-align: justify;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 1px white solid;
+}
+
+p.H-NHS-p4{
+    background-color: rgba(129, 129, 129, 0.1);
+    text-align: justify;
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 1px white solid;
+}
+
+img.H-NHS-img1{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  float: none;
+  width: 25%;
+  margin-bottom: 4%;
+  border: 1px white solid;
+}
+
+img.H-NHS-img2{
+  float: right;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 50%;
+  border: 1px white solid;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* End of national_health_service------------------------------------------*/
+
+
+/* malcom_byrd -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+
+div.H-MALCOM-div{
+  margin: 0px 2% 0px 2%;
+}
+
+p.H-MALCOM-p1{
+  text-align:center;
+  background-color: rgba(195, 7, 63, 0.5);
+  padding:20px;
+  border-left: 10px white groove;
+  border-right: 10px white groove;
+  border-radius:20px;
+}
+
+p.H-MALCOM-p2{
+  text-align:justify;
+  background-color: white;
+  padding:20px;
+  border: 10px rgba(195, 7, 63, 0.9) groove;
+  border-radius:20px;
+  color:black;
+  border-bottom:none;
+  padding-bottom:4%;
+}
+
+p.H-MALCOM-p3{
+  text-align:justify;
+  background-color: white;
+  padding:20px;
+  border: 10px rgba(195, 7, 63, 0.9) groove;
+  border-radius:20px;
+  color:black;
+  border-bottom:none;
+}
+
+img.H-MALCOM-img1{
+  float:right;
+  width:25%;
+  margin-left:2%;
+  border:10px rgba(195, 7, 63, 0.9) ridge;
+  min-width:300px;
+}
+
+
+
+/*window size over 1201px*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+/*window size under 1200px*/
+
+@media screen and (max-width: 1200px) {
+  img.H-MALCOM-img1{
+    float:none;
+    margin-left:0px;
+    display:inline-block;
+    margin-bottom:4%;
+  }
+
+  p.H-MALCOM-p2{
+    display:inline-block;
+
+  }
+
+
+}
+
+/* End of malcom_byrd ------------------------------------------*/
+
+/* prison -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+  div.H-PRISON-div{
+    margin:0px 2% 0px 2%;
+}
+
+  p.H-PRISON-p1{
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:20px;
+    border-left:20px rgba(195, 7, 63, 0.9) ridge;
+    border-bottom:5px rgba(195, 7, 63, 0.9) ridge;
+}
+
+  p.H-PRISON-p2{
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:20px;
+    border-right:20px rgba(195, 7, 63, 0.9) ridge;
+    margin-top:10px;
+    text-align:center;
+    border-top:5px rgba(195, 7, 63, 0.9) ridge;
+
+}
+
+  p.H-PRISON-p3{
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:20px;
+    border:10px rgba(195, 7, 63, 0.9) solid;
+    text-align:justify;
+    border-radius:10px;
+}
+
+  p.H-PRISON-p4{
+    padding:20px;
+    border-left:10px rgba(195, 7, 63, 0.9) solid;
+    border-right:10px rgba(195, 7, 63, 0.9) solid;
+    border-top:5px rgba(129, 129, 129, 0.5) solid;
+    border-bottom:5px rgba(129, 129, 129, 0.5) solid;
+    text-align:justify;
+    border-radius:10px;
+}
+
+  img.H-PRISON-img1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    min-width:250px;
+    margin-top:40px;
+    border-radius:10px;
+    width:30%;
+  }
+/* End of prison ------------------------------------------*/
+
+
+/* nesth_therm -------------------- Claudio Milanesi (modified by Onciu Razvan Petrica)------ */
+  div.H-NEST-div{
+    margin:0px 2% 0px 2%;
+  }
+
+  img.H-NEST-img1{
+    width:20%;
+    border:5px solid rgba(195, 7, 63, 0.9);
+    margin-top:20px;
+    float:left;
+    min-width:200px;
+  }
+
+  p.H-NEST-p1{
+    position:relative;
+    margin: 50px 2% 0px 25%;
+    text-align:justify;
+    text-decoration: underline;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:20px;
+
+  }
+
+  p.H-NEST-p2{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:10px;
+  }
+
+  p.H-NEST-p3{
+    position:relative;
+    text-align:center;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:10px;
+  }
+
+  p.H-NEST-p4{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.5);
+    padding:10px;
+  }
+
+  p.H-NEST-p5{
+    position:relative;
+    text-align:center;
+    background-color: rgba(195, 7, 63, 0.9);
+    padding:15px;
+    margin:0px 10% 0px 10%;
+    border:10px groove rgba(129, 129, 129, 0.9);
+  }
+
+  p.H-NEST-p6{
+    position:relative;
+    text-align:center;
+    background-color: rgba(129, 129, 129, 0.9);
+    padding:15px;
+    border-left:10px groove rgba(195, 7, 63, 0.9);
+    border-right:10px groove rgba(195, 7, 63, 0.9);
+  }
+
+  /*window size under 1200px*/
+
+  @media screen and (max-width: 1200px) {
+    img.H-NEST-img1{
+      float:none;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    p.H-NEST-p1{
+      margin: 0px 2% 0px 2%;
+    }
+
+
+  }
+
+
+
+/* End of nesth_therm ------------------------------------------*/
+
+
 
 
 
@@ -1098,6 +3605,10 @@ h1.bug {
     text-transform: capitalize;
 }
 
+h2.bugquiz {
+  text-transform: uppercase;
+}
+
 div.ContainerBug {
     margin-top: 200px;
     margin-left: 100px;
@@ -1114,20 +3625,21 @@ div.ContainerBug p {
 }
 
 a.RefBug {
-  color: white;
-  text-decoration: underline;
-  font-weight: bold;
+    color: #C3073F;
+    text-decoration: none;
+    font-style: italic;
 }
 
 a.RefBug:hover {
-  color: Gray;
+    text-decoration: underline;
+    color: #C3073F;
 }
 
 div.grid3bug {
     padding-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
     line-height: 1.2;
     padding-bottom: 50px;
 }
@@ -1136,6 +3648,71 @@ div.bugquiz {
     padding-top: 20px;
     width: 66%;
     margin: auto;
+}
+
+div.bugquiz:hover {
+    transform: scale(1.05);
+}
+
+ul.changePage {
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  margin-top: 70px;
+  border-style: solid;
+  border-color: rgba(129, 129, 129, 0.315);
+  border-radius: 10px;
+  height: 52px;
+  width: 245px;
+  padding-left: 0px;
+}
+
+ul.changePage li {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul.changePage a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+ul.changePage a:hover {
+  color: #C3073F;
+}
+
+button.ShowSolution {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 100%;
+}
+
+button.ShowSolution:hover {
+    color: #C3073F;
+}
+
+div.solution {
+    margin-top: 20px;
+    color: white;
+    font-style: italic;
+}
+
+ol.Quiz {
+    color: white;
+    line-height: 2;
+    font-size: 18px;
+}
+
+ol.SolutionQuiz {
+  color: white;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 div.ImageContainerBug {
@@ -1162,7 +3739,6 @@ a.quizbug {
     position: relative;
     margin: auto;
 }
-
 
 .DropdownBug:hover .DropdownButtonType {
     background-color: #9A1750;
@@ -1249,8 +3825,8 @@ h1.bug {
 }
 
 #back-button-bug {
-  position: absolute;
-  margin-top: 53.5px;
+    position: absolute;
+    margin-top: 53.5px;
 }
 
 .h1containerBug {
@@ -1333,7 +3909,12 @@ li.NavBarBug a:hover, .DropNavBarBug:hover .DropdownButtonNavBarBug {
 #vul-body {
     margin: 15px;
 }
-
+.VulList {list-style: none}
+.VulArticleTitle{
+  font-size: 4rem;
+  margin-top: 55px;
+  margin-left: 100px;
+}
 .ContainerVul{
   margin-top: 200px;
   margin-left: 8%;
@@ -1361,10 +3942,11 @@ p {
   height: 250px;
   float: left;
   position: static;
+  transform: scale(0.9);
 }
 
 .VulSquareBlack:hover {
-    transform: scale(1.1);
+    transform: scale(1);
     cursor: pointer;
     background-color: #C3073F;
     border-radius: 10px;
@@ -1401,6 +3983,52 @@ p {
   border-radius: 20px;
   font-size: 1em;
 }
+.VulTypeWhite{
+  background-color: white;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 100px;
+  max-width: 27.33%;
+  min-width: 27.33%;
+  height: 450px;
+  float: left;
+  position: static;
+  border-radius: 20px;
+  font-size: 1em;
+}
+.VulTypeWhite p{
+  color: black;
+}
+.VulStats{
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  width: 20%;
+  height: 400px;
+  float: right;
+  position: static;
+  font-size: 1em;
+  text-align: left;
+}
+.VulArticleBody{
+  width: 100%;
+  height: inherit;
+  float: right;
+}
+a.Vul{
+  text-decoration: none;
+}
+a.VulDef{
+  text-decoration: none;
+  font-style: italic;
+  color: #C3073F;
+}
+.VulTypeBlack h2, .VulTypeBlack a{
+  color:white;
+}
+.VulStats h2, .VulStats a{
+  color:white;
+}
 .VulTypeSphere{
   background-color: white;
   height: 80px;
@@ -1418,28 +4046,29 @@ p {
   margin: 0.5%;
   max-width: 100%;
   min-width: 100%;
-  height: 50px;
+  height: 55px;
   float: left;
   position: static;
 }
+.VulRectangle h2, .VulRectangle a{
+  color:white;
+}
 .VulRectangleSmall{
-  background-color: white;
-  padding: 0%;
+  padding-top: 10px;
   margin: 0;
   max-width: 20%;
   min-width: 20%;
-  height: 100%;
+  height: 70%;
   float: left;
+  text-align: left;
   position: static;
-  color: #C3073F;
-}
-a.Vul{
-  text-decoration: none;
-}
-a.VulDef{
-  text-decoration: none;
-  font-style: italic;
-  color: #C3073F;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(68,68,68,0.3);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow:0px 4px 21px rgba(0, 0, 0, 0.56);
 }
 .ArticleContainer{
   width: 100%;
@@ -1463,11 +4092,13 @@ a.VulDef{
 h1 {
     font-size: 80px;
     color: #C3073F;
+    text-transform: capitalize;
 }
 
 h2 {
     font-size: 30px;
     color: #C3073F;
+    text-transform: capitalize;
 }
 
 h3 {
@@ -1499,16 +4130,18 @@ p {
 /* Link states */
 
 .link:link {
-    color: #FFFFFF;
+    color: #C3073F;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .link:visited{
-    color: #FFFFFF;
+    color: #C3073F;
 }
 
 .link:hover {
     color: #C3073F;
+    text-decoration: underline;
 }
 
 .link:active{
@@ -1526,3 +4159,256 @@ p {
 .pictureitem {
     width: 100%;
 }
+
+#footer {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    bottom: 0;
+    background: #1A1A1D;
+    box-shadow: 0px 4px 21px #000000;
+}
+
+.footer-txt {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 136.2%;
+    color: white;
+}
+
+#page-auth {
+    font-size: 18px;
+    color: white;
+    float: right;
+    margin-right: 46px;
+    margin-top: -30px;
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/**************************************************************END PF PART C: Template**************************************************************/
+
+
+/**************************************************************PART D: Bibliography **************************************************************/
+
+#bib-img-page h1{
+  min-width: 1100px;
+}
+
+#bib-text-page h1{
+  min-width: 1100px;
+}
+
+.h1-bib-container{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 90px;
+  min-width: 900px;
+}
+
+#bib-text-page button{
+  font-size: 20px;
+}
+
+#bib-img-page button{
+  font-size: 20px;
+}
+
+.bib-btn{
+  position:absolute;
+  left:1200px;
+  top:70px;
+  width:210px;
+}
+
+.bib-btn:hover{
+  filter:brightness(1.2);
+}
+
+#bib-text-page{
+  font-size:18px;
+}
+
+#bib-img-page{
+  font-size:18px;
+}
+
+#bib-text-page #btn-text{
+  color: #C3073F;
+  background-color: #1A1A1D;
+  border-color: #C3073F;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+#bib-img-page #btn-img{
+  color: #813B80;
+  background-color: #1A1A1D;
+  border-color: #813B80;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+#bib-content-main {
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    top: 150px;
+    position: absolute;
+    margin: auto;
+    float: right;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.bib-acc-container {
+  position:absolute;
+  top:100px;
+  left:70px;
+  width: 70%;
+  height: 120%;
+  margin: 5%;
+  z-index: -2;
+  line-height: 1.2;
+}
+
+/* style body shown when checkboxes are checked */
+
+.bib-acc-container .bib-acc-body {
+  width: 96%;
+  height: 0;
+  background-color: #1A1A1D;
+  padding: 0 10px;
+  opacity:0; /* make text invisible when checkbox not checked */
+  border-bottom: 2px solid #000;
+  z-index: -2;
+}
+
+/* style labels on checkboxes */
+
+#bib-text-page .bib-acc-container label {
+  background-color: #C3073F;
+  opacity:0.5;
+  border-bottom: 2px solid #000;
+  display: block;
+  padding: 15px;
+  width: 98%;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#bib-img-page .bib-acc-container label {
+  background-color: #813B80;
+  opacity:0.5;
+  border-bottom: 2px solid #000;
+  display: block;
+  padding: 15px;
+  width: 98%;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+
+#bib-acc-container-bugs:hover label {
+  filter: brightness(1.2);
+}
+
+#bib-acc-container-vul:hover label {
+  filter: brightness(1.2);
+}
+
+#bib-acc-container-mal:hover label {
+  filter: brightness(1.2);
+}
+
+#bib-acc-container-his:hover label {
+  filter: brightness(1.2);
+}
+
+#bib-acc-container-vid:hover label {
+  filter: brightness(1.2);
+}
+
+/* delete the checkbox itself */
+
+.bib-acc-container input{
+  display: none;
+  z-index: -2;
+}
+
+/* make background of checked checkbox brighter */
+
+#bib-text-page .bib-acc-container input:checked+label {
+  background-color: #C3073F;
+  opacity:0.8;
+  z-index: -2;
+  filter: brightness(1.2);
+}
+
+#bib-img-page .bib-acc-container input:checked+label {
+  background-color: #813B80;
+  opacity:0.8;
+  z-index: 1;
+  filter: brightness(1.2);
+}
+
+/* style body shown when checkbox is cheked */
+
+.bib-acc-container input:checked~.bib-acc-body {
+  height:auto;
+  color:white;
+  padding: 20px;
+  transition: 0.5s; /* add transition of new body being shown when checking checkbox */
+  opacity:1; /* make body visible when checkbox is shown */
+}
+
+#bib-text-page a{
+  color: #c3073f;
+  filter: brightness(1.3);
+}
+
+#bib-text-page a:hover {
+  filter: brightness(1.5);
+}
+
+#bib-img-page a{
+  color: #813B80;
+  filter: brightness(1.3);
+
+}
+
+#bib-img-page a:hover {
+  filter: brightness(1.5);
+}
+
+
+.bib-text-list{
+  font-size:20;
+  margin:0;
+}
+
+.bib-title{
+  color: white;
+}
+
+#bib-text-page h1 {
+  color: #C3073F;
+}
+
+#bib-img-page h1 {
+  color: #813B80;
+}
+
+.empty-list{
+  opacity: 0;
+}
+
+/***********************************************************************************************************************************************************************/
+
+
+/**************************************************************END OF PART D: Bibliography **************************************************************/

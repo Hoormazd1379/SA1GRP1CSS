@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html class="scrollable">
+<html lang="en" class="scrollable" style="height: 180%;">
 <head>
     <title>Rootkit | Malicious Code</title>
+    
+    <!-- Stylesheet -E.R -->
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
 
-    <!-- background music -H.P-->
-    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+    <!-- Scripts -E.R -->
+    <script src="../../scripts/pageloader.js"></script>
+    <script src="../scripts/pageloader.js"></script>
 
     <!-- favicon -H.P-->
     <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
 
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
     <meta name="author" content="Michele Cattaneo">
+    <meta name="css-designer" content="Edoardo Riggio">
+
+    <!-- Meta data -E.R -->
+    <meta charset="UTF-8">
+    <meta name="description" content="malicious code - rootkit">
+    <meta name="keywords" content="software, failure, malware, rootkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -38,8 +47,8 @@
 
     <div id="description">
         <p>
-            A rootkit is a collection of computer softwares designed to enable the access to a computer that is otherwise not allowed, for example for an unauthorized user. The term rootkit comes from the concatenation of 'root', the traditional name of the administrator acounts on Unix systems, and the word 'kit', which are softwares designed to take root control of a 
-            PC, without informing the user. 
+            A rootkit can be any computer software designed to enable the access to a computer that is otherwise not allowed, for example for an unauthorized user. The term rootkit comes from the concatenation of 'root', the traditional name of the administrator acounts on Unix systems, and the word 'kit', which are softwares designed to take root control of a 
+            PC, without informing the user.  <sup>(24)</sup>
         </p>
         <br>
         <div id="impact-quote">
@@ -52,9 +61,12 @@
         </div>
         <br>
         <p>Having administrator access, it can track evenything that is done on a device, like scanning the data traffic, installing programs without consent, hijack your computer resources and much more.<br>
-        Unfortunately rootkits are known to be difficult to detect, since by having administrator privileges, allow them to hide processes from the view of other users. They not only hide their process but the process of any other accompanying malware aswell. <br>
+        Unfortunately rootkits are known to be difficult to detect, since by having administrator privileges they are allowed to hide processes from the view of other users. They not only hide their own process but the process of any other malware coming with them aswell. <br>
         Rootkits are usually composed of three components: the dropper, the loader and the rootkit itself.<br>
-        The dropper is the executable program, which it usually comes as an attachment of a suspicious email or a malicious download from a non-safe website. It is important to note that the dropper does not have to be an executable program. It is in fact possible for files such a PDF, to be designed to trigger the rootkit installation at the moment they are opened.
+        The dropper is the executable program, which usually comes as an attachment of a suspicious email or a malicious download from a non-safe website. It is important to note that the dropper does not have to be an executable program. It is in fact possible for files such a PDF, to be designed to trigger the rootkit installation at the moment they are opened. <br>
+        The severity of a rootkit infection can be measured by how deep in the system they are located. The levels start with the kernel and are then labeled 'Ring 'x' ', where the x is a number; the higher the number, the least privileged that level is. For example infections at the Ring 3 are very superficial and affect softwares like Photoshops or similar softwares you use daily. <br>The Ring 1 and 2 are deeper levels where the drivers for graphics and sound are located. <br>Ring 0 infections targets the part of the operating system that control the BIOS or CMOS. These last infections are hard to detect and remove, since antiviruses mostly operate at Ring 3 and don't have full access at Ring 1 and below. <br>Kernel rootkits are the one which got the deepest inside a computer, they are created to function at the same level as the operating system, which means that they can add or remove code from the OS itself. On a more positive note, these last kind of rootkits are extremely hard to program and are usually very buggy and will leave a lot of traces, giving the antiviruses and anti-rootkit many hints that a rootkit is present in the system. <sup>(25)</sup>
+
+        
         </p>
     </div>
 
@@ -66,9 +78,7 @@
                 The feature is known as "Lenovo Service Engine" or LSE, which is a piece of code present in the computer's motherboard. When windows is installed, the LSE automatically downloads and installs some Lenovo's software during the booting of the machine, before the OS is launched. This means that even if you find and uninstall these softwares, they will be reinstalled again as soon as the PC is booted again.
                 But what did these softwares do? For Desktop computers, these softwares did not send any personally identifying informations, but send some basic informations, including the system model, date, and system ID to a Lenovo server.<br>
                 For laptops the situation was a bit different; LSE would install a programm called OneKey Optimizer (or OKO). According to the company, the OKO software is used to enhancing computer performances scanning junk files and find factors that influence the system performances. This software falls under the category of a "crapware", an unwanted pre-installed software. The worst part is that both LSE and OKO appears to be insecure. <br>
-                It is not the first time Lenovo has been caught in this kind of privacy-related problems. The same year the company was forced to admit it had installed Superfish <a href="adware.html" class="mal-a">adware</a> on new machines. It is thought that as many as 16milions consumers werre affected by the preinstalled adware.
-
-
+                It is not the first time Lenovo has been caught in this kind of privacy-related problems. The same year the company was forced to admit it had installed Superfish <a href="adware.html" class="mal-a">adware</a> on new machines. It is thought that as many as 16 millions consumers werre affected by the preinstalled adware. <sup>(26)</sup>
             </p>
             <br><br>
             <a href="#">   
@@ -81,7 +91,7 @@
             <hr id="divider" style="width: 60%">
             <div id="img-div">
                 <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
-                <img src="../../assets/mal_imgs/lenovo.jpeg" id="card-img" alt="">
+                <img src="../../assets/mal_imgs/lenovo.jpeg" id="card-img" alt="lenovo logo">
             </div>
             <hr id="divider" style="width: 60%">
             <div id="specific">
@@ -103,6 +113,13 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <div id="footer">
+        <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+            &#169; Catastrophic Software Failures
+            <span><address id="page-auth">Michele Cattaneo</address></span>
+        </p>
     </div>
 
     <!-- fullscreen div, blocking the screen view until all images are loaded.

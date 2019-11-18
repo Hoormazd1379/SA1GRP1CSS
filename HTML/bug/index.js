@@ -279,6 +279,7 @@ function handleClickRandom() {
                 $('.code').text(objects[i].code);
                 $('.def').text(objects[i].def);
                 $('.text').text(objects[i].description);
+                document.getElementById("iCode").value=objects[i].code.toString();
                 break;
             }
         }

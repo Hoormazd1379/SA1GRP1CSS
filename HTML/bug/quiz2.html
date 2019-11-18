@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz - Part II</title>
+	<link rel="stylesheet" href="../../stylesheets/main.css">
+	<!-- Pageloader by H.P-->
+	<script src="../../scripts/pageloader.js"></script>
+	<script src="show_hide.js"></script>
+
+	<!-- background music H.P
+	<embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />-->
+
+	<!-- favicon -H.P-->
+	<link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
+
+	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+	<meta name="author" content="Alessio Cordivani">
+</head>
+<body>
+
+	<div id="particles-js">
+	</div>
+
+	<div id="wrapper">
+
+
+		<div id="wrapper">
+
+			<div class="ContainerBug">
+
+		<!-- CONTENT BELOW -->
+
+				<div class="h1container">
+					<a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+					<h1 id="page-title"> Quiz - Part II</h1>
+					<ul class="changePage">
+						<li>
+							<a href="quiz.html"> << Previous Page << </a>
+						</li>
+					</ul>
+				</div>
+
+				<h2 class="bugquiz">One page is not enough to see what you learned!</h2>
+
+
+				<!-- Question and solution template-->
+				<div class="textblockcont">
+					<h3>Question 1</h3>
+
+					<p>Which are the typology of Runtime error?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution1')">>>> Show solution <<<</button>
+
+					<div id="solution1" class="solution" style="display: none;">
+						<ol class="SolutionQuiz">
+							<li>Memory Leak</li>
+							<li>Logic Error</li>
+							<li>Crash</li>
+							<li>Peripherals</li>
+						</ol>
+						<p>More details in the <a class="RefBug" href="runtime_errors.html">Runtime Error</a> page.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 2</h3>
+
+					<p>What is a Severe Runtime Error in Videogame?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution2')">>>> Show solution <<<</button>
+
+					<div id="solution2" class="solution" style="display: none;">
+						<p>Severe is a game bug which restricts any movement from the player, without crashing or closing the game.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 3</h3>
+
+					<p>When does a Runtime Error appear?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution3')">>>> Show solution <<<</button>
+
+					<div id="solution3" class="solution" style="display: none;">
+						<p>Runtime errors occur during execution of the software, so such errors occur during the interpretation phase.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 4</h3>
+
+					<p>Why do problems related to time exist?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution4')">>>> Show solution <<<</button>
+
+					<div id="solution4" class="solution" style="display: none;">
+						<p>Problems relating to time exist because in an electronic device the space for keeping track of the time is finite.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 5</h3>
+
+					<p>What can happen when in the code a bug is present?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution5')">>>> Show solution <<<</button>
+
+					<div id="solution5" class="solution" style="display: none;">
+						<p>In the worst case the program could crash, otherwise it will not behave like the programmer intended. In the second case, it may lead to some vulnerabilities.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 6</h3>
+
+					<p>Which typology of Error is caused by aritmetic overflow?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution6')">>>> Show solution <<<</button>
+
+					<div id="solution6" class="solution" style="display: none;">
+						<p>In arithmetic overflow the input does't produce the right output, it's a Logic Error.</p>
+					</div>
+				</div>
+
+				<div class="textblockcont">
+					<h3>Question 7</h3>
+
+					<p>Can a program containing bugs run normally?</p>
+					<button class="ShowSolution" onclick="ShowHide('solution7')">>>> Show solution <<<</button>
+
+					<div id="solution7" class="solution" style="display: none;">
+						<p>Yes, it can, every software or operating system has some bugs in the code, but they are harmless.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- END OF THE CONTENT -->
+
+
+	<!-- fullscreen div, blocking the screen view until all images are loaded.
+			 see pageloader.js
+			 dont change the spacing between the divs otherwise it will break -H.P-->
+	<div id="loadingDiv">
+			 <div id="loadingBox">
+					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+					 <br>
+					 <h3> Please wait while we load the page!</h3>
+			 </div>
+	 </div>
+
+	 <div id="footer">
+			 <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+					 &#169; Catastrophic Software Failures
+					 <span><address id="page-auth">Alessio Cordivani</address></span>
+			 </p>
+	 </div>
+
+
+	 <!-- particles-js init
+			 dont construct app.js for the load function. its better to keep it in the html file since we dont use this for all pages. -H.P -->
+	 <script src="../../scripts/particles.js"></script>
+	 <script>
+			 particlesJS.load('particles-js', '../../scripts/particles.json', function() {
+					 console.log('callback - particles.js config loaded');
+			 });
+	 </script>
+
+</body>
+</html>

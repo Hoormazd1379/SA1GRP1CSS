@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Information Exposure</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <meta name="author" content="Kieran Mckee">
+  </head>
+
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Information Exposure</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Class</p></li>
+          <li><p>CWE Number: 200</p></li>
+          <li><p>Applicable Platforms: Language-independent</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Overview</h2>
+    <p> Information exposure is the intentional or unintentional leak of information to someone that is not recognised to have access to that information.</p>
+<p>This information can be sensitive within the product functionality, i.e. a private message that has been sent.
+It can also be in the form of Information that provides material about the product which can then be used in an attack, such as an installation path.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(26)</a></sup></p>
+
+<h2>Variants</h2>
+    <p> Information Exposure occurs through numerous different ways.<br> For Example:
+    <ul class="VulList">
+    <li><h3>Through Sent Data</h3>
+      <p>The accidental exposure of sensitive information through sent data refers to the transmission of data which are either sensitive in and of itself or useful in the further exploitation of the system through standard data channels.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(27)</a></sup></p>
+    </li>
+    <li><h3>Through Discrepancy</h3>
+      <p>The product behaves differently or sends different responses in a way that exposes security-relevant information about the state of the product, such as whether a particular operation was successful or not.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(28)</a></sup></p>
+    </li>
+    <li><h3>Through An Error Message</h3>
+      <p>The software generates an error message that includes sensitive information about its environment, users, or associated data.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(29)</a></sup></p>
+    </li>
+    <li><h3>Through Debug Information</h3>
+      <p>The application contains debugging code that can expose sensitive information to untrusted parties.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(30)</a></sup></p>
+    </li>
+    <li><h3>Through Caching</h3>
+      <p>The application uses a cache to maintain a pool of objects, threads, connections, pages, or passwords to minimize the time it takes to access them. If implemented improperly, these caches can allow access to unauthorized information.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(31)</a></sup></p>
+    </li>
+    </ul>
+
+  </div>
+    <div class="VulTypeWhite">
+      <h2>Consequences</h2>
+      <p><a class="VulDef" href="index.html#VulConfidentiality">Loss of confidentiality</a> is the most common consequence, as data is often disclosed. This often has security implications.</p>
+        <p>For example, if an attacker attempts to retrieve an object from a database, and an SQLException is raised whilst querying the database, an error message will be created.
+          The error message can include sensitive information about the database or query logic. This data can then be used to simplify different attacks, such as an <a class="VulDef" href="sql_injection.html">SQL Injection</a> in order to access the database.</p>
+
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Detection</h2>
+      <p>Regular error-checking methods will identify this vulnerability: both <a class="VulDef" href="index.html#VulDynamicAnalysis">dynamic analysis</a> and <a class="VulDef" href="index.html#VulStaticAnalysis">static analysis</a>.</p>
+      <p>Scanning the software with Dynamic Analysis through the use of: Web Application Scanners, Web Services Scanners and Database Scanners are highly cost-effective methods which can be used to detect areas which have the potential to cause information to be exposed.</p>
+
+      <p>Another highly cost effective method to detect areas viable to information exposure is Manual Static Analysis via the source code, which is achieved through manual code reviews.</p>
+
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Mitigation</h2>
+      <p>In order to prevent such attacks, effective security measures are required, for example: </p>
+      <ul>
+      <li><p>Identifying data that requires extra protection, and protecting it through data encryption, makes it harder for attackers to determine the information that has been exposed.</p></li>
+      <li><p>Sites should ensure that there are appropriate section components which are built into the system design and that the compartmentalization allows for and further reinforcing privileges in separation functionality, allowing different levels of privileges.</p></li>
+    </ul>
+      </div>
+</div>
+<div id="footer">
+    <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+        &#169; Catastrophic Software Failures
+        <span><address id="page-auth">Kieran McKee</address></span>
+    </p>
+</div>
+  </body>
+</html>

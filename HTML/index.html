@@ -17,48 +17,143 @@
     <!-- favicon H.P-->
     <link rel='icon' href='../assets/favicon.ico' type='image/x-icon'>
 
+    <!-- info page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/info.js"></script>
+
     <!-- meta data H.P-->
     <meta charset="UTF-8">
     <meta name="description" content="CATASTROPHIC SOFTWARE FAILURES">
     <meta name="keywords" content="software, failure, bugs, vulnerabilities">
     <meta name="author" content="Hoormazd Pirayeshfar, Edoardo Riggo">
+    <meta name="css-designer" content="Hoormazd Pirayeshfar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
+<body style="height: 10000px;">
+
+
     <!-- particles-js div, as a canvas -H.P-->
-    <div id="particles-js">
+    <div id="particles-js" style="z-index: 0;">
 
         <!-- page title -H.P-->
 
         <div id="title">
-            <h1>
-                <span id="a">CATASTROPHIC</span><br><span id="b"> SOFTWARE</span><br><span id="c"> FAILURES</span>
-            </h1>
+            <center>
+            <h1 id="a">CATASTROPHIC</h1><br>
+            <h1 id="b">SOFTWARE</h1><br>
+            <h1 id="c">FAILURES</h1>
+            </center>
         </div>
+
+
 
         <!-- menu items -H.P-->
         <table id="home" style="width:100%; position: absolute; bottom: 20%">
             <tr>
 
-                <td> <center> <div id="vul" class="menuitem" onclick="location.href='vul/index.html';">Vulnerabilities<br>
+                <td> <center> <div id="vul" class="menuitem VULbg" onclick="location.href='vul/index.html';">Vulnerabilities<br>
                     <img src="https://media.giphy.com/media/26u4iAWHVEtq3KLao/giphy.gif" alt="Cyber Security" class="pictureitem">
                 </div> </center> </td>
 
-                <td> <center> <div id="mal" class="menuitem" onclick="location.href='mal/index.html';">Malicious Code<br>
+                <td> <center> <div id="mal" class="menuitem MALbg" onclick="location.href='mal/index.html';">Malicious Code<br>
                     <img src="https://media.giphy.com/media/3oEjHCF6kGlXK0ofsY/giphy.gif" alt="Malware" class="pictureitem">
                 </div> </center></td>
 
-                <td> <center> <div id="bug" class="menuitem" onclick="location.href='bug/index.html';">Bugs and Errors<br>
+                <td> <center> <div id="bug" class="menuitem BUGbg" onclick="location.href='bug/index.html';">Bugs and Errors<br>
                     <img src="http://giphygifs.s3.amazonaws.com/media/angMOutyJVlaU/giphy.gif" alt="Boeing 737-Max" class="pictureitem">
                 </div> </center></td>
 
-                <td> <center> <div id="history" class="menuitem" onclick="location.href='his/index.html';">History<br>
+                <td> <center> <div id="history" class="menuitem HISbg" onclick="location.href='his/index.html';">History<br>
                     <img src="https://media.giphy.com/media/Lkw7E75dWHGvCQygnQ/giphy.gif" alt="History" class="pictureitem">
                 </div> </center></td>
             </tr>
         </table>
+        <div id="scrolltitle"><h2>&darr; Scroll down to browse each topic &darr;</h2></div>
+
+    </div>
+
+    <div id="infoVUL" class="infoPage VULbg">
+        <img class="infoIMG" src="../assets/VULbg.jpg" alt="" >
+        <h1>Vulnerabilities</h1>
+        <table style="margin-top: -120px; padding:10px;">
+        <tr>
+            <td>
+                <p style="text-align: justify; padding:10px;">Vulnerability is a weakness of a system which can be exploited by a threat actor to perform unauthorized actions within the system. Some vulnerabilities are directly tied to bugs in the code, some are an innate repercussion of the type of the software, and others are the result of a lack of implementation of mitigation strategies. What they all have in common is that they are not a security hazard by themselves, but only when a third party exploits them.</p><p style="text-align: right;">Read More &rarr;</p>
+            </td>
+            <td>
+                <div id="vul" class="menuitem VULbg" onclick="location.href='vul/index.html';">Vulnerabilities<br>
+                    <img src="https://media.giphy.com/media/26u4iAWHVEtq3KLao/giphy.gif" alt="Cyber Security" class="pictureitem">
+                </div>
+            </td>
+            </tr>
+        </table>
+
+        <h3>Malicious Code &darr;</h3>
+    </div>
+    <div id="infoMAL" class="infoPage MALbg">
+        <img class="infoIMG" src="../assets/MALbg.jpg" alt="" >
+        <h1>Malicious Code</h1>
+        <table style="margin-top: -120px; padding:10px;">
+        <tr>
+            <td>
+                <p style="text-align: justify; padding:10px;">Malware - short for malicious software - is a type of software made to cause harm, such as by stealing data, gaining unauthorised access to networks or damaging devices. Unlike vulnerabilities and bugs, malware is made by people to intentionally cause damage, and can exploit both bugs and vulnerabilities for that purpose. It is therefore important to know the different types of malware, ranging from viruses, trojans and worms to adware, key loggers and many others, and also how to protect yourself from them.</p><p style="text-align: right;">Read More &rarr;</p>
+            </td>
+            <td>
+                <div id="mal" class="menuitem MALbg" onclick="location.href='mal/index.html';">Malicious Code<br>
+                    <img src="https://media.giphy.com/media/3oEjHCF6kGlXK0ofsY/giphy.gif" alt="Malware" class="pictureitem">
+                </div>
+            </td>
+            </tr>
+        </table>
+        <h3>Bugs and Errors &darr;</h3>
+    </div>
+    <div id="infoBUG" class="infoPage BUGbg">
+        <img class="infoIMG" src="../assets/BUGbg.jpg" alt="" >
+        <h1>Bugs and Errors</h1>
+        <table style="margin-top: -120px; padding:10px;">
+        <tr>
+            <td>
+                <p style="text-align: justify; padding:10px;">A bug in informatics, is an error in a software that can cause several problems in the execution of the software itself. A software with bugs is defined as buggy. Different types of bugs exist which can cause various types of problems, which can lead have consequences ranging from insignificant to severe depending on quantity and criticalness of the bugs. Generally, a bug can result from three circumstances: syntax errors, logic errors and runtime errors.</p><p style="text-align: right;">Read More &rarr;</p>
+            </td>
+            <td>
+                <div id="bug" class="menuitem BUGbg" onclick="location.href='bug/index.html';">Bugs and Errors<br>
+                    <img src="http://giphygifs.s3.amazonaws.com/media/angMOutyJVlaU/giphy.gif" alt="Boeing 737-Max" class="pictureitem">
+                </div>
+            </td>
+            </tr>
+        </table>
+        <h3>History &darr;</h3>
+    </div>
+    <div id="infoHIS" class="infoPage HISbg">
+        <img class="infoIMG" src="../assets/HISbg.jpg" alt="" >
+        <h1>History</h1>
+        <table style="margin-top: -120px; padding:10px;">
+        <tr>
+            <td>
+                <p style="text-align: justify; padding:10px;">Several events in the history of software failures, from smaller bugs to sophisticated malware, have had catastrophic consequences which has left their mark on history. Some have led to numerous human casualties, some have had severe financial consequences, while others have left devastating social impacts behind them. It is by learning from and understanding the history of software failures that we can prevent similar mistakes from happening and reach a safer future.t</p><p style="text-align: right;">Read More &rarr;</p>
+            </td>
+            <td>
+                <div id="history" class="menuitem HISbg" onclick="location.href='his/index.html';">History<br>
+                    <img src="https://media.giphy.com/media/Lkw7E75dWHGvCQygnQ/giphy.gif" alt="History" class="pictureitem">
+                </div>
+            </td>
+            </tr>
+        </table>
+        <h3>About this project &darr;</h3>
+    </div>
+    <div id="infoMORE" class="infoPage MOREbg">
+        <center>
+            <h1>The Team Who Made </h1>
+            <h2 style="margin-top: -50px;">"Catastrophic Software Failures"</h2>
+            <h4 style="margin-top: -5px; color: white;">We didnt cause them though... i guess</h3>
+
+                <img id="roster" src="../assets/Roster.png">
+
+                <p style="width: 80%;"> <i> "This website about catastrophic software failures has been created by group 1 for the Software Atelier 1 for the Group project. Our goal has been to create a webpage which documents both well-known and lesser known catastrophic software failures, containing a well-documented gallery of major software bugs and vulnerabilities, containing for each one the causes, costs and actions taken to avoid future incidents"</i> - Mathias Bertelsen</p>
+        </center>
+        <h3>Return to Home &darr;</h3>
     </div>
 
     <!-- fullscreen div, blocking the screen view until all images are loaded.

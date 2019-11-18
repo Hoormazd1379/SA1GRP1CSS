@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Improper Authentication</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <meta name="author" content="Kieran Mckee">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Improper Authentication</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Base</p></li>
+          <li><p>CWE Number: 89</p></li>
+          <li><p>Applicable Platforms: Database server</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Overview</h2>
+
+    <p>Improper Authentication takes place when an application incorrectly validates the identity of a user, this can cause an attacker to receive certain privileges which can be used for example to have access to sensitive information, which they would otherwise not have. </p>
+
+    <p>The intention of the attacker is usually to gain access to an account and be able to have the same privileges as the user. <sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(34)</a></sup></p>
+
+    <h3>Relationships</h3>
+    <p>Improper Authentication can be the result of an <a class="VulDef" href="sql_injection.html">SQL Injection</a>/SQL Injection related vulnerabilities. </p>
+
+
+    </div>
+      <div class="VulTypeWhite">
+        <h2>Consequences</h2>
+        <p>Improper Authentication can have different consequences depending on what the intentions of the attacker are and what privileges they have gained. It can lead to a <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a>, through the attacker gaining access to disclosed information. </p>
+        <p>They can also, if privileges allow, execute arbitrary code which will be harmful to the application and cause alterations. </p>
+        </div>
+      <div class="VulTypeWhite">
+        <h2>Detection</h2>
+        <p>Manual <a class="VulDef" href="index.html#VulStaticAnalysis">Static Analysis</a> is an effective method used to detect the weakness, this involves manual analysis such as penetration testing, threat modelling. The benefit of such method is that it is useful for evaluating the correctness of custom authentication mechanisms.</p>
+
+        <p>Other methods include:
+          <ul>
+            <li><p><a class="VulDef" href="index.html#VulDynamicAnalysis">Dynamic analysis</a> with Manual Results Interpretation</p></li>
+            <li><p>Automated <a class="VulDef" href="index.html#VulStaticAnalysis">Static analysis</a></p></li>
+            <li><p>Architecture or Design Review</p></li>
+          </ul>
+        </p>
+        </div>
+
+      <div class="VulTypeWhite">
+        <h2>Mitigation</h2>
+        <p>In order to protect applications and websites from Improper Authentication, secure authentication methods that feature anti brute force and session protection mechanisms must be applied.
+
+          This can be done using an authentication framework or library such as the OWASP ESAPI Authentication which is a free, open source security control library. </p>
+        </div>
+</div>
+<div id="footer">
+    <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+        &#169; Catastrophic Software Failures
+        <span><address id="page-auth">Kieran McKee</address></span>
+    </p>
+</div>
+  </body>
+</html>

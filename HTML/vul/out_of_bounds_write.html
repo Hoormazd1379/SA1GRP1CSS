@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <meta charset="utf-8">
+    <title>Out Of Bounds Write</title>
+    <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
+    <meta name="author" content="Bahram Ismayilov">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle"> Out of Bounds Write</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Base</p></li>
+          <li><p>CWE Number: 787</p></li>
+          <li><p>Applicable Platforms: Most prevalent in languages C/C++/Assembly</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Description</h2>
+    <p> Out of Bounds write is a type of vulnerability that happen when a software writes data outside of the current buffer (where physical memory is stored) where it was initialy planned to.</p>
+    <p>This vulnerability mostly occurs in Assembly, C and C++.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(23)</a></sup></p>
+    <h2>Variants</h2>
+    <p>There are two main <a class="VulDef" href="index.html#VulTypes">Variant type</a> vulnerabilities of out of bounds write: Stack-based buffer overflow (CWE 121) and Heap-based buffer overflow (CWE 122).</p>
+    <h2>Stack Overflow</h2>
+    <p>Stack-based buffer overflow (or stack overflow) is a condition where the buffer being overwritten is allocated on the stack (i.e., is a local variable or, rarely, a parameter to a function).</p>
+    <p>This vulnerability is not to be confused with stack exhaustion, usually a result from an excessively recursive function call.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(24)</a></sup></p>
+    <h2>Heap Overflow</h2>
+    <p>Heap-based buffer overflow (or heap overflow) is a condition where the buffer that can be overwritten is allocated in the heap portion of memory, generally meaning that the buffer was allocated using a routine such as malloc().<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(25)</a></sup></p>
+
+
+    <!-- If you have any other sections, put them here -->
+       </div>
+         <div class="VulTypeWhite">
+           <h2>Consequences</h2>
+           <p> Write out of bounds can lead to several problems like troubles in code launching and errors in data, such as the modification of memory (<a class="VulDef" href="index.html#VulIntegrity">loss of integrity</a>).</p>
+           <p> Moreover, a program may refer to memory locations which are not in the boundaries of current buffer and that may lead to software failure (<a class="VulDef" href="index.html#VulAviability">loss of aviability</a>).</p>
+         </div>
+         <div class="VulTypeWhite">
+         <h2>Detection</h2>
+         <p>This weakness can often be detected using automated <a class="VulDef" href="index.html#VulStaticAnalysis">static analysis</a> tools. Many modern tools use data flow analysis or constraint-based techniques to minimize the number of false positives.</p>
+         <p>It may also prove useful to use <a class="VulDef" href="index.html#VulFuzzing">fuzzing</a> or other <a class="VulDef" href="index.html#VulDynamicAnalysis">dynamic</a> tools. </p>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Mitigation</h2>
+           <p>There are several ways to mitigate this problem. However, most of them only may help partially, but there is a universal solution.<br>
+            It is the usage of languages, such as Java, that do not support such vulnerability.
+           </p>
+         </div>
+         <div id="footer">
+             <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+                 &#169; Catastrophic Software Failures
+                 <span><address id="page-auth">Bahram Ismayilov</address></span>
+             </p>
+         </div>
+  </div>
+  </body>
+</html>

@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
     <meta charset="utf-8">
     <title>Validation</title>
-    <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="vulnerabilities.css"> -->
-
     <!-- @VULNERABILITES_TEAM ADD THE NAME OF THE AUTOR BELOW -->
-    <meta name="author" content="">
-</head>
+    <meta name="author" content="Bahram Ismayilov">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Improper Input Validation</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Class</p></li>
+          <li><p>CWE Number: 20</p></li>
+          <li><p>Applicable Platforms: Lanuguage-independent</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Description</h2>
+    <p>Improper Input Validation is one of the most common vulnerabilities that can create fatal failure in software.
+                  So what is Input Validation?<br>
+                  In software, in order to avoid any kinds of data flow one needs to validate input correctly. So, when one has improper input validation the software has a hard time checking the inputs, which in turn makes the software vulnerable.
+                  The Validation of data is very essential, because in software validation of forms reduces the chance of hack attacks and also avoids unintential software crashes. So, if data is validated improperly it can lead to one of these and cause a software failure.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(17)</a></sup>
+                  There are several reasons for improper input validation. These are:
+</p>
+<ol class="VulList">
+  <li><a class="link" href="#1">Shared names of Forms </a></li>
+  <li><a class="link" href="#2">Improper method of validation </a></li>
+  <li><a class="link" href="#3">Validator issues </a></li>
+  <li><a class="link" href="#4">Outdated Logic of validation </a></li>
+  <li><a class="link" href="#5">Action Form</a></li>
+  <li><a class="link" href="#6">Disabled Validator</a></li>
+</ol>
 
-<body id="vul-body">
-  <h1>Improper Input Validation</h1>
-  <h2> Why validation is needed</h2>
-  <p id="vul-p">Validation is an essential part of making a software and there are good reasons for that. One of the primary reason of validation is to reduce vulnerability of a software from hack attacks, which may lead to software failure. This webpage will look throw Improper Input Validation</p>
+  <h2 id="1">Shared Names of Forms </h2>
+  <p >This problem occurs when two or more forms have the same name, which leads to increased susceptibility to attacks of some forms. Why? Because the Validator only validates one of the forms with the same name and ignores others, which makes other forms more vulnerable. </p>
 
-  <h2>Description</h2>
-  <p id="vul-p">Improper input validation Is one of the most common vulnerabilities that can create fatal failure in software.
-                So what is input validation.
-                In a software in order to avoid any kinds of data flow one need to validate input correctly. So, when one has improper input validation the software has hard time checking the inputs, which in consequence makes one's software vulnerable.
-                There are several reasons of improper input validation. These are:
-  
-  <ol id="num1">
-    <a class="link" href="#1"><li> Shared names of Forms </li></a>
-    <a class="link" href="#2"><li> Improper method of validation </li></a>
-    <a class="link" href="#3"><li> Validator issues </li></a>
-    <a class="link" href="#4"><li>Outdated Logic of validation </li></a>
-    <a class="link" href="#5"><li>Action Form</li></a>
-    <a class="link" href="#6"><li>Disabled Validator</li></a>
+  <h2 id="2">Improper method of validation</h2>
+  <p >Some classes in a software may not support forms of validation and in order to avoid problems, super validate form should be used. If super validate forms is not used then some classes will not be validated and will be more susceptibile to attacks and software will be more vulnerable</p>
 
-    <a class="link" id="1"><h2>Shared Names of Forms </h3></a>
-    <p id="vul-p">This problem occurs when 2 or more forms has the same name, which leads to increase susceptibility to attacks of some forms. Why ? Because Validator only validates one of the form with the same name and ingnores others, which makes another(s) forms more vulnerable. </p>
+  <h2 id="3">Validator</h2>
+  <p >In the validation process, it is essential to all forms to be validated by forms defined by the Validator, otherwise forms which do not support the Validator will be weak places of a software. Moreover, a possible problem may occur when not all of the fields are validated, because the Validator requires all fields to be validated, even the unused fields as well. </p>
 
-    <a class="link" id="2"><h2>Improper method of validation</h3></a>
-    <p id="vul-p">Some classes in a software may not support forms of validation and in order to avoid problems super validate form should be used. If super validate forms is not used then some classes will not be validated and will be more susceptibile to attacks and software will be more vulnerable</p>
+  <h2 id="4">Outdated Logic of validation</h2>
+  <p > The logic of validation should always be updated. There are several consequencese when validation is out of date. One of them are forms with no fields, which may lead to a software crash. Moreover, when validation logic is outdated that means that validation is unavailabe, which makes forms more susceptibile to attacks and software becomes more vulnerable. So, it is essential for programmers to update validation logic.  </p>
 
-    <a class="link" id="3"><h2>Validator</h3></a>
-    <p id="vul-p">In validation process it is essential to all forms to be validated by forms defined by Validator, otherwise forms which does not support Validator will be weak places of a software. Moreover, a possible problem may occur when not all the fields are validated, because Validator requires all fields to be validated even the unuesed fields as well. </p>
+  <h2 id="5">Action Form</h2>
+  <p >Action forms have their own form defined by "Action Form Mapping". So, this form is the supported by Validator then Action forms will stay unvalidated, which will make tje program more vulnerable.</p>
 
-    <a class="link" id="4"><h2>Outdated Logic of validation</h3></a>
-    <p id="vul-p"> The logic of validation should always be updated. There are several consequencese when validation is out of date. One of them are forms with no fields, which may lead to software crus.Moreover, when validation logic is outdated that means that validation is unavailabe, which makes forms more susceptibile to attacks and software becomes more vulnerable. So, it is essential for programmers to update validation logic.  </p>
+  <h2 id="6">Disabled Validator</h2>
+  <p >This problem occurs when the Validator is turned off. That can happen when action form disables it. It is very dangerous if the Validator is disabled, because the Validator validates all the forms in a software.</p>
 
-    <a class="link" id="5"><h2>Action Form</h3></a>
-    <p id="vul-p">Actions forms have their own form define by "Action Form Mapping". So, this form is the supported by Validator then Action forms will stay unvalidated, which will make ur program mor vulnerable.</p>
 
-    <a class="link" id="6"><h2>Disabled Validator</h3></a>
-    <p id="vul-p">The problem can occur when the Validator is turned off. That can happen when action form disables it. It is very dangerous if Validator is disabled, because validator validates all the forms in a software.</p>
-
-    <h2>Links</h2>
-    <ul id="num1">
-      <a class="link" href="https://www.owasp.org/index.php/Improper_Data_Validation"><li>https://www.owasp.org/index.php/Improper_Data_Validation</li></a>
-      <a class="link" href="https://cwe.mitre.org/data/definitions/20.html"><li>https://cwe.mitre.org/data/definitions/20.html</li></a>
-    </ul>
-  </ol>
-</body>
+    <!-- If you have any other sections, put them here -->
+       </div>
+         <div class="VulTypeWhite">
+           <h2>Consequences</h2>
+           <p>The attacker is sometimes able to read the memory, causing <a class="VulDef" href="index.html#VulConfidentiality">loss of confidentiality</a> and leading to data leaks, or even write to memory leading to <a class="VulDef" href="index.html#VulIntegrity">loss of integrity</a>.</p>
+           <p>Another possible consequence is <a class="VulDef" href="index.html#VulDenialOfService">denial of service</a>.</p>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Detection</h2>
+           <p>Scanning the software with <a class="VulDef" href="index.html#VulDynamicAnalysis">dynamic analysis</a> and <a class="VulDef" href="index.html#VulFuzzing">fuzzing</a> are both highly cost-efficient ways of checking for improper input validation, even if <a class="VulDef" href="index.html#VulSpotchecking">manual spotchecks</a> and <a class="VulDef" href="index.html#VulManualCodeReview">manual code reviews</a> reviews are often enough to find an anomaly.</p>
+         </div>
+         <div class="VulTypeWhite">
+           <h2>Mitigation</h2>
+           <p>There are several mitigations of Improper Input Validation. One of them is to use Strut or OWASP ESAPI Validation API to validate data.</p><sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(16)</a></sup>
+         </div>
+         <div id="footer">
+             <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+                 &#169; Catastrophic Software Failures
+                 <span><address id="page-auth">Bahram Ismayilov</address></span>
+             </p>
+         </div>
+  </div>
+  </body>
 </html>

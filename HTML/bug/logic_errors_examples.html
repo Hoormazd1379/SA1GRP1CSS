@@ -14,6 +14,7 @@
 
 	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
 	<meta name="author" content="Alessio Cordivani">
+	<meta name="css-designer" content="Hoormazd Pirayeshfar">
 </head>
 <body>
 
@@ -27,8 +28,7 @@
 				<a href="index.html" class="DropdownButtonNavBarBug">Bugs and Errors</a>
 			</li>
 			<li class="NavBarBug">></li>
-
-			<!-- SubTopic 1 -->
+			<!-- SubTopic -->
 			<li class="DropNavBarBug">
 		    <a class="DropdownButtonNavBarBug">Typology</a>
 		    <div class="DropNavBarBug-content">
@@ -38,7 +38,7 @@
 		    </div>
 		  </li>
 			<li class="NavBarBug">></li>
-			<!-- SubSubTopic 1 -->
+			<!-- SubSubTopic -->
 			<li class="DropNavBarBug">
 				<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
 				<div class="DropNavBarBug-content">
@@ -47,71 +47,8 @@
 				</div>
 			</li>
 			<li class="NavBarBug">></li>
-			<!-- SubSubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">Categories</li> -->
-			<!-- SubSubSubTopic 2 -->
+			<!-- SubSubSubTopic -->
 			<li class="DropNavBarBug">Examples</li>
-			<!-- SubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Syntax</li> -->
-			<!-- SubSubTopic 3 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="runtime_errors.html" class="DropdownButtonNavBarBug">Runtime</a>
-				<div class="DropNavBarBug-content">
-					<a href="#">...</a>
-				</div>
-			</li> -->
-
-			<!-- SubTopic 2 -->
-			<!-- <li class="DropNavBarBug">
-		    <a class="DropdownButtonNavBarBug">Consequences</a>
-		    <div class="DropNavBarBug-content">
-		      <a href="../vul/index.html">Security</a>
-		      <a href="#">Design</a>
-					<a href="crash.html">Crash</a>
-		    </div>
-		  </li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
-				<div class="DropNavBarBug-content">
-					<a href="os_crash.html">Operating System</a>
-					<a href="hardware_crash.html">Hardware</a>
-					<a href="software_crash.html">Software</a>
-				</div>
-			</li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">Operating System</li> -->
-			<!-- SubSubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Hardware</li> -->
-			<!-- SubSubSubTopic 3 -->
-			<!-- <li class="DropNavBarBug">Software</li> -->
-			<!-- SubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="#" class="DropdownButtonNavBarBug">Design</a>
-				<div class="DropNavBarBug-content">
-					<a href="#">...</a>
-				</div>
-			</li> -->
-
-			<!-- SubTopic 3 -->
-			<!-- <li class="DropNavBarBug">
-		    <a class="DropdownButtonNavBarBug">Prevention</a>
-		    <div class="DropNavBarBug-content">
-					<a href="debugger.html">Debugging</a>
-		      <a href="#">...</a>
-		    </div>
-		  </li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">Debugging</li> -->
-			<!-- SubSubTopic 2 -->
-
-			<!-- SubTopic 4 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
-			</li> -->
 		</ul>
 
 		<div id="wrapper">
@@ -121,22 +58,33 @@
 		<!-- CONTENT BELOW -->
 
 				<div class="h1containerBug">
-					<a id="back-button-bug" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+					<a id="back-button-bug" href="logic_errors.html"><img src="../../assets/icns/arrow.png"></a>
 					<h1 class="bug"> Examples of Logic Error </h1>
 				</div>
-
+				<div class="textblockcont">
 				<h2>Time Related Errors</h2>
-				<p>Formatting and storing the time is crucial nowadays, many things depend on it. Since in computers everything has to be stored in bits and the storage is finite, some compromises had to be done. Those compromises are the cause of the problems we have today or we had in the past.</p>
-				<p>Keeping track of the time is really easy: in case of a clock, you set the initial time and then you increase it by 1 every second, in case of a calendar you increase the date by 1 every day, and so on.</p>
-				<p>It's easy to see that as the time goes, the value of the stored time gets larger and larger until there are not enough bits to store it... What happens now? <strong>Arithmetic Overflow</strong> and the result is a time which doesn't correspond to the value it should be. Here below you can find some problems from the past.</p>
+				<p>Formatting and storing the time is crucial nowadays, many things depend on it. Since in computers everything has to be stored in bits and the storage is finite, some compromises had to be done. Those compromises are the cause of the problems we have today or we had in the past.<sup><a class="VulDef" href="../bibliography/bib_text_bug.html" target="_blank">(16)</a></sup></p>
+				<p>Keeping track of the time is really easy: in case of a clock, you set the initial time and then you increase it by 1 every second, in case of a calendar you increase the date by 1 every day, and so on. It's easy to see that as the time goes, the value of the stored time gets larger and larger until there are not enough bits to store it... What happens now? <strong>Arithmetic Overflow</strong> and the result is a time which doesn't correspond to the value it should be. Here below you can find some problems.</p>
 				<h3>Global Positioning System</h3>
 				<p>GPS keeps track of the date with two variables: the week number and the day of the week. The variable for the day don't need much space, because it loops, after the 7th day there is the 1st day of the next week. The problem rises with the week number... Week number is stored in 10 bits, so it has a range between 0 and 1023, after 1023 the value "rolls over" turning back to 0. Since GPS started counting weeks from Sunday 6 January 1980, it's easy to calculate when the <strong>rollover</strong> will happen.</p>
-				<p><em>Day 0 of week number 1024, Sunday 22 August 1999, will appear to the GPS as Sunday 6 January 1980 (week 0).</em></p>
-				<p>Until now another rollover happened: 1024 weeks after 22 August 1999, Sunday 7 April 2019 the week number turned back to 0 for the second time. This trend will continue and the next rollover will be Sunday 21 November 2038.</p>
-				<h3>Millenium Bug</h3>
-				<p>Also known as the <em>Year 2000 Problem</em> or the <em>Y2K</em>, the <em>Millenium Bug</em> was a problem for all computers that represented the year with only two digits. This problem is better explained in the <a class="RefBug" href="../his/index.html">History part</a> of the website.</p>
+				<p><em>Day 0 of week number 1024, Sunday 22 August 1999, will appear to the GPS as Sunday 6 January 1980 (week 0).</em> Until now another rollover happened: 1024 weeks after 22 August 1999, Sunday 7 April 2019 the week number turned back to 0 for the second time. This trend will continue and the next rollover will be Sunday 21 November 2038.</p>
+				<!-- <h3>Millenium Bug</h3>
+				<p>Also known as the <em>Year 2000 Problem</em> or the <em>Y2K</em>, the <em>Millenium Bug</em> was a problem for all computers in the 20th century that represented the year with only two digits. This problem is better explained in the <a class="RefBug" href="../his/index.html">History part</a> of the website.</p> -->
 				<h3>Unix Time</h3>
+				<p>Early Unix operating systems stored the time as a 32-bit signed integer, where every second the value is increased by 1. It started counting at 00:00:00 UTC on 1 January 1970 and it is known as the Unix Epoch. Since time was stored as a 32-bit signed integer, the greatest value it can be is 0111 1111 1111 1111 1111 1111 1111 1111 which in decimal represent 2147483647 seconds from the Unix Epoch. With some easy calculations, we find out that it corresponds to 68 years, 18 days, 3 hours, 14 minutes and 7 seconds, which means that 03:14:07 UTC on 19 January 2038 will be the last date displayed before the time will turn back to 2147483647 seconds before Unix Epoch.</p>
+				<p>Operating systems using the Unix time will display correctly the date until 03:14:07-19.01.2038 when a second later they will display 20:45:52-13.12.1901, like the animation below is showing.</p>
+					<center>
+					<img class="imageblockcont" style="width: 40%;" src="../../assets/bug_imgs/year_2038_problem.gif" alt="Animation showing the rollover">
+				</center>
+
 			</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+				&#169; Catastrophic Software Failures
+				<span><address id="page-auth">Alessio Cordivani</address></span>
+			</p>
 		</div>
 	</div>
 
@@ -146,13 +94,20 @@
 	<!-- fullscreen div, blocking the screen view until all images are loaded.
 			 see pageloader.js
 			 dont change the spacing between the divs otherwise it will break -H.P-->
-	<!-- <div id="loadingDiv">
+	<div id="loadingDiv">
 			 <div id="loadingBox">
 					 <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 					 <br>
 					 <h3> Please wait while we load the page!</h3>
 			 </div>
-	 </div> -->
+	 </div>
+
+	 <div id="footer">
+			 <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+					 &#169; Catastrophic Software Failures
+					 <span><address id="page-auth">Alessio Cordivani</address></span>
+			 </p>
+	 </div>
 
 
 	 <!-- particles-js init

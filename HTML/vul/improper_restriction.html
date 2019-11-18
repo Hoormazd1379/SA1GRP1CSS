@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Improper Restrictions</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+    <meta name="author" content="Kieran Mckee">
+  </head>
+  <body id="vul-body">
+    <div class="h1container">
+        <a id="back-button" href="index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h2 id="page-title"> Vulnerabilities</h2>
+        <h1 class="VulArticleTitle">Improper Restriction Of Operations Within the Bounds of Memory Access</h1>
+    </div>
+    <div class="ContainerVul">
+    <div class="VulArticleBody">
+      <div class="VulStats VULbg">
+        <h2>Statistics</h2>
+        <hr>
+        <ul>
+          <li><p>Type: Class</p></li>
+          <li><p>CWE Number: 119</p></li>
+          <li><p>Applicable Platforms: Most prevalent in languages C/C++/Assembly</p></li>
+          <li><p>Likelyhood of exploit: High</p></li>
+        </ul>
+        <hr>
+      </div>
+    <h2>Overview</h2>
+    <p> Various languages can allow direct addressing of memory locations and do not automatically ensure that these locations are valid for the memory buffer that is being referenced. This can cause read or write operations to be performed on memory locations that may be associated with other variables, data structures, or internal program data.</p>
+    <p> Simply, a software can execute operations on the memory buffer, but when there are improper restrictions, it can cause it to read from or write to a memory location which is not located inside of the intended memory buffer.<sup><a class="VulDef" href="../bibliography/bib_text_vul.html">(33)</a></sup></p>
+    <h2>Variants</h2>
+    <p>Two of the most common vulnerabilities that can be categorized under improper restriction of operations are <a class="VulDef" href="out_of_bounds_read.html">out of bounds read</a> (CWE 125) and <a class="VulDef" href="out_of_bounds_write">out of bounds write</a> (CWE 787).</p>
+
+  </div>
+    <div class="VulTypeWhite">
+      <h2>Consequences</h2>
+      <p><a class="VulDef" href="index.html#VulConfidentiality">Confidentiality:</a> In the event of an <a class="VulDef" href="out_of_bounds_read.html">out of bounds read</a>, the attacker may gain access to sensitive information. The sensitive information may contain system details, for example, the current buffers position in memory, this can be used to orchestrate further attacks, possibly with more severe consequences.</p>
+      <p> Out of bounds memory access has a high chance of causing corruption of relevant memory, and possibly instructions, which in turn, can cause the system to crash.</p>
+      <p>If the memory that is accessed by the attacker is controlled, it allows the possibility to execute arbitrary code, as with a standard buffer overflow.</p>
+      <!--  If the attacker is able to overwrite a pointer's worth of memory, they can redirect the function pointer to their own malicious code. Even when the attacker can only modify a single byte, arbitrary code execution can be possible. Sometimes this is because the same problem can be exploited repeatedly to the same effect. Other times it is because the attacker can overwrite security-critical application-specific data, such as a flag indicating whether the user is an administrator.-->
+
+
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Detection</h2>
+      <p>The most effective way of detecting the weakness is through Automated <a class="VulDef" href="index.html#VulStaticAnalysis">Static Analysis</a> tools, an IEEE inspection can also locate the weakness but it is a much more costly method.
+      </p>
+      </div>
+    <div class="VulTypeWhite">
+      <h2>Mitigation</h2>
+      <p> Defending applications from buffer errors can be done by performing checks on input data, and through the use of certain compilers which provide process that can mitigate or eliminate exploitation possibilities, such as automatic buffer overflow detection.</p>
+      <p>Language Selection: <br>
+      Using a language such as Java and Perl do not allow this weakness to occur, this is excuse they perform their own memory management, thus they are not liable to buffer overflows.
+      Ada and C# are similar in that they provide their own overflow protection.</p>
+
+      </div>
+</div>
+<div id="footer">
+    <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+        &#169; Catastrophic Software Failures
+        <span><address id="page-auth">Kieran McKee</address></span>
+    </p>
+</div>
+  </body>
+</html>

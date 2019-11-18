@@ -3,7 +3,6 @@
 <head>
 	<title>Operating System Crash</title>
 	<link rel="stylesheet" href="../../stylesheets/main.css">
-	<link rel="stylesheet" href="bug.css">
 	<!-- Pageloader by H.P-->
 	<script src="../../scripts/pageloader.js"></script>
 
@@ -15,6 +14,7 @@
 
 	<!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
 	<meta name="author" content="Brian Bronz">
+	<meta name="css-designer" content="Hoormazd Pirayeshfar">
 </head>
 <body>
 
@@ -28,51 +28,17 @@
 				<a href="index.html" class="DropdownButtonNavBarBug">Bugs and Errors</a>
 			</li>
 			<li class="NavBarBug">></li>
-
-			<!-- SubTopic 1 -->
-			<!-- <li class="DropNavBarBug">
-				<a class="DropdownButtonNavBarBug">Typology</a>
-				<div class="DropNavBarBug-content">
-					<a href="logic_errors.html">Logic</a>
-					<a href="syntax_errors.html">Syntax</a>
-					<a href="runtime_errors.html">Runtime</a>
-				</div>
-			</li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="logic_errors.html" class="DropdownButtonNavBarBug">Logic</a>
-				<div class="DropNavBarBug-content">
-					<a href="logic_errors.html#categories">Categories</a>
-					<a href="#">Examples</a>
-				</div>
-			</li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">Categories</li> -->
-			<!-- SubSubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Examples</li> -->
-			<!-- SubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Syntax</li> -->
-			<!-- SubSubTopic 3 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="runtime_errors.html" class="DropdownButtonNavBarBug">Runtime</a>
-				<div class="DropNavBarBug-content">
-					<a href="#">...</a>
-				</div>
-			</li> -->
-
-			<!-- SubTopic 2 -->
+			<!-- SubTopic -->
 			<li class="DropNavBarBug">
 				<a class="DropdownButtonNavBarBug">Consequences</a>
 				<div class="DropNavBarBug-content">
 					<a href="../vul/index.html">Security</a>
-					<a href="design.html">Design</a>
+					<a href="behaviour.html">Behaviour</a>
 					<a href="crash.html">Crash</a>
 				</div>
 			</li>
 			<li class="NavBarBug">></li>
-			<!-- SubSubTopic 1 -->
+			<!-- SubSubTopic -->
 			<li class="DropNavBarBug">
 				<a href="crash.html" class="DropdownButtonNavBarBug">Crash</a>
 				<div class="DropNavBarBug-content">
@@ -82,37 +48,8 @@
 				</div>
 			</li>
 			<li class="NavBarBug">></li>
-			<!-- SubSubSubTopic 1 -->
+			<!-- SubSubSubTopic -->
 			<li class="DropNavBarBug">Operating System</li>
-			<!-- SubSubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">Hardware</li> -->
-			<!-- SubSubSubTopic 3 -->
-			<!-- <li class="DropNavBarBug">Software</li> -->
-			<!-- SubSubTopic 2 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="#" class="DropdownButtonNavBarBug">Design</a>
-				<div class="DropNavBarBug-content">
-					<a href="#">...</a>
-				</div>
-			</li> -->
-
-			<!-- SubTopic 3 -->
-			<!-- <li class="DropNavBarBug">
-				<a class="DropdownButtonNavBarBug">Prevention</a>
-				<div class="DropNavBarBug-content">
-					<a href="debugger.html">Debugging</a>
-					<a href="#">...</a>
-				</div>
-			</li>
-			<li class="NavBarBug">></li> -->
-			<!-- SubSubTopic 1 -->
-			<!-- <li class="DropNavBarBug">Debugging</li> -->
-			<!-- SubSubTopic 2 -->
-
-			<!-- SubTopic 4 -->
-			<!-- <li class="DropNavBarBug">
-				<a href="#" class="DropdownButtonNavBarBug">Quiz</a>
-			</li> -->
 		</ul>
 
 
@@ -127,19 +64,24 @@
 					<h1 class="bug"> Operating System Crash </h1>
 				</div>
 
-				<p>Since the OS provides an interface between applications and hardware and acts to share system resources between different programs, it is very likely that there are numerous errors. Perhaps the most common is a technical problem that occurs when the operating system attempts to access an incorrect memory address, perhaps due to a programming error.</p>
-				<p>In this type of crash, the operating system such as Windows, Mac OS, iOS (for Apple mobile devices) or Android has failed in some way. With an operating system crash, none of the applications work and the computer has stopped working, even though the power and hardware are functioning.</p>
-				<p>With an operating system crash, your computer or device may be completely unresponsive to anything, such as the mouse click, keyboard stroke or screen tap. In this case, a power shutdown and power on restart is necessary and often solves the problem since a power shut down and restart results in a reboot of the operating system and enables the computer to function properly. </p>
-				<p> There are other problems that are caused by bugs that allow you to write information to a memory buffer that is too small to accept it. Additional data "overflows" from the buffer and overwrites information in memory that damages the state of the operating system. These same errors can occur in application programs. The operating system can also crash abnormally when it fails to properly manage system resources. It may happen that the operating system reaches a deadlock state, in which several programs each have control of a resource that another program needs and each one waits for the other to renounce control of the resource. As an option, the system could switch back and forth between some programs, each of which needs a significant portion of memory resources. Since switching takes time, it is possible for the machine to freeze, which means that it takes so long to swap programs back and forth that little or no production processing occurs.</p>
-				<p>Lastly, an operating system can crash if the information it needs is damaged on the disk and it happens especially when the computer stops abnormally, loses power or is turned off without having the opportunity to write the contents of the memory to the appropriate files.</p>
-				<p>Another possible crash is when the operating system fails to correctly recover the memory when the programs stop and consequently there is a memory leak. Over time, the internal accounting of the operating system will show that there is little memory available</p>
-				<p> Consider a situation where the system actually crashes. It is supposed to have an incorrect code in the operating system that is activated because something unusual has been done. As soon as you connect a device to the USB socket of your computer that has a faulty driver, the bug is activated. What does the CPU do? It detects that event and reports it to the same piece of code used in the event of an application crash. Meanwhile the operating system detects the nature of this error and realizes that its code is the source of the problem. The system hangs to prevent more drastic failures, such as corrupting user data.</p>
-				<p> An operating system bug can corrupt some data that is not used for hours or even days until it stops abnormally</p>
+				<div class="textblockcont">
+					<h2> What is an OS-Crash? </h2>
+				<p>Since the operating system has an interface between the applications and the hardware and also works to share the system resources between the various programs, there is a high probability that there are numerous errors. Among which we can find a technical problem that happens when the operating system tries to access an incorrect memory address, which could be caused by a programming error.</p>
+				<p>In this kind of crash, the operating system such as Windows or the Mac OS failed in some way. Due to a crash of the operating system, none of the applications work, despite the power supply and the hardware working. In this type of crash, the computer may not respond to anything and therefore it is necessary to restart the power supply, which often resolves a problem, since this action allows the operating system to restart and allows the computer to function properly. </p>
+				<p> There may be other problems that can be caused by bugs, which allow information to be written to a memory buffer that is too small to accept it. The additional data is excessive and therefore overwrites the information in memory, which damages the state of the operating system. These errors can occur in application programs, but even the operating system can crash abnormally, especially when it fails to organize the system resources correctly. Furthermore it may happen that the operating system reaches a deadlock state, where the various programs control a resource that another program needs and therefore everyone waits for the other to renounce the control of the resource. As a possibility, the system could switch from one program to another, each of which needs a significant part of the memory resources. since switching takes time, it is possible for the machine to freeze, which means that it takes a very long time to swap programs back and forth that little or no production processing occurs.</p>
+				<p> Finally, an operating system can crash in the event that the information they need has been damaged on the disk and this happens especially when the computer stops abnormally, loses power or is turned off without the possibility to write the contents of the memory in the file.</p>
+				<p>Moreover we can find another possible arrest and when the operating system is not able to recover the memory correctly, that is when the programs stop and consequently there is a memory loss. Meanwhile, the internal accounting of the operating system will show that there is little available memory. Keep in mind a situation where the system actually crashes. There should be an incorrect code that is activated because something unusual has been done. The bug is only activated as soon as you set up a USB port on the computer with a defective driver. But xosa does the CPU? This component detects that event and reports it to the same piece of code used in case of application crash. Meanwhile the operating system finds the nature of this error and realizes that its code is the source of the problem. To avoid more drastic failures such as corruption of user data, the system hangs. An operating system bug can damage some data that is not used indefinitely until it stops abnormally.</p>
+			</div>
 
 			</div>
 		</div>
 	</div>
-
+	<div id="footer">
+		<p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+			&#169; Catastrophic Software Failures
+			<span><address id="page-auth">Brian Bronz</address></span>
+		</p>
+	</div>
 	<!-- END OF THE CONTENT -->
 
 

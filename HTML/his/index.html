@@ -1,69 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 105%;" lang="en">
 <head>
     <title>History</title>
-    <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
 
-    <!-- background music -H.P-->
-    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+    <!-- Stylesheet -E.R -->
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <!-- Scripts -E.R -->
+    <script src="../../scripts/pageloader.js"></script>
+    <script src="../scripts/pageloader.js"></script>
 
     <!-- favicon -H.P-->
-    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'/ >
+    <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
 
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
-    <meta name="author" content="">
+    <meta name="author" content="Edoardo Riggio">
+    <meta name="css-designer" content="Edoardo Riggio">
 
+    <!-- Meta data -E.R -->
+    <meta charset="UTF-8">
+    <meta name="description" content="history">
+    <meta name="keywords" content="software, failure, history">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <div id="particles-js">
-        <div class="h1container">
-            <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
-            <h1 id="page-title"> HISTORY </h1>
-        </div>
+    <div id="particles-js"></div>
+    <div class="h1container">
+        <a id="back-button" href="../index.html"><img src="../../assets/icns/arrow.png"></a>
+        <h1 id="page-title"> HISTORY </h1>
+    </div>
 
-        <div id="filters">
-            <ul>
-                <a href="#" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">Main</li></a>
-                <a href="#" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
-                <a href="#" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
-                <a href="#"><li id="filter-element">Social Impact</li></a>
-            </ul>
-        </div>
+    <div id="filters">
+        <ul>
+            <a href="./index.html" style="margin-right: 60px;"><li id="filter-element" style="background: #C3073F;">All</li></a>
+            <a href="./fin_impact.html" style="margin-right: 60px;"><li id="filter-element">Financial Impact</li></a>
+            <a href="./cas.html" style="margin-right: 60px;"><li id="filter-element">Casualties</li></a>
+            <a href="./soc_impact.html"><li id="filter-element">Social Impact</li></a>
+        </ul>
+    </div>
 
-        <div>
-            <div id="timeline">
-                <div id="timeline-shapes">
-                    <a href="#"><div class="milestone" style="background: #C3073F;"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="milestone"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="normal"></div></a>
-                    <a href="#"><div class="milestone"></div></a>
-                </div>
+    <div>
+        <div id="timeline">
+            <div id="timeline-shapes">
+                <a href="./mariner1.html" target="iframe" onclick="milestones('n1', 0); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="milestone" id="n1"><span class="date-mil">1962</span></div></a>
+                <a href="./therac_25.html" target="iframe" onclick="milestones('n2', 1); showSub1(); multiple(); normal('n2.1', 0); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'" style="cursor: pointer;"><div class="milestone" id="n2"><span class="date-mil">1985</span></div></a>
+                <a href="./therac_25.html" target="iframe" onclick="normal('n2.1', 0); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n2.1"><span class="date-nor">#1</span></div></a>
+                <a href="./ozone_layer_social_impact.html" target="iframe" onclick="normal('n2.2', 1); document.getElementById('page-auth').innerHTML = 'Mathias Bertelsen'"><div class="normal" id="n2.2"><span class="date-nor">#2</span></div></a>
+                <a href="./morrisworm.html" target="iframe" onclick="milestones('n3', 2); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="milestone" id="n3"><span class="date-mil">1988</span></div></a>
+                <a href="./patriot_missile_failure.html" target="iframe" onclick="milestones('n4', 3); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n4"><span class="date-mil">1991</span></div></a>
+                <a href="./raf_chinook.html" target="iframe" onclick="milestones('n5', 4); showSub2(); multiple(); normal('n5.1', 2); document.getElementById('page-auth').innerHTML = 'Elena Franchini'" style="cursor: pointer;"><div class="milestone" id="n5"><span class="date-mil">1994</span></div></a>
+                <a href="./raf_chinook.html" target="iframe" onclick="normal('n5.1', 2); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n5.1"><span class="date-nor">June</span></div></a>
+                <a href="./pentium.html" target="iframe" onclick="normal('n5.2', 3); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="normal" id="n5.2"><span class="date-nor">December</span></div></a>
+                <a href="./ariane5.html" target="iframe" onclick="milestones('n6', 5); showSub3(); multiple(); normal('n6.1', 4); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'" style="cursor: pointer;"><div class="milestone" id="n6"><span class="date-mil">1996</span></div></a>
+                <a href="./ariane5.html" target="iframe" onclick="normal('n6.1', 4); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="normal" id="n6.1"><span class="date-nor">June</span></div></a>
+                <a href="./tam_air_402.html" target="iframe" onclick="normal('n6.2', 5); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n6.2"><span class="date-nor">October</span></div></a>
+                <a href="./korean_air_flight.html" target="iframe" onclick="milestones('n7', 6); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n7"><span class="date-mil">1997</span></div></a>
+                <a href="./nasamars.html" target="iframe" onclick="milestones('n8', 7); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="milestone" id="n8"><span class="date-mil">1999</span></div></a>
+                <a href="./multidata_system.html" target="iframe" onclick="milestones('n9', 8); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="milestone" id="n9"><span class="date-mil">2001</span></div></a>
+                <a href="./mizuho.html" target="iframe" onclick="milestones('n10', 9); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="milestone" id="n10"><span class="date-mil">2002</span></div></a>
+                <a href="./nissan.html" target="iframe" onclick="milestones('n11', 10); showSub4(); multiple(); normal('n11.1', 6); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'" style="cursor: pointer;"><div class="milestone" id="n11"><span class="date-mil">2003</span></div></a>
+                <a href="./nissan.html" target="iframe" onclick="normal('n11.1', 6); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="normal" id="n11.1"><span class="date-nor">#1</span></div></a>
+                <a href="./malcom_byrd.html" target="iframe" onclick="normal('n11.2', 7); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="normal" id="n11.2"><span class="date-nor">#2</span></div></a>
+                <a href="./northeast_blsckout.html" target="iframe" onclick="normal('n11.3', 8); document.getElementById('page-auth').innerHTML = 'Onciu Razvan Petrica'"><div class="normal" id="n11.3"><span class="date-nor">August</span></div></a>
+                <a href="./child_support_agency.html" target="iframe" onclick="milestones('n12', 11); document.getElementById('page-auth').innerHTML = 'Onciu Razvan Petrica'"><div class="milestone" id="n12"><span class="date-mil">2004</span></div></a>
+                <a href="./airbus_a400m_plane.html" target="iframe" onclick="milestones('n13', 12); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="milestone" id="n13"><span class="date-mil">2005</span></div></a>
+                <a href="./heathrow_t5.html" target="iframe" onclick="milestones('n14', 13); document.getElementById('page-auth').innerHTML = 'Onciu Razvan Petrica'"><div class="milestone" id="n14"><span class="date-mil">2008</span></div></a>
+                <a href="./toyota_glitch.html" target="iframe" onclick="milestones('n15', 14); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="milestone" id="n15"><span class="date-mil">2010</span></div></a>
+                <a href="./knightgroup.html" target="iframe" onclick="milestones('n16', 15); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="milestone" id="n16"><span class="date-mil">2012</span></div></a>
+                <a href="./mtgox.html" target="iframe" onclick="milestones('n17', 16); showSub5(); multiple(); normal('n17.1', 9); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'" style="cursor: pointer;"><div class="milestone" id="n17"><span class="date-mil">2014</span></div></a>
+                <a href="./mtgox.html" target="iframe" onclick="normal('n17.1', 9); document.getElementById('page-auth').innerHTML = 'Massimo Bordogna'"><div class="normal" id="n17.1"><span class="date-nor">February</span></div></a>
+                <a href="./emergency_num.html" target="iframe" onclick="normal('n17.2', 10); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="normal" id="n17.2"><span class="date-nor">April</span></div></a>
+                <a href="./cpr_number_social_impact.html" target="iframe" onclick="normal('n17.3', 11); document.getElementById('page-auth').innerHTML = 'Mathias Bertelsen'"><div class="normal" id="n17.3"><span class="date-nor">July</span></div></a>
+                <a href="./air_traffic.html" target="iframe" onclick="normal('n17.4', 12); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n17.4"><span class="date-nor">September</span></div></a>
+                <a href="./sony_hacks.html" target="iframe" onclick="normal('n17.5', 13); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n17.5"><span class="date-nor">December</span></div></a>
+                <a href="./prison.html" target="iframe" onclick="milestones('n18', 17); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="milestone" id="n18"><span class="date-mil">2015</span></div></a>
+                <a href="./nesth_therm.html" target="iframe" onclick="milestones('n19', 18); showSub6(); multiple(); normal('n19.1', 14); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'" style="cursor: pointer;"><div class="milestone" id="n19"><span class="date-mil">2016</span></div></a>
+                <a href="./nesth_therm.html" target="iframe" onclick="normal('n19.1', 14); document.getElementById('page-auth').innerHTML = 'Claudio Milanesi'"><div class="normal" id="n19.1"><span class="date-nor">January</span></div></a>
+                <a href="./astro_h.html" target="iframe" onclick="normal('n19.2', 15); document.getElementById('page-auth').innerHTML = 'Onciu Razvan Petrica'"><div class="normal" id="n19.2"><span class="date-nor">March</span></div></a>
+                <a href="./ddos_attack.html" target="iframe" onclick="milestones('n20', 19); showSub7(); multiple(); normal('n20.1', 16); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'" style="cursor: pointer;"><div class="milestone" id="n20"><span class="date-mil">2017</span></div></a>
+                <a href="./ddos_attack.html" target="iframe" onclick="normal('n20.1', 16); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n20.1"><span class="date-nor">January</span></div></a>
+                <a href="./cloud_flare.html" target="iframe" onclick="normal('n20.2', 17); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n20.2"><span class="date-nor">February</span></div></a>
+                <a href="./tesla_accident.html" target="iframe" onclick="milestones('n21', 20); showSub8(); multiple(); normal('n21.1', 18); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'" style="cursor: pointer;"><div class="milestone" id="n21"><span class="date-mil">2018</span></div></a>
+                <a href="./tesla_accident.html" target="iframe" onclick="normal('n21.1', 18); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n21.1"><span class="date-nor">#1</span></div></a>
+                <a href="./uber_car.html" target="iframe" onclick="normal('n21.2', 19); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n21.2"><span class="date-nor">March</span></div></a>
+                <a href="./bank_tbs.html" target="iframe" onclick="normal('n21.3', 20); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n21.3"><span class="date-nor">April</span></div></a>
+                <a href="./zimbawe.html" target="iframe" onclick="normal('n21.4', 21); document.getElementById('page-auth').innerHTML = 'Matteo Bernaschina'"><div class="normal" id="n21.4"><span class="date-nor">July</span></div></a>
+                <a href="./national_health_service.html" target="iframe" onclick="normal('n21.5', 22); document.getElementById('page-auth').innerHTML = 'Arianna Bianchi'"><div class="normal" id="n21.5"><span class="date-nor">July</span></div></a>
+                <a href="./boeing_737_max_8.html" target="iframe" onclick="normal('n21.6', 23); document.getElementById('page-auth').innerHTML = 'Elena Franchini'"><div class="normal" id="n21.6"><span class="date-nor">October</span></div></a>
+                <a href="./network_o2.html" target="iframe" onclick="normal('n21.7', 24); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n21.7"><span class="date-nor">December</span></div></a>
+                <a href="./facebook_insta_whatspp.html" target="iframe" onclick="milestones('n22', 21); showSub9(); multiple(); normal('n22.1', 25); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'" style="cursor: pointer;"><div class="milestone" id="n22"><span class="date-mil">2019</span></div></a>
+                <a href="./facebook_insta_whatspp.html" target="iframe" onclick="normal('n22.1', 25); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n22.1"><span class="date-nor">July</span></div></a>
+                <a href="./electr_medical_record.html" target="iframe" onclick="normal('n22.2', 26); document.getElementById('page-auth').innerHTML = 'Matteo Bernaschina'"><div class="normal" id="n22.2"><span class="date-nor">September</span></div></a>
+                <a href="./hospital_ransomware.html" target="iframe" onclick="normal('n22.3', 27); document.getElementById('page-auth').innerHTML = 'Marco Mariosa'"><div class="normal" id="n22.3"><span class="date-nor">October</span></div></a>
+                <script src="../../scripts/his.js"></script>
             </div>
+        </div>
 
-            <div id="content-main">
-                <div id="content-box">
+        <div id="content-main">
+            <div id="content-box">
 
-                    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
-                    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+                <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+                <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
 
-                    <div id="content">
-                        <div class="title-container">
-                            <h2 id="sect-title">Title Of Section</h2>
-                        </div>
-                            <p>
-                                Content here (it will be scrollable once the div's size is passed)
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <iframe id="content" src="./introduction_page.html" name="iframe"></iframe>
             </div>
         </div>
+    </div>
+
+    <div id="footer">
+        <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+            &#169; Catastrophic Software Failures
+            <span><address id="page-auth">Onciu Razvan Petrica</address></span>
+        </p>
     </div>
 
      <!-- fullscreen div, blocking the screen view until all images are loaded.
@@ -86,6 +135,5 @@
             console.log('callback - particles.js config loaded');
         });
     </script>
-
 </body>
 </html>

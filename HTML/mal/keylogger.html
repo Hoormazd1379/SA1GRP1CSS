@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html class="scrollable">
+<html lang="en" class="scrollable" style="height: 170%;">
 <head>
     <title>Keylogger | Malicious Code</title>
+    
+    <!-- Stylesheet -E.R -->
     <link rel="stylesheet" href="../../stylesheets/main.css">
-    <!-- <script src="../../scripts/pageloader.js"></script> -H.P-->
 
-    <!-- background music -H.P-->
-    <embed name="background music" src="../assets/bg.mp3" width="180" height="90" loop="true" hidden="true" autostart="true" />
+    <!-- Scripts -E.R -->
+    <script src="../../scripts/pageloader.js"></script>
+    <script src="../scripts/pageloader.js"></script>
 
     <!-- favicon -H.P-->
     <link rel='icon' href='../../assets/favicon.ico' type='image/x-icon'>
 
     <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
     <meta name="author" content="Michele Cattaneo">
+    <meta name="css-designer" content="Edoardo Riggio">
+
+    <!-- Meta data -E.R -->
+    <meta charset="UTF-8">
+    <meta name="description" content="malicious code - keylogger">
+    <meta name="keywords" content="software, failure, malware, keylogger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -23,7 +32,7 @@
         <h1 id="page-title">KEYLOGGER</h1>
         <span id="nav">
             <a href="./spyware.html"><div id="previous-div">
-                <img src="../../assets/icns/arrow.png" class="previous"> 
+                <img src="../../assets/icns/arrow.png" class="previous">
                 <p id="previous-p">Previous</p>
             </div></a>
 
@@ -31,29 +40,33 @@
 
             <a href="./rootkit.html"><div id="next-div">
                 <p id="next-p" style="margin-right: 15px;">Next</p>
-                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;"> 
+                <img src="../../assets/icns/arrow.png" class="next" style="margin: 10px 10px 10px 0;">
             </div></a>
         </span>
     </div>
 
     <div id="description">
         <p>
-            Keylogging is the action of recording the keys pressed on a keyboard, usually with the person using the keyboard being unaware of being monitored. This can be achived with either a software or an hardware. <br>
-            The programs themselves are not illegal, they are in fact often used by employers to check the use of their computer. However keyloggers are most often used in illegal ways, with the goal of stealing confidential informations or passwords. Usually the law says that if the person installing the keylogger owns the device, then its use is perfectly legal.   
+            Keylogging is the action of recording the keys pressed on a keyboard, usually with the person using the keyboard being unaware of being monitored. The name of the Keylogger malware comes from the definition of that action. In most of the cases a keylogger is a software but it can also be an hardware. This last option was most used in the past, for example during the cold war.<br>
+            The softwares themselves are not illegal, they are in fact often used by employers to check the use of their computer. For example they can be used to check the work that is being done by their employees. However keyloggers are most often used in illegal ways, with the goal of stealing confidential informations or passwords. Usually the law says that if the person installing the keylogger owns the device, then its use is perfectly legal.
             The risk comes when there are malicious actors behind the keylogger.
         </p>
         <br>
         <div id="impact-quote">
             <span>
                 <hr>
-                    <i>" A keylogger can steal any password, take screnshots, record the web pages you view and much more. "
+                    <i>
+                        " A keylogger can steal any password, take screnshots, record the web pages you view and much more. "
                     </i>
                 <hr>
             </span>
         </div>
+        <br>
         <p>
-            <br>
-            As we said, there are two types of keyloggers; the hardware type and the software type. For the first one, physical access to the computer is needed for the cybercriminal to attach it, therefore this type is less common than the other. Software keyloggers are much easier to introduce and install. Unlike other kinds of malwares, keyloggers do not make a threat to the machine they are installed in. In fact their goal is to get the information needed without being noticed. While they are not a threat to the hardware, they are definetely a threat to the user.
+            As we said, there are two types of keyloggers; the hardware type and the software type. For the first one, physical access to the computer is needed for a keylogger to be installed,
+            therefore today this type is less common than the other. Software keyloggers can be introduced and installed the same way as other malwares are. Unlike other kinds of malwares however, 
+            keyloggers are not supposed to be a threat to the machine they are installed in, since their goal is to get the information needed without being noticed, their goal definitely isn't to damage their computer host. 
+            While they are not a threat to the hardware, they are definetely a threat to the user; with the informations collected by a cybercriminal using a keylogger, a victim could have his/her money stolen, his/her sensible information saved on the computer or traffic data information stolen, which can be then be sold by the criminal or used against the victim. <sup>(18) (19)</sup>
         </p>
     </div>
 
@@ -61,8 +74,8 @@
     <div id="case">
         <div id="text">
             <p>
-                During the cold war a keylogger allowed the Soviet Union to spy on US diplomats. This was probably the world's first case of a keylogger. It consisted in a small device implanted in some US diplomats' IBM Selectric typewriters. The highly miniaturized circuits where hidden into a metal bar inside the typewriter, making them invisible to the naked eye. With the exception of spaces and tabs, the tiny devices had the ability to record every single key pressed and transmit it back to the spies in real time. The devices were found inside 16 typewriters used from 1976 to 1984, meaning that they operated for 8 yers potentially. Since they operate for so long it is hard to quantify the damage done. <br>
-                The device worked by measuring magnetic energy: The movement of the "bail", a mechanical arm that controlled the writing, had a unique binary movement corresponding to each character. The magnetic energy was picked up by the sensors in the bar and was converted into a digital signal, which a transmitter in the bar would send out to a sensor. This devices could be turned off to avoid detection when it was known that inspection teams were checking nearby. It is not surprising that Soviet embassies opted to use manual typewriters over electric ones to type confidential papers.
+                During the cold war a keylogger allowed the Soviet Union to spy on US diplomats. This was probably the world's first case of a keylogger being used. It consisted in a small device implanted in some US diplomats' IBM Selectric typewriters. The incredibly small hardware circuits where hidden into a metal bar inside the typewriter, making them invisible to the naked eye. With the exception of spaces and tabs, the tiny devices had the ability to record every single key being pressed and transmit the informations back to the spies in real time. The devices were found inside 16 typewriters used from 1976 to 1984, meaning that they operated for 8 yers potentially. Since they operate for so long it is hard to quantify the damage done. <br>
+                The device worked by measuring magnetic energy: The movement of the "bail", a mechanical arm that controlled the writing, had a unique movement corresponding to each character that could be recognized. The magnetic energy was picked up by the sensors in the bar and was converted into a digital signal, which a transmitter in the bar would send out to a sensor. This devices could be turned off to avoid detection when it was known that inspection teams were checking nearby. It is not surprising that Soviet embassies opted to use manual typewriters over electric ones to type confidential papers. <sup>(20)</sup>
             </p>
             <br><br>
             <a href="#">
@@ -75,7 +88,7 @@
             <hr id="divider" style="width: 60%">
             <div id="img-div">
                 <!-- @TEAM_MEMBERS FILL IN THE ALT OPTION WITH A SHORT DESCRIPTION OF THE IMAGE -E.R-->
-                <img src="../../assets/mal_imgs/bugged-selectric-power-switch.png" id="card-img" alt="">
+                <img src="../../assets/mal_imgs/bugged-selectric-power-switch.png" id="card-img" alt="keylogger switch">
             </div>
             <hr id="divider" style="width: 60%">
             <div id="specific">
@@ -86,7 +99,7 @@
                     <br> <br>
                     <strong>Outcome:</strong> 16 typewriters implanted
                     <br> <br>
-                    <strong>Infectivity:</strong> 
+                    <strong>Infectivity:</strong>
                     <ul id="quantity">
                         <li><img src="../../assets/icns/bullet/bullet_full.png"></li>
                         <li><img src="../../assets/icns/bullet/bullet_empty.png"></li>
@@ -97,6 +110,13 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <div id="footer">
+        <p class="footer-txt" style="margin-left: 46px; margin-top: 25px;">
+            &#169; Catastrophic Software Failures
+            <span><address id="page-auth">Michele Cattaneo</address></span>
+        </p>
     </div>
 
     <!-- fullscreen div, blocking the screen view until all images are loaded.

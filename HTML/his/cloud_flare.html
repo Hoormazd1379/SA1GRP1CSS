@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>History</title>
+
+    <!-- Stylesheet -E.R -->
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+
+    <!-- TO BE MODIFIED BY THE AUTHOR OF THE PAGE -E.R-->
+    <meta name="author" content="Arianna Bianchi">
+
+    <!-- Meta data -E.R -->
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- PAGE CONTENT GOES HERE DON'T CHANGE ANYTHING ELSE @TOPIC_LEADERS -H.P, E.R-->
+    <!-- @TEAM_MEMBERS IF YOU HAVE TO CHANGE THE CSS FOR IMAGES ETC. PLEASE GO TO THE APPOSITE SECTION IN THE CSS FILE -E.R-->
+
+                    <div id="content">
+                        <div class="title-container">
+                            <h2 id="sect-title">Cloudflare/Cloudbleed <a href="../bibliography/bib_text_his.html" target="_blank"><sup> (25) (32) </sup></a></h2>
+                        </div>
+                        <div class="H-CLOUD-div">
+
+
+                            <p class="H-CLOUD-div">
+<a href="../bibliography/bib_img_his.html" target="_blank"><img class="H-CLOUD-img1" src="../../assets/his_imgs/cloudflare.png" alt="Cloudflare logo"></a>
+<p class="H-CLOUD-p1">Cloudflare was created in 2009 and acts as an intermediary between a client and a server, using
+a reverse proxy to mirror and cache websites. By storing web content for delivery on the
+closest edge server it is able to optimize loading times. This also allows it to modify
+content, such as images and rich text, for better peromance.</p><hr>
+<a href="../bibliography/bib_img_his.html" target="_blank"><img class="H-CLOUD-img2" src="../../assets/his_imgs/cloudbleed.png" alt="Cloudbleed logo "></a>
+<a href="../bibliography/bib_img_his.html" target="_blank"><img class="H-CLOUD-img3" src="../../assets/his_imgs/text.png" alt="Cloudbleed icon"></a>
+
+<p class="H-CLOUD-p2">
+On the 2nd of July, 2017, at 05:50 pm, visitors to Cloudflare sites received 502 errors
+("Bad Gateway") due to a global outage across networks for about 30 minutes.
+
+The cause of this outage was deployment of a single misconfigured rule within the
+Cloudflare Web Application Firewall (WAF) during a routine deployment of new Cloudflare
+WAF Managed rules. The intent of these new rules was to improve the blocking of
+inline JavaScript that is used in attacks. These rules were being deployed in a
+simulated mode where issues are identified and logged by the new rule but no customer
+traffic is actually blocked so that they can measure false positive rates and ensure
+that the new rules do not cause problems when they are deployed into full production.
+Unfortunately, one of these rules contained a regular expression that caused CPU to
+spike to 100% on their machines worldwide. This 100% CPU spike caused the 502 errors
+that their customers saw. At it's worst, traffic dropped by 82%.</p>
+<hr>
+
+  <h2>Solutions</h2>
+<p class="H-CLOUD-p3">
+They decided to issue a ‘global kill’ on the WAF Managed Rulesets, which instantly
+dropped CPU back to normal and restored traffic.
+They then went on to review the offending pull request, roll back the specific rules,
+test the change to ensure that they were 100% certain that they had the correct fix,
+and re-enabled the WAF Managed Rulesets.
+
+Once rolled back the service returned to normal operation and all domains
+using Cloudflare returned to normal traffic levels.</p>
+
+                        </div>
+</div>
+
+</body>
+</html>
